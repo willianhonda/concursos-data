@@ -1,0 +1,47 @@
+name: Atualizar concursos
+
+on:
+  schedule:
+    # Todo dia às 09:00 UTC (06:00 em Brasília). O GitHub pode atrasar alguns minutos.
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Dias para trás na busca"
+        default: "7"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-concursos
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Testes do extrator
+        run: python -m unittest discover -s tests -v
+
+      - name: Gerar docs/concursos.json
+        run: python scripts/build_feed.py --days "${{ github.event.inputs.days || '7' }}"
+
+      - name: Publicar se mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/concursos.json
+          if git diff --cached --quiet; then
+            echo "Sem mudanças no feed."
+          else
+            git commit -m "Atualiza concursos ($(date -u +%Y-%m-%d))"
+            git push
+          fi
