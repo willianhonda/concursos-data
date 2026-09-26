@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
-"""Monta docs/concursos.json a partir dos diários oficiais municipais do Querido Diário.
+"""Monta docs/concursos.json com concursos e processos seletivos com inscrições abertas.
+
+Fontes:
+- diários oficiais municipais, pela API do Querido Diário;
+- Diário Oficial da União (Seção 3), pelo INLABS da Imprensa Nacional. Precisa das
+  variáveis INLABS_EMAIL e INLABS_PASSWORD (cadastro gratuito); sem elas, o DOU é pulado.
 
 Só usa a biblioteca padrão do Python, então não precisa de `pip install`.
 
 Fluxo:
 1. Busca na API do Querido Diário os diários publicados nos últimos N dias que
-   mencionam a abertura de inscrições de um concurso público.
-2. Baixa o texto completo de cada diário e localiza os trechos de abertura.
+   mencionam a abertura de inscrições de um concurso público ou processo seletivo,
+   e baixa as edições do DOU dos mesmos dias.
+2. Baixa o texto completo de cada diário e localiza os atos de abertura.
 3. Extrai com regex os campos do `EventModel` do app: título, prazo de
    inscrição, UF, salário, vagas, descrição e link.
 4. Junta com o feed anterior, remove duplicados e concursos com inscrições
@@ -17,6 +23,10 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import html
+import http.cookiejar
+import io
+import os
 import hashlib
 import json
 import re
@@ -26,17 +36,19 @@ import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
+import zipfile
 from pathlib import Path
 
 API = "https://api.queridodiario.org.br/gazettes"
 USER_AGENT = "concursos-data/1.0 (+https://github.com/willianhonda/concursos-data)"
 QUERY = (
-    '"concurso público" + ("abertas as inscrições" | "abertura das inscrições" | '
+    '("concurso público" | "processo seletivo") + ("abertas as inscrições" | "abertura das inscrições" | '
     '"inscrições estarão abertas" | "período de inscrições" | "período de inscrição" | '
     '"edital de abertura" | "torna pública a abertura")'
 )
 PAGE_SIZE = 50
-MAX_PAGES = 10
+MAX_PAGES = 20
 # Sem prazo identificado, o concurso sai do feed depois deste número de dias.
 UNDATED_TTL_DAYS = 45
 
@@ -45,20 +57,26 @@ MONTHS = {
     "julho": 7, "agosto": 8, "setembro": 9, "outubro": 10, "novembro": 11, "dezembro": 12,
 }
 
-# Frases que indicam a abertura de um concurso (e não convocação ou resultado).
+# Concurso público ou processo seletivo (simplificado, público etc.).
+SEL = r"(?:concurso\s+p[úu]blico|processo\s+seletivo)"
+SELECTION = re.compile(SEL, re.IGNORECASE)
+CONCURSO = re.compile(r"concurso\s+p[úu]blico", re.IGNORECASE)
+# Frases que indicam a abertura de um concurso ou processo seletivo (e não convocação ou resultado).
 OPENING = re.compile(
-    r"torna(?:r|m)?\s+p[úu]blic[ao]\s+(?:[^.;]{0,120}?\s)?(?:a\s+)?(?:abertura|realiza[çc][ãa]o)[^.;]{0,160}?concurso\s+p[úu]blico"
-    r"|torna(?:r|m)?\s+p[úu]blico\s+o\s+edital\s+(?:normativo|de\s+abertura)[^.;]{0,80}?concurso\s+p[úu]blico"
-    r"|(?:estar[ãa]o|ficam|est[ãa]o)\s+abertas\s+as\s+inscri[çc][õo]es"
-    r"|abertura\s+(?:das|de)\s+inscri[çc][õo]es[^.;]{0,120}?concurso\s+p[úu]blico",
+    r"torna(?:r|m)?\s+p[úu]blic[ao]\s+(?:[^.;]{0,120}?\s)?(?:a\s+)?(?:abertura|realiza[çc][ãa]o)[^.;]{0,160}?" + SEL
+    + r"|torna(?:r|m)?\s+p[úu]blico\s+o\s+edital\s+(?:normativo|de\s+abertura)[^.;]{0,80}?" + SEL
+    + r"|(?:estar[ãa]o|ficam|est[ãa]o)\s+abertas\s+as\s+inscri[çc][õo]es"
+    r"|abertura\s+(?:das|de)\s+inscri[çc][õo]es[^.;]{0,120}?" + SEL,
     re.IGNORECASE,
 )
 # Retificações também indicam um concurso em andamento, mas não trazem os dados completos.
 RECTIFICATION = re.compile(r"retifica[çc][ãa]o", re.IGNORECASE)
-# Temas que usam as mesmas frases, mas não são concursos (matrícula escolar, conselhos, bolsas).
+# Temas que usam as mesmas frases, mas não são vagas de emprego público
+# (matrícula escolar, conselhos, bolsas, pós-graduação, vestibular).
 OFF_TOPIC = re.compile(
-    r"processo\s+seletivo\s+simplificado|contrata[çc][ãa]o\s+tempor[áa]ria|conselh[oe]|elei[çc][ãa]o|"
-    r"matr[íi]cula|ano\s+letivo|bolsa|est[áa]gio|credenciamento|chamamento\s+p[úu]blico",
+    r"conselh[oe]|elei[çc][ãa]o|matr[íi]cula|ano\s+letivo|bolsa|est[áa]gio|credenciamento|chamamento\s+p[úu]blico|"
+    r"mestrado|doutorado|p[óo]s-gradua|resid[êe]ncia\s+(?:m[ée]dica|multiprofissional)|vestibular|monitoria|aluno|discente|"
+    r"curso\s+(?:de\s+)?(?:licenciatura|gradua[çc][ãa]o|bacharelado|especializa[çc][ãa]o|t[ée]cnico)",
     re.IGNORECASE,
 )
 # Trechos que, logo antes da frase de abertura, indicam outro tipo de ato.
@@ -86,7 +104,7 @@ ORG = re.compile(
     re.IGNORECASE,
 )
 EDITAL_NUMBER = re.compile(
-    r"(?:concurso\s+p[úu]blico|edital)[^\n]{0,40}?n[.ºo°]*\s*[:.]?\s*(\d{1,4}\s*[/-]\s*\d{2,4})",
+    r"(?:concurso\s+p[úu]blico|processo\s+seletivo(?:\s+simplificado)?|edital)[^\n]{0,40}?n[.ºo°]*\s*[:.]?\s*(\d{1,4}\s*[/-]\s*\d{2,4})",
     re.IGNORECASE,
 )
 DATE_NUM = r"\d{1,2}/\d{1,2}/\d{2,4}"
@@ -101,7 +119,7 @@ MONEY = re.compile(r"R\$\s*(\d{1,3}(?:\.\d{3})*,\d{2})")
 VACANCIES_TOTAL = re.compile(r"total\s+de\s+(\d{1,4})\s*(?:\([^)]*\)\s*)?vagas", re.IGNORECASE)
 VACANCIES = re.compile(r"\b(\d{1,4})\s*(?:\([a-zà-ú\s]+\)\s*)?vagas?\b", re.IGNORECASE)
 URL = re.compile(r"(?:https?://|www\.)[\w.-]+\.[a-z]{2,}(?:/[\w./%?=&#-]*)?", re.IGNORECASE)
-GAZETTE_URL_HINTS = ("diario", "diário", "imprensa", "dom.", "doe.", "queridodiario", "iomat", "iom",
+GAZETTE_URL_HINTS = ("diario", "diário", "imprensa", "in.gov.br", "dom.", "doe.", "queridodiario", "iomat", "iom",
                      "jus.br", "inss", "receita", "tse.", "esocial", "planalto", "caixa.gov")
 
 
@@ -254,6 +272,9 @@ def find_link(window: str, fallback: str) -> str:
     return best if best.lower().startswith("http") else f"https://{best}"
 
 
+KIND_LABEL = {"concurso": "Concurso Público", "processo_seletivo": "Processo Seletivo"}
+
+
 def extract_openings(text: str, gazette: dict) -> list[dict]:
     published = dt.date.fromisoformat(gazette["date"])
     city, uf = gazette["territory_name"], gazette["state_code"]
@@ -265,8 +286,9 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
         if NEGATIVE.search(around) or OFF_TOPIC.search(around):
             continue
         context = text[max(0, m.start() - 600): m.end() + 400]
-        if not re.search(r"concurso\s+p[úu]blico", context, re.IGNORECASE):
+        if not SELECTION.search(context):
             continue
+        kind = "concurso" if CONCURSO.search(text[max(0, m.start() - 300): m.end() + 200]) else "processo_seletivo"
         is_rectification = bool(RECTIFICATION.search(text[max(0, m.start() - 300): m.end()]))
         start = max(0, m.start() - 600)
         nxt = NEXT_ACT.search(text, m.end() + 150)
@@ -284,7 +306,8 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
         number_str = re.sub(r"\s+", "", number.group(1)).replace("-", "/") if number else ""
         org = find_org(text[max(0, m.start() - 600): m.end()], window, city)
 
-        title = org + (f" - Concurso Público nº {number_str}" if number_str else " - Concurso Público")
+        label = KIND_LABEL[kind]
+        title = org + (f" - {label} nº {number_str}" if number_str else f" - {label}")
         if is_rectification:
             title += " (retificação)"
         snippet = squash(text[max(start, m.start() - 250): min(end, m.end() + 650)])
@@ -293,7 +316,7 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
             "Informações extraídas automaticamente; confira sempre o edital oficial."
         )
         key = (
-            f"{gazette['territory_id']}|{number_str}" if number_str
+            f"{gazette['territory_id']}|{kind}|{number_str}" if number_str
             else f"{gazette['territory_id']}|{strip_accents(org.lower())}|{published.isoformat()}"
         )
         items.append({
@@ -309,11 +332,193 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
             "description": description,
             "url": find_link(window, gazette.get("url") or gazette.get("txt_url", "")),
             # Campos extras: o app ignora, mas o script usa na junção.
+            "kind": kind,
+            "source": "querido_diario",
             "city": city,
             "published": published.isoformat(),
+            "registrationStarts": period[0].isoformat() if period else None,
             "registrationEnds": period[1].isoformat() if period else None,
             "gazetteUrl": gazette.get("url", ""),
         })
+    return items
+
+
+# ---------------------------------------------------------------- DOU (INLABS)
+
+INLABS_LOGIN = "https://inlabs.in.gov.br/logar.php"
+INLABS_DOWNLOAD = "https://inlabs.in.gov.br/index.php?p={day}&dl={day}-{section}.zip"
+DOU_SECTIONS = ("DO3", "DO3E")
+DOU_OPENING = re.compile(
+    r"torna(?:r|m)?\s+p[úu]blic[ao]s?\s+(?:[^.;]{0,160}?\s)?(?:a\s+)?(?:abertura|realiza[çc][ãa]o)"
+    r"|(?:estar[ãa]o|ficam|est[ãa]o)\s+abertas\s+as\s+inscri[çc][õo]es"
+    r"|abertura\s+(?:das|de)\s+inscri[çc][õo]es|edital\s+de\s+abertura",
+    re.IGNORECASE,
+)
+# No cabeçalho do ato, indicam que não é a abertura (convocação, resultado, alteração).
+DOU_NEGATIVE = re.compile(
+    r"convoca|nomea|homolog|resultado|classifica[çc][ãa]o|retifica|altera[çc][ãa]o|aditivo|prorroga|"
+    r"reabertura|gabarito|recurso|cancela|suspen|revoga|torna\s+sem\s+efeito",
+    re.IGNORECASE,
+)
+UF_BY_NAME = {
+    "acre": "AC", "alagoas": "AL", "amapa": "AP", "amazonas": "AM", "bahia": "BA", "ceara": "CE",
+    "distrito federal": "DF", "espirito santo": "ES", "goias": "GO", "maranhao": "MA", "mato grosso do sul": "MS",
+    "mato grosso": "MT", "minas gerais": "MG", "para": "PA", "paraiba": "PB", "parana": "PR", "pernambuco": "PE",
+    "piaui": "PI", "rio de janeiro": "RJ", "rio grande do norte": "RN", "rio grande do sul": "RS", "rondonia": "RO",
+    "roraima": "RR", "santa catarina": "SC", "sao paulo": "SP", "sergipe": "SE", "tocantins": "TO",
+}
+UFS = "|".join(sorted(set(UF_BY_NAME.values())))
+# Sede de cada região da Justiça do Trabalho e da Justiça Federal.
+TRT_UF = {1: "RJ", 2: "SP", 3: "MG", 4: "RS", 5: "BA", 6: "PE", 7: "CE", 8: "PA", 9: "PR", 10: "DF", 11: "AM", 12: "SC",
+          13: "PB", 14: "RO", 15: "SP", 16: "MA", 17: "ES", 18: "GO", 19: "AL", 20: "SE", 21: "RN", 22: "PI", 23: "MT", 24: "MS"}
+TRF_UF = {1: "DF", 2: "RJ", 3: "SP", 4: "RS", 5: "PE", 6: "MG"}
+REGION = re.compile(r"tribunal\s+regional\s+(do\s+trabalho|federal)\s+da\s+(\d{1,2})[ªa]\s+regi[ãa]o", re.IGNORECASE)
+CITY_UF = re.compile(rf"\b[A-ZÀ-Ú][\wÀ-ú' ]{{2,40}}\s*[/-]\s*({UFS})\b")
+# "(?!\w)" evita que "Pará" case com "Paraná" e "Mato Grosso" com "Mato Grosso do Sul".
+STATE_NAME = re.compile(
+    r"\b(?:estado|universidade\s+(?:federal\s+)?|instituto\s+federal)\s*(?:do|da|de)?\s+("
+    + "|".join(sorted(UF_BY_NAME, key=len, reverse=True)) + r")(?!\w)",
+    re.IGNORECASE,
+)
+
+
+def html_to_text(raw: str) -> str:
+    text = re.sub(r"<\s*(?:br|/p|/tr|/li|/h\d)\s*/?>", "\n", raw, flags=re.IGNORECASE)
+    text = html.unescape(re.sub(r"<[^>]+>", " ", text))
+    return re.sub(r"[ \t]+", " ", re.sub(r"\n\s*\n+", "\n", text)).strip()
+
+
+def dou_org(category: str) -> str:
+    """artCategory vem como "Ministério da Educação/Universidade Federal do Ceará/Pró-Reitoria…"."""
+    parts = [p.strip() for p in category.split("/") if p.strip()]
+    if not parts:
+        return "Governo Federal"
+    return parts[1] if len(parts) > 1 else parts[0]
+
+
+def dou_uf(org: str, text: str) -> str:
+    region = REGION.search(org)
+    if region:
+        table = TRT_UF if "trabalho" in region.group(1).lower() else TRF_UF
+        if int(region.group(2)) in table:
+            return table[int(region.group(2))]
+    for source in (org, text[:3000]):
+        m = STATE_NAME.search(strip_accents(source))
+        if m:
+            return UF_BY_NAME[m.group(1).lower()]
+    m = CITY_UF.search(text[:6000])
+    return m.group(1) if m else "BR"
+
+
+def extract_dou_article(article: ET.Element) -> dict | None:
+    """Converte um <article> do XML do INLABS num item do feed, se for abertura de seleção."""
+    body = article.find("body")
+    if body is None:
+        return None
+    identifica = squash(html_to_text(body.findtext("Identifica") or ""))
+    text = html_to_text(body.findtext("Texto") or "")
+    header = f"{article.get('artType', '')} {identifica} {text[:700]}"
+    if not SELECTION.search(header) or not DOU_OPENING.search(text[:3000]):
+        return None
+    if DOU_NEGATIVE.search(f"{article.get('artType', '')} {identifica} {text[:250]}") or OFF_TOPIC.search(header):
+        return None
+    try:
+        published = dt.datetime.strptime(article.get("pubDate", ""), "%d/%m/%Y").date()
+    except ValueError:
+        return None
+
+    kind = "concurso" if CONCURSO.search(header) else "processo_seletivo"
+    org = dou_org(article.get("artCategory", ""))
+    number = re.search(r"n[º°o.]*\s*(\d{1,4}(?:\s*/\s*\d{2,4})?)", identifica, re.IGNORECASE)
+    number_str = re.sub(r"\s+", "", number.group(1)) if number else ""
+    if number_str and "/" not in number_str:
+        number_str += f"/{published.year}"
+    title = f"{org} - {KIND_LABEL[kind]}" + (f" (Edital nº {number_str})" if number_str else "")
+    period = find_inscription_period(text, published)
+    gazette_url = article.get("pdfPage", "")
+    section = article.get("pubName", "DO3").upper().replace("DO", "Seção ").replace("E", " (extra)")
+    snippet = squash(text[:900])
+    return {
+        "id": hashlib.sha1(f"dou|{article.get('idMateria') or article.get('id')}".encode()).hexdigest()[:12],
+        "title": title,
+        "deadline": (
+            f"Inscrições: {period[0].strftime('%d/%m/%Y')} a {period[1].strftime('%d/%m/%Y')}"
+            if period else "Inscrições: veja o edital"
+        ),
+        "state": dou_uf(org, text),
+        "salary": find_salary(text[:12000]),
+        "vacancies": find_vacancies(text[:12000]),
+        "description": (
+            f"{snippet}\n\nFonte: Diário Oficial da União, {section}, {published.strftime('%d/%m/%Y')}. "
+            "Informações extraídas automaticamente; confira sempre o edital oficial."
+        ),
+        "url": find_link(text, gazette_url),
+        "kind": kind,
+        "source": "dou",
+        "city": None,
+        "published": published.isoformat(),
+        "registrationStarts": period[0].isoformat() if period else None,
+        "registrationEnds": period[1].isoformat() if period else None,
+        "gazetteUrl": gazette_url,
+    }
+
+
+def extract_dou_zip(data: bytes) -> list[dict]:
+    items = []
+    with zipfile.ZipFile(io.BytesIO(data)) as zf:
+        for name in zf.namelist():
+            if not name.lower().endswith(".xml"):
+                continue
+            try:
+                root = ET.fromstring(zf.read(name))
+            except ET.ParseError as err:
+                log(f"  XML inválido {name}: {err}")
+                continue
+            for article in root.iter("article"):
+                item = extract_dou_article(article)
+                if item:
+                    items.append(item)
+    return items
+
+
+def fetch_dou(since: dt.date, today: dt.date) -> list[dict]:
+    email, password = os.environ.get("INLABS_EMAIL"), os.environ.get("INLABS_PASSWORD")
+    if not email or not password:
+        log("DOU: INLABS_EMAIL/INLABS_PASSWORD não definidos; pulando o DOU")
+        return []
+    jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
+    login = urllib.request.Request(
+        INLABS_LOGIN,
+        data=urllib.parse.urlencode({"email": email, "password": password}).encode(),
+        headers={"User-Agent": USER_AGENT, "Content-Type": "application/x-www-form-urlencoded"},
+    )
+    opener.open(login, timeout=60).read()
+    cookie = next((c.value for c in jar if c.name == "inlabs_session_cookie"), None)
+    if not cookie:
+        raise RuntimeError("INLABS: login falhou (confira INLABS_EMAIL e INLABS_PASSWORD)")
+
+    items: list[dict] = []
+    day = since
+    while day <= today:
+        for section in DOU_SECTIONS:
+            url = INLABS_DOWNLOAD.format(day=day.isoformat(), section=section)
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "origem": "736372697074"})
+            try:
+                with opener.open(req, timeout=120) as resp:
+                    data = resp.read()
+            except urllib.error.HTTPError as err:
+                if err.code != 404:  # 404 = sem edição (fim de semana, feriado, sem extra)
+                    log(f"DOU {day} {section}: HTTP {err.code}")
+                continue
+            if not data.startswith(b"PK"):
+                log(f"DOU {day} {section}: resposta não é ZIP; pulando")
+                continue
+            found = extract_dou_zip(data)
+            log(f"DOU {day} {section}: {len(found)} abertura(s)")
+            items.extend(found)
+            time.sleep(1)
+        day += dt.timedelta(days=1)
     return items
 
 
@@ -336,6 +541,7 @@ def merge(old: list[dict], new: list[dict], today: dt.date) -> list[dict]:
                     prev[k] = v
             if item.get("registrationEnds"):
                 prev["registrationEnds"], prev["deadline"] = item["registrationEnds"], item["deadline"]
+                prev["registrationStarts"] = item.get("registrationStarts")
         else:
             by_id[item["id"]] = item
     current = [i for i in by_id.values() if is_current(i, today)]
@@ -350,7 +556,12 @@ def main() -> int:
 
     today = dt.date.today()
     old = json.loads(args.output.read_text()) if args.output.exists() else []
-    gazettes = search_gazettes(today - dt.timedelta(days=args.days))
+    since = today - dt.timedelta(days=args.days)
+    try:
+        gazettes = search_gazettes(since)
+    except Exception as err:  # noqa: BLE001 - API fora do ar: segue com o DOU e limpa os vencidos
+        log(f"Querido Diário: {err}")
+        gazettes = []
 
     new: list[dict] = []
     for g in gazettes:
@@ -363,6 +574,11 @@ def main() -> int:
         log(f"{g['territory_name']}/{g['state_code']} {g['date']}: {len(found)} abertura(s)")
         new.extend(found)
         time.sleep(0.5)
+
+    try:
+        new.extend(fetch_dou(since, today))
+    except Exception as err:  # noqa: BLE001 - falha no DOU não impede publicar os municipais
+        log(f"DOU: {err}")
 
     feed = merge(old, new, today)
     args.output.parent.mkdir(parents=True, exist_ok=True)

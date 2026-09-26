@@ -1,8 +1,10 @@
 # concursos-data
 
-Feed JSON de concursos públicos municipais com inscrições abertas, usado pelo app iOS **ConcursosPublicos**.
+Feed JSON de concursos públicos e processos seletivos com inscrições abertas, usado pelo app iOS **ConcursosPublicos**.
 
-- **Fonte:** diários oficiais municipais, pela API pública do [Querido Diário](https://queridodiario.ok.org.br) (Open Knowledge Brasil).
+- **Fontes:**
+  - diários oficiais municipais, pela API pública do [Querido Diário](https://queridodiario.ok.org.br) (Open Knowledge Brasil);
+  - Diário Oficial da União, Seção 3, pelo [INLABS](https://inlabs.in.gov.br) da Imprensa Nacional (precisa de cadastro gratuito; veja a configuração).
 - **Atualização:** diária, por GitHub Actions.
 - **Hospedagem:** GitHub Pages, em `https://<seu-usuario>.github.io/concursos-data/concursos.json`.
 - **Custo:** zero. O repositório é público, sem servidor, banco de dados, chave de API nem LLM.
@@ -22,7 +24,18 @@ Feed JSON de concursos públicos municipais com inscrições abertas, usado pelo
    - os concursos com inscrições encerradas
    - os concursos sem prazo identificado publicados há mais de 45 dias
 
-Cada item segue o formato do `EventModel` do app. Os campos extras (`city`, `published`, `registrationEnds`, `gazetteUrl`) são ignorados pelo app.
+Cada item segue o formato do `EventModel` do app, mais estes campos:
+
+| Campo | Valores |
+|---|---|
+| `kind` | `concurso` ou `processo_seletivo` (seleções simplificadas e contratações temporárias) |
+| `source` | `querido_diario` ou `dou` |
+| `city` | cidade do diário municipal; `null` no DOU |
+| `published` | data de publicação no diário (`AAAA-MM-DD`) |
+| `registrationStarts`, `registrationEnds` | período de inscrições (`AAAA-MM-DD`), ou `null` quando não foi identificado |
+| `gazetteUrl` | link do diário (PDF do município ou página do DOU) |
+
+No DOU, `state` vem da UF da instituição (ou da sede, nos TRTs e TRFs) e é `BR` quando não dá para saber.
 
 ```json
 {
@@ -43,9 +56,9 @@ Cada item segue o formato do `EventModel` do app. Os campos extras (`city`, `pub
 
 ## Limitações conhecidas
 
-- **Cobertura:** só entram os municípios que o Querido Diário indexa. Concursos estaduais e federais ainda não entram (o próximo passo seria o DOU).
+- **Cobertura:** só entram os municípios que o Querido Diário indexa (cerca de 500 dos 5.570) e os editais federais do DOU. Concursos estaduais ainda não entram.
 - **Campos incompletos:** a extração é heurística. Quando o diário publica só um aviso resumido, os campos de prazo, salário e vagas podem sair vazios, e o app esconde campos vazios. A descrição sempre traz o trecho original e a fonte.
-- **Instabilidade da API:** a API às vezes responde 503. O script tenta de novo com espera crescente e, se falhar, o workflow falha sem apagar o feed publicado.
+- **Instabilidade das fontes:** a API do Querido Diário às vezes responde 503. O script tenta de novo com espera crescente; se uma fonte falhar, ele segue com a outra e ainda tira do feed os concursos com inscrições encerradas.
 
 ## Rodar localmente
 
@@ -53,7 +66,8 @@ Precisa de Python 3.10 ou superior, sem nenhuma dependência.
 
 ```sh
 python3 -m unittest discover -s tests -v    # testes do extrator
-python3 scripts/build_feed.py --days 14     # atualiza docs/concursos.json
+python3 scripts/build_feed.py --days 14     # atualiza docs/concursos.json (só municípios)
+INLABS_EMAIL=... INLABS_PASSWORD=... python3 scripts/build_feed.py --days 3   # inclui o DOU
 ```
 
 ## Configuração (uma vez só)
@@ -80,7 +94,11 @@ python3 scripts/build_feed.py --days 14     # atualiza docs/concursos.json
    - Vá em *Actions → Atualizar concursos → Run workflow*.
    - Use `days = 30` para preencher o histórico inicial.
    - Depois disso, o workflow roda sozinho todo dia às 06:00 (horário de Brasília).
-6. **Apontar o app para o feed:** confira se a URL em `EventListingService.swift` (projeto ConcursosPublicos) usa o seu usuário.
+6. **Ativar o DOU (opcional, recomendado):**
+   - Crie uma conta gratuita em [inlabs.in.gov.br](https://inlabs.in.gov.br) e confirme o e-mail.
+   - Em *Settings → Secrets and variables → Actions → New repository secret*, crie `INLABS_EMAIL` e `INLABS_PASSWORD`.
+   - Rode o workflow manualmente e confira no log as linhas `DOU <data> DO3: N abertura(s)`.
+7. **Apontar o app para o feed:** confira se a URL em `EventListingService.swift` (projeto ConcursosPublicos) usa o seu usuário.
 
 ### Manutenção
 

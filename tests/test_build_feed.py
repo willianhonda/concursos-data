@@ -1,6 +1,9 @@
 import datetime as dt
+import io
 import sys
 import unittest
+import xml.etree.ElementTree as ET
+import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -26,8 +29,10 @@ class ExtractOpeningsTests(unittest.TestCase):
         self.assertEqual(item["title"], "Fundação Municipal de Ensino Superior de Marília - Concurso Público nº 06/2026")
         self.assertEqual(item["deadline"], "Inscrições: 01/10/2026 a 20/10/2026")
         self.assertEqual(item["registrationEnds"], "2026-10-20")
+        self.assertEqual(item["registrationStarts"], "2026-10-01")
         self.assertEqual(item["state"], "SP")
         self.assertEqual(item["url"], "https://www.fumes.sp.gov.br")
+        self.assertEqual(item["kind"], "concurso")
 
     def test_convocation_is_ignored(self):
         text = (
@@ -36,10 +41,19 @@ class ExtractOpeningsTests(unittest.TestCase):
         )
         self.assertEqual(bf.extract_openings(text, GAZETTE), [])
 
-    def test_temporary_selection_is_ignored(self):
+    def test_temporary_selection_is_included_as_processo_seletivo(self):
         text = (
             "O Município, no uso de suas atribuições, TORNA PÚBLICO que estarão abertas as inscrições do "
-            "Processo Seletivo Simplificado para contratação temporária."
+            "Processo Seletivo Simplificado nº 03/2026 para contratação temporária de Professor."
+        )
+        [item] = bf.extract_openings(text, GAZETTE)
+        self.assertEqual(item["kind"], "processo_seletivo")
+        self.assertEqual(item["title"], "Município de Marília - Processo Seletivo nº 03/2026")
+
+    def test_internship_selection_is_ignored(self):
+        text = (
+            "O Município TORNA PÚBLICO que estarão abertas as inscrições do Processo Seletivo "
+            "para estágio remunerado de estudantes."
         )
         self.assertEqual(bf.extract_openings(text, GAZETTE), [])
 
@@ -56,6 +70,84 @@ class ExtractOpeningsTests(unittest.TestCase):
         self.assertEqual(item["deadline"], "Inscrições: 05/10/2026 a 04/11/2026")
         self.assertEqual(item["salary"], "Faixa salarial: R$ 2.500,00 - R$ 9.100,50")
         self.assertEqual(item["vacancies"], "Vagas 12")
+
+
+def dou_article(art_type, identifica, texto, category="Ministério da Educação/Universidade Federal do Ceará"):
+    return (
+        f'<article id="1" idMateria="{abs(hash(identifica))}" pubName="DO3" artType="{art_type}" pubDate="25/09/2026" '
+        f'artCategory="{category}" pdfPage="https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&amp;jornal=530&amp;pagina=45">'
+        f"<body><Identifica><![CDATA[{identifica}]]></Identifica><Texto><![CDATA[{texto}]]></Texto></body></article>"
+    )
+
+
+class DouTests(unittest.TestCase):
+    def parse(self, xml):
+        return bf.extract_dou_article(ET.fromstring(xml))
+
+    def test_concurso_opening(self):
+        item = self.parse(dou_article(
+            "Edital de Concurso Público", "EDITAL Nº 48/2026",
+            "<p>EDITAL Nº 48/2026</p><p>A Reitora da Universidade Federal do Ceará torna pública a abertura de "
+            "inscrições para o Concurso Público para provimento de cargos de Professor do Magistério Superior.</p>"
+            "<p>2. DAS INSCRIÇÕES 2.1 As inscrições serão realizadas de 01/10/2026 a 30/10/2026, no site "
+            "https://concursos.ufc.br. Remuneração: R$ 10.481,64. Total de 12 vagas.</p>",
+        ))
+        self.assertEqual(item["title"], "Universidade Federal do Ceará - Concurso Público (Edital nº 48/2026)")
+        self.assertEqual(item["state"], "CE")
+        self.assertEqual(item["kind"], "concurso")
+        self.assertEqual(item["source"], "dou")
+        self.assertEqual(item["registrationEnds"], "2026-10-30")
+        self.assertEqual(item["url"], "https://concursos.ufc.br")
+        self.assertEqual(item["vacancies"], "Vagas 12")
+        self.assertIn("Diário Oficial da União, Seção 3, 25/09/2026", item["description"])
+
+    def test_substitute_teacher_is_processo_seletivo(self):
+        item = self.parse(dou_article(
+            "Edital", "EDITAL Nº 12",
+            "<p>O Reitor do Instituto Federal de Goiás torna pública a abertura de inscrições do Processo Seletivo "
+            "Simplificado para contratação de Professor Substituto. Inscrições de 29/09/2026 a 08/10/2026.</p>",
+            category="Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia de Goiás",
+        ))
+        self.assertEqual(item["kind"], "processo_seletivo")
+        self.assertEqual(item["state"], "GO")
+        self.assertEqual(item["title"], "Instituto Federal de Educação, Ciência e Tecnologia de Goiás - Processo Seletivo (Edital nº 12/2026)")
+
+    def test_convocation_and_graduate_selection_are_ignored(self):
+        self.assertIsNone(self.parse(dou_article(
+            "Edital de Convocação", "EDITAL DE CONVOCAÇÃO",
+            "<p>CONCURSO PÚBLICO EDITAL Nº 1/2023. O Conselho Regional convoca o candidato aprovado.</p>",
+        )))
+        self.assertIsNone(self.parse(dou_article(
+            "Aviso", "EDITAL DE 14 DE SETEMBRO DE 2026",
+            "<p>CONCURSO PÚBLICO DE SELEÇÃO E ADMISSÃO - CURSOS DE MESTRADO E DOUTORADO. Torna pública a abertura "
+            "das inscrições.</p>",
+        )))
+
+    def test_regional_court_uses_seat_state(self):
+        item = self.parse(dou_article(
+            "Edital", "EDITAL Nº 20, DE 23 DE SETEMBRO DE 2026",
+            "<p>O Presidente torna pública a realização de Concurso Público para formação de cadastro de reserva.</p>",
+            category="Poder Judiciário/Tribunal Regional do Trabalho da 1ª Região",
+        ))
+        self.assertEqual(item["state"], "RJ")
+
+    def test_student_selection_is_ignored(self):
+        self.assertIsNone(self.parse(dou_article(
+            "Extrato", "EDITAL Nº 17/2026 - UFPI",
+            "<p>PROCESSO SELETIVO PARA O CURSO DE LICENCIATURA EM EDUCAÇÃO DO CAMPO. Torna pública a abertura "
+            "das inscrições.</p>",
+        )))
+
+    def test_zip_with_several_articles(self):
+        xml_ok = "<xml>" + dou_article("Edital", "EDITAL Nº 5", "<p>Torna pública a abertura do Concurso Público.</p>") + "</xml>"
+        xml_skip = "<xml>" + dou_article("Extrato de Contrato", "EXTRATO", "<p>Contratação de serviços.</p>") + "</xml>"
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w") as zf:
+            zf.writestr("a.xml", xml_ok)
+            zf.writestr("b.xml", xml_skip)
+            zf.writestr("imagem.jpg", b"...")
+        items = bf.extract_dou_zip(buf.getvalue())
+        self.assertEqual([i["title"] for i in items], ["Universidade Federal do Ceará - Concurso Público (Edital nº 5/2026)"])
 
 
 class MergeTests(unittest.TestCase):
