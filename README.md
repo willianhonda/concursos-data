@@ -19,7 +19,7 @@ Feed JSON de concursos públicos e processos seletivos com inscrições abertas,
    - o período de inscrições
    - a faixa salarial
    - o número de vagas
-   - o link da banca
+   - o link do edital: prefere o site da banca e descarta o site que publica o diário, que aparece no cabeçalho de cada página; sem link útil, usa o PDF do diário
 4. Por fim, junta com o `docs/concursos.json` anterior, remove duplicados e tira do feed:
    - os concursos com inscrições encerradas
    - os concursos sem prazo identificado publicados há mais de 45 dias
@@ -34,6 +34,7 @@ Cada item segue o formato do `EventModel` do app, mais estes campos:
 | `published` | data de publicação no diário (`AAAA-MM-DD`) |
 | `registrationStarts`, `registrationEnds` | período de inscrições (`AAAA-MM-DD`), ou `null` quando não foi identificado |
 | `gazetteUrl` | link do diário (PDF do município ou página do DOU) |
+| `linkKind` | o que o `url` abre: `edital` (página do concurso), `banca`, `orgao` (site do órgão) ou `diario` (o próprio diário, quando o ato não traz um link útil) |
 
 No DOU, `state` vem da UF da instituição (ou da sede, nos TRTs e TRFs) e é `BR` quando não dá para saber.
 
@@ -98,7 +99,7 @@ INLABS_EMAIL=... INLABS_PASSWORD=... python3 scripts/build_feed.py --days 3   # 
    - Crie uma conta gratuita em [inlabs.in.gov.br](https://inlabs.in.gov.br) e confirme o e-mail.
    - Em *Settings → Secrets and variables → Actions → New repository secret*, crie `INLABS_EMAIL` e `INLABS_PASSWORD`.
    - Rode o workflow manualmente e confira no log as linhas `DOU <data> DO3: N abertura(s)`.
-7. **Apontar o app para o feed:** confira se a URL em `EventListingService.swift` (projeto ConcursosPublicos) usa o seu usuário.
+7. **Apontar o app para o feed:** confira se `AppLinks.eventsFeed` (projeto ConcursosPublicos) usa o seu usuário.
 
 ### Manutenção
 

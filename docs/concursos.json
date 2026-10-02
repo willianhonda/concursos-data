@@ -99,7 +99,8 @@
   "published": "2026-09-30",
   "registrationStarts": null,
   "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-30/373eafa067ded6e640472d3b5ad0d03d3e5b88a3.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-30/373eafa067ded6e640472d3b5ad0d03d3e5b88a3.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "766abfb0e79e",
@@ -109,14 +110,15 @@
   "salary": "",
   "vacancies": "",
   "description": "lgada procedente a autuação Penalidade Imposta: MULTA Outros 282/2026, de 30/09/2026 EXTRATO DO EDITAL DE RESTITUIÇÃO DAS TAXAS DE INSCRIÇÃO CONCURSO PÚBLICO Nº. 01/2026 E PROCESSO SELETIVO PÚBLICO Nº. 01/2026 O Município de Dois Irmãos/RS torna pública a abertura do prazo para solicitação de restituição integral das taxas de inscrição referentes ao Concurso Público nº. 01/2026 e ao Processo Seletivo Público nº. 01/2026, em decorrência da anulação integral das provas teórico-objetivas aplicadas em 30 de agosto de 2026, conforme Despacho Decisório do Prefeito Municipal, exarado em 11 de setembro de 2026, no Processo Administrativo nº. 39/2026. Os pedidos deverão ser formalizados no período de 1º a 30 de outubro de 2026, mediante abertura de processo digital, exclusivamente pelo link: https://doisirmaos.atende.net/autoatendimento/servicos/e-restituicao-taxa-de-inscricao-concurso-012026-e-processo- seletivo-publico-012026 . Os candidatos deverão informar os dad\n\nFonte: Diário Oficial de Dois Irmãos/RS, 30/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://doisirmaos.atende.net/autoatendimento/servicos/e-restituicao-taxa-de-inscricao-concurso-012026-e-processo-",
+  "url": "https://data.queridodiario.ok.org.br/4306403/2026-09-30/0348f33934086672ca67f81d5306ec11d8bc0ce1.pdf",
   "kind": "concurso",
   "source": "querido_diario",
   "city": "Dois Irmãos",
   "published": "2026-09-30",
   "registrationStarts": null,
   "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4306403/2026-09-30/0348f33934086672ca67f81d5306ec11d8bc0ce1.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4306403/2026-09-30/0348f33934086672ca67f81d5306ec11d8bc0ce1.pdf",
+  "linkKind": "diario"
  },
  {
   "id": "62de71770db0",
@@ -133,7 +135,8 @@
   "published": "2026-09-30",
   "registrationStarts": null,
   "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-30/373eafa067ded6e640472d3b5ad0d03d3e5b88a3.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-30/373eafa067ded6e640472d3b5ad0d03d3e5b88a3.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "4493504c864e",
@@ -201,7 +204,8 @@
   "published": "2026-09-29",
   "registrationStarts": "2026-10-05",
   "registrationEnds": "2026-10-09",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/2312908/2026-09-29/4b1e2df03b7d5de289598be9c65daf75a304d077.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2312908/2026-09-29/4b1e2df03b7d5de289598be9c65daf75a304d077.pdf",
+  "linkKind": "orgao"
  },
  {
   "id": "751d4f7924ec",
@@ -235,7 +239,8 @@
   "published": "2026-09-29",
   "registrationStarts": "2026-09-30",
   "registrationEnds": "2026-10-14",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3534401/2026-09-29/dca877c88ae0fc18c586e5a264a08951dc9acfae.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3534401/2026-09-29/dca877c88ae0fc18c586e5a264a08951dc9acfae.pdf",
+  "linkKind": "diario"
  },
  {
   "id": "5ca132d464e2",
@@ -269,7 +274,8 @@
   "published": "2026-09-28",
   "registrationStarts": "2026-09-29",
   "registrationEnds": "2026-10-08",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4316758/2026-09-28/2360c320c5edc56cc612ca8627a27e5df42c931b.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4316758/2026-09-28/2360c320c5edc56cc612ca8627a27e5df42c931b.pdf",
+  "linkKind": "orgao"
  },
  {
   "id": "abaab3f5d871",
@@ -289,23 +295,6 @@
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=530&pagina=85"
  },
  {
-  "id": "7141ab76dc27",
-  "title": "Prefeitura Municipal de Andradina - Concurso Público nº 002/2026",
-  "deadline": "Inscrições: 30/09/2026 a 01/10/2026",
-  "state": "SP",
-  "salary": "Salário: R$ 15.000,00",
-  "vacancies": "",
-  "description": "ministração, Comunicação, Assuntos Parlamentares e Institucionais Coordenadoria de Gestão de PessoasConcurso Público ESTADO DE SÃO PAULO PREFEITURA MUNICIPAL DE ANDRADINA EDITAL DO CONCURSO PÚBLICO N.° 002/2026 1 EDITAL DE ABERTURA DE INSCRIÇÕES CONCURSO PÚBLICO Nº 002/2026 2ª RETIFICAÇÃO DO EDITAL DE ABERTURA DE INSCRIÇÕES A PREFEITURA MUNICIPAL DE ANDRADINA/SP, no uso de suas atribuições legais, torna pública a 2ª RETIFICAÇÃO DO EDITAL DE ABERTURA DE INSCRIÇÕES do Concurso Público nº 002/2026, conforme segue: 1 DAS ALTERAÇÕES DO CAPÍTULO 10 1.1 Os itens 10.1 e 10.1.1 passam a vigorar com a seguinte redação: 10.1 O prazo para interposição dos recursos administrativos cabíveis no âmbito deste Concurso Público será de 2 (dois) dias corridos, abrangendo os resultados relativos às inscrições, à isenção da taxa de inscrição, à participação na reserva de vagas para pessoa\n\nFonte: Diário Oficial de Andradina/SP, 28/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://portal.cepasf.com.br",
-  "kind": "concurso",
-  "source": "querido_diario",
-  "city": "Andradina",
-  "published": "2026-09-28",
-  "registrationStarts": "2026-09-30",
-  "registrationEnds": "2026-10-01",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3502101/2026-09-28/6451ccfdd6e523c171bcb5c04a919a617dfe5343.pdf"
- },
- {
   "id": "57bb35e5f3b9",
   "title": "Prefeitura Municipal de São José Vale Rio Preto - Processo Seletivo",
   "deadline": "Inscrições: 28/09/2026 a 04/10/2026",
@@ -320,7 +309,8 @@
   "published": "2026-09-28",
   "registrationStarts": "2026-09-28",
   "registrationEnds": "2026-10-04",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3305158/2026-09-28/4c7ad714f6c8966733d3b1203f0b7bd6a8c21c4f.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3305158/2026-09-28/4c7ad714f6c8966733d3b1203f0b7bd6a8c21c4f.pdf",
+  "linkKind": "diario"
  },
  {
   "id": "234992441d13",
@@ -364,14 +354,15 @@
   "salary": "Faixa salarial: R$ 1.769,16 - R$ 5.587,46",
   "vacancies": "",
   "description": "O PÚBLICO Nº 01/2026 CARGOS EFETIVOS DE MÚSICOS PARA ORQUESTRA E BANDA SINFÔNICAS DO RECIFE CONCURSO PÚBLICO Nº 01/2026 EDITAL Nº 01/2026 A Secretária de Cultura e Secretária de Administração do Município do Recife, no uso das atribuições legais, tornam pública a abertura, a contar da data de publicação do Edital de Abertura, das inscrições para realização de Concurso Público que será executado mediante a coordenação técnico-administrativa da Fundação Universidade Empresa de Tecnologia e Ciências – FUNDATEC e destinado ao provimento de cargos públicos e formação de Cadastro Reserva (CR), com ingresso pelo regime jurídico-administrativo estatutário, o qual será regido pelas legislações: Lei Orgânica do Município do Recife, o Estatuto dos Funcionários Públicos do Município do Recife (Anexo Único da Lei Municipal nº 14.728/85) e demais legislações vigentes pertinentes ao quadro de Músicos da Orquestra Sinfônica do Recife e Banda Sinfônica do Recife, referidos neste Concurso. O certame observará o disposto na Le\n\nFonte: Diário Oficial de Recife/PE, 26/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://data.queridodiario.ok.org.br/2611606/2026-09-26/1663d251e640f35532d4ce1460496ddb2c64842f.pdf",
+  "url": "https://www.fundatec.org.br",
   "kind": "concurso",
   "source": "querido_diario",
   "city": "Recife",
   "published": "2026-09-26",
   "registrationStarts": null,
   "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/2611606/2026-09-26/1663d251e640f35532d4ce1460496ddb2c64842f.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2611606/2026-09-26/1663d251e640f35532d4ce1460496ddb2c64842f.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "8917220c3d94",
@@ -405,7 +396,8 @@
   "published": "2026-09-25",
   "registrationStarts": "2026-09-25",
   "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3550605/2026-09-25/55eede5ac8b18f63b513b78a45c0f4f472622436.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3550605/2026-09-25/55eede5ac8b18f63b513b78a45c0f4f472622436.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "67be50070125",
@@ -422,7 +414,8 @@
   "published": "2026-09-25",
   "registrationStarts": "2026-09-25",
   "registrationEnds": "2026-10-26",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3502507/2026-09-25/e7b18dc3bd1f6d9991109a1cf095db5e4b9ccb38.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3502507/2026-09-25/e7b18dc3bd1f6d9991109a1cf095db5e4b9ccb38.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "56f6c3154a16",
@@ -439,7 +432,8 @@
   "published": "2026-09-25",
   "registrationStarts": "2026-09-29",
   "registrationEnds": "2026-10-18",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3538105/2026-09-25/ceafbc30053a29fadde82bbdc5ede47bb34b125b.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3538105/2026-09-25/ceafbc30053a29fadde82bbdc5ede47bb34b125b.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "12cf946e31bf",
@@ -474,20 +468,6 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=77"
- },
- {
-  "id": "d8a80785fb20",
-  "title": "Fundação Municipal de Ensino Superior de Marília - Concurso Público nº 06/2026",
-  "deadline": "Inscrições: 01/10/2026 a 20/10/2026",
-  "state": "SP",
-  "salary": "",
-  "vacancies": "",
-  "description": ". Art. 5°. Esta Portaria entra em vigor na data de sua publicação. Marília, 23 de setembro de 2026. PAULO JORGE DE OLIVEIRA ALVES Diretor-Presidente EMDURB A FUNDAÇÃO MUNICIPAL DE ENSINO SUPERIOR DE MARÍLIA torna pública a abertura do Concurso Público para o preenchimento do emprego público de MÉDICO DO TRABALHO, conforme Edital DRH n.º 06/2026. Período de inscrição: 01/10/2026 a 20/10/2026, no site www.fumes.sp.gov.br, aba concurso público. Edital completo no site da FUMES.\n\nFonte: Diário Oficial de Marília/SP, 24/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.fumes.sp.gov.br",
-  "city": "Marília",
-  "published": "2026-09-24",
-  "registrationEnds": "2026-10-20",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3529005/2026-09-24/a7feea0bfeb78f03af16b0f33ed3ec61ad1d7667.pdf"
  },
  {
   "id": "d448430fe2bd",
@@ -572,7 +552,8 @@
   "published": "2026-09-24",
   "registrationStarts": "2026-10-01",
   "registrationEnds": "2026-10-20",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3529005/2026-09-24/a7feea0bfeb78f03af16b0f33ed3ec61ad1d7667.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3529005/2026-09-24/a7feea0bfeb78f03af16b0f33ed3ec61ad1d7667.pdf",
+  "linkKind": "orgao"
  },
  {
   "id": "537763206a70",
@@ -582,14 +563,15 @@
   "salary": "Faixa salarial: R$ 2.312,10 - R$ 4.602,09",
   "vacancies": "",
   "description": "PREFEITURA MUNICIPAL DE JUATUBA SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO EDITAL DE PROCESSO SELETIVO SIMPLIFICADO – Nº 002/ 2026 PROJETO BOM DE BOLA E BOM NA ESCOLA – MODALIDADE FUTSAL A PREFEITURA MUNICIPAL DE JUATUBA/MG torna público que estarão abertas as inscrições para o Processo Seletivo Simplificado – PSS para preenchimento de vagas destinadas ao Projeto Bom de Bola e Bom na Escola – Modalidade Futsal, no âmbito da Secretaria Municipal de Esporte e Juventude, por prazo determinado, com fundamento no art. 37, inciso IX, da Constituição Federal de 1988, na Lei Municipal nº 541/2005 e demais normas aplicáveis, visando atender à necessidade temporária de excepcional interesse público. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Processo Seletivo Simplificado (PSS) visa à contratação, por prazo determinado, de profissionais para atender a demanda de pessoal dos serviços prestados pela Secret\n\nFonte: Diário Oficial de Juatuba/MG, 24/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://data.queridodiario.ok.org.br/3136652/2026-09-24/248701ee909cfa8124f74b83326bbecf20288b3d.pdf",
+  "url": "http://www.juatuba.mg.gov.br/processo-seletivo-n--02/2026",
   "kind": "processo_seletivo",
   "source": "querido_diario",
   "city": "Juatuba",
   "published": "2026-09-24",
   "registrationStarts": "2026-10-01",
   "registrationEnds": "2026-10-12",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3136652/2026-09-24/248701ee909cfa8124f74b83326bbecf20288b3d.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3136652/2026-09-24/248701ee909cfa8124f74b83326bbecf20288b3d.pdf",
+  "linkKind": "edital"
  },
  {
   "id": "45a8f66897a2",
@@ -616,14 +598,15 @@
   "salary": "Faixa salarial: R$ 1.621,00 - R$ 3.847,97",
   "vacancies": "",
   "description": "PREFEITO DO MUNICÍPIO DE SANTANA DO MUNDAÚ, Estado de Alagoas, na forma da Constituição Federal, Art. 37, incisos I e II, torna público, através da COMISSÃO ORGANIZADORA DO CONCURSO PÚBLICO, em datas, locais e horários especificados neste Edital, abertura de inscrições para o Concurso Público nº 001/2026–PMSM/AL, para provimento dos cargos públicos de Agente Administrativo, Agente de Limpeza Urbana, Assistente Jurídico, Assistente Social, Auxiliar de Serviços Gerais, Bibliotecário, Cirurgião Dentista – Clínico Geral, Eletricista, Fiscal de Tributos, Guarda Municipal, Médico da Estratégia de Saúde da Família, Motorista, Operador de Máquinas Pesadas, Professor (Educação Infantil / Anos Iniciais do Ensino Fundamental), Professor de Ciências, Professor de Educação Física, Professor de Geografia, Professor de História, Professor de Língua Inglesa, Professor de Língua Portuguesa, Professor de Matemática, Técnico de Enfermagem e\n\nFonte: Diário Oficial de Santana do Mundaú/AL, 24/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://data.queridodiario.ok.org.br/2700000/2026-09-24/3b5399a68f93219a8c3210177f9936f8db29b892.pdf",
+  "url": "https://www.institutoiacp.net.br",
   "kind": "concurso",
   "source": "querido_diario",
   "city": "Santana do Mundaú",
   "published": "2026-09-24",
   "registrationStarts": "2026-09-05",
   "registrationEnds": "2026-10-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/2700000/2026-09-24/3b5399a68f93219a8c3210177f9936f8db29b892.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2700000/2026-09-24/3b5399a68f93219a8c3210177f9936f8db29b892.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "142cdea096ff",
@@ -658,20 +641,6 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=44"
- },
- {
-  "id": "fc9e9309ce54",
-  "title": "Prefeitura Municipal de Mirante do Paranapanema - Concurso Público nº 003/2026 (retificação)",
-  "deadline": "Inscrições: veja o edital",
-  "state": "SP",
-  "salary": "Salário: R$ 3.242,00",
-  "vacancies": "",
-  "description": "RMA AGRÁRIA Secretaria Municipal de Administração 1 RETIFICAÇÃO 3 EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 003/2026 A Prefeitura Municipal de Mirante do Paranapanema, Estado de São Paulo, por meio do convênio firmado com CIOP, torna pública a RETIFICAÇÃO 3 do Edital de abertura das inscrições do CONCURSO PÚBLICO DE PROVAS para o preenchimento de vagas dos cargos abaixo especificados. A Presente Retificação ALTERA a Data da Prova Prática, conforme segue: ANEXO IV CRONOGRAMA EVENTO DATA Data de aplicação da Prova Prática 08/11/2026 Divulgação do resultado das Provas Práticas 17/11/2026 Prazo para interposição de recursos das Provas Práticas 17 e 18/11/2026 Publicação do Resultado Final 25/11/2026 Homologação do Concurso Púbico A Definir candidatos inscritos no referido cargo, caso não queiram realizar o Processo Seletivo, em razão da retificação, terão o direito de requerer a devolução do valor recolhido no perío\n\nFonte: Diário Oficial de Mirante do Paranapanema/SP, 23/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.consesp.com.br",
-  "city": "Mirante do Paranapanema",
-  "published": "2026-09-23",
-  "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3530201/2026-09-23/a4a8260ca4940e3352d40edb6bdaf67c930859ab.pdf"
  },
  {
   "id": "c63f94a2c0de",
@@ -722,7 +691,8 @@
   "published": "2026-09-23",
   "registrationStarts": null,
   "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3530201/2026-09-23/a4a8260ca4940e3352d40edb6bdaf67c930859ab.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3530201/2026-09-23/a4a8260ca4940e3352d40edb6bdaf67c930859ab.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "3066874da71a",
@@ -776,20 +746,6 @@
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=23/09/2026&jornal=530&pagina=49"
  },
  {
-  "id": "faf3d2ff7b74",
-  "title": "Prefeitura Municipal de Horizonte - Concurso Público nº 001/2026",
-  "deadline": "Inscrições: veja o edital",
-  "state": "CE",
-  "salary": "",
-  "vacancies": "",
-  "description": "na Lei Complementar Municipal nº 31, de 21 de maio de 2026, na Lei Complementar Municipal nº 25, de 19 de novembro de 2025, na Lei Municipal nº 1.722 , de 18 de março de 2026, na Lei Municipal nº 1.723, de 18 de março de 2026, e suas alterações, torna pública a realização de CONCURSO PÚBLICO para o provimento de vagas e a formação de cadastro de reserva em cargos de níveis de escolaridade Fundamental, Médio/Técnico e Superior. 1. INFORMAÇÕES GERAIS DO CONCURSO 1.1. O concurso público será regido por este Edital, seus anexos, eventuais retificações e pelos diplomas legais e regulamentares vigentes. 1.2. O concurso público será executado pelo Instituto CONSULPAM – Consultoria Público-Privada, banca organizadora contratada. 1.3. Acompanham o presente Edital, sendo dele partes integrantes, os seguintes anexos: a) ANEXO I – Relação dos cargos públicos, com o número total de vagas ofertadas por modalidade de conco\n\nFonte: Diário Oficial de Horizonte/CE, 22/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.consulpam.com.br",
-  "city": "Horizonte",
-  "published": "2026-09-22",
-  "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/2305233/2026-09-22/5278bd517e5550fcb2fc44293281ac094e353f14.pdf"
- },
- {
   "id": "f88e12cc94aa",
   "title": "Prefeitura Municipal de Horizonte - Concurso Público nº 001/2026",
   "deadline": "Inscrições: veja o edital",
@@ -804,7 +760,8 @@
   "published": "2026-09-22",
   "registrationStarts": null,
   "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/2305233/2026-09-22/5278bd517e5550fcb2fc44293281ac094e353f14.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2305233/2026-09-22/5278bd517e5550fcb2fc44293281ac094e353f14.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "ed3574511350",
@@ -974,7 +931,8 @@
   "published": "2026-09-21",
   "registrationStarts": "2026-10-07",
   "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "e86de7556084",
@@ -994,20 +952,6 @@
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=222"
  },
  {
-  "id": "d56f7398167d",
-  "title": "Município de Curitiba - Concurso Público nº 5/2026",
-  "deadline": "Inscrições: 07/10/2026 a 05/11/2026",
-  "state": "PR",
-  "salary": "Faixa salarial: R$ 4.333,71 - R$ 14.117,18",
-  "vacancies": "",
-  "description": "XV CURITIBA, SEGUNDA-FEIRA, 21 DE SETEMBRO DE 2026 Página 46 CP - EDITAL NORMATIVO Nº 5 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Concurso Público n° 5, de 2026, que estabelece normas para provimento de vagas nos cargos de Analista Administrativo, Analista de Finanças, Assistente Social, Auditor Fiscal de Tributos Municipais, Contador e Engenheiro Civil, na Administração Pública Direta e a formação de cadastro de reserva do quadro de servidores efetivos da Administração Pública Autárquica e Fundacional do Município de Curitiba, em regime estatutário. Secretaria Municipal de Gestão de Pessoal, 21 de setembro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal Torna público o Edital Normativo do Concurso Público para provimento de vagas nos cargos de A\n\nFonte: Diário Oficial de Curitiba/PR, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.fundacaofafipa.org.br",
-  "city": "Curitiba",
-  "published": "2026-09-21",
-  "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf"
- },
- {
   "id": "c2fa6f8c073d",
   "title": "Conselho Nacional dos Direitos da Pessoa com Deficiência - Processo Seletivo (Edital nº 3/2026)",
   "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
@@ -1023,20 +967,6 @@
   "registrationStarts": "2026-09-21",
   "registrationEnds": "2026-10-21",
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=102"
- },
- {
-  "id": "b97c62a4402b",
-  "title": "Prefeitura Municipal de Curitiba - Concurso Público nº 4/2026",
-  "deadline": "Inscrições: 07/10/2026 a 05/11/2026",
-  "state": "PR",
-  "salary": "Faixa salarial: R$ 1.152,29 - R$ 4.993,27",
-  "vacancies": "",
-  "description": "Executivo SECRETARIA MUNICIPAL DE GESTÃO DE PESSOAL - SMGP CP - EDITAL NORMATIVO Nº 4 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Concurso Público n° 4, de 2026, que estabelece normas para provimento de vagas nos cargos de Agente Administrativo, Fiscal e Fiscal de Obras e Posturas, na Administração Pública Direta e a formação de cadastro de reserva do quadro de servidores efetivos da Administração Pública Autárquica e Fundacional do Município de Curitiba, em regime estatutário. Secretaria Municipal de Gestão de Pessoal, 21 de setembro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal SUMÁRIO Poder Executivo SECRETARIA MUNICIPAL DE GESTÃO DE PESSOAL - SMGP Torna público o Edital Normativo do Concurso Público para provimento de vagas nos cargos de\n\nFonte: Diário Oficial de Curitiba/PR, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.fundacaofafipa.org.br",
-  "city": "Curitiba",
-  "published": "2026-09-21",
-  "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf"
  },
  {
   "id": "aa0bbfba31b6",
@@ -1070,7 +1000,8 @@
   "published": "2026-09-21",
   "registrationStarts": "2026-10-07",
   "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "203061b5345e",
@@ -1087,7 +1018,8 @@
   "published": "2026-09-21",
   "registrationStarts": "2026-10-07",
   "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf"
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf",
+  "linkKind": "banca"
  },
  {
   "id": "18ccc43607f7",
@@ -1124,20 +1056,6 @@
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=102"
  },
  {
-  "id": "128842ef6710",
-  "title": "Prefeitura Municipal de Curitiba - Concurso Público nº 6/2026",
-  "deadline": "Inscrições: 07/10/2026 a 05/11/2026",
-  "state": "PR",
-  "salary": "Faixa salarial: R$ 2.842,24 - R$ 38.087,99",
-  "vacancies": "",
-  "description": "V CURITIBA, SEGUNDA-FEIRA, 21 DE SETEMBRO DE 2026 Página 108 CP - EDITAL NORMATIVO Nº 6 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Concurso Público n° 6, de 2026, que estabelece normas para provimento de vagas no cargo de Procurador do Município, na Administração Pública Direta do Município de Curitiba, em regime estatutário. Secretaria Municipal de Gestão de Pessoal, 21 de setembro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal Torna público o Edital Normativo do Concurso Público para provimento de vagas no cargo de Procurador do Município. DIÁRIO OFICIAL ELETRÔNICO ATOS DO MUNICÍPIO DE CURITIBA SUPLEMENTO Nº 2 Nº 175 - SUPLEMENTO Nº 2 - ANO XV CURITIBA, SEGUNDA-FEIRA, 21 DE SETEMBRO DE 2026 Página 109 E D I T A L N O R M A T I\n\nFonte: Diário Oficial de Curitiba/PR, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.fundacaofafipa.org.br",
-  "city": "Curitiba",
-  "published": "2026-09-21",
-  "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf"
- },
- {
   "id": "1219f1590fdc",
   "title": "Conselho Nacional dos Direitos da Pessoa com Deficiência - Processo Seletivo (Edital nº 1/2026)",
   "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
@@ -1172,21 +1090,25 @@
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=140"
  },
  {
-  "id": "7b4d054b0211",
-  "title": "Prefeitura Municipal do Salvador - Concurso Público nº 02/2026",
-  "deadline": "Inscrições: 21/09/2026 a 30/10/2026",
-  "state": "BA",
-  "salary": "Faixa salarial: R$ 1.773,21 - R$ 3.546,42",
-  "vacancies": "Vagas 50",
-  "description": "Infância e Juventude. EDITAIS SECRETARIA MUNICIPAL DE GESTÃO - SEMGE CONCURSO PÚBLICO - EDITAL Nº 02/2026 GCM O Secretário Municipal de Gestão, no uso de suas atribuições, em conformidade com os dispositivos da Constituição Federal vigente, torna pública a abertura de inscrições e estabelece as normas relativas à realização do Concurso Público, para preenchimento de vagas efetivas do quadro permanente da Prefeitura Municipal do Salvador, bem como a formação de cadastro de reserva no período de vigência do Concurso Público, para o cargo de Nível Médio de Guarda Civil Municipal nos termos da Lei Complementar nº 01/1991 com alterações posteriores, Lei nº 9.640/2022 e Processo Administrativo SEMGE nº 78684/2026, o qual reger-se-á de acordo com as instruções, que fazem parte deste Edital. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público a que se refere o presente Edital destina-se ao preenchimento de 50 (cinquenta) vagas imediatas, além de cadastro de reserva a ser\n\nFonte: Diário Oficial de Salvador/BA, 18/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.semge.salvador.ba.gov.br",
-  "city": "Salvador",
+  "id": "d21c7244fdeb",
+  "title": "Município de Paulínia - Processo Seletivo nº 001/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "SP",
+  "salary": "",
+  "vacancies": "",
+  "description": "nº 4.698 de 10 de abril de 2026. II - Esta Portaria entrará em vigor na data de sua publicação, produzindo efeitos a partir de 12 de novembro de 2025. CUMPRA-SE. REGISTRE-SE. PUBLIQUE-SE. Paulínia, 17 de setembro de 2026. ções legais aplicáveis, TORNA PÚBLICO o EDITAL DE HORÁRIO E LOCAL DE REALIZAÇÃO DA PROVA OBJETIVA, do PROCESSO SELETIVO aberto pelo Edital de Abertura nº 001/2026, conforme segue: Art. 1º Para as funções descritas na TABELA 01, a Prova Objetiva será realizada na data de 27/09/2026 (DOMINGO), no período da MANHÃ. TABELA 01 – RELAÇÃO DAS FUNÇÕES QUE REALIZARÃO A PROVA NO PERÍODO DA MANHÃ HORÁRIO DE ABERTURA DOS PORTÕES HORÁRIO DE FECHAMENTO DOS PORTÕES 07h00min (HORÁRIO LOCAL) 08h00min (HORÁRIO LOCAL) CÓDIGO FUNÇÃO PERÍODO 202 Motorista Manhã 401 Professor de Educação Básica I – PEB I Manhã Art. 2º Para as funções descritas na TABELA 02, a Prova Objetiva será realizada na data de 27/09/2026 (DOMINGO), no período da TARDE. TABELA 02 – RELAÇÃO DAS FUNÇÕ\n\nFonte: Diário Oficial de Paulínia/SP, 18/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.avalia.org.br",
+  "linkKind": "banca",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Paulínia",
   "published": "2026-09-18",
-  "registrationEnds": "2026-10-30",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/2927408/2026-09-18/ea3b0b244518d645ff888544709af99091f198f6.pdf"
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3536505/2026-09-18/c8e97f88396cb951d8eaac14edaf93ed859c9601.pdf"
  },
  {
-  "id": "3d824e67bfe7",
+  "id": "b96556e9ecf3",
   "title": "Câmara Municipal de Barão de Antonina - Concurso Público nº 01/2026",
   "deadline": "Inscrições: 23/09/2026 a 21/10/2026",
   "state": "SP",
@@ -1194,27 +1116,71 @@
   "vacancies": "",
   "description": "raconstitucionais atinentes à matéria, em especial, a Lei Orgânica do Município de Barão de Antonina - SP e a Lei Complementar do Município de Barão de Antonina - SP – Dispõe sobre o Estatuto dos Servidores do Município de Barão de Antonina – SP, TORNA PÚBLICA a realização do Concurso Público n.º 01/2026, sob o regime estatutário para o provimento de vagas do quadro de servidores do Poder Legislativo Municipal. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público a que se refere o presente Edital será executado pela Fundação FAFIPA – Campus de Paranavaí, CNPJ: 05.566.804/0001-76, com sede administrativa na Av. Paraná, 794 A - Esquina com Rua Guaporé, 1° Andar - Centro CEP: 87.705-190, Paranavaí – PR, endereço eletrônico www.fundacaofafipa.org.br e correio eletrônico candidato@fundacaofafipa.org.br. 1.2 A seleção visa o preenchimento de vagas, sob o regime estatutário, para suprir a necessidade de servidores do Po\n\nFonte: Diário Oficial de Barão de Antonina/SP, 18/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
   "url": "https://www.fundacaofafipa.org.br",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "querido_diario",
   "city": "Barão de Antonina",
   "published": "2026-09-18",
+  "registrationStarts": "2026-09-23",
   "registrationEnds": "2026-10-21",
   "gazetteUrl": "https://data.queridodiario.ok.org.br/3505005/2026-09-18/9c0f19629167795575f45034ab284de98d1dc42d.pdf"
  },
  {
-  "id": "3f16ab325a43",
-  "title": "Câmara Municipal de Itápolis - Concurso Público nº 01/2026",
-  "deadline": "Inscrições: 18/09/2026 a 02/10/2026",
-  "state": "SP",
-  "salary": "Salário: R$ 3.043,13",
-  "vacancies": "",
-  "description": "(16) 3262-1322 www.itapolis.sp.leg.br | camara@itapolis.sp.leg.br Concurso Público nº 01/2026 EDITAL Nº 01/2026 DE ABERTURA DE INSCRIÇÕES EDERSON DAVID DONATANGELO, Presidente da Câmara Municipal de Itápolis, Estado de São Paulo, torna público na forma prevista no inciso II do artigo 37 da Constituição Federal, a abertura das inscrições do Concurso Público de Provas para provimento de Cargo previsto no Capítulo 2, item 2.5 - Quadro de Cargo, com o acompanhamento da Comissão do Concurso Público, especialmente nomeada através da Portaria nº 32 de 20 de agosto de 2026, para acompanhamento do referido certame, regido pelas instruções deste Edital, em regime CLT, nos termos da Legislação vigente e Lei Orgânica do Município. 1 DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público a que se refere o presente Edital, será executado pela IPELL CONSULTORIA LTDA. 1.2 Este Concurso Público destina-se ao provimento de va\n\nFonte: Diário Oficial de Itápolis/SP, 15/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.itapolis.sp.gov.br",
-  "city": "Itápolis",
-  "published": "2026-09-15",
-  "registrationEnds": "2026-10-02",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3522703/2026-09-15/d12c4e254da2cf69a6b016c99f5cff8f292d6a84.pdf"
+  "id": "9176a1ab98c4",
+  "title": "Prefeitura Municipal do Salvador - Concurso Público nº 02/2026",
+  "deadline": "Inscrições: 21/09/2026 a 30/10/2026",
+  "state": "BA",
+  "salary": "Faixa salarial: R$ 1.773,21 - R$ 3.546,42",
+  "vacancies": "Vagas 50",
+  "description": "Infância e Juventude. EDITAIS SECRETARIA MUNICIPAL DE GESTÃO - SEMGE CONCURSO PÚBLICO - EDITAL Nº 02/2026 GCM O Secretário Municipal de Gestão, no uso de suas atribuições, em conformidade com os dispositivos da Constituição Federal vigente, torna pública a abertura de inscrições e estabelece as normas relativas à realização do Concurso Público, para preenchimento de vagas efetivas do quadro permanente da Prefeitura Municipal do Salvador, bem como a formação de cadastro de reserva no período de vigência do Concurso Público, para o cargo de Nível Médio de Guarda Civil Municipal nos termos da Lei Complementar nº 01/1991 com alterações posteriores, Lei nº 9.640/2022 e Processo Administrativo SEMGE nº 78684/2026, o qual reger-se-á de acordo com as instruções, que fazem parte deste Edital. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público a que se refere o presente Edital destina-se ao preenchimento de 50 (cinquenta) vagas imediatas, além de cadastro de reserva a ser\n\nFonte: Diário Oficial de Salvador/BA, 18/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://conhecimento.fgv.br/concursos/pmsguarda2026",
+  "linkKind": "edital",
+  "kind": "concurso",
+  "source": "querido_diario",
+  "city": "Salvador",
+  "published": "2026-09-18",
+  "registrationStarts": "2026-09-21",
+  "registrationEnds": "2026-10-30",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2927408/2026-09-18/ea3b0b244518d645ff888544709af99091f198f6.pdf"
  },
  {
-  "id": "01534c0f112e",
+  "id": "56d09d67037e",
+  "title": "Município de Corbélia - Processo Seletivo nº 01/2026 (retificação)",
+  "deadline": "Inscrições: veja o edital",
+  "state": "PR",
+  "salary": "",
+  "vacancies": "",
+  "description": "refeito do Município de Corbélia, Estado do Paraná, Thiago Daross Stefanello, no uso de suas atribuições legais, considerando o Edital nº 002/2026, que regulamenta o Processo Seletivo Simplificado destinado à contratação temporária de Professor, TORNA PÚBLICA a presente RETIFICAÇÃO, para alteração da data de realização da Prova Escrita e adequação do cronograma do Processo Seletivo, nos seguintes termos: 1. Fica retificado o item 4.2 – Cronograma do Processo Seletivo, quanto aos atos a partir da publicação do Edital de Ensalamento, que passam a vigorar conforme o cronograma abaixo: DATA ATIVIDADE 30/10/2026 Publicação e Divulgação do Edital de Ensalamento. 08/11/2026 Realização da Prova Escrita e entrega da documentação referente à Prova de Títulos. 09/11/2026 Divulgação do Gabarito Provisório e disponibilização do caderno de provas. 10/11/2026 Recurso contra as questões objetivas e o gabarito provisório, por e-mail: educacao@corbelia.pr.gov.br. 11/11/2026 Divulgação do Gabarito Definitivo.\n\nFonte: Diário Oficial de Corbélia/PR, 17/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://data.queridodiario.ok.org.br/4106308/2026-09-17/b7836a499a37baed6956e3f6a166947157259d34.pdf",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Corbélia",
+  "published": "2026-09-17",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106308/2026-09-17/b7836a499a37baed6956e3f6a166947157259d34.pdf"
+ },
+ {
+  "id": "22b5385931ab",
+  "title": "Município de Iracemápolis - Processo Seletivo nº 001/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "SP",
+  "salary": "",
+  "vacancies": "",
+  "description": "ÁTER EVENTUAL VILCÉIA SALVINO DA SILVA CORRÊA, Diretora Municipal da Educação de Iracemápolis, Estado de São Paulo, no uso de suas atribuições legais, em especial a conferida pelo art. 3º da Lei municipal nº 2516/2022, de 13 de setembro de 2022, torna pública a abertura de PROCESSO SELETIVO SIMPLIFICADO POR ANÁLISE OBJETIVA DE CURRÍCULO PARA CONTRATAÇÃO DE PROFESSORES EM CARÁTER EVENTUAL para substituir Professor I - Ensino Fundamental, Professor I - Educação Infantil, Professor de Artes, Professor de Atendimento Educacional Especializado e Professor de Educação Física, pertencentes ao quadro permanente, durante os seus impedimentos legais e transitórios que possam comprometer ou ocasionar prejuízo à Educação, mediante as condições estabelecidas no Edital, na seguinte conformidade: Função Vagas Valor Hora/aula Requisitos Carga Horária Professor I - Ensino Fundamental Cadastro de Professor Eventual (CPE) R\n\nFonte: Diário Oficial de Iracemápolis/SP, 16/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.iracemapolis.sp.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Iracemápolis",
+  "published": "2026-09-16",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3521408/2026-09-16/7eb1ec0f948f0f8916fa282933e319339eca439e.pdf"
+ },
+ {
+  "id": "f3646f22db31",
   "title": "Município de Campinas - Concurso Público nº 01/2026 (retificação)",
   "deadline": "Inscrições: veja o edital",
   "state": "SP",
@@ -1222,10 +1188,86 @@
   "vacancies": "",
   "description": "nas, 14 de setembro de 2026 ENRIQUE JAVIER MISAILIDIS LERENA PRESIDENTE DA SETEC CONCURSO PÚBLICO - EDITAL Nº 01/2026 EXTRATO DA RETIFICAÇÃO Nº 01 DO EDITAL DE ABERTURA O Presidente daSETEC - SERVIÇOS TÉCNICOS GERAIS, no Município de Campinas/SP torna pública a RETIFICAÇÃO Nº 01 DO EDITAL DE ABERTURA do Concurso Público nº 01/2026. O arquivo, na íntegra, será publicado nos endereços eletrônicos https://indepac.selecao.net.br/ e https://setec.sp.gov.br/ a partir desta data. Campinas, 14 de setembro de 2026 ENRIQUE JAVIER MISAILIDIS LERENA PRESIDENTE DA SETEC CONCURSO PÚBLICO - EDITAL Nº 02/2026\n\nFonte: Diário Oficial de Campinas/SP, 15/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
   "url": "https://indepac.selecao.net.br/",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "querido_diario",
   "city": "Campinas",
   "published": "2026-09-15",
+  "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "https://data.queridodiario.ok.org.br/3509502/2026-09-15/0db82de6c807327927bc454fbf218f52c7544f60.pdf"
+ },
+ {
+  "id": "c245208415d2",
+  "title": "Câmara Municipal de Itápolis - Concurso Público nº 01/2026",
+  "deadline": "Inscrições: 18/09/2026 a 02/10/2026",
+  "state": "SP",
+  "salary": "Salário: R$ 3.043,13",
+  "vacancies": "",
+  "description": "(16) 3262-1322 www.itapolis.sp.leg.br | camara@itapolis.sp.leg.br Concurso Público nº 01/2026 EDITAL Nº 01/2026 DE ABERTURA DE INSCRIÇÕES EDERSON DAVID DONATANGELO, Presidente da Câmara Municipal de Itápolis, Estado de São Paulo, torna público na forma prevista no inciso II do artigo 37 da Constituição Federal, a abertura das inscrições do Concurso Público de Provas para provimento de Cargo previsto no Capítulo 2, item 2.5 - Quadro de Cargo, com o acompanhamento da Comissão do Concurso Público, especialmente nomeada através da Portaria nº 32 de 20 de agosto de 2026, para acompanhamento do referido certame, regido pelas instruções deste Edital, em regime CLT, nos termos da Legislação vigente e Lei Orgânica do Município. 1 DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público a que se refere o presente Edital, será executado pela IPELL CONSULTORIA LTDA. 1.2 Este Concurso Público destina-se ao provimento de va\n\nFonte: Diário Oficial de Itápolis/SP, 15/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.ipell.com.br",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "querido_diario",
+  "city": "Itápolis",
+  "published": "2026-09-15",
+  "registrationStarts": "2026-09-18",
+  "registrationEnds": "2026-10-02",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3522703/2026-09-15/d12c4e254da2cf69a6b016c99f5cff8f292d6a84.pdf"
+ },
+ {
+  "id": "944010bf4c74",
+  "title": "Município de Tamboara - Processo Seletivo nº 195/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "PR",
+  "salary": "Salário: R$ 3.242,85",
+  "vacancies": "",
+  "description": "s da Lei Complementar Municipal n.º 001/2017 e Lei Municipal nº 029/2026 que dispõe sobre as contratações temporárias e dispõe sobre autorização para realização deste Processo Seletivo Simplificado no âmbito desta municipalidade, TORNA PÚBLICO que estarão abertas as inscrições para processo seletivo simplificado visando à contratação por tempo determinado e no excepcional interesse público, para suprir temporariamente a demanda de atividades essenciais ao atendimento da população, que se regerá pelas seguintes normas: Este edital estará disponível no site oficial do Município no seguinte endereço: www.tamboara.pr.gov.br 1 – DA INSCRIÇÃO 1.1 - A inscrição será efetivada entre os dias 16 à 22 do mês de setembro do ano de 2026, no horário de expediente das 08:00h às 11:00h e das 13:00h às 17:00h na Praça Isabel Marcos Beltrame, 2000, centro, Tamboara -PR, no Departamento Pessoal. 1.2 - No ato da inscri\n\nFonte: Diário Oficial de Tamboara/PR, 14/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.tamboara.pr.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Tamboara",
+  "published": "2026-09-14",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4126702/2026-09-14/e7eaa5342a89b64645cb78deb7bbeb65ad050229.pdf"
+ },
+ {
+  "id": "4ca334d13fad",
+  "title": "Autarquia Educacional do - Processo Seletivo",
+  "deadline": "Inscrições: veja o edital",
+  "state": "PE",
+  "salary": "",
+  "vacancies": "",
+  "description": "SSA INFÂNCIA E NOSSA INFÂNCIA+ E ESCOLAS DE ENSINO FUNDAMENTAL REGULAR E DE TEMPO INTEGRAL DA REDE MUNICIPAL DE ENSINO DE PETROLINA-PE. A Comissão para realização de Processo Seletivo da Autarquia Educacional do Vale do São Francisco - AEVSF, torna público a abertura de processo seletivo interno simplificado para CERTIFICAÇÃO DE GESTORES E VICE GESTORES PARA ATUAREM NAS UNIDADES NOSSA INFÂNCIA E NOSSA INFÂNCIA+ E ESCOLAS DE ENSINO FUNDAMENTAL REGULAR E DE TEMPO INTEGRAL DA REDE MUNICIPAL DE ENSINO DE PETROLINA-PE, para atender interesse público da Secretaria de Educação, Cultura e Esporte do município de Petrolina/PE, de acordo com as definições e normas estabelecidas neste Edital, embasada na Lei nº 14.113, de 25 dezembro de 2020, constante no § 1º, inciso I do art. 14º. 1. DAS DISPOSIÇÕES PRELIMINARES O presente Processo Seletivo Interno será realizado em uma única etapa - Prova objetiva, de caráter eliminatór\n\nFonte: Diário Oficial de Petrolina/PE, 14/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "http://www.facape.br/concursos/",
+  "linkKind": "edital",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Petrolina",
+  "published": "2026-09-14",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2611101/2026-09-14/4d9bd13f06623574ec24b032126b0a48ea03f985.pdf"
+ },
+ {
+  "id": "d7de200b9297",
+  "title": "Município de Santa Clara do Sul - Processo Seletivo",
+  "deadline": "Inscrições: veja o edital",
+  "state": "RS",
+  "salary": "Salário: R$ 2.895,45",
+  "vacancies": "Vagas 2",
+  "description": ". O PREFEITO DE SANTA CLARA DO SUL, Estado do Rio Grande do Sul, no uso de suas atribuições legais, e, em conformidade com as leis municipais nº 1662/2011, 2809/2022, 3147/2026 e 3186/2026, e memorandos nº 1.078/2026, TORNA PÚBLICO, que estarão abertas as inscrições, através do link https://santaclaradosul.1doc.com.br/b.php?pg=wp/wp&itd=12&iser=01JJC8B4CHRK8Z3SAP7J 6X2EJ9 a partir das 08h do dia 11 de até às 17h do dia 21 de setembro de 2026, ao Processo Seletivo Simplificado, para a celebração de Contrato Administrativo Temporário durante o exercício de 2026, em substituição a titulares afastados por motivo de: Designação para ativida- des junto à Secretaria, ou de Chefia, Direção, Supervisão ou Coordenação na área; Férias; Licen- ça Saúde, pedidos de exoneração; e outros afastamentos legais do RJU, além de atender a de- manda, em casos de exoneração de titular, para a função, abaixo relacion\n\nFonte: Diário Oficial de Santa Clara do Sul/RS, 11/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://santaclaradosul.1doc.com.br/b.php?pg=wp/wp&itd=12&iser=01JJC8B4CHRK8Z3SAP7J",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Santa Clara do Sul",
+  "published": "2026-09-11",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4316758/2026-09-11/e3f856582a50af7bad6590641bfd8a9a9ad011af.pdf"
  },
  {
   "id": "bb67aa92dc5c",

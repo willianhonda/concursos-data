@@ -20,6 +20,16 @@ GAZETTE = {
 }
 
 
+ITAPOLIS = {
+    "territory_id": "3522703",
+    "territory_name": "Itápolis",
+    "state_code": "SP",
+    "date": "2026-09-15",
+    "url": "https://data.queridodiario.ok.org.br/3522703/2026-09-15/x.pdf",
+    "txt_url": "https://data.queridodiario.ok.org.br/3522703/2026-09-15/x.txt",
+}
+
+
 class ExtractOpeningsTests(unittest.TestCase):
     def test_real_gazette_excerpt(self):
         text = (FIXTURES / "marilia_2026-09-24.txt").read_text()
@@ -33,6 +43,14 @@ class ExtractOpeningsTests(unittest.TestCase):
         self.assertEqual(item["state"], "SP")
         self.assertEqual(item["url"], "https://www.fumes.sp.gov.br")
         self.assertEqual(item["kind"], "concurso")
+
+    def test_banca_site_beats_gazette_header(self):
+        # O cabeçalho de cada página traz o site da prefeitura; o edital é da banca (IPELL).
+        text = (FIXTURES / "itapolis_2026-09-15.txt").read_text()
+        [item] = bf.extract_openings(text, ITAPOLIS)
+        self.assertEqual(item["title"], "Câmara Municipal de Itápolis - Concurso Público nº 01/2026")
+        self.assertEqual(item["url"], "https://www.ipell.com.br")
+        self.assertEqual(item["linkKind"], "banca")
 
     def test_convocation_is_ignored(self):
         text = (
@@ -152,7 +170,7 @@ class DouTests(unittest.TestCase):
 
 class MergeTests(unittest.TestCase):
     def item(self, id_, published, ends=None, **extra):
-        return {"id": id_, "published": published, "registrationEnds": ends, "deadline": "", "salary": "", **extra}
+        return {"id": id_, "title": id_, "published": published, "registrationEnds": ends, "deadline": "", "salary": "", **extra}
 
     def test_drops_closed_and_stale_items(self):
         today = dt.date(2026, 9, 25)
@@ -176,6 +194,52 @@ class MergeTests(unittest.TestCase):
         self.assertEqual(merged["published"], "2026-09-20")
         self.assertEqual(merged["registrationEnds"], "2026-10-30")
         self.assertEqual(merged["salary"], "Salário: R$ 3.000,00")
+
+    def test_legacy_item_is_replaced_by_the_same_act_with_source(self):
+        today = dt.date(2026, 9, 25)
+        old = [self.item("legacy", "2026-09-15", "2026-10-02", title="Câmara - Concurso Público nº 01/2026")]
+        new = [self.item("new", "2026-09-15", "2026-10-02", title="Câmara - Concurso Público nº 01/2026", source="querido_diario")]
+        self.assertEqual([i["id"] for i in bf.merge(old, new, today)], ["new"])
+
+    def test_better_link_replaces_worse_one(self):
+        today = dt.date(2026, 9, 25)
+        old = [self.item("a", "2026-09-20", url="https://cidade.sp.gov.br", linkKind="orgao")]
+        new = [
+            self.item("a", "2026-09-24", url="https://www.ipell.com.br", linkKind="banca"),
+            self.item("a", "2026-09-24", url="https://x.pdf", linkKind="diario"),
+        ]
+        [merged] = bf.merge(old, new, today)
+        self.assertEqual((merged["url"], merged["linkKind"]), ("https://www.ipell.com.br", "banca"))
+
+
+
+class FindLinkTests(unittest.TestCase):
+    PDF = "https://data.queridodiario.ok.org.br/1/x.pdf"
+
+    def test_edital_page_is_preferred(self):
+        text = "Site www.prefeitura.sp.gov.br. Inscrições pelo site https://www.vunesp.com.br/concurso/PMXX2601."
+        self.assertEqual(bf.find_link(text, self.PDF), ("https://www.vunesp.com.br/concurso/PMXX2601", "edital"))
+
+    def test_only_gazette_site_falls_back_to_pdf(self):
+        text = ("www.cidade.sp.gov.br https://www.cidade.sp.gov.br/diario-oficial/10/ Edital de abertura. "
+                "www.cidade.sp.gov.br")
+        self.assertEqual(bf.find_link(text, self.PDF), (self.PDF, "diario"))
+
+    def test_no_link_falls_back_to_pdf(self):
+        self.assertEqual(bf.find_link("Edital sem endereço eletrônico.", self.PDF), (self.PDF, "diario"))
+
+    def test_link_broken_across_lines_is_joined(self):
+        text = "Inscrições no site http://www.juatuba.mg.gov.br/processo-\nseletivo-2026 até 10/10."
+        self.assertEqual(bf.find_link(text, self.PDF), ("http://www.juatuba.mg.gov.br/processo-seletivo-2026", "edital"))
+
+    def test_fee_refund_page_is_not_the_edital(self):
+        text = ("Edital no site www.cidade.rs.gov.br. Restituição em "
+                "https://cidade.atende.net/servicos/e-restituicao-taxa-de-inscricao-concurso-012026.")
+        self.assertEqual(bf.find_link(text, self.PDF), ("https://www.cidade.rs.gov.br", "orgao"))
+
+    def test_organization_site(self):
+        text = "Informações no portal www.saae.sp.gov.br."
+        self.assertEqual(bf.find_link(text, self.PDF), ("https://www.saae.sp.gov.br", "orgao"))
 
 
 if __name__ == "__main__":

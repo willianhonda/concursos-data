@@ -121,6 +121,27 @@ VACANCIES = re.compile(r"\b(\d{1,4})\s*(?:\([a-zà-ú\s]+\)\s*)?vagas?\b", re.IG
 URL = re.compile(r"(?:https?://|www\.)[\w.-]+\.[a-z]{2,}(?:/[\w./%?=&#-]*)?", re.IGNORECASE)
 GAZETTE_URL_HINTS = ("diario", "diário", "imprensa", "in.gov.br", "dom.", "doe.", "queridodiario", "iomat", "iom",
                      "jus.br", "inss", "receita", "tse.", "esocial", "planalto", "caixa.gov")
+# Domínios de bancas organizadoras conhecidas: o edital e a inscrição costumam estar no site delas.
+# "concurso" pega bancas menores (abconcursospublicos.org, cmmconcursos.com.br); sites .gov.br ficam de fora.
+BANCA_HOSTS = (
+    "concurso", "consesp", "consulpam", "institutoiacp", "avalia.org", "selecao.net.br", "indepac", "vunesp", "fgv", "cebraspe", "cespe", "cesgranrio", "ibfc", "aocp", "fundatec", "consulplan", "idecan", "quadrix",
+    "ibam", "ipell", "concursosfcc", "fcc.org", "objetivas", "legalle", "avancasp", "institutomais", "omniconcursos",
+    "ibade", "selecon", "fafipa", "gestaoconcursos", "fundep", "rboconcursos", "nossorumo", "ibgp", "itame",
+    "fepese", "furb", "faurgs", "fumarc", "cpcon", "conscamweb", "metodoesolucoes", "shdias", "igecs", "agirh",
+    "publiconsult", "ameosc", "unoesc", "acafe", "institutoconsulplan", "excelenciaconcursos", "noroesteconcursos",
+)
+# Frase que nomeia a banca: "será executado pela IPELL CONSULTORIA LTDA".
+BANCA_NAME = re.compile(
+    r"(?:executad[oa]|realizad[oa]|organizad[oa]|operacionalizad[oa]|aplicad[oa])\s+(?:pel[oa]|por)\s+"
+    r"(?:empresa\s+|institui[çc][ãa]o\s+)?([A-ZÀ-Ú][\w&À-ú-]{2,})",
+)
+# Contexto logo antes do link que indica o local de inscrição ou do edital.
+LINK_CONTEXT = re.compile(r"inscri|endere[çc]o\s+eletr[ôo]nico|s[íi]tio|site|portal|edital", re.IGNORECASE)
+LINK_PATH = re.compile(r"concurso|sele[cçt]|inscri|edital", re.IGNORECASE)
+# Páginas de serviço que citam o concurso, mas não são o edital (restituição da taxa, isenção, recurso).
+LINK_PATH_OTHER = re.compile(r"restitui|isen[cç]|recurso|gabarito|resultado", re.IGNORECASE)
+# Continuação de um link quebrado no fim da linha: "…/processo-\nseletivo-2026".
+URL_TAIL = re.compile(r"\s*\n\s*([\w./%?=&#-]+)")
 
 
 def log(msg: str) -> None:
@@ -259,17 +280,69 @@ def find_org(pre: str, window: str, city: str) -> str:
     return f"Município de {city}"
 
 
-def find_link(window: str, fallback: str) -> str:
-    links = []
-    for m in URL.finditer(window):
-        link = m.group(0).rstrip(".,;)")
-        if any(h in link.lower() for h in GAZETTE_URL_HINTS):
+def url_host(link: str) -> str:
+    host = urllib.parse.urlsplit(link if "://" in link else f"https://{link}").hostname or ""
+    return host.removeprefix("www.")
+
+
+def find_link(text: str, fallback: str) -> tuple[str, str]:
+    """Escolhe o link do edital no texto do ato e diz o que ele é.
+
+    Devolve (url, tipo), com tipo "edital", "banca", "orgao" ou "diario" (o próprio diário, quando
+    nenhum link serve). O site que publica o diário aparece no cabeçalho de cada página, então ele
+    perde pontos: o link útil costuma ser o da banca, citado no capítulo das inscrições.
+    """
+    found = []
+    for m in URL.finditer(text):
+        link = m.group(0)
+        tail = URL_TAIL.match(text, m.end()) if link.endswith(("-", "/", "_")) else None
+        found.append((m.start(), (link + tail.group(1) if tail else link).rstrip(".,;)")))
+    gazette_hosts = {url_host(l) for _, l in found if any(h in l.lower() for h in GAZETTE_URL_HINTS)}
+    banca = BANCA_NAME.search(text)
+    banca_token = strip_accents(banca.group(1)).lower() if banca else ""
+
+    best, best_score = None, None
+    for pos, link in found:
+        lower = link.lower()
+        if any(h in lower for h in GAZETTE_URL_HINTS):
             continue
-        links.append(link)
-    if not links:
-        return fallback
-    best = next((l for l in links if re.search(r"concurso|selec|inscri|edital", l, re.IGNORECASE)), links[0])
-    return best if best.lower().startswith("http") else f"https://{best}"
+        host = url_host(link)
+        path = urllib.parse.urlsplit(link if "://" in link else f"https://{link}").path.strip("/")
+        is_banca = (any(b in host for b in BANCA_HOSTS) and not host.endswith(".gov.br")) or (
+            len(banca_token) >= 3 and banca_token in host
+        )
+        score = 0
+        score += 5 if is_banca else 0
+        score += 3 if LINK_PATH.search(path) and not LINK_PATH_OTHER.search(path) else 0
+        score -= 3 if LINK_PATH_OTHER.search(path) else 0
+        score += 2 if LINK_CONTEXT.search(text[max(0, pos - 150): pos]) else 0
+        score -= 6 if host in gazette_hosts else 0
+        if best_score is None or score > best_score:
+            best, best_score = (link, is_banca, path), score
+    if best is None or best_score < 0:
+        return fallback, "diario"
+    link, is_banca, path = best
+    url = link if link.lower().startswith("http") else f"https://{link}"
+    if (LINK_PATH.search(path) and not LINK_PATH_OTHER.search(path)) or path.lower().endswith(".pdf"):
+        return url, "edital"
+    return url, "banca" if is_banca else "orgao"
+
+
+# Do link mais útil para o menos útil.
+LINK_RANK = {"diario": 0, "orgao": 1, "banca": 2, "edital": 3}
+
+
+def link_is_broken(url: str) -> bool:
+    """Só 404 e 410 contam como link quebrado: sites de prefeitura costumam ter certificado
+    vencido ou recusar HEAD, e isso não quer dizer que o link esteja errado."""
+    try:
+        req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": USER_AGENT})
+        urllib.request.urlopen(req, timeout=15).close()
+    except urllib.error.HTTPError as err:
+        return err.code in (404, 410)
+    except Exception:  # noqa: BLE001 - erro de rede ou SSL não prova que o link está quebrado
+        return False
+    return False
 
 
 KIND_LABEL = {"concurso": "Concurso Público", "processo_seletivo": "Processo Seletivo"}
@@ -311,6 +384,8 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
         if is_rectification:
             title += " (retificação)"
         snippet = squash(text[max(start, m.start() - 250): min(end, m.end() + 650)])
+        # O ato inteiro, e não só a janela, porque o site da banca costuma vir no capítulo das inscrições.
+        url, link_kind = find_link(text[m.start(): min(act_end, m.end() + 30000)], gazette.get("url") or gazette.get("txt_url", ""))
         description = (
             f"{snippet}\n\nFonte: Diário Oficial de {city}/{uf}, {published.strftime('%d/%m/%Y')}. "
             "Informações extraídas automaticamente; confira sempre o edital oficial."
@@ -330,7 +405,8 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
             "salary": find_salary(full_act[:12000]),
             "vacancies": find_vacancies(full_act[:12000]),
             "description": description,
-            "url": find_link(window, gazette.get("url") or gazette.get("txt_url", "")),
+            "url": url,
+            "linkKind": link_kind,
             # Campos extras: o app ignora, mas o script usa na junção.
             "kind": kind,
             "source": "querido_diario",
@@ -438,6 +514,7 @@ def extract_dou_article(article: ET.Element) -> dict | None:
     gazette_url = article.get("pdfPage", "")
     section = article.get("pubName", "DO3").upper().replace("DO", "Seção ").replace("E", " (extra)")
     snippet = squash(text[:900])
+    url, link_kind = find_link(text, gazette_url)
     return {
         "id": hashlib.sha1(f"dou|{article.get('idMateria') or article.get('id')}".encode()).hexdigest()[:12],
         "title": title,
@@ -452,7 +529,8 @@ def extract_dou_article(article: ET.Element) -> dict | None:
             f"{snippet}\n\nFonte: Diário Oficial da União, {section}, {published.strftime('%d/%m/%Y')}. "
             "Informações extraídas automaticamente; confira sempre o edital oficial."
         ),
-        "url": find_link(text, gazette_url),
+        "url": url,
+        "linkKind": link_kind,
         "kind": kind,
         "source": "dou",
         "city": None,
@@ -539,12 +617,20 @@ def merge(old: list[dict], new: list[dict], today: dt.date) -> list[dict]:
             for k, v in item.items():
                 if v and not prev.get(k):
                     prev[k] = v
+            # Fica o link de melhor tipo; no empate, o da extração mais nova. Feeds antigos não têm linkKind.
+            if item.get("url") and LINK_RANK.get(item.get("linkKind"), -1) >= LINK_RANK.get(prev.get("linkKind"), -1):
+                prev["url"], prev["linkKind"] = item["url"], item["linkKind"]
             if item.get("registrationEnds"):
                 prev["registrationEnds"], prev["deadline"] = item["registrationEnds"], item["deadline"]
                 prev["registrationStarts"] = item.get("registrationStarts")
         else:
             by_id[item["id"]] = item
-    current = [i for i in by_id.values() if is_current(i, today)]
+    # Itens anteriores ao campo `source` usavam outro id: some o antigo quando o mesmo ato foi extraído de novo.
+    sourced = {(i["title"], i["published"]) for i in by_id.values() if i.get("source")}
+    current = [
+        i for i in by_id.values()
+        if is_current(i, today) and (i.get("source") or (i["title"], i["published"]) not in sourced)
+    ]
     return sorted(current, key=lambda i: (i["published"], i["id"]), reverse=True)
 
 
@@ -579,6 +665,11 @@ def main() -> int:
         new.extend(fetch_dou(since, today))
     except Exception as err:  # noqa: BLE001 - falha no DOU não impede publicar os municipais
         log(f"DOU: {err}")
+
+    for item in new:
+        if item["linkKind"] != "diario" and link_is_broken(item["url"]):
+            log(f"  link quebrado, usando o diário: {item['url']}")
+            item["url"], item["linkKind"] = item["gazetteUrl"], "diario"
 
     feed = merge(old, new, today)
     args.output.parent.mkdir(parents=True, exist_ok=True)
