@@ -40,6 +40,8 @@ import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 
+from validate_feed import item_errors
+
 API = "https://api.queridodiario.org.br/gazettes"
 USER_AGENT = "concursos-data/1.0 (+https://github.com/willianhonda/concursos-data)"
 QUERY = (
@@ -671,7 +673,13 @@ def main() -> int:
             log(f"  link quebrado, usando o diário: {item['url']}")
             item["url"], item["linkKind"] = item["gazetteUrl"], "diario"
 
-    feed = merge(old, new, today)
+    feed = []
+    for item in merge(old, new, today):
+        # Um item fora do formato do app sai do feed em vez de derrubar a lista de quem está na 2.2.x.
+        if problems := item_errors(item):
+            log(f"  descartado {item.get('id', '?')}: {'; '.join(problems)}")
+        else:
+            feed.append(item)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(feed, ensure_ascii=False, indent=1) + "\n")
     log(f"feed: {len(feed)} concursos ({len(new)} encontrados nesta execução)")

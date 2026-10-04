@@ -31,12 +31,19 @@ jobs:
       - name: Testes do extrator
         run: python -m unittest discover -s tests -v
 
+      - name: Guardar o feed publicado
+        run: cp docs/concursos.json "$RUNNER_TEMP/anterior.json"
+
       - name: Gerar docs/concursos.json
         run: python scripts/build_feed.py --days "${{ github.event.inputs.days || '7' }}"
         env:
           # Cadastro gratuito em https://inlabs.in.gov.br. Sem os secrets, o DOU é pulado.
           INLABS_EMAIL: ${{ secrets.INLABS_EMAIL }}
           INLABS_PASSWORD: ${{ secrets.INLABS_PASSWORD }}
+
+      # Se falhar, o job para aqui e o feed de ontem continua no ar.
+      - name: Validar o feed para o app
+        run: python scripts/validate_feed.py docs/concursos.json --previous "$RUNNER_TEMP/anterior.json"
 
       - name: Publicar se mudou
         run: |

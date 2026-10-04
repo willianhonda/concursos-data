@@ -23,6 +23,7 @@ Feed JSON de concursos públicos e processos seletivos com inscrições abertas,
 4. Por fim, junta com o `docs/concursos.json` anterior, remove duplicados e tira do feed:
    - os concursos com inscrições encerradas
    - os concursos sem prazo identificado publicados há mais de 45 dias
+5. Descarta os itens que o app não conseguiria ler, e o workflow só publica se `scripts/validate_feed.py` aprovar o feed inteiro (veja "Compatibilidade com o app").
 
 Cada item segue o formato do `EventModel` do app, mais estes campos:
 
@@ -54,6 +55,16 @@ No DOU, `state` vem da UF da instituição (ou da sede, nos TRTs e TRFs) e é `B
   "gazetteUrl": "https://data.queridodiario.ok.org.br/…pdf"
 }
 ```
+
+## Compatibilidade com o app
+
+O feed chega no mesmo dia a todas as versões instaladas do app, sem revisão da App Store. As versões até a 2.2.x leem o array inteiro de uma vez: um único item fora do formato derruba a lista de todo mundo. Por isso:
+
+- **Só acrescente campos, sempre opcionais.** Nunca remova, renomeie ou mude o tipo de `id`, `title`, `deadline`, `state`, `salary`, `vacancies`, `description` e `url`, que são obrigatórios e sempre texto. O app ignora chaves que não conhece.
+- **`build_feed.py` descarta** os itens que não passam em `validate_feed.item_errors` e registra o motivo no log.
+- **O workflow valida o feed antes de publicar.** Ele confere os campos obrigatórios e os tipos, as datas em `AAAA-MM-DD`, os valores de `kind`, `source`, `linkKind` e `state`, ids repetidos e se o feed encolheu mais da metade de um dia para o outro. Se falhar, nada é publicado e o feed anterior continua no ar; o GitHub avisa por e-mail.
+
+Para conferir à mão: `python3 scripts/validate_feed.py docs/concursos.json`.
 
 ## Limitações conhecidas
 
