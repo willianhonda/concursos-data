@@ -8,7 +8,8 @@ derruba a lista de todo mundo. Por isso o workflow só publica se este script pa
 O contrato é o `EventModel` do app:
 - obrigatórios, sempre texto: id, title, deadline, state, salary, vacancies, description, url;
 - opcionais, texto ou null: city, published, registrationStarts, registrationEnds, gazetteUrl,
-  kind, source, linkKind;
+  kind, source, linkKind, banca;
+- opcionais, lista de texto ou null (app 2.3+): roles, education, areas;
 - campos novos são permitidos (o app ignora chaves que não conhece), mas nunca se remove,
   renomeia ou muda o tipo de um campo existente.
 
@@ -26,7 +27,14 @@ import sys
 from pathlib import Path
 
 REQUIRED = ("id", "title", "deadline", "state", "salary", "vacancies", "description", "url")
-OPTIONAL = ("city", "published", "registrationStarts", "registrationEnds", "gazetteUrl", "kind", "source", "linkKind")
+OPTIONAL = ("city", "published", "registrationStarts", "registrationEnds", "gazetteUrl", "kind", "source", "linkKind", "banca")
+# Listas opcionais lidas pelo app a partir da 2.3; as versões anteriores ignoram as chaves.
+LISTS = ("roles", "education", "areas")
+LIST_ENUMS = {
+    "education": {"fundamental", "medio", "tecnico", "superior"},
+    "areas": {"saude", "educacao", "ti", "juridica", "seguranca", "engenharia", "administrativa",
+              "assistencia_social", "operacional"},
+}
 DATES = ("published", "registrationStarts", "registrationEnds")
 ENUMS = {
     "kind": {"concurso", "processo_seletivo"},
@@ -57,6 +65,10 @@ def item_errors(item: object) -> list[str]:
         value = item.get(key)
         if value is not None and not isinstance(value, str):
             errors.append(f"{key!r} deve ser texto ou null, veio {type(value).__name__}")
+    for key in LISTS:
+        value = item.get(key)
+        if value is not None and (not isinstance(value, list) or not all(isinstance(v, str) for v in value)):
+            errors.append(f"{key!r} deve ser lista de texto ou null")
     if errors:
         return errors
 
@@ -71,6 +83,10 @@ def item_errors(item: object) -> list[str]:
     for key, allowed in ENUMS.items():
         if item.get(key) is not None and item[key] not in allowed:
             errors.append(f"{key!r} fora dos valores conhecidos: {item[key]!r}")
+    for key, allowed in LIST_ENUMS.items():
+        unknown = sorted(set(item.get(key) or []) - allowed)
+        if unknown:
+            errors.append(f"{key!r} com valores desconhecidos: {unknown!r}")
     dates = {}
     for key in DATES:
         value = item.get(key)

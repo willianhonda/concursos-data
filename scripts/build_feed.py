@@ -137,6 +137,167 @@ BANCA_NAME = re.compile(
     r"(?:executad[oa]|realizad[oa]|organizad[oa]|operacionalizad[oa]|aplicad[oa])\s+(?:pel[oa]|por)\s+"
     r"(?:empresa\s+|institui[çc][ãa]o\s+)?([A-ZÀ-Ú][\w&À-ú-]{2,})",
 )
+# Nome completo da banca: vai até a pontuação, o CNPJ ou o fim da linha.
+BANCA_FULL = re.compile(
+    r"(?:executad[oa]s?|realizad[oa]s?|organizad[oa]s?|operacionalizad[oa]s?|aplicad[oa]s?)\s+(?:pel[oa]|por)\s+"
+    r"(?:empresa\s+|institui[çc][ãa]o\s+)?([A-ZÀ-Ú][^,;:()\n]{2,80}?)(?=\s*(?:[,;:()\n]|\.\s|\.$|$|\s+[-–]\s|\s+CNPJ|\s+inscrit|\s+com\s+sede|\s+sediad))",
+)
+# Primeira palavra que não é uma banca ("realizada pela Comissão Especial", "aplicada por meio").
+BANCA_NOT = re.compile(
+    r"^(?:comiss[ãa]o|prefeitura|secretaria|munic[íi]pio|c[âa]mara|internet|meio|pr[óo]pri|pr[óo]pri[ao]|candidat|"
+    r"ger[êe]ncia|diretoria|departamento|coordena|unidade|universidade|n[úu]cleo|setor|servidor|banca|ente|[óo]rg[ãa]o)",
+    re.IGNORECASE,
+)
+BANCA_SUFFIX = re.compile(r"[\s,-]+(?:ltda|me|epp|eireli|s/?a|s\.a\.?)\.?$", re.IGNORECASE)
+# Bancas conhecidas pelo site, quando o ato só traz o link: token do domínio → nome.
+BANCA_BY_HOST = {
+    "vunesp": "Vunesp", "fgv": "FGV", "cebraspe": "Cebraspe", "cespe": "Cebraspe", "cesgranrio": "Cesgranrio",
+    "ibfc": "IBFC", "aocp": "Instituto AOCP", "fundatec": "Fundatec", "consulplan": "Consulplan", "idecan": "Idecan",
+    "quadrix": "Quadrix", "concursosfcc": "FCC", "fcc.org": "FCC", "ibam": "IBAM", "ipell": "IPELL", "ibade": "Ibade",
+    "selecon": "Selecon", "fafipa": "Fafipa", "fundep": "Fundep", "fepese": "Fepese", "faurgs": "Faurgs",
+    "fumarc": "Fumarc", "legalle": "Legalle", "objetivas": "Objetiva", "avancasp": "Avança SP", "institutomais": "Instituto Mais",
+    "omniconcursos": "Omni", "consesp": "Consesp", "consulpam": "Consulpam", "rboconcursos": "RBO", "nossorumo": "Nosso Rumo",
+    "ibgp": "IBGP", "itame": "Itame", "cpcon": "CPCON", "publiconsult": "Publiconsult", "ameosc": "Ameosc",
+    "unoesc": "Unoesc", "acafe": "Acafe", "excelenciaconcursos": "Excelência", "noroesteconcursos": "Noroeste Concursos",
+    "indepac": "Indepac", "avalia.org": "Avalia", "selecao.net.br": "Seleção", "institutoiacp": "IACP",
+}
+# "o(s) cargo(s) de X, Y e Z", "emprego público de X", "função de X".
+ROLE_PHRASE = re.compile(
+    r"(?:cargos?|empregos?|fun[çc](?:[ãa]o|[õo]es))\s+(?:p[úu]blicos?\s+)?(?:efetivos?\s+)?(?:tempor[áa]ri[oa]s?\s+)?"
+    r"(?:de\s+(?!(?:n[íi]vel|n[íi]veis|provimento|acordo)\b)|:\s*)([^.;\n]{3,240})",
+    re.IGNORECASE,
+)
+# Onde a lista de cargos termina: o resto da frase fala de regime, órgão ou condições.
+ROLE_STOP = re.compile(
+    r"\s(?:nas?\s+condi[çc]|conforme|sob\s+o\s+regime|sob\s+regime|na\s+administra|para\s|destinad|do\s+tribunal|"
+    r"da\s+universidade|do\s+instituto|constantes?|nos\s+termos|considerando|observad|processo|edital|inscri|"
+    r"e\s+a\s+forma[çc][ãa]o|e\s+forma[çc][ãa]o|em\s+regime|regid|do\s+quadro|da\s+prefeitura|do\s+munic[íi]pio|"
+    r"da\s+c[âa]mara|com\s+lota|lotad|no\s+[âa]mbito|o\s+reitor|a\s+reitora|a\s+pr[óo]-reitora|o\s+pr[óo]-reitor|"
+    r"a\s+president|o\s+presidente|o\s+prefeito|a\s+prefeita|mediante|atrav[ée]s|por\s+meio|que\s|cujas?\s|"
+    r"exclusivamente|fonte:|se[çc][ãa]o\s+\d|constan|nomead|[–-]\s*(?:feminino|masculino)|\d{1,3}\s*\(|vagas?\b)",
+    re.IGNORECASE,
+)
+ROLE_NOISE = re.compile(r"^(?:o|a|os|as|de|do|da|dos|das|e|cargo|cargos|vagas?|n[íi]vel|n[íi]veis|provimento|classe\b.*|fonte\b.*)$", re.IGNORECASE)
+# Nomes de carreira com vírgula ou barra que não são listas: "Ensino Básico, Técnico e Tecnológico".
+ROLE_COMPOUND = re.compile(r"b[áa]sico\s*,\s*t[ée]cnico\s+e\s+tecnol[óo]gico", re.IGNORECASE)
+EDUCATION = (
+    ("fundamental", re.compile(r"(?:ensino|n[íi]vel)\s+fundamental", re.IGNORECASE)),
+    ("medio", re.compile(r"(?:ensino|n[íi]vel)\s+m[ée]dio|n[íi]vel\s+intermedi[áa]rio", re.IGNORECASE)),
+    ("tecnico", re.compile(r"(?:ensino|n[íi]vel|curso)\s+t[ée]cnico|m[ée]dio\s*/\s*t[ée]cnico", re.IGNORECASE)),
+    ("superior", re.compile(r"(?:ensino|n[íi]vel|curso)\s+superior|gradua[çc][ãa]o\s+em|bacharel|licenciatura\s+(?:plena\s+)?em", re.IGNORECASE)),
+)
+# Área pelo nome do cargo. Só substantivos de cargo: "Secretaria de Saúde" não diz qual é a vaga.
+AREAS = (
+    ("saude", re.compile(r"m[ée]dic[oa]|enfermeir|enfermagem|odont|dentista|farmac[êe]utic|fisioterapeut|psic[óo]log|nutricionista|"
+                         r"fonoaudi[óo]log|biom[ée]dic|agente\s+comunit[áa]rio\s+de\s+sa[úu]de|agente\s+de\s+endemias|"
+                         r"socorrista|terapeuta\s+ocupacional|radiolog|veterin[áa]ri", re.IGNORECASE)),
+    ("educacao", re.compile(r"professor|docente|pedagog|educador|magist[ée]rio|monitor\s+de\s+creche|"
+                            r"auxiliar\s+de\s+(?:classe|sala|creche)|int[ée]rprete\s+de\s+libras|orientador\s+educacional", re.IGNORECASE)),
+    ("ti", re.compile(r"tecnologia\s+da\s+informa|inform[áa]tica|analista\s+de\s+sistemas|programador|desenvolvedor|"
+                      r"suporte\s+t[ée]cnico|redes\s+de\s+computadores|ci[êe]ncia\s+de\s+dados|programador\s+de\s+redes", re.IGNORECASE)),
+    ("juridica", re.compile(r"procurador|advogad|assessor\s+jur[íi]dic|assistente\s+jur[íi]dic|analista\s+judici[áa]ri|"
+                            r"t[ée]cnico\s+judici[áa]ri|juiz|ju[íi]za|defensor|oficial\s+de\s+justi[çc]a|promotor", re.IGNORECASE)),
+    ("seguranca", re.compile(r"guarda\s+(?:civil|municipal)|vigia|vigilante|agente\s+de\s+tr[âa]nsito|policial|"
+                             r"agente\s+penitenci|bombeiro|agente\s+de\s+seguran", re.IGNORECASE)),
+    ("engenharia", re.compile(r"engenheir|arquitet|ge[óo]log|top[óo]grafo|agr[ôo]nomo", re.IGNORECASE)),
+    ("administrativa", re.compile(r"(?:auxiliar|assistente|agente|t[ée]cnico|analista|oficial)\s+administrativ|"
+                                  r"assistente\s+em\s+administra|escritur[áa]ri|recepcionista|contador|contabil|"
+                                  r"administrador|auditor|fiscal\s+de\s+tributos|analista\s+de\s+finan|secret[áa]ri[oa]\s+escolar", re.IGNORECASE)),
+    ("assistencia_social", re.compile(r"assistente\s+social|cuidador|educador\s+social|orientador\s+social|psicopedagog", re.IGNORECASE)),
+    ("operacional", re.compile(r"motorista|operador\s+de\s+m[áa]quina|gari|servente|servi[çc]os\s+gerais|merendeir|"
+                               r"cozinheir|pedreiro|eletricista|encanador|jardineir|zelador|agente\s+de\s+limpeza|coveiro|"
+                               r"mec[âa]nico|carpinteiro|pintor|soldador|bra[çc]al", re.IGNORECASE)),
+)
+MAX_ROLES = 12
+
+
+def tidy_name(name: str) -> str:
+    """CAIXA ALTA vira Título; siglas curtas (TI, EBTT) e preposições ficam como estão."""
+    small = {"de", "do", "da", "dos", "das", "e", "em", "para", "a", "o", "por", "com", "sem"}
+    words = []
+    for i, w in enumerate(squash(name).split(" ")):
+        if w.lower() in small and i > 0:
+            words.append(w.lower())
+        elif w.isupper() and len(w) <= 4 and w.isalpha() and i > 0:
+            words.append(w)
+        elif w.isupper() or w.islower():
+            words.append(w[:1].upper() + w[1:].lower())
+        else:
+            words.append(w)
+    return " ".join(words)
+
+
+def find_banca(text: str, url: str, link_kind: str) -> str | None:
+    """A banca citada no ato ("será executado pela IPELL CONSULTORIA LTDA") ou, sem isso, a do link."""
+    for m in BANCA_FULL.finditer(squash(text)):
+        name = BANCA_SUFFIX.sub("", m.group(1).strip(" .-"))
+        if BANCA_NOT.match(name) or not 3 <= len(name) <= 70:
+            continue
+        first, _, rest = name.partition(" ")
+        # A sigla da banca fica em maiúsculas (IPELL Consultoria); "FUNDAÇÃO VUNESP" vira Fundação Vunesp.
+        is_acronym = first.isupper() and len(first) <= 6 and strip_accents(first.lower()) not in {"fundacao", "centro", "empresa"}
+        return first + (" " + tidy_name(rest) if rest else "") if is_acronym else tidy_name(name)
+    if link_kind in ("banca", "edital"):
+        host = url_host(url).lower()
+        for token, name in BANCA_BY_HOST.items():
+            if token in host and not host.endswith(".gov.br"):
+                return name
+    return None
+
+
+def find_roles(text: str) -> list[str]:
+    """Cargos citados por extenso no ato. Tabelas de cargos (comuns nos editais completos) ficam de fora."""
+    roles: list[str] = []
+    seen: set[str] = set()
+    for m in ROLE_PHRASE.finditer(squash(text)):
+        chunk = m.group(1)
+        stop = ROLE_STOP.search(" " + chunk)
+        chunk = chunk[: stop.start() - 1] if stop else chunk
+        chunk = ROLE_COMPOUND.sub("Básico-Técnico-Tecnológico", chunk)
+        # "A, B e C": vírgulas separam; o "e" só separa o último par, e só quando há lista.
+        parts = [p for p in re.split(r",|;|\s+/\s+", chunk) if p.strip(" -–:")]
+        if len(parts) > 1:
+            parts[-1:] = re.split(r"\s+e\s+(?=[A-ZÀ-Ú])", parts[-1], maxsplit=1)
+        for part in parts:
+            part = part.replace("Básico-Técnico-Tecnológico", "Básico, Técnico e Tecnológico")
+            part = re.sub(r"^(?:e\s+|o\s+|a\s+|os\s+|as\s+|(?:para\s+)?o\s+cargo\s+de\s+)", "", part.strip(" -–:"), flags=re.IGNORECASE)
+            part = re.sub(r"\s+[-–]\s+[A-Z]\d{1,3}$|\s+e$", "", part.strip(" -–:")).strip(" -–:")
+            if not 3 <= len(part) <= 60 or ROLE_NOISE.match(part) or re.search(r"\d{3,}|n[º°]|r\$", part, re.IGNORECASE):
+                continue
+            name = tidy_name(part)
+            key = strip_accents(name.lower())
+            if key not in seen:
+                seen.add(key)
+                roles.append(name)
+        if len(roles) >= MAX_ROLES:
+            break
+    return roles[:MAX_ROLES]
+
+
+def find_education(text: str, org: str) -> list[str]:
+    """Níveis de escolaridade citados no ato, sem contar o nome do órgão ("Fundação de Ensino Superior")."""
+    text = text.replace(org, " ") if org else text
+    text = re.sub(r"(?:funda[çc][ãa]o|instituto|faculdade|centro)\s+(?:municipal\s+)?de\s+ensino\s+superior", " ", text, flags=re.IGNORECASE)
+    return [level for level, pattern in EDUCATION if pattern.search(text)]
+
+
+def find_areas(roles: list[str], text: str) -> list[str]:
+    """Áreas pelos cargos; sem cargos identificados, pelos nomes de cargo que aparecem no trecho."""
+    source = " ; ".join(roles) if roles else text
+    return [area for area, pattern in AREAS if pattern.search(source)]
+
+
+def career_fields(act: str, org: str, url: str, link_kind: str) -> dict:
+    """Campos opcionais do feed a partir de 2.3: banca, cargos, escolaridade e área (null quando não achados)."""
+    roles = find_roles(act[:12000])
+    return {
+        "banca": find_banca(act[:30000], url, link_kind),
+        "roles": roles or None,
+        "education": find_education(act[:30000], org) or None,
+        "areas": find_areas(roles, act[:5000]) or None,
+    }
+
+
 # Contexto logo antes do link que indica o local de inscrição ou do edital.
 LINK_CONTEXT = re.compile(r"inscri|endere[çc]o\s+eletr[ôo]nico|s[íi]tio|site|portal|edital", re.IGNORECASE)
 LINK_PATH = re.compile(r"concurso|sele[cçt]|inscri|edital", re.IGNORECASE)
@@ -417,6 +578,7 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
             "registrationStarts": period[0].isoformat() if period else None,
             "registrationEnds": period[1].isoformat() if period else None,
             "gazetteUrl": gazette.get("url", ""),
+            **career_fields(full_act, org, url, link_kind),
         })
     return items
 
@@ -540,6 +702,7 @@ def extract_dou_article(article: ET.Element) -> dict | None:
         "registrationStarts": period[0].isoformat() if period else None,
         "registrationEnds": period[1].isoformat() if period else None,
         "gazetteUrl": gazette_url,
+        **career_fields(text, org, url, link_kind),
     }
 
 

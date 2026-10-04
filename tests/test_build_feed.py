@@ -52,6 +52,16 @@ class ExtractOpeningsTests(unittest.TestCase):
         self.assertEqual(item["url"], "https://www.ipell.com.br")
         self.assertEqual(item["linkKind"], "banca")
 
+    def test_career_fields_from_real_gazettes(self):
+        [marilia] = bf.extract_openings((FIXTURES / "marilia_2026-09-24.txt").read_text(), GAZETTE)
+        self.assertEqual(marilia["roles"], ["Médico do Trabalho"])
+        self.assertEqual(marilia["areas"], ["saude"])
+        # "Fundação Municipal de Ensino Superior" é o nome do órgão, não a escolaridade exigida.
+        self.assertIsNone(marilia["education"])
+        [itapolis] = bf.extract_openings((FIXTURES / "itapolis_2026-09-15.txt").read_text(), ITAPOLIS)
+        self.assertEqual(itapolis["banca"], "IPELL Consultoria")
+        self.assertEqual(itapolis["education"], ["medio"])
+
     def test_convocation_is_ignored(self):
         text = (
             "EDITAL DE CONVOCAÇÃO DO CONCURSO PÚBLICO 026/2024. Considerando o que consta do Edital de Abertura "
@@ -244,3 +254,40 @@ class FindLinkTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CareerFieldsTests(unittest.TestCase):
+    def test_role_list_with_commas_and_final_and(self):
+        text = ("torna pública a abertura do Concurso Público para os cargos de Analista Administrativo, Assistente Social, "
+                "Contador e Engenheiro Civil, na Administração Pública Direta do Município.")
+        self.assertEqual(bf.find_roles(text), ["Analista Administrativo", "Assistente Social", "Contador", "Engenheiro Civil"])
+
+    def test_role_names_with_commas_and_uppercase(self):
+        self.assertEqual(bf.find_roles("para o cargo de PROFESSOR DO ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO, nas condições do edital"),
+                         ["Professor do Ensino Básico, Técnico e Tecnológico"])
+        self.assertEqual(bf.find_roles("emprego público de MÉDICO DO TRABALHO, conforme Edital"), ["Médico do Trabalho"])
+
+    def test_role_without_list_keeps_its_and(self):
+        self.assertEqual(bf.find_roles("cargo de Juiz Federal Substituto e de Juíza Federal Substituta do Tribunal Regional"),
+                         ["Juiz Federal Substituto e de Juíza Federal Substituta"])
+
+    def test_level_phrase_is_not_a_role(self):
+        self.assertEqual(bf.find_roles("cargos de níveis de escolaridade Fundamental, Médio e Superior"), [])
+
+    def test_education_levels(self):
+        text = "Requisitos: ensino médio completo; para o cargo de Enfermeiro, curso superior em Enfermagem e nível técnico."
+        self.assertEqual(bf.find_education(text, "Prefeitura de Exemplo"), ["medio", "tecnico", "superior"])
+
+    def test_areas_from_roles_not_from_secretariats(self):
+        self.assertEqual(bf.find_areas(["Enfermeiro", "Guarda Municipal", "Motorista"], ""), ["saude", "seguranca", "operacional"])
+        self.assertEqual(bf.find_areas([], "Secretaria Municipal de Saúde torna pública a seleção"), [])
+        self.assertEqual(bf.find_areas([], "seleção de Professor de Educação Básica"), ["educacao"])
+
+    def test_banca_by_name_and_by_link(self):
+        self.assertEqual(bf.find_banca("O concurso será executado pela FUNDAÇÃO VUNESP, com sede em São Paulo.", "", "orgao"),
+                         "Fundação Vunesp")
+        self.assertEqual(bf.find_banca("realizado pelo Instituto Consulpam – Consultoria Público-Privada.", "", "orgao"),
+                         "Instituto Consulpam")
+        self.assertIsNone(bf.find_banca("A prova será aplicada pela Comissão Especial do Concurso.", "", "orgao"))
+        self.assertEqual(bf.find_banca("Inscrições no site.", "https://www.vunesp.com.br/PMSP2601", "edital"), "Vunesp")
+        self.assertIsNone(bf.find_banca("Inscrições no site.", "https://www.sp.gov.br/concurso", "edital"))

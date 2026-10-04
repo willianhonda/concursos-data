@@ -36,6 +36,12 @@ Cada item segue o formato do `EventModel` do app, mais estes campos:
 | `registrationStarts`, `registrationEnds` | período de inscrições (`AAAA-MM-DD`), ou `null` quando não foi identificado |
 | `gazetteUrl` | link do diário (PDF do município ou página do DOU) |
 | `linkKind` | o que o `url` abre: `edital` (página do concurso), `banca`, `orgao` (site do órgão) ou `diario` (o próprio diário, quando o ato não traz um link útil) |
+| `banca` | banca organizadora citada no ato ("será executado pela…") ou reconhecida pelo site do edital; `null` quando não identificada |
+| `roles` | cargos citados por extenso ("cargos de Enfermeiro, Motorista e Guarda Municipal"), até 12; `null` quando o ato só traz uma tabela de cargos |
+| `education` | níveis citados no ato: `fundamental`, `medio`, `tecnico`, `superior`; `null` quando não identificados |
+| `areas` | áreas pelos cargos (ou pelos nomes de cargo do trecho): `saude`, `educacao`, `ti`, `juridica`, `seguranca`, `engenharia`, `administrativa`, `assistencia_social`, `operacional`; `null` sem pista |
+
+`banca`, `roles`, `education` e `areas` são lidos pelo app a partir da 2.3 (filtro e alertas por área e escolaridade, Premium). A extração é por expressões regulares e cobre só parte dos atos; o app trata a ausência como "confira no edital".
 
 No DOU, `state` vem da UF da instituição (ou da sede, nos TRTs e TRFs) e é `BR` quando não dá para saber.
 

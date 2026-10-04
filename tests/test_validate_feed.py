@@ -42,6 +42,16 @@ class ItemTests(unittest.TestCase):
     def test_new_fields_are_allowed(self):
         self.assertEqual(vf.item_errors(item(cargo="Enfermeiro", escolaridade="superior")), [])
 
+    def test_career_fields(self):
+        valid = item(banca="Vunesp", roles=["Enfermeiro"], education=["superior"], areas=["saude"])
+        self.assertEqual(vf.item_errors(valid), [])
+        self.assertEqual(vf.item_errors(item(banca=None, roles=None, education=None, areas=None)), [])
+        self.assertIn("'roles' deve ser lista de texto ou null", vf.item_errors(item(roles="Enfermeiro")))
+        self.assertIn("'roles' deve ser lista de texto ou null", vf.item_errors(item(roles=[1])))
+        self.assertIn("'banca' deve ser texto ou null, veio list", vf.item_errors(item(banca=["Vunesp"])))
+        self.assertEqual(vf.item_errors(item(areas=["astronomia"])), ["'areas' com valores desconhecidos: ['astronomia']"])
+        self.assertEqual(vf.item_errors(item(education=["doutorado"])), ["'education' com valores desconhecidos: ['doutorado']"])
+
     def test_missing_required_field(self):
         self.assertIn("falta o campo obrigatório 'title'", vf.item_errors(item(title=...)))
 
