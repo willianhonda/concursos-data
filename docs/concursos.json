@@ -213,7 +213,18 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-30/373eafa067ded6e640472d3b5ad0d03d3e5b88a3.pdf",
-  "linkKind": "banca"
+  "linkKind": "banca",
+  "banca": "Instituto AOCP",
+  "roles": [
+   "Diretor e Vice-Diretor de Centros da Educação Integrada",
+   "De Escolas",
+   "Durante o Exercício Destas Funções)",
+   "Ix (atender Situações em"
+  ],
+  "education": [
+   "medio",
+   "superior"
+  ]
  },
  {
   "id": "766abfb0e79e",
@@ -249,7 +260,18 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-30/373eafa067ded6e640472d3b5ad0d03d3e5b88a3.pdf",
-  "linkKind": "banca"
+  "linkKind": "banca",
+  "banca": "Instituto AOCP",
+  "roles": [
+   "Diretor e Vice-Diretor de Centros da Educação Integrada",
+   "De Escolas",
+   "Durante o Exercício Destas Funções) do Art"
+  ],
+  "education": [
+   "fundamental",
+   "medio",
+   "superior"
+  ]
  },
  {
   "id": "4493504c864e",
@@ -357,7 +379,14 @@
   "registrationStarts": "2026-09-30",
   "registrationEnds": "2026-10-14",
   "gazetteUrl": "https://data.queridodiario.ok.org.br/3534401/2026-09-29/dca877c88ae0fc18c586e5a264a08951dc9acfae.pdf",
-  "linkKind": "diario"
+  "linkKind": "diario",
+  "roles": [
+   "Técnico Operacional"
+  ],
+  "education": [
+   "medio",
+   "superior"
+  ]
  },
  {
   "id": "5ca132d464e2",
@@ -393,7 +422,16 @@
   "registrationStarts": "2026-09-29",
   "registrationEnds": "2026-10-08",
   "gazetteUrl": "https://data.queridodiario.ok.org.br/4316758/2026-09-28/2360c320c5edc56cc612ca8627a27e5df42c931b.pdf",
-  "linkKind": "orgao"
+  "linkKind": "orgao",
+  "roles": [
+   "Educador Infantil 30h"
+  ],
+  "education": [
+   "fundamental"
+  ],
+  "areas": [
+   "educacao"
+  ]
  },
  {
   "id": "abaab3f5d871",
@@ -412,24 +450,6 @@
   "registrationEnds": null,
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=28/09/2026&jornal=530&pagina=85",
   "linkKind": "orgao"
- },
- {
-  "id": "57bb35e5f3b9",
-  "title": "Prefeitura Municipal de São José Vale Rio Preto - Processo Seletivo",
-  "deadline": "Inscrições: 28/09/2026 a 04/10/2026",
-  "state": "RJ",
-  "salary": "",
-  "vacancies": "",
-  "description": "PROCESSO SELETIVO PÚBLICO SIMPLIFICADO PARA CONTRATAÇÃO TEMPORÁRIA 03/2026 De ordem do Excelentíssimo Sr.° Prefeito do Município de São José do Vale do Rio Preto, a Secretária de Saúde, na forma do processo administrativo nº 6304/2026, torna pública a abertura de processo seletivo público simplificado para contratações por tempo determinado, objetivando atender à necessidade temporária da Secretaria Municipal de Saúde, conforme disposições a seguir. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O presente Processo Seletivo Simplificado destina-se à contratação temporária de profissional Cirurgião-Dentista (20h), para atuação junto ao Centro de Especialidades Odontológicas (CEO), realizando atendimentos odontológicos especializados, procedimentos endodônticos e demais atividades inerentes à assistência em saúde bucal, em conformidade com as diretrizes do Sistema Único de Saúde – SUS. 1.2 Considerando as\n\nFonte: Diário Oficial de São José do Vale do Rio Preto/RJ, 28/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://data.queridodiario.ok.org.br/3305158/2026-09-28/4c7ad714f6c8966733d3b1203f0b7bd6a8c21c4f.pdf",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "São José do Vale do Rio Preto",
-  "published": "2026-09-28",
-  "registrationStarts": "2026-09-28",
-  "registrationEnds": "2026-10-04",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3305158/2026-09-28/4c7ad714f6c8966733d3b1203f0b7bd6a8c21c4f.pdf",
-  "linkKind": "diario"
  },
  {
   "id": "234992441d13",
