@@ -1,5 +1,29 @@
 [
  {
+  "id": "877f6144b26b",
+  "title": "Fundação Universidade Federal do Maranhão - Concurso Público (Edital nº 386/2026)",
+  "deadline": "Inscrições: veja o edital",
+  "state": "MA",
+  "salary": "",
+  "vacancies": "",
+  "description": "EDITAL Nº 386, DE 6 DE OUTUBRO DE 2026 A PRÓ-REITORA DE GESTÃO DE PESSOAS da Universidade Federal do Maranhão, no uso da competência que lhe foi delegada, e de acordo com o Artigo 36 da Resolução n o. 120 - CONSUN, de 04 de novembro de 2009, torna público, para conhecimento dos interessados, o resultado do recurso ao CONSEPE quanto ao resultado provisório do Concurso Público para provimento de Cargos da Carreira do Magistério Superior, aberto por meio do Edital nº 36/2026-PROGEP, conforme abaixo: EDITAL DE ABERTURA UNIDADE ACADÊMICA RESPONSÁVEL ÁREA INTERESSADO(A) PROCESSO DECISÃO 36/2026-PROGEP COORDENAÇÃO DO CURSO DE FÍSICA - LICENCIATURA/CCET Ensino / Ensino de Física Suziete Batista Soares Gusmão 23115.016567/2026-53 DEFERIDO PARCIALMENTE ANA CARLA ARAÚJO ARRUDA\n\nFonte: Diário Oficial da União, Seção 3, 08/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=55",
+  "linkKind": "diario",
+  "kind": "concurso",
+  "source": "dou",
+  "city": null,
+  "published": "2026-10-08",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=08/10/2026&jornal=530&pagina=55",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "educacao"
+  ]
+ },
+ {
   "id": "fcab43519dc7",
   "title": "Universidade Federal do Estado do Rio de Janeiro - Concurso Público (Edital nº 228/2026)",
   "deadline": "Inscrições: veja o edital",
@@ -119,6 +143,59 @@
   "areas": [
    "educacao"
   ]
+ },
+ {
+  "id": "ecde41777302",
+  "title": "Município de Curitiba - Concurso Público nº 1/2026",
+  "deadline": "Inscrições: 07/10/2026 a 05/11/2026",
+  "state": "PR",
+  "salary": "Faixa salarial: R$ 1.152,29 - R$ 4.993,27",
+  "vacancies": "",
+  "description": "Executivo SECRETARIA MUNICIPAL DE GESTÃO DE PESSOAL - SMGP CP - EDITAL NORMATIVO Nº 4 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Concurso Público n° 4, de 2026, que estabelece normas para provimento de vagas nos cargos de Agente Administrativo, Fiscal e Fiscal de Obras e Posturas, na Administração Pública Direta e a formação de cadastro de reserva do quadro de servidores efetivos da Administração Pública Autárquica e Fundacional do Município de Curitiba, em regime estatutário. Secretaria Municipal de Gestão de Pessoal, 6 de outubro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal (Republicado após período de impugnação, conforme Retificação do Edital Normativo n° 1/2026). SUMÁRIO Poder Executivo SECRETARIA MUNICIPAL DE GESTÃO DE PESSOAL - SMGP\n\nFonte: Diário Oficial de Curitiba/PR, 06/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.fundacaofafipa.org.br",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "querido_diario",
+  "city": "Curitiba",
+  "published": "2026-10-06",
+  "registrationStarts": "2026-10-07",
+  "registrationEnds": "2026-11-05",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-10-06/144f1c0ed725fb009a38dd02f42c7a86128ba6a4.pdf",
+  "banca": "Fundação Fafipa",
+  "roles": [
+   "Agente Administrativo",
+   "Fiscal",
+   "Fiscal de Obras e Posturas"
+  ],
+  "education": [
+   "medio",
+   "tecnico"
+  ],
+  "areas": [
+   "administrativa"
+  ]
+ },
+ {
+  "id": "db0e779a83a4",
+  "title": "Prefeitura Municipal de Divina Pastora - Processo Seletivo",
+  "deadline": "Inscrições: veja o edital",
+  "state": "SE",
+  "salary": "",
+  "vacancies": "",
+  "description": "al n' 8.59712019\" Lei Estadual n'8.79912020 e Lei Estadual rf 8.8'7212021. Lei Estadual n\" 9.338/2023, e em face da Portaria n\" 40051202lIGSISEDUC. da Portaria n\" 4007l202l|GSISEDUC e da Portaria n\" 404512023/GS/SEDUC, torna público e Íàz saber que estão abertas as inscrições para o Processo Seletivo Simplificado - PSS. visando o preenchimento de VAGAS e FORMAÇÀO DE CADASTRO RESERVA para Bolsistas de Exrensão Tecnológica de Nivel II - Coordenadores Municipais no ârrbito do Programa Alfabetizar Pra Valer. I Esta edição encontra-se no site: http://www.municipioonline.com.br/se/prefeitura/divinapastora terça-feira, 6 de outubro de 2026 3 - Ano I - Nº 1674 PREFEITURA MUNICIPAL DE DIVINA PASTORA DIÁRIO OFICIAL DO MUNICÍPIO\n\nFonte: Diário Oficial de Divina Pastora/SE, 06/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "http://www.municipioonline.com.br/se/prefeitura/divinapastora",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Divina Pastora",
+  "published": "2026-10-06",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2802007/2026-10-06/a9af8257ecbcdd9a0791c754cee6a4f156ec269e.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": null
  },
  {
   "id": "c1e0aa54c20a",
