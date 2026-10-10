@@ -1,0 +1,76 @@
+name: Sombra - atualizações depois da inscrição
+
+# Modo sombra do spike CA-006: grava só em shadow/, que nenhum app lê e o GitHub Pages
+# não publica (o Pages serve docs/). Para pausar, crie a variável de repositório
+# UPDATES_SHADOW=off ou desative este workflow em Actions. Veja o README.
+
+on:
+  schedule:
+    # Todo dia às 10:00 UTC, uma hora depois do "Atualizar concursos", para ler o feed do dia.
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Dias para trás na busca de atos"
+        default: "7"
+      seed_days:
+        description: "Reconstruir as aberturas dos últimos N dias no índice (0 = não)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sombra-atualizacoes
+  cancel-in-progress: false
+
+jobs:
+  sombra:
+    if: vars.UPDATES_SHADOW != 'off'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Testes
+        run: python -m unittest discover -s tests -v
+
+      - name: Gerar shadow/
+        run: |
+          python scripts/build_updates.py \
+            --days "${{ github.event.inputs.days || '7' }}" \
+            --seed-days "${{ github.event.inputs.seed_days || '0' }}"
+        env:
+          # Os mesmos secrets do feed. Sem eles, o DOU é pulado.
+          INLABS_EMAIL: ${{ secrets.INLABS_EMAIL }}
+          INLABS_PASSWORD: ${{ secrets.INLABS_PASSWORD }}
+
+      - name: Validar shadow/atualizacoes.json
+        run: python scripts/validate_updates.py shadow/atualizacoes.json --index shadow/aberturas.json
+
+      # Trava de segurança: este workflow só pode mudar shadow/.
+      - name: Conferir que nada fora de shadow/ mudou
+        run: |
+          outside="$(git status --porcelain --untracked-files=all | grep -v ' shadow/' || true)"
+          if [ -n "$outside" ]; then
+            echo "Arquivos fora de shadow/ mudaram; nada será publicado:"
+            echo "$outside"
+            exit 1
+          fi
+
+      - name: Publicar shadow/ se mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add shadow/
+          if git diff --cached --quiet; then
+            echo "Sem mudanças em shadow/."
+          else
+            git commit -m "Atualiza modo sombra ($(date -u +%Y-%m-%d))"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi
