@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Modelo do XML do INLABS (DO3) com três atos. O primeiro segue o caso da UFERSA no spike CA-006
+     (homologação de concurso aberto pelo Edital nº 30/2026); os outros dois não são atualizações. -->
+<xml>
+<article id="1" idMateria="90000001" pubName="DO3" artType="Edital" pubDate="25/09/2026"
+  artCategory="Ministério da Educação/Universidade Federal Rural do Semi-Árido/Pró-Reitoria de Gestão de Pessoas"
+  pdfPage="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&amp;jornal=530&amp;pagina=61">
+<body>
+<Identifica><![CDATA[EDITAL Nº 16, DE 24 DE SETEMBRO DE 2026]]></Identifica>
+<Texto><![CDATA[<p class="identifica">EDITAL Nº 16, DE 24 DE SETEMBRO DE 2026</p>
+<p>HOMOLOGAÇÃO DO RESULTADO FINAL DO CONCURSO PÚBLICO</p>
+<p>O PRÓ-REITOR DE GESTÃO DE PESSOAS DA UNIVERSIDADE FEDERAL RURAL DO SEMI-ÁRIDO, no uso de suas atribuições legais,
+torna pública a homologação do resultado final do Concurso Público para o cargo de Professor do Magistério Superior,
+regido pelo Edital nº 30/2026, publicado no Diário Oficial da União de 12 de junho de 2026, conforme anexo.</p>
+<p>ÁREA: Engenharia Elétrica. CLASSIFICAÇÃO: 1º FULANO DE TAL - 87,50.</p>]]></Texto>
+</body>
+</article>
+<article id="2" idMateria="90000002" pubName="DO3" artType="Edital de Concurso Público" pubDate="25/09/2026"
+  artCategory="Ministério da Educação/Universidade Federal Rural do Semi-Árido"
+  pdfPage="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&amp;jornal=530&amp;pagina=62">
+<body>
+<Identifica><![CDATA[EDITAL Nº 41/2026]]></Identifica>
+<Texto><![CDATA[<p>A Reitora da Universidade Federal Rural do Semi-Árido torna pública a abertura de inscrições para o
+Concurso Público de Técnico-Administrativo. O resultado final será homologado e publicado no Diário Oficial da União.</p>]]></Texto>
+</body>
+</article>
+<article id="3" idMateria="90000003" pubName="DO3" artType="Edital" pubDate="25/09/2026"
+  artCategory="Ministério da Educação/Universidade Federal Rural do Semi-Árido"
+  pdfPage="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&amp;jornal=530&amp;pagina=63">
+<body>
+<Identifica><![CDATA[EDITAL Nº 17, DE 24 DE SETEMBRO DE 2026]]></Identifica>
+<Texto><![CDATA[<p>CONVOCAÇÃO PARA A PROVA DIDÁTICA</p><p>O Pró-Reitor convoca os candidatos habilitados no Concurso
+Público regido pelo Edital nº 30/2026 para a prova didática, conforme cronograma.</p>]]></Texto>
+</body>
+</article>
+</xml>

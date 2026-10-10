@@ -72,6 +72,65 @@ O feed chega no mesmo dia a todas as versões instaladas do app, sem revisão da
 
 Para conferir à mão: `python3 scripts/validate_feed.py docs/concursos.json`.
 
+## Modo sombra: atualizações depois da inscrição
+
+Experimento de 4 semanas (spike CA-006) para medir se dá para avisar quem acompanha um concurso quando sai o gabarito, o resultado, a homologação ou a convocação. **Nenhuma versão do app lê estes arquivos.** Eles ficam em `shadow/`, fora de `docs/`, então o GitHub Pages não os publica, e o `docs/concursos.json` não muda (o script só o lê). Como o repositório é público, `shadow/` pode ser visto no GitHub.
+
+O workflow **Sombra - atualizações depois da inscrição** (`.github/workflows/sombra-atualizacoes.yml`) roda todo dia às 10:00 UTC, uma hora depois do feed, e faz o seguinte:
+
+1. Roda os testes e `scripts/build_updates.py`:
+   - **Índice de aberturas** (`shadow/aberturas.json`, 18 meses): junta o índice anterior com os itens do `docs/concursos.json` do dia. Cada abertura tem o mesmo `id` do item do feed, o município (`territoryId`), o tipo de órgão (`prefeitura`, `camara`, `autarquia`, `fundacao`, `instituto`, `outro`), o tipo de seleção e o número normalizado (`01/2026` e `001/2026` viram `1/2026`). O "Município de X" genérico conta como prefeitura.
+   - **Atos no Querido Diário:** usa uma consulta própria (resultado, homologação, gabarito, convocação, nomeação). O tipo vem do cabeçalho do ato em caixa alta ("EDITAL DE HOMOLOGAÇÃO", "GABARITO OFICIAL PRELIMINAR") ou do verbo do ato ("Fica homologado", "CONVOCA os candidatos aprovados"). Cronogramas, comissões, estagiários, licitações, prorrogações de validade e convocações para prova ficam de fora. As repetições viram um ato por concurso, tipo e dia (Itajubá publica um termo de convocação por candidato).
+   - **Atos no DOU (Seção 3):** pelo INLABS, com os mesmos secrets do feed. Sem eles, o DOU é pulado.
+   - **Ligação com o concurso (`examId`):**
+     - no município, só quando o município, o tipo de órgão e o número (e o tipo de seleção, quando o ato diz) apontam para uma única abertura, publicada antes do ato;
+     - no DOU, quando o órgão e o número do edital de abertura citado no texto apontam para uma única abertura.
+
+     O resto fica sem ligação: aparece no log do Actions com o motivo, mas não vai para o arquivo. Exemplos: o gabarito do SAAE de Itápolis não liga com o concurso nº 01/2026 da Câmara, e uma homologação sem número do concurso não liga com nada.
+2. Valida `shadow/atualizacoes.json` com `scripts/validate_updates.py`.
+3. Confere que nada fora de `shadow/` mudou e faz commit só de `shadow/`.
+
+| Arquivo | Conteúdo |
+|---|---|
+| `shadow/aberturas.json` | índice de aberturas (estado do script, não é feed) |
+| `shadow/atualizacoes.json` | o feed que o app leria: só atualizações ligadas, últimos 90 dias, no formato da seção 6(b) do spike (`id`, `examId`, `type`, `title`, `organization`, `edital`, `state`, `city`, `published`, `gazetteUrl`, `excerpt`, `source`) |
+| `shadow/log.csv` | uma linha por execução: diários lidos, atos por tipo, ligados por tipo, não ligados, ligações novas, tamanho do índice |
+| `shadow/revisao.csv` | a cada execução, até 10 ligações novas (alternando os tipos), com o concurso, a atualização, o trecho e o link do diário, e as colunas `correto` e `observacao` em branco |
+
+Para preencher o índice com aberturas que já saíram do feed, rode o workflow uma vez à mão com `seed_days = 90`. A semente usa o próprio `extract_openings` do build_feed.
+
+### Critério para liberar o app
+
+Depois de 4 semanas, o app só passa a ler o arquivo se, nas revisões semanais:
+
+- a **precisão das ligações for ≥ 90%** (`correto = sim` sobre as linhas revisadas);
+- houver **≥ 3 atualizações ligadas por semana** (soma de `novos_ligados` no `log.csv`), em todas as 4 semanas.
+
+Se passar, o arquivo vai para `docs/atualizacoes.json` com o mesmo contrato, como um arquivo separado: as versões antigas do app nunca o baixam, e o `concursos.json` não muda.
+
+### Revisão semanal
+
+1. Abra `shadow/revisao.csv` (no GitHub, ou baixe e abra numa planilha) e pegue as linhas da semana pela coluna `execucao`. Revise umas 30.
+2. Para cada linha, abra o link da coluna `diario`, procure o trecho e confira:
+   - se o ato é mesmo do tipo indicado (`tipo`);
+   - se é do concurso da coluna `concurso`: mesmo órgão, mesmo número e mesmo tipo de seleção.
+3. Preencha `correto` com `sim` ou `nao`. Em `observacao`, anote o motivo quando for `nao` (outro órgão, cronograma, outro concurso, tipo errado etc.).
+4. Faça commit do arquivo. O workflow só acrescenta linhas no fim e não apaga o que você preencheu. Evite editar no horário em que ele roda (10:00 UTC).
+5. Precisão da semana = `sim` ÷ (`sim` + `nao`). Ligações por semana = soma de `novos_ligados` no `log.csv`.
+
+Para conferir à mão: `python3 scripts/validate_updates.py shadow/atualizacoes.json --index shadow/aberturas.json`.
+
+### Rollback
+
+Nada em `docs/`, no feed ou no app depende do modo sombra.
+
+- **Pausar:** em *Settings → Secrets and variables → Actions → Variables*, crie a variável de repositório `UPDATES_SHADOW` com o valor `off`, ou desative o workflow em *Actions → Sombra - atualizações depois da inscrição → Disable workflow*. Para voltar, apague a variável ou reative o workflow.
+- **Remover:** reverta o commit que trouxe o modo sombra para a `main` (`git revert -m 1 <merge>` ou, se entrou por squash, `git revert <commit>`), ou apague o workflow e os arquivos e faça commit:
+  ```sh
+  git rm -r .github/workflows/sombra-atualizacoes.yml shadow/ scripts/build_updates.py scripts/validate_updates.py tests/test_build_updates.py tests/fixtures/updates/
+  ```
+  Depois, apague esta seção do README.
+
 ## Limitações conhecidas
 
 - **Cobertura:** só entram os municípios que o Querido Diário indexa (cerca de 500 dos 5.570) e os editais federais do DOU. Concursos estaduais ainda não entram.
@@ -86,6 +145,7 @@ Precisa de Python 3.10 ou superior, sem nenhuma dependência.
 python3 -m unittest discover -s tests -v    # testes do extrator
 python3 scripts/build_feed.py --days 14     # atualiza docs/concursos.json (só municípios)
 INLABS_EMAIL=... INLABS_PASSWORD=... python3 scripts/build_feed.py --days 3   # inclui o DOU
+python3 scripts/build_updates.py --days 3 --seed-days 30   # modo sombra: grava só em shadow/
 ```
 
 ## Configuração (uma vez só)
