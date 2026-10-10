@@ -1,5 +1,33 @@
 [
  {
+  "id": "upd-efea36649bf9",
+  "examId": "9d52a5bd95ac",
+  "type": "resultado",
+  "title": "Resultado publicado",
+  "organization": "Prefeitura Municipal de Mirante do Paranapanema",
+  "edital": "Processo Seletivo nº 002/2026",
+  "state": "SP",
+  "city": "Mirante do Paranapanema",
+  "published": "2026-10-09",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3530201/2026-10-09/537dea239d3b5b47b929d524dca7a98fcb32f55a.pdf",
+  "excerpt": "........................................................................................ MUNICÍPIO DE MIRANTE DO PARANAPANEMA-SP CAPITAL DO PONTAL E DA REFORMA AGRÁRIA Secretaria Municipal de Administração EDITAL DE DIVULGAÇÃO DE RESULTADO PRELIMINAR DA PROVA ESCRITA E CONVOCAÇÃO PARA PROVA PRÁTICA DO PROCESSO SELETIVO 002/2026. A Prefeitura Municipal de Mirante do Paranapanema, Estado de São Paulo, por meio do convênio firmado com CIOP, torna pública a relação Preliminar dos aprovados no Proces",
+  "source": "querido_diario"
+ },
+ {
+  "id": "upd-119b6c21035b",
+  "examId": "3571a65a7bdd",
+  "type": "resultado",
+  "title": "Resultado publicado",
+  "organization": "Prefeitura Municipal de Mirante do Paranapanema",
+  "edital": "Concurso Público nº 003/2026",
+  "state": "SP",
+  "city": "Mirante do Paranapanema",
+  "published": "2026-10-09",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3530201/2026-10-09/52d209c1d514f5565742ab3a1651669a2d67ea46.pdf",
+  "excerpt": "........................................................................................ MUNICÍPIO DE MIRANTE DO PARANAPANEMA-SP CAPITAL DO PONTAL E DA REFORMA AGRÁRIA Secretaria Municipal de Administração EDITAL DE DIVULGAÇÃO DE RESULTADO PRELIMINAR DA PROVA ESCRITA E CONVOCAÇÃO PARA PROVA PRÁTICA DO CONCURSO PÚBLICO 003/2026. A Prefeitura Municipal de Mirante do Paranapanema, Estado de São Paulo, por meio do convênio firmado com CIOP, torna pública a relação Preliminar dos aprovados no Concurs",
+  "source": "querido_diario"
+ },
+ {
   "id": "upd-767b3dc415b1",
   "examId": "7141ab76dc27",
   "type": "resultado",
