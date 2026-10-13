@@ -1,5 +1,129 @@
 [
  {
+  "id": "e125656a4e15",
+  "title": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Processo Seletivo (Edital nº 4/2026)",
+  "deadline": "Inscrições: 21/10/2026 a 31/10/2026",
+  "state": "BR",
+  "salary": "Salário: R$ 4.478,03",
+  "vacancies": "",
+  "description": "EDITAL Nº 4, DE 8 DE OUTUBRO DE 2026 A DIRETORA-GERAL DO CAMPUS DE LIMOEIRO DO NORTE DO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO CEARÁ (IFCE), no uso de suas atribuições e considerando a delegação de competência conferida pela Portaria Normativa nº 81/GABR/REITORIA, de 08 de agosto de 2023, torna pública a abertura de inscrições para o Processo Seletivo Simplificado destinado a selecionar candidatos para contratação por tempo determinado, como professor substituto para o campus de Limoeiro do Norte, nos termos da Lei nº 8.745/93 e suas alterações. Período: 21/10/2026 a 31/10/2026. Inscrição somente via internet, pelo sítio qselecao.ifce.edu.br; Taxa: R$ 150,00 (cento e cinquenta reais) paga por meio de boleto eletrônico, em qualquer agência bancária ou lotérica; Habilitação exigida e todas as informações do certame se encontram disponíveis, na íntegra, no Edital do certam\n\nFonte: Diário Oficial da União, Seção 3, 13/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=51",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "dou",
+  "city": null,
+  "published": "2026-10-13",
+  "registrationStarts": "2026-10-21",
+  "registrationEnds": "2026-10-31",
+  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=51",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "educacao"
+  ]
+ },
+ {
+  "id": "b62c5512ad72",
+  "title": "Universidade Federal do Rio Grande do Sul - Concurso Público (Edital nº 3/2026)",
+  "deadline": "Inscrições: veja o edital",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "EDITAL Nº 3, DE 9 DE OUTUBRO DE 2026 CONSULTA A CANDIDATOS(AS) APROVADOS(AS) EM CONCURSO PÚBLICO DA CARREIRA DE MAGISTÉRIO SUPERIOR O PRÓ-REITOR DE GESTÃO DE PESSOAS DA UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL (UFRGS), no uso de suas atribuições legais, considerando: a expansão das atividades acadêmicas da UFRGS por meio da implantação do Campus Serra, no município de Caxias do Sul/RS; a existência de concursos públicos da Carreira do Magistério Superior com bancos de candidatos(as) aprovados(as) ainda válidos, regidos pelos Editais de Abertura indicados no Anexo I deste Edital; e que os Editais de Abertura dos concursos públicos da Carreira do Magistério Superior da UFRGS, bem como a regulamentação interna aplicável, preveem a possibilidade de aproveitamento de bancos de aprovados para provimento de vagas em unidades e campi distintos daqueles onde foram inicialmente ofertadas, re\n\nFonte: Diário Oficial da União, Seção 3, 13/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://conferenciaweb.rnp.br/sala/alice-108",
+  "linkKind": "orgao",
+  "kind": "concurso",
+  "source": "dou",
+  "city": null,
+  "published": "2026-10-13",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=69",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "educacao"
+  ]
+ },
+ {
+  "id": "82f94071c0f5",
+  "title": "Hospital de Clínicas de Porto Alegre - Processo Seletivo (Edital nº 4/2026)",
+  "deadline": "Inscrições: veja o edital",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "EDITAL nº 4/2026, de 9 de outubro de 2026 PROCESSO SELETIVO O Hospital de Clínicas de Porto Alegre (HCPA) torna pública a realização do seguinte Processo Seletivo, de acordo com o extrato de divulgação de abertura de inscrições deste Edital. O Processo Seletivo reger-se-á por instruções contidas no Edital e será executado em conjunto com a Fundação de Apoio da Universidade Federal do Rio Grande do Sul (FAURGS). Cargo de Nível Médio: Nº PROCESSO SELETIVO C. H. MENSAL SALÁRIO INICIAL* (R$) VAGA(S)** PRÉ-REQUISITO 32 Assistente Administrativo II 200 4.536,19 por mês C.R Ensino Médio Completo * Valor inicial de classe. Cada classe possui 14 (quatorze) níveis salariais, sendo o primeiro para admissão e os demais para progressão horizontal que, de forma alternada, possibilitam ao funcionário concorrer anualmente por merecimento ou antiguidade, mediante critérios específicos e d\n\nFonte: Diário Oficial da União, Seção 3, 13/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.hcpa.edu.br/venha-para-o-hcpa/processo-seletivo-publico",
+  "linkKind": "edital",
+  "kind": "processo_seletivo",
+  "source": "dou",
+  "city": null,
+  "published": "2026-10-13",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=78",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "medio"
+  ],
+  "areas": [
+   "administrativa"
+  ]
+ },
+ {
+  "id": "7e01bc268d8a",
+  "title": "Instituto Federal de Educação, Ciência e Tecnologia do Norte de Minas Gerais - Processo Seletivo (Edital nº 116/2026)",
+  "deadline": "Inscrições: 15/10/2026 a 25/10/2026",
+  "state": "BR",
+  "salary": "",
+  "vacancies": "",
+  "description": "EDITAL Nº 116, DE 8 DE OUTUBRO DE 2026 PROCESSO SELETIVO SIMPLIFICADO DE PROFESSOR SUBSTITUTO A DIRETORA/DIRETORA GERAL DO CAMPUS ARINOS, DO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO NORTE DE MINAS GERAIS, em exercício, no uso de suas atribuições legais, conferidas pela Portaria/Reitor n° 540 de 12/04/2018, publicada no Diário Oficial da União de 16/04/2018, Processo nº 23392.001483/2026-46, torna público a ABERTURA DE INSCRIÇÕES para o PROCESSO SELETIVO SIMPLIFICADO, objetivando a contratação de PROFESSOR SUBSTITUTO, por prazo determinado, na forma da Lei nº 8.745, de 09/12/1993 e alterações posteriores, conforme abaixo especificado: 1 - DA ÁREA / VAGA / CARGA HORÁRIA SEMANAL / HABILITAÇÃO EXIGIDA Área de Atuação Nº de Vagas Carga Horária Habilitação Exigida Artes 01 40h Licenciatura em Artes; ou Licenciatura em Artes, com Aperfeiçoamento; ou Licenciatura em Art\n\nFonte: Diário Oficial da União, Seção 3, 13/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.ifnmg.edu.br/professor-substituto",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "dou",
+  "city": null,
+  "published": "2026-10-13",
+  "registrationStarts": "2026-10-15",
+  "registrationEnds": "2026-10-25",
+  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=59",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "educacao"
+  ]
+ },
+ {
+  "id": "508b80bf2a63",
+  "title": "Universidade Federal de Uberlândia - Processo Seletivo (Edital nº 26/2026)",
+  "deadline": "Inscrições: veja o edital",
+  "state": "BR",
+  "salary": "",
+  "vacancies": "",
+  "description": "EDITAL DIRESTES Nº 26/2026 A Universidade Federal de Uberlândia faz saber que estarão abertas as inscrições para o Processo Seletivo da Escola Técnica de Saúde (ESTES), visando ao preenchimento, por candidatos que concluíram o Ensino Médio, de vagas dos cursos técnicos de nível médio no Eixo Tecnológico da Saúde e Segurança, oferecidas em 2027/1, de acordo com o disposto neste Edital. As inscrições iniciam-se a partir de 26 de outubro de 2026 e encerram-se em 10 de novembro de 2026, exclusivamente pela internet. Farão parte deste Edital demais informações sobre o objeto do edital, disposições preliminares, vagas, inscrições, taxas, atendimento especial, aplicação das provas, resultados, classificação, recursos, bem como outras informações. Edital completo disponível em http://www.portalselecao.ufu.br. Uberlândia, 9 de outubro de 2026. LUIZ CARLOS GEBRIM DE PAULA COSTA Diretor da ESTE\n\nFonte: Diário Oficial da União, Seção 3, 13/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "http://www.portalselecao.ufu.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "dou",
+  "city": null,
+  "published": "2026-10-13",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=81",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "medio"
+  ],
+  "areas": null
+ },
+ {
   "id": "ddfbf2e92486",
   "title": "Prefeitura Municipal de Curitiba - Processo Seletivo nº 11/2026",
   "deadline": "Inscrições: veja o edital",
@@ -1178,30 +1302,6 @@
   ]
  },
  {
-  "id": "6c8bf17b4dab",
-  "title": "Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Processo Seletivo (Edital nº 72/2026)",
-  "deadline": "Inscrições: 02/10/2026 a 12/10/2026",
-  "state": "BR",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 72, DE 1º DE OUTUBRO DE 2026 PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO DE PROFESSOR SUBSTITUTO O DIRETOR-GERAL DO CAMPUS PORTO ALEGRE DO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO GRANDE DO SUL, no uso de suas atribuições legais e de acordo com o disposto na Lei Nº 8.745/93, torna pública a abertura das inscrições para o Processo Seletivo Simplificado, com vistas à contratação por tempo determinado de Professor Substituto para atender à necessidade temporária de excepcional interesse público. 1. DAS VAGAS Vagas (AC) Vagas (PPP) Vagas (PcD)* Vagas (indígenas)* Vagas (quilombolas) CH semanal Área/ Disciplina 01 0 00 00 00 40 horas Direito *Não haverá reserva imediata de cota para pessoa preta ou parda (PPP), indígenas, quilombolas ou pessoa com deficiência (PcD), em função do quantitativo de vagas oferecidas. 1.1 Requisito exigido: Bacha\n\nFonte: Diário Oficial da União, Seção 3, 02/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://forms.gle/aQggXhyyFkoxAtN3A",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-02",
-  "registrationStarts": "2026-10-02",
-  "registrationEnds": "2026-10-12",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=45",
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao"
-  ]
- },
- {
   "id": "13e00a9aaeb5",
   "title": "Universidade Federal do Estado do Rio de Janeiro - Processo Seletivo (Edital nº 222/2026)",
   "deadline": "Inscrições: veja o edital",
@@ -1830,24 +1930,6 @@
   "linkKind": "orgao"
  },
  {
-  "id": "537763206a70",
-  "title": "Prefeitura Municipal de Juatuba - Processo Seletivo nº 002/2026",
-  "deadline": "Inscrições: 01/10/2026 a 12/10/2026",
-  "state": "MG",
-  "salary": "Faixa salarial: R$ 2.312,10 - R$ 4.602,09",
-  "vacancies": "",
-  "description": "PREFEITURA MUNICIPAL DE JUATUBA SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO EDITAL DE PROCESSO SELETIVO SIMPLIFICADO – Nº 002/ 2026 PROJETO BOM DE BOLA E BOM NA ESCOLA – MODALIDADE FUTSAL A PREFEITURA MUNICIPAL DE JUATUBA/MG torna público que estarão abertas as inscrições para o Processo Seletivo Simplificado – PSS para preenchimento de vagas destinadas ao Projeto Bom de Bola e Bom na Escola – Modalidade Futsal, no âmbito da Secretaria Municipal de Esporte e Juventude, por prazo determinado, com fundamento no art. 37, inciso IX, da Constituição Federal de 1988, na Lei Municipal nº 541/2005 e demais normas aplicáveis, visando atender à necessidade temporária de excepcional interesse público. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Processo Seletivo Simplificado (PSS) visa à contratação, por prazo determinado, de profissionais para atender a demanda de pessoal dos serviços prestados pela Secret\n\nFonte: Diário Oficial de Juatuba/MG, 24/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://www.juatuba.mg.gov.br/processo-seletivo-n--02/2026",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Juatuba",
-  "published": "2026-09-24",
-  "registrationStarts": "2026-10-01",
-  "registrationEnds": "2026-10-12",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3136652/2026-09-24/248701ee909cfa8124f74b83326bbecf20288b3d.pdf",
-  "linkKind": "edital"
- },
- {
   "id": "45a8f66897a2",
   "title": "Universidade Federal da Integração Latino-Americana - Concurso Público (Edital nº 241/2026)",
   "deadline": "Inscrições: veja o edital",
@@ -2174,23 +2256,6 @@
   "linkKind": "banca"
  },
  {
-  "id": "e86de7556084",
-  "title": "Fundação de Apoio da Universidade Federal do Rio Grande do Sul - Processo Seletivo (Edital nº 13/2026)",
-  "deadline": "Inscrições: 21/09/2026 a 12/10/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 13/2026 , DE 11 de setembro de 2026 PROCESSO SELETIVO SIMPLIFICADO A FAURGS torna pública a abertura de inscrições para o Processo Seletivo Simplificado nº 13/2026, visando à contratação para o cargo de Programador de Redes, sob o regime da Consolidação das Leis do Trabalho (CLT). INSCRIÇÃO, ENVIO DE TÍTULOS E CURRÍCULUM LATTES DOCUMENTADO: A documentação deverá ser enviada via link disponibilizado no edital, no período entre as 8h do dia 21/09/2026 até as 18h do dia 12/10/2026. Título do e-mail: Inscrição-PSS 13/2026. Somente serão avaliados e analisados os documentos anexados no link e recebidos no horário estipulados em Edital. O Edital completo estará à disposição para consulta, no mesmo período, no site da FAURGS. https://www.faurgs.com.br/concursos/ CRISTIANE TERESINHA DOMINGUES DE SOUZA Gerente Administrativa\n\nFonte: Diário Oficial da União, Seção 3, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.faurgs.com.br/concursos/",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-21",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-12",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=222"
- },
- {
   "id": "c2fa6f8c073d",
   "title": "Conselho Nacional dos Direitos da Pessoa com Deficiência - Processo Seletivo (Edital nº 3/2026)",
   "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
@@ -2472,19 +2537,5 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "https://data.queridodiario.ok.org.br/4316758/2026-09-11/e3f856582a50af7bad6590641bfd8a9a9ad011af.pdf"
- },
- {
-  "id": "bb67aa92dc5c",
-  "title": "Fundação Vunesp - Concurso Público nº 01/2026",
-  "deadline": "Inscrições: veja o edital",
-  "state": "SP",
-  "salary": "Salário: R$ 1.300,00",
-  "vacancies": "",
-  "description": "RETARIA INTERESSADA: Secretaria Municipal de Cultura, Turismo e Even- tos ELABORADO POR: Divisão de Instrumentos Contratuais – Departamento de Atas e Instrumentos Contratuais – Secretaria Municipal de Administração. CONCURSO PÚBLICO EDITAL DE ABERTURA DE INSCRIÇÕES Nº 01/2026 O PREFEITO MUNICIPAL DE PAULÍNIA, faz saber que estarão abertas as inscri- ções para Concurso Público, regido por este Edital, para provimento dos cargos públicos efetivos de Guarda Municipal 6ª Classe –Feminino e Masculino constan- tes do item 1.2., sob organização e aplicação da Fundação para o Vestibular da Universidade Estadual Paulista “Júlio de Mesquita Filho” – Fundação VUNESP. CAPÍTULO 1 – DOS CARGOS 1.1. Este Concurso Público destina-se ao provimento dos cargos efetivos constan- tes do item 1.2., com vagas existentes e das que vierem a existir dentro do prazo de sua validade. 1.2. Os cargos, o total de vagas, o número de vagas para ampla concorrência, o número de vagas reservadas para pessoas com deficiência (PCD), número de v\n\nFonte: Diário Oficial de Paulínia/SP, 28/08/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.vunesp.com.br",
-  "city": "Paulínia",
-  "published": "2026-08-28",
-  "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3536505/2026-08-28/3ffab191b0b171e55ccb9fc198c08c8d89dc5f7f.pdf"
  }
 ]
