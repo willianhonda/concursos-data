@@ -1,5 +1,60 @@
 [
  {
+  "id": "93eda683a7c3",
+  "title": "Universidade Federal de Itajubá - Processo Seletivo",
+  "deadline": "Inscrições: 14/10/2026 a 25/10/2026",
+  "state": "BR",
+  "salary": "",
+  "vacancies": "Vagas 1",
+  "description": "EDITAL DE 13 DE OUTUBRO DE 2026 PROCESSO SELETIVO Nº 58/2026 A Diretora de Desenvolvimento de Pessoal, no uso da competência que lhe foi delegada pelo Reitor da UNIFEI, por meio da Portaria nº 2.586, de 20/12/2024, publicada no DOU de 23/12/2024, faz saber que estarão abertas as inscrições para o Processo Seletivo Simplificado para Contratação de Professor Substituto, no período estabelecido nos Anexos I e II do Edital, de acordo com a Resolução CEPEAD Nº 03/2022, Lei nº 8.745/93 e suas alterações, Decretos nº 7.485/2011 e nº 8.259/2014 e Portaria Conjunta MGI/MEC nº 38/2026. A remuneração está fixada com base no valor dos vencimentos da carreira do Magistério Superior, observados o regime de trabalho da vaga pretendida e a titulação comprovada pelo candidato aprovado no momento da contratação, conforme tabela abaixo: CLASSE TITULAÇÃO REGIME DE TRABALHO 40 horas Vencimento Básico\n\nFonte: Diário Oficial da União, Seção 3, 14/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://progepe.unifei.edu.br/concursos-e-processos-seletivos/edital-58-2026/",
+  "linkKind": "edital",
+  "kind": "processo_seletivo",
+  "source": "dou",
+  "city": null,
+  "published": "2026-10-14",
+  "registrationStarts": "2026-10-14",
+  "registrationEnds": "2026-10-25",
+  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=55",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "educacao"
+  ]
+ },
+ {
+  "id": "44c505a832f6",
+  "title": "Ministério de Minas e Energia - Concurso Público (Edital nº 1/2026)",
+  "deadline": "Inscrições: 13/10/2026 a 11/11/2026",
+  "state": "RJ",
+  "salary": "",
+  "vacancies": "",
+  "description": "EDITAL DE CONCURSO PÚBLICO Nº 1/2026 Indústrias Nucleares do Brasil S.A. - INB, torna pública a realização do Concurso Público destinado a formação de Cadastro de Reserva para os cargos de nível médio e superior previstos neste edital, de acordo com o disposto abaixo. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público regido por este Edital, pelos diplomas legais e regulamentares, por seus anexos e posteriores retificações, caso existam, visa a formação de cadastro reserva (CR) para os cargos de nível médio e superior, conforme previsto no item 3.1, observado o prazo de validade do certame. 1.2 O prazo de validade do Concurso Público é de 2 (dois) anos, contados da data da publicação da homologação do resultado final no Diário Oficial da União (DOU), podendo ser prorrogado uma única vez, por igual período, nos termos do art. 37, inciso III, da Constituição Federal. 1.3 Das vagas\n\nFonte: Diário Oficial da União, Seção 3, 14/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://conhecimento.fgv.br/processoseletivo/inb2026",
+  "linkKind": "edital",
+  "kind": "concurso",
+  "source": "dou",
+  "city": null,
+  "published": "2026-10-14",
+  "registrationStarts": "2026-10-13",
+  "registrationEnds": "2026-11-11",
+  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=116",
+  "banca": "FGV",
+  "roles": [
+   "Inspetor de Guarda",
+   "De Caráter Eliminatório"
+  ],
+  "education": [
+   "medio",
+   "tecnico",
+   "superior"
+  ],
+  "areas": null
+ },
+ {
   "id": "e125656a4e15",
   "title": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Processo Seletivo (Edital nº 4/2026)",
   "deadline": "Inscrições: 21/10/2026 a 31/10/2026",
