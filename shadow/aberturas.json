@@ -1,5 +1,18 @@
 [
  {
+  "id": "44c505a832f6",
+  "source": "dou",
+  "territoryId": null,
+  "city": null,
+  "state": "RJ",
+  "organization": "Ministério de Minas e Energia",
+  "orgType": null,
+  "kind": "concurso",
+  "number": "1/2026",
+  "title": "Ministério de Minas e Energia - Concurso Público (Edital nº 1/2026)",
+  "published": "2026-10-14"
+ },
+ {
   "id": "e125656a4e15",
   "source": "dou",
   "territoryId": null,
