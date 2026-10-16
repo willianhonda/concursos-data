@@ -1,5 +1,70 @@
 [
  {
+  "id": "96d36249a8d5",
+  "source": "dou",
+  "territoryId": null,
+  "city": null,
+  "state": "PI",
+  "organization": "Fundação Universidade Federal do Piauí",
+  "orgType": null,
+  "kind": "processo_seletivo",
+  "number": "4/2026",
+  "title": "Fundação Universidade Federal do Piauí - Processo Seletivo (Edital nº 4/2026)",
+  "published": "2026-10-16"
+ },
+ {
+  "id": "6b871494a8cf",
+  "source": "dou",
+  "territoryId": null,
+  "city": null,
+  "state": "BR",
+  "organization": "Fundação Universidade de Brasília",
+  "orgType": null,
+  "kind": "concurso",
+  "number": "76/2026",
+  "title": "Fundação Universidade de Brasília - Concurso Público (Edital nº 76/2026)",
+  "published": "2026-10-16"
+ },
+ {
+  "id": "4dee12c1aceb",
+  "source": "dou",
+  "territoryId": null,
+  "city": null,
+  "state": "PB",
+  "organization": "Instituto Federal de Educação, Ciência e Tecnologia da Paraíba",
+  "orgType": null,
+  "kind": "processo_seletivo",
+  "number": "148/2026",
+  "title": "Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - Processo Seletivo (Edital nº 148/2026)",
+  "published": "2026-10-16"
+ },
+ {
+  "id": "49c60193c298",
+  "source": "dou",
+  "territoryId": null,
+  "city": null,
+  "state": "BR",
+  "organization": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará",
+  "orgType": null,
+  "kind": "processo_seletivo",
+  "number": "30/2026",
+  "title": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Processo Seletivo (Edital nº 30/2026)",
+  "published": "2026-10-16"
+ },
+ {
+  "id": "39c106914c6c",
+  "source": "dou",
+  "territoryId": null,
+  "city": null,
+  "state": "SP",
+  "organization": "Universidade Federal de São Paulo",
+  "orgType": null,
+  "kind": "processo_seletivo",
+  "number": "732/2026",
+  "title": "Universidade Federal de São Paulo - Processo Seletivo (Edital nº 732/2026)",
+  "published": "2026-10-16"
+ },
+ {
   "id": "e6459f8d9429",
   "source": "dou",
   "territoryId": null,
@@ -102,6 +167,19 @@
   "number": "60/2026",
   "title": "Fundação Universidade Federal de Viçosa - Concurso Público (Edital nº 60/2026)",
   "published": "2026-10-15"
+ },
+ {
+  "id": "5e0ad9477ada",
+  "source": "querido_diario",
+  "territoryId": "4101408",
+  "city": "Apucarana",
+  "state": "PR",
+  "organization": "Município de Apucarana",
+  "orgType": "prefeitura",
+  "kind": "concurso",
+  "number": "54/2026",
+  "title": "Município de Apucarana - Concurso Público nº 54/2026",
+  "published": "2026-10-14"
  },
  {
   "id": "44c505a832f6",
