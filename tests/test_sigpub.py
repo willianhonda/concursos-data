@@ -177,3 +177,72 @@ class CollectTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PipelineTests(unittest.TestCase):
+    """build_feed.main de ponta a ponta, com a rede trocada pelas fixtures."""
+
+    def run_main(self, env, old_feed=None, old_shadow=None):
+        import json
+        import os
+        import tempfile
+        from unittest import mock
+
+        search = fixture("amp_pesquisa.html").encode()
+        opening = fixture("amp_quatro_barras_abertura.html").encode()
+        other = fixture("amp_jaguapita_convocacao.html").encode()
+
+        def fake_get(url, **_):
+            if "/pesquisar?" in url:
+                return search if "titulo%5D=concurso" in url and "pagina%5D=1" in url else b""
+            return opening if url.endswith("/133E6D93") else other
+
+        with tempfile.TemporaryDirectory() as tmp:
+            out, shadow = Path(tmp) / "concursos.json", Path(tmp) / "fontes-novas.json"
+            if old_feed is not None:
+                out.write_text(json.dumps(old_feed))
+            if old_shadow is not None:
+                shadow.write_text(json.dumps(old_shadow))
+            argv = ["build_feed.py", "--output", str(out), "--shadow-output", str(shadow)]
+            with mock.patch.dict(os.environ, env, clear=False), mock.patch.object(sys, "argv", argv), \
+                    mock.patch.object(bf, "search_gazettes", return_value=[]), mock.patch.object(bf, "fetch_dou", return_value=[]), \
+                    mock.patch.object(bf, "http_get", fake_get), mock.patch.object(bf, "link_is_broken", return_value=False), \
+                    mock.patch.object(sigpub, "SLUGS", {"amp": "PR"}), mock.patch.object(sigpub, "DELAY", 0), \
+                    mock.patch.object(bf, "log", lambda _: None), \
+                    mock.patch.object(bf.dt, "date", wraps=dt.date) as fake_date:
+                fake_date.today.return_value = dt.date(2026, 10, 16)
+                self.assertEqual(bf.main(), 0)
+            read = lambda path: json.loads(path.read_text()) if path.exists() else None  # noqa: E731
+            return read(out), read(shadow)
+
+    ENV = {"SOURCES_ON": "", "SOURCES_SHADOW": "", "SOURCES_OFF": ""}
+
+    def test_new_sources_are_off_by_default(self):
+        feed, shadow = self.run_main(self.ENV)
+        self.assertEqual(feed, [])
+        self.assertIsNone(shadow)
+
+    def test_shadow_mode_writes_only_to_the_shadow_file(self):
+        feed, shadow = self.run_main({**self.ENV, "SOURCES_SHADOW": "sigpub"})
+        self.assertEqual(feed, [])
+        self.assertEqual([i["collector"] for i in shadow], ["sigpub:amp"])
+
+    def test_live_mode_publishes_in_the_feed(self):
+        feed, shadow = self.run_main({**self.ENV, "SOURCES_ON": "sigpub"})
+        self.assertEqual([i["collector"] for i in feed], ["sigpub:amp"])
+        self.assertIsNone(shadow)
+        self.assertEqual(vf.feed_errors(feed), [])
+
+    def test_kill_switch_removes_already_published_items(self):
+        feed, _ = self.run_main({**self.ENV, "SOURCES_ON": "sigpub"})
+        legacy = {**feed[0], "id": "legacy", "collector": None, "source": "querido_diario", "registrationEnds": "2026-12-01"}
+        before = [legacy, {**feed[0], "registrationEnds": "2026-12-01"}]
+        after, _ = self.run_main({**self.ENV, "SOURCES_ON": "sigpub", "SOURCES_OFF": "sigpub"}, old_feed=before)
+        self.assertEqual([i["id"] for i in after], ["legacy"])
+        self.assertEqual(vf.feed_errors(after, off={"sigpub"}), [])
+
+    def test_kill_switch_also_cleans_the_shadow_file(self):
+        _, shadow = self.run_main({**self.ENV, "SOURCES_SHADOW": "sigpub"})
+        shadow[0]["registrationEnds"] = "2026-12-01"
+        _, cleaned = self.run_main({**self.ENV, "SOURCES_SHADOW": "sigpub", "SOURCES_OFF": "sigpub"}, old_shadow=shadow)
+        self.assertEqual(cleaned, [])

@@ -40,7 +40,9 @@ import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 
-from validate_feed import item_errors
+import sigpub
+import sources
+from validate_feed import item_errors, sources_off
 
 API = "https://api.queridodiario.org.br/gazettes"
 USER_AGENT = "concursos-data/1.0 (+https://github.com/willianhonda/concursos-data)"
@@ -834,10 +836,49 @@ def merge(old: list[dict], new: list[dict], today: dt.date) -> list[dict]:
     return sorted(current, key=lambda i: (i["published"], i["id"]), reverse=True)
 
 
+SHADOW_OUTPUT = Path("shadow/fontes-novas.json")
+# nome do coletor (o prefixo de `collector`) -> função que devolve os itens
+COLLECTOR_FUNCS = {"sigpub": sigpub.collect}
+
+
+def run_collectors(since: dt.date, today: dt.date, existing: list[dict], env: dict | None = None,
+                   fetch=None) -> tuple[list[dict], list[dict]]:
+    """Roda as fontes novas conforme SOURCES_ON/SOURCES_SHADOW/SOURCES_OFF e devolve (itens do feed, itens da sombra).
+
+    `existing` são os itens que já temos (feed anterior e coletas desta execução): o que repete um deles
+    (mesma cidade, tipo e número de edital) é descartado. Um coletor com erro não derruba os demais.
+    """
+    fetch = fetch or http_get
+    off = sources_off(env)
+    for name in sources.unknown_names(env):
+        log(f"AVISO: {name!r} não é um coletor conhecido ({', '.join(sources.KNOWN_COLLECTORS)})")
+    live: list[dict] = []
+    shadow: list[dict] = []
+    for name, collect in COLLECTOR_FUNCS.items():
+        mode = sources.collector_mode(name, env)
+        if mode == sources.OFF:
+            log(f"{name}: desligado em SOURCES_OFF")
+            continue
+        if mode == sources.SKIP:
+            continue
+        try:
+            found = collect(since, today, fetch=fetch, extract=extract_openings, to_text=html_to_text, off=off, log=log)
+        except Exception as err:  # noqa: BLE001 - uma fonte nova nunca impede publicar as demais
+            log(f"{name}: {err}")
+            continue
+        found = [i for i in found if not item_errors(i)]
+        found = sources.dedupe(found, existing + live + shadow)
+        log(f"{name} ({mode}): {len(found)} abertura(s) novas")
+        (live if mode == sources.LIVE else shadow).extend(found)
+    return live, shadow
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--days", type=int, default=7, help="dias para trás na busca (padrão: 7)")
     parser.add_argument("--output", type=Path, default=Path("docs/concursos.json"))
+    parser.add_argument("--shadow-output", type=Path, default=SHADOW_OUTPUT,
+                        help="onde gravar as fontes em modo sombra (o app não lê este arquivo)")
     args = parser.parse_args()
 
     today = dt.date.today()
@@ -867,13 +908,25 @@ def main() -> int:
     except Exception as err:  # noqa: BLE001 - falha no DOU não impede publicar os municipais
         log(f"DOU: {err}")
 
-    for item in new:
+    live, shadow = run_collectors(since, today, old + new)
+    new.extend(live)
+
+    for item in new + shadow:
         if item["linkKind"] != "diario" and link_is_broken(item["url"]):
             log(f"  link quebrado, usando o diário: {item['url']}")
             item["url"], item["linkKind"] = item["gazetteUrl"], "diario"
 
+    off = sources_off()
+    if shadow or (args.shadow_output.exists() and off):
+        old_shadow = json.loads(args.shadow_output.read_text()) if args.shadow_output.exists() else []
+        kept = sources.drop_disabled(merge(old_shadow, shadow, today), off)
+        args.shadow_output.parent.mkdir(parents=True, exist_ok=True)
+        args.shadow_output.write_text(json.dumps(kept, ensure_ascii=False, indent=1) + "\n")
+        log(f"sombra: {len(kept)} itens em {args.shadow_output} ({len(shadow)} novos nesta execução)")
+
     feed = []
-    for item in merge(old, new, today):
+    # O kill switch tira do feed também o que já estava publicado.
+    for item in sources.drop_disabled(merge(old, new, today), off):
         # Um item fora do formato do app sai do feed em vez de derrubar a lista de quem está na 2.2.x.
         if problems := item_errors(item):
             log(f"  descartado {item.get('id', '?')}: {'; '.join(problems)}")
