@@ -44,10 +44,11 @@ from validate_feed import item_errors
 
 API = "https://api.queridodiario.org.br/gazettes"
 USER_AGENT = "concursos-data/1.0 (+https://github.com/willianhonda/concursos-data)"
+# Consulta ampla: a frase exata de abertura deixava passar atos como "Período de inscrições: de … a …" sem
+# "abertas as inscrições". Quem decide se é abertura é o extrator (OPENING/NEGATIVE), não a consulta.
 QUERY = (
-    '("concurso público" | "processo seletivo") + ("abertas as inscrições" | "abertura das inscrições" | '
-    '"inscrições estarão abertas" | "período de inscrições" | "período de inscrição" | '
-    '"edital de abertura" | "torna pública a abertura")'
+    '("concurso público" | "processo seletivo") + ("inscrições" | "inscrição" | "edital de abertura" | '
+    '"torna pública a abertura" | "extrato de edital")'
 )
 PAGE_SIZE = 50
 MAX_PAGES = 20
@@ -68,7 +69,11 @@ OPENING = re.compile(
     r"torna(?:r|m)?\s+p[úu]blic[ao]\s+(?:[^.;]{0,120}?\s)?(?:a\s+)?(?:abertura|realiza[çc][ãa]o)[^.;]{0,160}?" + SEL
     + r"|torna(?:r|m)?\s+p[úu]blico\s+o\s+edital\s+(?:normativo|de\s+abertura)[^.;]{0,80}?" + SEL
     + r"|(?:estar[ãa]o|ficam|est[ãa]o)\s+abertas\s+as\s+inscri[çc][õo]es"
-    r"|abertura\s+(?:das|de)\s+inscri[çc][õo]es[^.;]{0,120}?" + SEL,
+    r"|abertura\s+(?:das|de)\s+inscri[çc][õo]es[^.;]{0,120}?" + SEL
+    # Extratos que só publicam o edital e o período: "Extrato do Edital … Concurso Público nº 01/2026 … Período de inscrições: de …".
+    + r"|extrato\s+d[eo]\s+edital[^.;]{0,120}?" + SEL
+    + r"|publica[çc][ãa]o\s+do\s+edital[^.;]{0,160}?" + SEL
+    + r"|inscri[çc][õo]es\s+(?:para|ao|do)\s+(?:o\s+)?" + SEL,
     re.IGNORECASE,
 )
 # Retificações também indicam um concurso em andamento, mas não trazem os dados completos.
@@ -83,7 +88,7 @@ OFF_TOPIC = re.compile(
 )
 # Trechos que, logo antes da frase de abertura, indicam outro tipo de ato.
 NEGATIVE = re.compile(
-    r"convoca|nomea|nomear|homolog|classifica[çc][ãa]o|resultado|posse|desclassifica|investiga[çc][ãa]o\s+social|"
+    r"convoca|nomea(?!da\s+pel[oa])|nomear|homolog|classifica[çc][ãa]o|resultado|posse|desclassifica|investiga[çc][ãa]o\s+social|"
     r"indeferid|recurso|isen[çc][ãa]o|gabarito|"
     r"conforme\s+(?:previsto|prev[êe])|nos\s+termos\s+do\s+edital|constantes?\s+(?:no|do)\s+edital",
     re.IGNORECASE,
@@ -350,6 +355,24 @@ def search_gazettes(since: dt.date) -> list[dict]:
     return gazettes
 
 
+def newest_gazette_age(gazettes: list[dict], today: dt.date) -> int | None:
+    """Dias desde o diário mais recente da busca; None quando a busca veio vazia."""
+    dates = [dt.date.fromisoformat(g["date"]) for g in gazettes if g.get("date")]
+    return (today - max(dates)).days if dates else None
+
+
+# Sem nenhum diário com esses termos há tanto tempo, o spider do Querido Diário provavelmente parou.
+STALE_AFTER_DAYS = 5
+
+
+def warn_if_stale(gazettes: list[dict], today: dt.date) -> bool:
+    age = newest_gazette_age(gazettes, today)
+    if age is not None and age > STALE_AFTER_DAYS:
+        log(f"AVISO: o diário mais recente da busca tem {age} dias; os spiders do Querido Diário podem ter parado")
+        return True
+    return False
+
+
 # ---------------------------------------------------------------- extração
 
 def squash(text: str) -> str:
@@ -400,6 +423,17 @@ def find_inscription_period(text: str, published: dt.date) -> tuple[dt.date, dt.
                         return start, end
                 except ValueError:
                     pass
+    # Sem datas depois da palavra: "no período de 09/11/2026 a 30/11/2026 estarão abertas as inscrições".
+    for m in re.finditer(r"per[íi]odo\s+de\s+(?=\d)", text, re.IGNORECASE):
+        if not re.search(r"inscri[çc](?:[ãa]o|[õo]es)", text[m.end(): m.end() + 80], re.IGNORECASE):
+            continue
+        rng = DATE_RANGE.match(text, m.end())
+        if not rng:
+            continue
+        end = parse_date(rng.group(2), published.year)
+        start = parse_date(rng.group(1), end.year if end else published.year)
+        if start and end and start <= end and (end - start).days <= 120 and end >= published - dt.timedelta(days=7):
+            return start, end
     return None
 
 
@@ -623,6 +657,7 @@ STATE_NAME = re.compile(
 
 
 def html_to_text(raw: str) -> str:
+    raw = re.sub(r"<\s*(script|style)\b.*?<\s*/\s*\1\s*>", " ", raw, flags=re.IGNORECASE | re.DOTALL)
     text = re.sub(r"<\s*(?:br|/p|/tr|/li|/h\d)\s*/?>", "\n", raw, flags=re.IGNORECASE)
     text = html.unescape(re.sub(r"<[^>]+>", " ", text))
     return re.sub(r"[ \t]+", " ", re.sub(r"\n\s*\n+", "\n", text)).strip()
@@ -813,6 +848,7 @@ def main() -> int:
     except Exception as err:  # noqa: BLE001 - API fora do ar: segue com o DOU e limpa os vencidos
         log(f"Querido Diário: {err}")
         gazettes = []
+    warn_if_stale(gazettes, today)
 
     new: list[dict] = []
     for g in gazettes:
