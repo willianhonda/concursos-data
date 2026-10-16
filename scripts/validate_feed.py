@@ -8,10 +8,15 @@ derruba a lista de todo mundo. Por isso o workflow só publica se este script pa
 O contrato é o `EventModel` do app:
 - obrigatórios, sempre texto: id, title, deadline, state, salary, vacancies, description, url;
 - opcionais, texto ou null: city, published, registrationStarts, registrationEnds, gazetteUrl,
-  kind, source, linkKind, banca;
+  kind, source, linkKind, banca, sphere, collector, gazetteName;
 - opcionais, lista de texto ou null (app 2.3+): roles, education, areas;
 - campos novos são permitidos (o app ignora chaves que não conhece), mas nunca se remove,
   renomeia ou muda o tipo de um campo existente.
+
+Kill switch: a variável de ambiente SOURCES_OFF (lista separada por vírgula, ex. "sigpub,doe") lista
+coletores ou valores de `source` desligados. Um item vindo de uma fonte desligada reprova o feed, para que
+nada dela seja publicado. Como desligar uma fonte tira itens do feed, o encolhimento passa a ser aceito com
+--allow-shrink.
 
 Uso:
     python3 scripts/validate_feed.py docs/concursos.json --previous /tmp/anterior.json
@@ -22,12 +27,14 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import os
 import re
 import sys
 from pathlib import Path
 
 REQUIRED = ("id", "title", "deadline", "state", "salary", "vacancies", "description", "url")
-OPTIONAL = ("city", "published", "registrationStarts", "registrationEnds", "gazetteUrl", "kind", "source", "linkKind", "banca")
+OPTIONAL = ("city", "published", "registrationStarts", "registrationEnds", "gazetteUrl", "kind", "source", "linkKind", "banca",
+            "sphere", "collector", "gazetteName")
 # Listas opcionais lidas pelo app a partir da 2.3; as versões anteriores ignoram as chaves.
 LISTS = ("roles", "education", "areas")
 LIST_ENUMS = {
@@ -38,17 +45,33 @@ LIST_ENUMS = {
 DATES = ("published", "registrationStarts", "registrationEnds")
 ENUMS = {
     "kind": {"concurso", "processo_seletivo"},
-    "source": {"querido_diario", "dou"},
+    "source": {"querido_diario", "dou", "diario_municipal", "doe", "banca"},
+    "sphere": {"municipal", "estadual", "federal"},
     "linkKind": {"edital", "banca", "orgao", "diario"},
 }
 UFS = {
     "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB",
     "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO", "BR",
 }
+# `collector` identifica o coletor que gerou o item ("sigpub:amp"); o kill switch SOURCES_OFF age sobre ele.
+COLLECTOR = re.compile(r"^[a-z0-9_]+(?::[a-z0-9_-]+)?$")
 ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 # Um feed que encolhe mais que isso de um dia para o outro indica erro no extrator, não concursos encerrados.
 MAX_SHRINK = 0.5
 MIN_PREVIOUS_FOR_SHRINK_CHECK = 10
+
+
+def sources_off(env: dict | None = None) -> set[str]:
+    """Nomes em SOURCES_OFF, em minúsculas e sem espaços."""
+    raw = (os.environ if env is None else env).get("SOURCES_OFF", "")
+    return {name.strip().lower() for name in raw.split(",") if name.strip()}
+
+
+def is_source_off(item: dict, off: set[str]) -> bool:
+    """O item veio de uma fonte desligada? Vale o coletor inteiro ("sigpub:amp"), o seu prefixo ("sigpub") ou o `source`."""
+    collector = (item.get("collector") or "").lower()
+    names = {collector, collector.split(":")[0], (item.get("source") or "").lower()} - {""}
+    return bool(names & off)
 
 
 def item_errors(item: object) -> list[str]:
@@ -83,6 +106,8 @@ def item_errors(item: object) -> list[str]:
     for key, allowed in ENUMS.items():
         if item.get(key) is not None and item[key] not in allowed:
             errors.append(f"{key!r} fora dos valores conhecidos: {item[key]!r}")
+    if item.get("collector") is not None and not COLLECTOR.match(item["collector"]):
+        errors.append(f"'collector' fora do formato nome ou nome:parte: {item['collector']!r}")
     for key, allowed in LIST_ENUMS.items():
         unknown = sorted(set(item.get(key) or []) - allowed)
         if unknown:
@@ -103,7 +128,7 @@ def item_errors(item: object) -> list[str]:
     return errors
 
 
-def feed_errors(feed: object, previous_count: int | None = None) -> list[str]:
+def feed_errors(feed: object, previous_count: int | None = None, off: set[str] | None = None) -> list[str]:
     """Problemas do feed como um todo; cada item inválido aparece com o seu id ou posição."""
     if not isinstance(feed, list):
         return [f"o feed deve ser um array JSON, veio {type(feed).__name__}"]
@@ -112,6 +137,8 @@ def feed_errors(feed: object, previous_count: int | None = None) -> list[str]:
     for index, item in enumerate(feed):
         label = item.get("id") if isinstance(item, dict) and isinstance(item.get("id"), str) else f"#{index}"
         errors += [f"item {label}: {problem}" for problem in item_errors(item)]
+        if off and isinstance(item, dict) and is_source_off(item, off):
+            errors.append(f"item {label}: vem de uma fonte desligada em SOURCES_OFF ({item.get('collector') or item.get('source')})")
         if isinstance(item, dict) and isinstance(item.get("id"), str):
             if item["id"] in seen:
                 errors.append(f"item {label}: 'id' repetido")
@@ -126,6 +153,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("feed", type=Path, nargs="?", default=Path("docs/concursos.json"))
     parser.add_argument("--previous", type=Path, help="feed publicado antes desta execução, para detectar encolhimento")
+    parser.add_argument("--allow-shrink", action="store_true", help="aceita o feed encolher mais da metade (use quando SOURCES_OFF mudou)")
     args = parser.parse_args()
 
     try:
@@ -141,7 +169,7 @@ def main() -> int:
         except json.JSONDecodeError:
             previous_count = None
 
-    errors = feed_errors(feed, previous_count)
+    errors = feed_errors(feed, None if args.allow_shrink else previous_count, sources_off())
     if errors:
         print(f"feed inválido ({len(errors)} problema(s)); nada será publicado:", file=sys.stderr)
         for error in errors:
