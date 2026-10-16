@@ -72,6 +72,17 @@ O feed chega no mesmo dia a todas as versões instaladas do app, sem revisão da
 
 Para conferir à mão: `python3 scripts/validate_feed.py docs/concursos.json`.
 
+## Concursos previstos
+
+`docs/previstos.json` lista os concursos **autorizados** por portaria no DOU que ainda não têm edital (spike CA-007). É um arquivo **separado** do feed: as versões antigas do app não o leem, e um erro aqui nunca afeta `docs/concursos.json`. `[]` é válido e é o estado normal (cerca de 5 autorizações por ano, em lotes).
+
+- **Captura estrita:** `scripts/build_previstos.py` lê a Seção 1 do DOU (`DO1` e `DO1E`) pelo INLABS, com os mesmos `INLABS_EMAIL` e `INLABS_PASSWORD` do feed. Só entra o ato cuja ementa começa com "Autoriza a realização de concurso(s) público(s)". Autorização de nomeação ou provimento adicional, homologações que citam uma autorização antiga e retificações ficam de fora. A republicação "(\*)" do mesmo ato conta uma vez.
+- **Campos:** obrigatórios `id` (sha1 curto da URL do ato), `organization`, `authorizedOn` (data da publicação, AAAA-MM-DD) e `url`; opcionais `vacancies`, `roles`, `education`, `editalDeadline` (publicação + prazo do edital, quando o ato diz), `sphere` (`federal`), `source` (`dou`) e `act`. As portarias do MGI têm o modelo fixo (cargos, escolaridade e vagas do Anexo, conferidas com o total por extenso do art. 1º); em outros formatos, como o de conselhos, o que não for achado fica de fora. Ordenado por `authorizedOn` decrescente.
+- **Saída:** o previsto sai quando surge em `docs/concursos.json` um edital do mesmo órgão (comparado sem caixa, acento ou espaço, e sem a sigla final), publicado a partir da autorização, ou quando `editalDeadline` passou há mais de 30 dias. Sem `editalDeadline`, sai 365 dias depois da autorização.
+- **Workflow:** o passo "Gerar e validar docs/previstos.json" do workflow diário roda depois da validação do feed. Se o script ou o validador falhar, ele restaura o arquivo anterior e o feed é publicado normalmente. Na **primeira carga**, rode o workflow manualmente (*Run workflow*) com `previstos_days` = `365`; depois o padrão de 7 dias basta, porque o arquivo acumula o estado.
+- **Sem o workflow:** `python3 scripts/build_previstos.py --days 365` (com as variáveis do INLABS) e `python3 scripts/validate_previstos.py docs/previstos.json`. Para reprocessar XMLs do INLABS já baixados: `--xml arquivo.xml ...`. Para desligar, apague o passo do workflow; o arquivo `[]` continua válido.
+- **Limite conhecido:** a comparação com o edital é por órgão; um órgão com dois concursos autorizados seguidos pode sair do arquivo quando o primeiro edital aparecer.
+
 ## Modo sombra: atualizações depois da inscrição
 
 Experimento de 4 semanas (spike CA-006) para medir se dá para avisar quem acompanha um concurso quando sai o gabarito, o resultado, a homologação ou a convocação. **Nenhuma versão do app lê estes arquivos.** Eles ficam em `shadow/`, fora de `docs/`, então o GitHub Pages não os publica, e o `docs/concursos.json` não muda (o script só o lê). Como o repositório é público, `shadow/` pode ser visto no GitHub.
