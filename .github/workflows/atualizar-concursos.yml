@@ -43,10 +43,18 @@ jobs:
           # Cadastro gratuito em https://inlabs.in.gov.br. Sem os secrets, o DOU é pulado.
           INLABS_EMAIL: ${{ secrets.INLABS_EMAIL }}
           INLABS_PASSWORD: ${{ secrets.INLABS_PASSWORD }}
+          # Fontes novas (veja "Fontes novas e modo sombra" no README). Variáveis do repositório, listas separadas por vírgula.
+          # SOURCES_ON: entram no feed; SOURCES_SHADOW: só gravam shadow/fontes-novas.json; SOURCES_OFF: kill switch.
+          SOURCES_ON: ${{ vars.SOURCES_ON }}
+          SOURCES_SHADOW: ${{ vars.SOURCES_SHADOW || 'sigpub' }}
+          SOURCES_OFF: ${{ vars.SOURCES_OFF }}
 
       # Se falhar, o job para aqui e o feed de ontem continua no ar.
       - name: Validar o feed para o app
-        run: python scripts/validate_feed.py docs/concursos.json --previous "$RUNNER_TEMP/anterior.json"
+        # Mudar SOURCES_OFF tira itens do feed de uma vez; aí o encolhimento é esperado.
+        run: python scripts/validate_feed.py docs/concursos.json --previous "$RUNNER_TEMP/anterior.json" ${{ vars.SOURCES_OFF != '' && '--allow-shrink' || '' }}
+        env:
+          SOURCES_OFF: ${{ vars.SOURCES_OFF }}
 
       # Concursos autorizados no DOU, sem edital ainda. Arquivo separado, que as versões antigas do app
       # não leem: se falhar, volta o arquivo anterior e o feed é publicado normalmente.
@@ -64,6 +72,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/concursos.json docs/previstos.json
+          [ -f shadow/fontes-novas.json ] && git add shadow/fontes-novas.json
           if git diff --cached --quiet; then
             echo "Sem mudanças no feed."
           else

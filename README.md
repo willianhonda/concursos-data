@@ -4,7 +4,8 @@ Feed JSON de concursos públicos e processos seletivos com inscrições abertas,
 
 - **Fontes:**
   - diários oficiais municipais, pela API pública do [Querido Diário](https://queridodiario.ok.org.br) (Open Knowledge Brasil);
-  - Diário Oficial da União, Seção 3, pelo [INLABS](https://inlabs.in.gov.br) da Imprensa Nacional (precisa de cadastro gratuito; veja a configuração).
+  - Diário Oficial da União, Seção 3, pelo [INLABS](https://inlabs.in.gov.br) da Imprensa Nacional (precisa de cadastro gratuito; veja a configuração);
+  - em modo sombra, ainda fora do feed: diários das associações municipais no Sigpub (veja "Fontes novas e modo sombra").
 - **Atualização:** diária, por GitHub Actions.
 - **Hospedagem:** GitHub Pages, em `https://<seu-usuario>.github.io/concursos-data/concursos.json`.
 - **Custo:** zero. O repositório é público, sem servidor, banco de dados, chave de API nem LLM.
@@ -30,7 +31,10 @@ Cada item segue o formato do `EventModel` do app, mais estes campos:
 | Campo | Valores |
 |---|---|
 | `kind` | `concurso` ou `processo_seletivo` (seleções simplificadas e contratações temporárias) |
-| `source` | `querido_diario` ou `dou` |
+| `source` | `querido_diario`, `dou` ou `diario_municipal` (associações municipais; `doe` e `banca` já são aceitos pelo validador, mas ainda não há coletor) |
+| `sphere` | esfera do órgão: `municipal`, `estadual` ou `federal` (opcional; só os itens recém-extraídos trazem) |
+| `collector` | coletor que gerou o item, como `sigpub:amp`; é por ele que o kill switch `SOURCES_OFF` age (opcional) |
+| `gazetteName` | nome do diário, como "Diário Oficial dos Municípios do Paraná" (opcional; só no Sigpub) |
 | `city` | cidade do diário municipal; `null` no DOU |
 | `published` | data de publicação no diário (`AAAA-MM-DD`) |
 | `registrationStarts`, `registrationEnds` | período de inscrições (`AAAA-MM-DD`), ou `null` quando não foi identificado |
@@ -82,6 +86,36 @@ Para conferir à mão: `python3 scripts/validate_feed.py docs/concursos.json`.
 - **Workflow:** o passo "Gerar e validar docs/previstos.json" do workflow diário roda depois da validação do feed. Se o script ou o validador falhar, ele restaura o arquivo anterior e o feed é publicado normalmente. Na **primeira carga**, rode o workflow manualmente (*Run workflow*) com `previstos_days` = `365`; depois o padrão de 7 dias basta, porque o arquivo acumula o estado.
 - **Sem o workflow:** `python3 scripts/build_previstos.py --days 365` (com as variáveis do INLABS) e `python3 scripts/validate_previstos.py docs/previstos.json`. Para reprocessar XMLs do INLABS já baixados: `--xml arquivo.xml ...`. Para desligar, apague o passo do workflow; o arquivo `[]` continua válido.
 - **Limite conhecido:** a comparação com o edital é por órgão; um órgão com dois concursos autorizados seguidos pode sair do arquivo quando o primeiro edital aparecer.
+
+## Fontes novas e modo sombra
+
+Para pegar mais concursos municipais (a amostra do spike `fontes-novas` mostrou 7% de cobertura) há duas mudanças:
+
+- **Consulta mais ampla no Querido Diário.** A busca agora pede "concurso público" ou "processo seletivo" junto de "inscrições", "edital de abertura" ou "extrato de edital" (antes exigia frases exatas de abertura), e o extrator reconhece também extratos que só trazem o período de inscrições, o período escrito antes da palavra "inscrições" e comissões "nomeadas pelo Decreto…". Quem decide se é abertura continua sendo `OPENING`/`NEGATIVE`. O log avisa quando o diário mais recente da busca tem mais de 5 dias (spider parado).
+- **Coletor Sigpub** (`scripts/sigpub.py`): lê a busca pública por título de 11 associações (AMP-PR, FAMURS-RS, AMM-MG, AGM e FGM-GO, AROM-RO, FAMEP-PA, FAMUP-PB, AMUPE-PE, FEMURN-RN, APRECE-CE), ignora pelo título convocações, resultados e homologações, baixa cada matéria e usa o mesmo `extract_openings`. O `id` é `sha1("sigpub|<código da matéria>")`. Um item já coletado com o mesmo município, tipo e número de edital vem de outra fonte? Então o do Sigpub é descartado (`sources.dedupe`).
+
+### Ligar e desligar fontes (variáveis do repositório)
+
+O código das fontes novas pode ir para a `main` sem mudar o que o app recebe: um coletor que não está em nenhuma lista não roda. Em Settings > Secrets and variables > Actions > Variables (listas separadas por vírgula):
+
+| Variável | Efeito | Padrão |
+|---|---|---|
+| `SOURCES_SHADOW` | o coletor roda, mas grava só em `shadow/fontes-novas.json` (o app não lê; o `docs/concursos.json` não muda) | `sigpub` no workflow |
+| `SOURCES_ON` | o coletor entra no `docs/concursos.json` | vazio: **nenhuma fonte nova em produção** |
+| `SOURCES_OFF` | kill switch: o coletor não roda e os itens dele, inclusive os já publicados e os da sombra, saem do feed e de `shadow/` na próxima execução. Aceita o coletor (`sigpub`), uma parte (`sigpub:amp`) ou um valor de `source` (`diario_municipal`) | vazio |
+
+`SOURCES_OFF` vence as outras duas. O `validate_feed.py` também lê `SOURCES_OFF` e reprova um feed que ainda tenha item de fonte desligada, e o workflow passa `--allow-shrink` quando a variável está preenchida, já que desligar uma fonte pode encolher o feed mais que o limite de 50%. Um erro em um coletor é registrado no log e não impede os demais nem a publicação.
+
+Para desligar sem deploy: crie a variável `SOURCES_OFF=sigpub` e rode o workflow **Atualizar concursos** (ou espere o próximo agendamento).
+
+### Roteiro das 2 semanas de sombra
+
+1. **Semana 0:** mergear. O workflow já roda com `SOURCES_SHADOW=sigpub`; o feed publicado continua igual e `shadow/fontes-novas.json` passa a ser atualizado todo dia (as primeiras execuções só olham os últimos 7 dias, para não despejar o histórico).
+2. **Semanas 1 e 2:** revisar umas 30 aberturas por semana de `shadow/fontes-novas.json`: abrir `gazetteUrl` e conferir se é abertura real, do órgão e do número indicados. Anotar a precisão (`sim` ÷ revisadas) e quantos itens são novos em relação ao `docs/concursos.json`.
+3. **Critério para ligar:** precisão ≥ 90% e itens novos sem duplicar os que o Querido Diário já traz. Se passar, `SOURCES_ON=sigpub` (e tirar de `SOURCES_SHADOW`). Se uma associação tiver precisão ruim, `SOURCES_OFF=sigpub:<slug>`.
+4. **Depois de ligar,** acompanhar o primeiro dia: quem tem perfil de alerta recebe de uma vez um resumo com tudo que for novo para o app.
+
+Testes: `python -m unittest discover -s tests` (as fixtures de `tests/fixtures/sigpub/` são matérias reais gravadas do Sigpub em 16/10/2026).
 
 ## Modo sombra: atualizações depois da inscrição
 

@@ -52,6 +52,19 @@ class ItemTests(unittest.TestCase):
         self.assertEqual(vf.item_errors(item(areas=["astronomia"])), ["'areas' com valores desconhecidos: ['astronomia']"])
         self.assertEqual(vf.item_errors(item(education=["doutorado"])), ["'education' com valores desconhecidos: ['doutorado']"])
 
+    def test_new_sources_and_optional_fields(self):
+        for source in ("diario_municipal", "doe", "banca"):
+            self.assertEqual(vf.item_errors(item(source=source)), [])
+        new = item(source="diario_municipal", collector="sigpub:amp", sphere="municipal", gazetteName="Diário Oficial dos Municípios do Paraná")
+        self.assertEqual(vf.item_errors(new), [])
+        self.assertEqual(vf.item_errors(item(sphere=None, collector=None, gazetteName=None)), [])
+        self.assertTrue(vf.item_errors(item(source="blog")))
+
+    def test_sphere_and_collector_are_checked(self):
+        self.assertTrue(vf.item_errors(item(sphere="conselho")))
+        self.assertTrue(vf.item_errors(item(collector="Sigpub AMP")))
+        self.assertIn("'gazetteName' deve ser texto ou null, veio int", vf.item_errors(item(gazetteName=1)))
+
     def test_missing_required_field(self):
         self.assertIn("falta o campo obrigatório 'title'", vf.item_errors(item(title=...)))
 
@@ -85,6 +98,19 @@ class FeedTests(unittest.TestCase):
         feed = [item(id=str(n)) for n in range(4)]
         self.assertTrue(vf.feed_errors(feed, previous_count=20))
         self.assertEqual(vf.feed_errors(feed, previous_count=8), [])  # feed pequeno: sem checagem
+
+    def test_sources_off_parsing(self):
+        self.assertEqual(vf.sources_off({"SOURCES_OFF": " Sigpub, doe ,,"}), {"sigpub", "doe"})
+        self.assertEqual(vf.sources_off({}), set())
+
+    def test_kill_switch_rejects_items_from_disabled_sources(self):
+        feed = [item(id="a"), item(id="b", source="diario_municipal", collector="sigpub:amp")]
+        self.assertEqual(vf.feed_errors(feed, off=set()), [])
+        self.assertEqual(vf.feed_errors(feed, off={"sigpub"}), [
+            "item b: vem de uma fonte desligada em SOURCES_OFF (sigpub:amp)"])
+        self.assertEqual(len(vf.feed_errors(feed, off={"sigpub:amp"})), 1)
+        self.assertEqual(len(vf.feed_errors(feed, off={"diario_municipal"})), 1)
+        self.assertEqual(vf.feed_errors(feed, off={"sigpub:famurs"}), [])
 
     def test_published_feed_is_valid(self):
         self.assertEqual(vf.feed_errors(json.loads(FEED.read_text())), [])

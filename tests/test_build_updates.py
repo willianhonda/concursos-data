@@ -376,7 +376,7 @@ class OutputTests(unittest.TestCase):
             bu.search(bu.QUERY_UPDATES, dt.date(2026, 10, 1))
         self.assertIn("homologa", urls[0])
         self.assertNotIn("abertas+as+inscri", urls[0])
-        self.assertTrue(bf.QUERY.startswith('("concurso público" | "processo seletivo") + ("abertas'))
+        self.assertTrue(bf.QUERY.startswith('("concurso público" | "processo seletivo") + ("inscrições"'))
         self.assertEqual(bf.MAX_PAGES, 20)
 
     def test_updates_window_is_90_days(self):

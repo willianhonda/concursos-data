@@ -108,6 +108,53 @@ def dou_article(art_type, identifica, texto, category="Ministério da Educação
     )
 
 
+def gazette_for(city="Exemplo", uf="MG"):
+    return {"territory_id": "1", "territory_name": city, "state_code": uf, "date": "2026-10-05",
+            "url": "https://example.com/d.pdf", "txt_url": "https://example.com/d.txt"}
+
+
+class RecallTests(unittest.TestCase):
+    def test_commission_named_by_decree_is_not_a_nomination(self):
+        # "nomeada pelo Decreto" descreve a comissão do concurso, não é nomeação de aprovado.
+        text = (
+            "EXTRATO DE EDITAL DO CONCURSO PÚBLICO N. 01/2026\nO MUNICÍPIO DE PROFESSOR JAMIL - GO, através da "
+            "Comissão Especial de Concurso Público - CECP, nomeada pelo Decreto n. 026/2026, torna público que no "
+            "período de 09/11/2026 a 30/11/2026 estarão abertas as inscrições do Concurso Público, visando à "
+            "contratação de servidores efetivos. O edital estará em www.itame.com.br."
+        )
+        [item] = bf.extract_openings(text, gazette_for("Professor Jamil", "GO"))
+        self.assertEqual(item["registrationEnds"], "2026-11-30")
+        self.assertEqual(item["kind"], "concurso")
+
+    def test_nomination_is_still_negative(self):
+        text = "O Prefeito nomeia os aprovados no Concurso Público 01/2026; estarão abertas as inscrições para posse."
+        self.assertEqual(bf.extract_openings(text, gazette_for()), [])
+
+    def test_extract_that_only_gives_the_registration_period(self):
+        text = (
+            "EXTRATO DO EDITAL Nº 01/2026 - CONCURSO PÚBLICO Nº 01/2026\nA Prefeita Municipal de Tio Hugo/RS faz saber "
+            "a publicação do Edital nº 01/2026, referente ao Concurso Público nº 01/2026, para provimento de cargos. "
+            "Período de inscrições: de 16/10/2026 a 16/11/2026, no site da banca www.objetivas.com.br."
+        )
+        [item] = bf.extract_openings(text, gazette_for("Tio Hugo", "RS"))
+        self.assertEqual(item["registrationStarts"], "2026-10-16")
+        self.assertEqual(item["registrationEnds"], "2026-11-16")
+
+    def test_query_is_broader_than_the_exact_opening_phrases(self):
+        self.assertIn('"inscrições"', bf.QUERY)
+        self.assertIn('"extrato de edital"', bf.QUERY)
+
+    def test_html_to_text_drops_style_blocks(self):
+        raw = "<style>td { font-size: 6pt; }</style><p>Concurso</p><script>x()</script>"
+        self.assertEqual(bf.html_to_text(raw), "Concurso")
+
+    def test_stale_spiders_warning(self):
+        today = dt.date(2026, 10, 16)
+        self.assertTrue(bf.warn_if_stale([{"date": "2026-10-01"}, {"date": "2026-10-03"}], today))
+        self.assertFalse(bf.warn_if_stale([{"date": "2026-10-15"}], today))
+        self.assertFalse(bf.warn_if_stale([], today))
+
+
 class DouTests(unittest.TestCase):
     def parse(self, xml):
         return bf.extract_dou_article(ET.fromstring(xml))
