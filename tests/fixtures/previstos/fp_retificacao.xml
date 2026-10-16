@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SINTÉTICA, falso positivo do spike CA-007: retificação de uma autorização -->
+<xml>
+<article id="714500000" idMateria="714500000" pubName="DO1" artType="Portaria" pubDate="25/06/2026" artCategory="Ministério da Gestão e da Inovação em Serviços Públicos/Gabinete da Ministra">
+<body>
+<Identifica><![CDATA[RETIFICAÇÃO]]></Identifica>
+<Ementa><![CDATA[Autoriza a realização de concurso público para provimento de cargos do quadro de pessoal da Controladoria-Geral da União.]]></Ementa>
+<Texto><![CDATA[<p class="dou-paragraph">Na Portaria MGI nº 5.093, onde se lê "sessenta", leia-se "cinquenta".</p>]]></Texto>
+</body>
+</article>
+</xml>

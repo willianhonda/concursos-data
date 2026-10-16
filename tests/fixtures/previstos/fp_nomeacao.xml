@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SINTÉTICA, falso positivo do spike CA-007: autorização de nomeação de aprovados (art. 27, II) -->
+<xml>
+<article id="711423907" idMateria="711423907" pubName="DO1" artType="Portaria" pubDate="10/06/2026" artCategory="Ministério da Gestão e da Inovação em Serviços Públicos/Gabinete da Ministra">
+<body>
+<Identifica><![CDATA[PORTARIA MGI Nº 4.757, DE 9 DE JUNHO DE 2026]]></Identifica>
+<Ementa><![CDATA[Autoriza a nomeação de pessoas candidatas aprovadas em concurso público para cargos do quadro de pessoal do Ministério do Planejamento e Orçamento.]]></Ementa>
+<Texto><![CDATA[<p class="dou-paragraph">Art. 1º Fica autorizada a nomeação de candidatos aprovados no concurso público autorizado pela Portaria MGI nº 1.000, de 2025, com base no art. 27, inciso II, do Decreto nº 9.739, de 2019.</p>]]></Texto>
+</body>
+</article>
+</xml>

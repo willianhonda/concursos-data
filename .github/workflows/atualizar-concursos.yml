@@ -9,6 +9,9 @@ on:
       days:
         description: "Dias para trás na busca"
         default: "7"
+      previstos_days:
+        description: "Dias para trás na busca de concursos previstos (use 365 na primeira carga)"
+        default: "7"
 
 permissions:
   contents: write
@@ -45,11 +48,22 @@ jobs:
       - name: Validar o feed para o app
         run: python scripts/validate_feed.py docs/concursos.json --previous "$RUNNER_TEMP/anterior.json"
 
+      # Concursos autorizados no DOU, sem edital ainda. Arquivo separado, que as versões antigas do app
+      # não leem: se falhar, volta o arquivo anterior e o feed é publicado normalmente.
+      - name: Gerar e validar docs/previstos.json
+        run: |
+          python scripts/build_previstos.py --days "${{ github.event.inputs.previstos_days || '7' }}" \
+            && python scripts/validate_previstos.py docs/previstos.json \
+            || { echo "::warning::previstos.json não atualizado"; git checkout -- docs/previstos.json; }
+        env:
+          INLABS_EMAIL: ${{ secrets.INLABS_EMAIL }}
+          INLABS_PASSWORD: ${{ secrets.INLABS_PASSWORD }}
+
       - name: Publicar se mudou
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/concursos.json
+          git add docs/concursos.json docs/previstos.json
           if git diff --cached --quiet; then
             echo "Sem mudanças no feed."
           else
