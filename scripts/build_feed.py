@@ -22,6 +22,7 @@ Fluxo:
 from __future__ import annotations
 
 import argparse
+import functools
 import datetime as dt
 import html
 import http.cookiejar
@@ -40,6 +41,7 @@ import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 
+import bancas
 import sigpub
 import sources
 from validate_feed import item_errors, sources_off
@@ -838,7 +840,10 @@ def merge(old: list[dict], new: list[dict], today: dt.date) -> list[dict]:
 
 SHADOW_OUTPUT = Path("shadow/fontes-novas.json")
 # nome do coletor (o prefixo de `collector`) -> função que devolve os itens
-COLLECTOR_FUNCS = {"sigpub": sigpub.collect}
+COLLECTOR_FUNCS = {
+    "sigpub": sigpub.collect,
+    **{name: functools.partial(bancas.collect, only=name) for name in ("ibgp", "proseleta", "cebraspe")},
+}
 
 
 def run_collectors(since: dt.date, today: dt.date, existing: list[dict], env: dict | None = None,
