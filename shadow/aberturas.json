@@ -65,6 +65,19 @@
   "published": "2026-10-16"
  },
  {
+  "id": "2da7268cf5f7",
+  "source": "querido_diario",
+  "territoryId": "3112000",
+  "city": "Candeias",
+  "state": "MG",
+  "organization": "Prefeitura Municipal de Candeias",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "5/2026",
+  "title": "Prefeitura Municipal de Candeias - Processo Seletivo nº 005/2026",
+  "published": "2026-10-16"
+ },
+ {
   "id": "e6459f8d9429",
   "source": "dou",
   "territoryId": null,
@@ -130,6 +143,19 @@
   "published": "2026-10-15"
  },
  {
+  "id": "4499c1fed278",
+  "source": "querido_diario",
+  "territoryId": "5003256",
+  "city": "Costa Rica",
+  "state": "MS",
+  "organization": "Município de Costa Rica",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "16/2026",
+  "title": "Município de Costa Rica - Processo Seletivo nº 16/2026",
+  "published": "2026-10-15"
+ },
+ {
   "id": "29e2f98aa54d",
   "source": "dou",
   "territoryId": null,
@@ -169,6 +195,32 @@
   "published": "2026-10-15"
  },
  {
+  "id": "b702d9b87a23",
+  "source": "querido_diario",
+  "territoryId": "3304557",
+  "city": "Rio de Janeiro",
+  "state": "RJ",
+  "organization": "Município de Rio de Janeiro",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "44/2026",
+  "title": "Município de Rio de Janeiro - Processo Seletivo nº 044/2026",
+  "published": "2026-10-14"
+ },
+ {
+  "id": "7bb5ffc1245e",
+  "source": "querido_diario",
+  "territoryId": "4101507",
+  "city": "Arapongas",
+  "state": "PR",
+  "organization": "Município de Arapongas",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "81/2026",
+  "title": "Município de Arapongas - Processo Seletivo nº 081/2026",
+  "published": "2026-10-14"
+ },
+ {
   "id": "5e0ad9477ada",
   "source": "querido_diario",
   "territoryId": "4101408",
@@ -205,6 +257,19 @@
   "kind": "processo_seletivo",
   "number": "4/2026",
   "title": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Processo Seletivo (Edital nº 4/2026)",
+  "published": "2026-10-13"
+ },
+ {
+  "id": "c61471bcfc29",
+  "source": "querido_diario",
+  "territoryId": "2700000",
+  "city": "Chã Preta",
+  "state": "AL",
+  "organization": "Fundação Vale do Piauí",
+  "orgType": "fundacao",
+  "kind": "concurso",
+  "number": "1/2026",
+  "title": "Fundação Vale do Piauí - Concurso Público nº 001/2026",
   "published": "2026-10-13"
  },
  {
