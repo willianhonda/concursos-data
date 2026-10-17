@@ -93,6 +93,7 @@ Para pegar mais concursos municipais (a amostra do spike `fontes-novas` mostrou 
 
 - **Consulta mais ampla no Querido Diário.** A busca agora pede "concurso público" ou "processo seletivo" junto de "inscrições", "edital de abertura" ou "extrato de edital" (antes exigia frases exatas de abertura), e o extrator reconhece também extratos que só trazem o período de inscrições, o período escrito antes da palavra "inscrições" e comissões "nomeadas pelo Decreto…". Quem decide se é abertura continua sendo `OPENING`/`NEGATIVE`. O log avisa quando o diário mais recente da busca tem mais de 5 dias (spider parado).
 - **Coletor Sigpub** (`scripts/sigpub.py`): lê a busca pública por título de 11 associações (AMP-PR, FAMURS-RS, AMM-MG, AGM e FGM-GO, AROM-RO, FAMEP-PA, FAMUP-PB, AMUPE-PE, FEMURN-RN, APRECE-CE), ignora pelo título convocações, resultados e homologações, baixa cada matéria e usa o mesmo `extract_openings`. O `id` é `sha1("sigpub|<código da matéria>")`. Um item já coletado com o mesmo município, tipo e número de edital vem de outra fonte? Então o do Sigpub é descartado (`sources.dedupe`).
+- **Coletores das bancas** (`scripts/bancas.py`): IBGP (`ibgp`, JSON de inscrições abertas), ProSeleta (`proseleta:avancasp`, `proseleta:objetivas`, `proseleta:igeduc`; HTML em ISO-8859-1) e Cebraspe (`cebraspe`, só eventos estaduais, UF pelo código do evento). Lemos só os fatos da lista (órgão, tipo, número, datas, vagas, salário máximo) e o link aponta para a página da banca (`source: banca`, `linkKind: banca`). Ficam de fora vestibular, residência, especialização, hospitais particulares, autarquias e eventos sem município/UF reconhecido. Cada um liga e desliga sozinho (`SOURCES_SHADOW=ibgp,proseleta,cebraspe`; kill switch `SOURCES_OFF=proseleta:avancasp`). Fixtures reais em `tests/fixtures/bancas/` (16/10/2026).
 
 ### Ligar e desligar fontes (variáveis do repositório)
 
@@ -100,7 +101,7 @@ O código das fontes novas pode ir para a `main` sem mudar o que o app recebe: u
 
 | Variável | Efeito | Padrão |
 |---|---|---|
-| `SOURCES_SHADOW` | o coletor roda, mas grava só em `shadow/fontes-novas.json` (o app não lê; o `docs/concursos.json` não muda) | `sigpub` no workflow |
+| `SOURCES_SHADOW` | o coletor roda, mas grava só em `shadow/fontes-novas.json` (o app não lê; o `docs/concursos.json` não muda) | `sigpub,ibgp,proseleta,cebraspe` no workflow |
 | `SOURCES_ON` | o coletor entra no `docs/concursos.json` | vazio: **nenhuma fonte nova em produção** |
 | `SOURCES_OFF` | kill switch: o coletor não roda e os itens dele, inclusive os já publicados e os da sombra, saem do feed e de `shadow/` na próxima execução. Aceita o coletor (`sigpub`), uma parte (`sigpub:amp`) ou um valor de `source` (`diario_municipal`) | vazio |
 
