@@ -101,7 +101,7 @@ O código das fontes novas pode ir para a `main` sem mudar o que o app recebe: u
 
 | Variável | Efeito | Padrão |
 |---|---|---|
-| `SOURCES_SHADOW` | o coletor roda, mas grava só em `shadow/fontes-novas.json` (o app não lê; o `docs/concursos.json` não muda) | `sigpub` no workflow |
+| `SOURCES_SHADOW` | o coletor roda, mas grava só em `shadow/fontes-novas.json` (o app não lê; o `docs/concursos.json` não muda) | `sigpub,ibgp,proseleta,cebraspe` no workflow |
 | `SOURCES_ON` | o coletor entra no `docs/concursos.json` | vazio: **nenhuma fonte nova em produção** |
 | `SOURCES_OFF` | kill switch: o coletor não roda e os itens dele, inclusive os já publicados e os da sombra, saem do feed e de `shadow/` na próxima execução. Aceita o coletor (`sigpub`), uma parte (`sigpub:amp`) ou um valor de `source` (`diario_municipal`) | vazio |
 
