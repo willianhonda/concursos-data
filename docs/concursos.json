@@ -1,5 +1,27 @@
 [
  {
+  "id": "c719c9b54e32",
+  "title": "Município de Campo Mourão - Concurso Público",
+  "deadline": "Inscrições: veja o edital",
+  "state": "PR",
+  "salary": "",
+  "vacancies": "",
+  "description": "Instituir a Comissão Especial de Concurso Público para seleção e provimento de cargos estatutários do quadro funcional da PREVISCAM, sem ônus aos cofres públicos, ficando incumbida entre outros, dos seguintes atos: a) Elaborar e providenciar a publicação do Edital de Abertura e dos demais Editais de regulamentação do Concurso Público, quanto ao aspecto legal, funcional e operacional; b) Realizar, fiscalizar e acompanhar as etapas do Concurso Público para a seleção e contratação de servidores estatutários; e c) Firmar contratos, convênios e outros atos administrativos inerentes ao certame. Art. 2° Designar para compor a referida Comissão os seguintes servidores efetivos: Orgão Oficial Eletrônico - 1926 Campo Mourão - Sexta-Feira - 18/12/2015 36 36 www.campomourao.atende.net Órgão Oficial Eletrônico - 3450 Campo Mourão - Sexta-feira - 16/10/2026 Barbara Elania Menezes Cortez - Presidente Caio Cesar Hernandes Bomfim Camila Fernanda Pequito\n\nFonte: Diário Oficial de Campo Mourão/PR, 16/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.campomourao.atende.net",
+  "linkKind": "orgao",
+  "kind": "concurso",
+  "source": "querido_diario",
+  "city": "Campo Mourão",
+  "published": "2026-10-16",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4104303/2026-10-16/e91ecafd0c3cdd48cff84d2a685d448325884bd0.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": null
+ },
+ {
   "id": "96d36249a8d5",
   "title": "Fundação Universidade Federal do Piauí - Processo Seletivo (Edital nº 4/2026)",
   "deadline": "Inscrições: veja o edital",
@@ -128,6 +150,68 @@
   ],
   "areas": [
    "educacao"
+  ]
+ },
+ {
+  "id": "34a860f52617",
+  "title": "Prefeitura Municipal de Votorantim - Concurso Público",
+  "deadline": "Inscrições: 16/10/2026 a 16/11/2026",
+  "state": "SP",
+  "salary": "Faixa salarial: R$ 1.100,00 - R$ 8.377,33",
+  "vacancies": "",
+  "description": "etuar a inscrição, o candidato deverá conhecer o Edital, seus anexos, eventuais retificações e certificar-se de que preenche todos os requisitos exigidos ou de que preencherá no período oportuno descrito neste Capítulo. 3. DAS INSCRIÇÕES 3.1. As inscrições para o Concurso Público encontrar-se-ão abertas no período de 16 de outubro de 2026 até 16 de novembro de 2026. 3.2. As inscrições poderão ser prorrogadas, por necessidade de ordem técnica e/ou operacional, a critério da PREFEITURA MUNICIPAL DE VOTORANTIM e/ou do AVANÇASP. 3.2.1. A prorrogação das inscrições de que trata este item poderá ser feita sem prévio aviso, bastando, para todos os efeitos legais, a comunicação de prorrogação feita no site www.avancasp.org.br. 3.3. O candidato poderá realizar inscrição para cargos diferentes, desde que os turnos de prova sejam distintos. PREFEITURA MUNICIPAL DE VOTORANTIM CONCURSO PÚBLICO 02/2026 Página 2 de 35 Ge\n\nFonte: Diário Oficial de Votorantim/SP, 16/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.avancasp.org.br",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "querido_diario",
+  "city": "Votorantim",
+  "published": "2026-10-16",
+  "registrationStarts": "2026-10-16",
+  "registrationEnds": "2026-11-16",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3557006/2026-10-16/bbcea197622334c5ffd37e2af3881635e8810d53.pdf",
+  "banca": "Avança SP",
+  "roles": [
+   "Inspetor de Alunos",
+   "Auxiliar de Serviços Infantis",
+   "Peb I - Professor de Educação Básica I",
+   "Peb II - Professor de Educação Básica II - Educação Física"
+  ],
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "educacao"
+  ]
+ },
+ {
+  "id": "2da7268cf5f7",
+  "title": "Prefeitura Municipal de Candeias - Processo Seletivo nº 005/2026",
+  "deadline": "Inscrições: 19/10/2026 a 21/10/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "NDEIAS, Estado de Minas Gerais, inscrita no CNPJ sob o nº 17.888.090/0001-00, com sede na Avenida 17 de Dezembro, nº 240, Minas Gerais, CEP 37.280-000, centro, nesta cidade de Candeias/MG, e considerando o Decreto nº 4428 de 13 de outubro de 2026, torna público para conhecimento dos interessados, a abertura do presente Processo Seletivo Simplificado – PSS 005/2026 para contratação de pessoal em regime TEMPORÁRIO, para a prestação de serviços como ENFERMEIRO com a finalidade de atendimento às necessidades temporárias, de excepcional interesse público, da Secretaria Municipal de Saúde e continuidade de seus serviços. 1.DISPOSIÇÕES PRELIMINARES 1.1. Justifica-se a realização do presente processo seletivo simplificado tendo em a necessidade de um enfermeiro para executar suas funções junto a Secretaria Municipal de Saúde, podendo atuar em ESF – Estratégia de Saúde da Família, bem como no CAPS - Centro de Atenção Psicossocial, e ainda no novo Serviço de Regulação que for\n\nFonte: Diário Oficial de Candeias/MG, 16/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.candeias.mg.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Candeias",
+  "published": "2026-10-16",
+  "registrationStarts": "2026-10-19",
+  "registrationEnds": "2026-10-21",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3112000/2026-10-16/a58a9dfb51dfb16230c2f67644f9b64b8ba4e916.pdf",
+  "banca": null,
+  "roles": [
+   "Enfermeiro Não Foi Ofertado No Último Concurso Realizado",
+   "O Município Não Possui Cadastro de Reserva e Nem",
+   "Suas Subsidiárias e Controladas",
+   "Salvo Quando Houver Compatibilidade de Horários"
+  ],
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "saude"
   ]
  },
  {
@@ -323,6 +407,30 @@
   ]
  },
  {
+  "id": "4499c1fed278",
+  "title": "Município de Costa Rica - Processo Seletivo nº 16/2026",
+  "deadline": "Inscrições: 15/10/2026 a 10/11/2026",
+  "state": "MS",
+  "salary": "",
+  "vacancies": "",
+  "description": "//www.costarica.ms.gov.br/diario-oficial/4913/ MUNICÍPIO DE COSTA RICA Edital n.º 16/2026 - PROCESSO SELETIVO SIMPLIFICADO 23 ANEXO IV – CRONOGRAMA. FASES. DATAS PREVISTAS* (Estas datas poderão ser alteradas). PUBLICAÇÃO DO EDITAL DE ABERTURA DO PROCESSO SELETIVO SIMPLIFICADO. 15/10/2026. PERÍODO PARA IMPUGNAÇÃO DO EDITAL. 16/10/2026. PERÍODO DE INSCRIÇÕES. 15/10/2026 a 10/11/2026. PERÍODO PARA ENVIO DE LAUDO MÉDICO E AUTODECLARAÇÃO DE CANDIDATO NEGRO. 15/10/2026 a 10/11/2026. PERÍODO PARA ENVIO DE TÍTULOS. 15/10/2026 a 10/11/2026. PERÍODO PARA SOLICITAÇÃO DE CONDIÇÕES ESPECIAIS PARA REALIZAÇÃO DAS PROVAS. 15/10/2026 a 10/11/2026. DIVULGAÇÃO DAS INSCRIÇÕES DEFERIDAS E INDEFERIDAS, DAS SOLICITAÇÕES DE CONDIÇÕES ESPECIAIS PARA A REALIZAÇÃO DAS PROVAS E DA ANÁLISE DA AUTODECLARAÇÃO DE CANDIDATO NEGRO. 17/11/2026. PERÍODO RECURSAL SOBRE AS INSCRIÇÕES INDEFERIDAS, DAS CONDIÇÕES E\n\nFonte: Diário Oficial de Costa Rica/MS, 15/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.portaldecompraspublicas.com.br/",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Costa Rica",
+  "published": "2026-10-15",
+  "registrationStarts": "2026-10-15",
+  "registrationEnds": "2026-11-10",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/5003256/2026-10-15/b5676ba2282a86979cc388d5ac62bc95284ff00a.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude"
+  ]
+ },
+ {
   "id": "29e2f98aa54d",
   "title": "Fundação Universidade Federal de Viçosa - Concurso Público (Edital nº 5/2026)",
   "deadline": "Inscrições: veja o edital",
@@ -432,6 +540,52 @@
   ]
  },
  {
+  "id": "c78b6cdda878",
+  "title": "Município de Apucarana - Concurso Público",
+  "deadline": "Inscrições: 21/10/2026 a 09/11/2026",
+  "state": "PR",
+  "salary": "",
+  "vacancies": "",
+  "description": "s exigências contidas neste Edital e legislação municipal aplicável. 5. DAS INSCRIÇÕES 5.1 A inscrição no Concurso Público implica, desde logo, o conhecimento e a tácita aceitação pelo candidato das condições estabelecidas neste Edital. 5.2 As inscrições para o Concurso Público do Município de Apucarana serão realizadas somente via internet. Não serão aceitas inscrições efetuadas de forma diversa da estabelecida neste item. 5.3 O período para a realização das inscrições será a partir das 12h00min do dia 21 de outubro de 2026 às 23h59min do dia 09 de novembro de 2026, observado horário oficial de Brasília/DF, através do endereço eletrônico www.concursosfau.com.br. 5.4 Para efetuar sua inscrição, o candidato deverá: a) preencher o Formulário de Solicitação de Inscrição declarando estar ciente das condições exigidas para admissão no cargo e submetendo-se às normas expressas neste Edital; b) imprimir o bo\n\nFonte: Diário Oficial de Apucarana/PR, 14/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.concursosfau.com.br",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "querido_diario",
+  "city": "Apucarana",
+  "published": "2026-10-14",
+  "registrationStarts": "2026-10-21",
+  "registrationEnds": "2026-11-09",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4101408/2026-10-14/c218d2875b59bf1429b3652a28c9052cdc07b81c.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": null
+ },
+ {
+  "id": "b702d9b87a23",
+  "title": "Município de Rio de Janeiro - Processo Seletivo nº 044/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "RJ",
+  "salary": "",
+  "vacancies": "",
+  "description": "geiro (original e cópia). **EM CASO DE ALTERAÇÃO DE NOME, OS DOCUMENTOS APRESENTADOS DEVERÃO CONTER O NOME ATUALIZADO (CÓPIAS E ORIGINAIS) EMPRESA PÚBLICA DE SAÚDE DO RIO DE JANEIRO S/A - RIOSAÚDE COMUNICADO DE REABERTURA EXCEPCIONAL DO PERÍODO DE INSCRIÇÕES DO PROCESSO SELETIVO SIMPLIFICADO REGIDO PELO EDITAL CO-RSU Nº 044/2026 A EMPRESA PÚBLICA DE SAÚDE DO RIO DE JANEIRO S/A - RioSaúde, no uso de suas atribuições le- gais, comunica a reabertura excepcional do período de inscrições do Processo Seletivo Simplificado re- gido pelo Edital CO-RSU nº 044/2026, autorizado no Processo Administrativo nº SEI 006900.000149/2026-79 de 09/01/2026 e com a respectiva publicação no Diário Oficial do Município do Rio de Janeiro - D.O. RIO de 07/05/2026, destinado à contratação temporária de profissionais médicos para as unidades geridas pela Rio- Saúde, exclusivamente para as seguintes categorias: CATEGORIA CARGA HORÁRIA SEMA\n\nFonte: Diário Oficial de Rio de Janeiro/RJ, 14/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://data.queridodiario.ok.org.br/3304557/2026-10-14/40754d9b14fd56e8c6115dce5887892ff4b7b77c.pdf",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Rio de Janeiro",
+  "published": "2026-10-14",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3304557/2026-10-14/40754d9b14fd56e8c6115dce5887892ff4b7b77c.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude"
+  ]
+ },
+ {
   "id": "93eda683a7c3",
   "title": "Universidade Federal de Itajubá - Processo Seletivo",
   "deadline": "Inscrições: 14/10/2026 a 25/10/2026",
@@ -455,6 +609,30 @@
   ],
   "areas": [
    "educacao"
+  ]
+ },
+ {
+  "id": "7bb5ffc1245e",
+  "title": "Município de Arapongas - Processo Seletivo nº 081/2026",
+  "deadline": "Inscrições: 28/09/2026 a 03/11/2026",
+  "state": "PR",
+  "salary": "",
+  "vacancies": "",
+  "description": "taria nº 417/26, de 08 de setembro de 2026, no uso de suas atribuições legais, TORNA PÚBLICA: 1. Fica alterado o item 1 do Processo Seletivo de Estagiário aberto pelo Edital nº 068/2026, quanto ao cronograma de atividades, para realização das inscrições do Processo Seletivo de Estagiário, conforme segue: CRONOGRAMA DE ATIVIDADES Datas Atividades 10/09/2026 Publicação do Edital de Abertura. 11/09, 14/09 e 15/09/2026 Prazo para impugnação do Edital. 28/09 a 03/11/2026 Período de inscrições, preenchimento do formulário de inscrição e envio de documentos exigidos que deverão ser anexados no ato da inscrição online. 25/11/2026 Homologação das inscrições e das notas preliminares de todos os inscritos. 26/11, 27/11 e 30/11/2026 Prazo para recursos quanto às inscrições e notas preliminares. 04/12/2026 Publicação do resultado dos recursos e homologação da classificação e resultado final.\n\nFonte: Diário Oficial de Arapongas/PR, 14/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://arapongas.atende.net/cidadao/pagina/processo-seletivo-de-estagiarios-2026",
+  "linkKind": "edital",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Arapongas",
+  "published": "2026-10-14",
+  "registrationStarts": "2026-09-28",
+  "registrationEnds": "2026-11-03",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4101507/2026-10-14/a898a8f20a27de912e753034d5dcede8d04b1f2c.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude"
   ]
  },
  {
@@ -567,6 +745,28 @@
   ]
  },
  {
+  "id": "c61471bcfc29",
+  "title": "Fundação Vale do Piauí - Concurso Público nº 001/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "AL",
+  "salary": "",
+  "vacancies": "",
+  "description": "O PÚBLICO Nº 001/2026 - REPUBLICADO O MUNICÍPIO DE CHÃ-PRETA – AL por meio do Prefeito Municipal e da Comissão Especial de Concursos Públicos nomeada pela Portaria Nº 0108-001/2025 de 01 de agosto de 2025 e a Fundação Vale do Piauí – FUNVAPI, tornam público e estabelecem normas para a realização de Concurso Público destinado a selecionar candidatos ao cargo de provimento efetivo para o Quadro de Servidores da Prefeitura Municipal de CHÃ- PRETA – AL. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público será regido por este Edital, por seus anexos, avisos, atos complementares e eventuais retificações. 1.2 O Concurso Público será realizado pela FUNDAÇÃO VALE DO PIAUÍ - FUNVAPI, em todas as suas etapas, visando o preenchimento das vagas dispostas no ANEXO I, durante seu prazo de validade, de acordo com a necessidade e a conveniência do MUNICÍPIO DE CHÃ-PRETA – AL. 1.3 A Comissão Especial de Concursos Públicos nomeada pela Portaria\n\nFonte: Diário Oficial de Chã Preta/AL, 13/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://data.queridodiario.ok.org.br/2700000/2026-10-13/534fbbc9342fc4a1928514f96dbe344c0046e035.pdf",
+  "linkKind": "diario",
+  "kind": "concurso",
+  "source": "querido_diario",
+  "city": "Chã Preta",
+  "published": "2026-10-13",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2700000/2026-10-13/534fbbc9342fc4a1928514f96dbe344c0046e035.pdf",
+  "banca": "Fundação VALE do Piauí",
+  "roles": null,
+  "education": null,
+  "areas": null
+ },
+ {
   "id": "b62c5512ad72",
   "title": "Universidade Federal do Rio Grande do Sul - Concurso Público (Edital nº 3/2026)",
   "deadline": "Inscrições: veja o edital",
@@ -640,6 +840,30 @@
   ],
   "areas": [
    "educacao"
+  ]
+ },
+ {
+  "id": "6345ce8fa26c",
+  "title": "Prefeitura Municipal de Chã-preta - Concurso Público",
+  "deadline": "Inscrições: veja o edital",
+  "state": "AL",
+  "salary": "",
+  "vacancies": "",
+  "description": "cial de Avisos da Prefeitura Municipal de CHÃ-PRETA - AL e no endereço eletrônico: www.chapreta.al.gov.br. www.diariomunicipal.com.br/ama 81 17.2. O extrato do Edital regulador do Concurso Público será publicado no Diário Oficial do Município e no Quadro de Avisos da Prefeitura Municipal de CHÃ-PRETA - AL e no site: www.chapreta.al.gov.br. 17.3. O acompanhamento das publicações, atos complementares, avisos, comunicados e convocações referentes ao Concurso Público é de responsabilidade exclusiva do candidato. 17.4. Não haverá publicação da relação de candidatos eliminados, sendo que estes terão as notas disponibilizadas para consulta, no endereço eletrônico: www.funvapi.com.br. 17.5. A eventual disponibilização de atos nos endereços eletrônicos do MUNICÍPIO DE CHÃ-PRETA – AL e da FUNVAPI não isenta o candidato\n\nFonte: Diário Oficial de Chã Preta/AL, 13/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.chapreta.al.gov.br",
+  "linkKind": "orgao",
+  "kind": "concurso",
+  "source": "querido_diario",
+  "city": "Chã Preta",
+  "published": "2026-10-13",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2700000/2026-10-13/534fbbc9342fc4a1928514f96dbe344c0046e035.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude"
   ]
  },
  {
@@ -1116,28 +1340,6 @@
   ]
  },
  {
-  "id": "e93fa01bfb1e",
-  "title": "Fundação de Apoio da Universidade Federal do Rio Grande do Sul - Processo Seletivo",
-  "deadline": "Inscrições: 07/10/2026 a 16/10/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "",
-  "description": "edital PROCESSO SELETIVO SIMPLIFICADO Nº 14/2026 A FAURGS torna pública a abertura de inscrições ao Processo Seletivo Simplificado nº 14/2026, visando à contratação para o cargo: C.01 - Assistente de Gestão - Presencial, sob o regime da Consolidação das Leis do Trabalho (CLT). Inscrição: via internet no site do TelessaúdeRS no endereço: www.telessauders.ufrgs.br, no período de 07 a 16 de outubro de 2026. O Edital completo estará à disposição para consulta, no mesmo período, no site www.portalfaurgs.com.br, e www.telessauders.ufrgs.br. Outras informações podem ser obtidas pelos telefones (51) 3308.2160 - 3308.2092 de segunda à sexta-feira das 08h30min às 17h. Porto Alegre, 6 de outubro de 2026. CRISTIANE TERESINHA DOMINGUES DE SOUZA Gerente Administrativa\n\nFonte: Diário Oficial da União, Seção 3, 07/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.portalfaurgs.com.br",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-07",
-  "registrationStarts": "2026-10-07",
-  "registrationEnds": "2026-10-16",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=188",
-  "banca": "Faurgs",
-  "roles": null,
-  "education": null,
-  "areas": null
- },
- {
   "id": "a506a92b4639",
   "title": "Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais - Concurso Público (Edital nº 1/2026)",
   "deadline": "Inscrições: 13/10/2026 a 13/11/2026",
@@ -1453,36 +1655,6 @@
   ]
  },
  {
-  "id": "e2216f7c181e",
-  "title": "Prefeitura Municipal de Marau - Processo Seletivo",
-  "deadline": "Inscrições: 09/10/2026 a 16/10/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "",
-  "description": "ional interesse público, conforme Lei autorizativa municipal nº 6.627 de 29 de setembro de 2026, com fulcro no artigo 37, IX, da Constituição Federal Brasileira de 1988, Lei Municipal 1.402/1990, Lei Municipal nº 4.130 de 15 de fevereiro de 2007, torna público a realização de Processo Seletivo Simplificado para a contratação temporária, que será regido pelas normas estabelecidas neste edital. 1. DISPOSIÇÕES PRELIMINARES 1.1. O Processo Seletivo simplificado será executado por intermédio de Comissão, designados através de Portaria nº 149 de 30 de setembro de 2026 1.2. Durante toda realização do Processo Seletivo Simplificado, serão prestigiados, sem prejuízo de outros, os princípios estabelecidos no Artigo 37, “caput”, CF/88. 1.3. O edital de abertura e demais atos e decisões inerentes ao processo simplificado serão publicados integralmente no mural e no site oficial da Prefeitura Municipal de Marau (www.pmmarau.\n\nFonte: Diário Oficial de Marau/RS, 05/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.pmmarau.com.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Marau",
-  "published": "2026-10-05",
-  "registrationStarts": "2026-10-09",
-  "registrationEnds": "2026-10-16",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4311809/2026-10-05/334cbc9b1008922a09e0afc58a2d7d698e9bc126.pdf",
-  "banca": null,
-  "roles": [
-   "Auxiliar de Operações e Motorista",
-   "Amparado de Excepcional Interesse Público",
-   "Que Trata o Processo Seletivo Simplificado"
-  ],
-  "education": [
-   "fundamental"
-  ],
-  "areas": [
-   "operacional"
-  ]
- },
- {
   "id": "bfba9ba40780",
   "title": "Universidade Federal de Goiás - Concurso Público (Edital nº 20/2026)",
   "deadline": "Inscrições: 16/10/2026 a 04/11/2026",
@@ -1649,33 +1821,6 @@
   ],
   "areas": [
    "engenharia"
-  ]
- },
- {
-  "id": "0254085a82ea",
-  "title": "Fundação Universidade Federal de São Carlos - Processo Seletivo (Edital nº 89/2026)",
-  "deadline": "Inscrições: 05/10/2026 a 16/10/2026",
-  "state": "BR",
-  "salary": "Faixa salarial: R$ 3.198,59 - R$ 8.340,33",
-  "vacancies": "",
-  "description": "EDITAL Nº 89, DE 29 DE SETEMBRO DE 2026 PROCESSO SELETIVO SIMPLIFICADO DE PROVAS E TÍTULOS DESTINADO A CONTRATAÇÃO DE PROFESSOR SUBSTITUTO A Pró-Reitora de Gestão de Pessoas da Universidade Federal de São Carlos, no uso da competência que lhe foi delegada pela Portaria GR nº 4.809, de 27/01/2021, publicada no Diário Oficial da União de 29/01/2021, seção 1, página 70, torna público que estão abertas as inscrições para Processo Seletivo Simplificado de Provas e Títulos, destinado a contratação de PROFESSOR SUBSTITUTO, nos termos da Lei nº 8.745/93, Lei nº 12.425/11 e na Orientação Normativa SRH/MP nº 05 de 28/10/2009, conforme segue: Subedital/Cargo/Depto/Campus Nº de Vagas Vagas Área/Subárea Requisitos Mínimos Regime de Trabalho Remuneração total (VB+RT) Taxa de Inscrição 089/26.01 Professor Substituto Departamento de Ciências Ambientais - DCA-So Sorocaba 01 Área: Recursos\n\nFonte: Diário Oficial da União, Seção 3, 05/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.concursos.ufscar.br",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-05",
-  "registrationStarts": "2026-10-05",
-  "registrationEnds": "2026-10-16",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=69",
-  "banca": null,
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao",
-   "administrativa"
   ]
  },
  {
