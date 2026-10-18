@@ -326,7 +326,8 @@ def http_get(url: str, *, attempts: int = 5, timeout: int = 60) -> bytes:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return resp.read()
-        except (urllib.error.URLError, TimeoutError) as err:
+        # BrokenPipeError e ConnectionResetError (ConnectionError) aparecem quando a API derruba a conexão no meio.
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as err:
             if attempt == attempts:
                 raise
             log(f"  tentativa {attempt} falhou ({err}); nova tentativa em {delay}s")
