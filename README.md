@@ -47,7 +47,7 @@ Cada item segue o formato do `EventModel` do app, mais estes campos:
 
 `banca`, `roles`, `education` e `areas` são lidos pelo app a partir da 2.3 (filtro e alertas por área e escolaridade, Premium). A extração é por expressões regulares e cobre só parte dos atos; o app trata a ausência como "confira no edital".
 
-No DOU, `state` vem da UF da instituição (ou da sede, nos TRTs e TRFs) e é `BR` quando não dá para saber.
+No DOU, `state` vem da UF da instituição (ou da sede, nos TRTs e TRFs). Para os órgãos federais locais cujo nome não traz o estado (UnB, UFV, IF Goiano, Unila, Colégio Pedro II…), a UF sai da lista curada em `scripts/orgaos_uf.py`, aplicada também aos itens já publicados. `BR` fica só para os órgãos nacionais (ministérios, conselhos, ENAP, Marinha, PF, PRF) e as universidades com campi em mais de um estado. Para incluir um órgão, acrescente o nome como vem no DOU em `SEDE_UF`, só quando ele identifica uma única UF, e um caso em `tests/test_orgaos_uf.py`.
 
 ```json
 {
