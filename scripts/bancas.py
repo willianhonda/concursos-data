@@ -224,6 +224,20 @@ def cebraspe_org(code: str, uf: str) -> str:
     return f"{' '.join(tokens)} {uf}".strip()
 
 
+def cebraspe_name(detail: dict | None) -> str | None:
+    """Nome por extenso do órgão ("Corpo de Bombeiros Militar do Estado de Alagoas"), quando o evento traz um.
+
+    Vários eventos só repetem o código ("PC PE 26") ou trazem uma frase ("Concurso para provimento do cargo…");
+    nesses casos fica a sigla do código.
+    """
+    name = _clean((detail or {}).get("eventoNomeCompleto") or "")
+    if not name or not re.search(r"[a-zà-ú]", name) or len(name) > 90:
+        return None
+    if re.match(r"(?i)(?:concurso|processo|sele[çc][ãa]o|edital)\b", name):
+        return None
+    return name
+
+
 def parse_cebraspe_list(raw: bytes) -> list[dict]:
     """Eventos da fase "Inscrições Abertas" com UF reconhecida."""
     out = []
@@ -250,7 +264,7 @@ def item_from_cebraspe(event: dict, detail: dict | None, today: dt.date) -> dict
     vacancies = int(vac) if str(vac or "").isdigit() else None
     salary = event.get("eventoSalarioMaximo") or None
     return build_item(
-        key=f"cebraspe|{code}", org=cebraspe_org(code, uf), label_kind="Concurso Público", number="", state=uf,
+        key=f"cebraspe|{code}", org=cebraspe_name(detail) or cebraspe_org(code, uf), label_kind="Concurso Público", number="", state=uf,
         city=None, sphere="estadual", banca="Cebraspe", collector="cebraspe", url=CEBRASPE_PAGE.format(url=code),
         starts=starts, ends=ends, vacancies=vacancies, salary=float(salary) if salary else None, today=today,
         source_name="Cebraspe",

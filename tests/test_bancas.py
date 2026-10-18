@@ -109,6 +109,15 @@ class CebraspeTests(unittest.TestCase):
         self.assertEqual(item["url"], "https://www.cebraspe.org.br/concursos/PC_PE_26")
         self.assertEqual(vf.item_errors(item), [])
 
+    def test_full_name_when_the_event_has_one(self):
+        event = next(e for e in bancas.parse_cebraspe_list(raw("cebraspe_lista.json")) if e["eventoURL"] == "PC_PE_26")
+        detail = {**json.loads(raw("cebraspe_evento.json")), "eventoNomeCompleto": "Polícia Civil do Estado de Pernambuco"}
+        self.assertEqual(bancas.item_from_cebraspe(event, detail, TODAY)["title"],
+                         "Polícia Civil do Estado de Pernambuco - Concurso Público")
+        # Código repetido ou frase no lugar do nome: fica a sigla do código.
+        for name in ("PC PE 26", "Concurso para provimento do cargo efetivo de Conselheiro Substituto (Auditor) do TCE/AC", ""):
+            self.assertIsNone(bancas.cebraspe_name({"eventoNomeCompleto": name}), name)
+
     def test_item_without_detail_still_valid(self):
         event = bancas.parse_cebraspe_list(raw("cebraspe_lista.json"))[0]
         item = bancas.item_from_cebraspe(event, None, TODAY)
