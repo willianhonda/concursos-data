@@ -99,5 +99,24 @@ class OrganTests(unittest.TestCase):
                          "Fundação Municipal de Saúde de Exemplo")
 
 
+class DateTests(unittest.TestCase):
+    PUBLISHED = dt.date(2026, 10, 16)
+
+    def test_start_without_year(self):
+        # Novo Cabrais/RS: "Período de inscrições : de 23/10 a 23/11/2026, no site do INSTITUTO OBJETIVA"
+        self.assertEqual(bf.find_inscription_period("Período de inscrições : de 23/10 a 23/11/2026, no site do INSTITUTO OBJETIVA .",
+                                                    self.PUBLISHED), (dt.date(2026, 10, 23), dt.date(2026, 11, 23)))
+
+    def test_day_range_written_before_the_word_inscricoes(self):
+        # Itapirapuã/GO e Tocos do Moji/MG: o período vem antes, separado de "inscrições" por horário e endereço.
+        itapirapua = ("torna público aos interessados que, no período de 13 a 16 de outubro de 2026, no horário das 8:00h às "
+                      "11:00h e das 13:00h às 17:00h, na Secretaria Municipal de Assistência Social de Itapirapuã, situada na "
+                      "Av. Tancredo Neves, Q. 68, L. 11, nº 62, Centro, estarão abertas as inscrições, gratuitas, para o PROCESSO SELETIVO")
+        self.assertEqual(bf.find_inscription_period(itapirapua, self.PUBLISHED), (dt.date(2026, 10, 13), dt.date(2026, 10, 16)))
+        tocos = ("TORNA PÚBLICO que estarão abertas no período de 08 a 09 de outubro de 2026, na Sede da Prefeitura Municipal, "
+                 "no horário de 8h às 11h e das 13h às 16h, as inscrições ao Processo Seletivo")
+        self.assertEqual(bf.find_inscription_period(tocos, self.PUBLISHED), (dt.date(2026, 10, 8), dt.date(2026, 10, 9)))
+
+
 if __name__ == "__main__":
     unittest.main()

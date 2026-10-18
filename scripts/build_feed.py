@@ -135,6 +135,8 @@ DATE_RANGE = re.compile(
     rf"(?:\d{{1,2}}h\d{{0,2}}\s*(?:min)?\s*(?:do\s+dia\s+)?)?({DATE_NUM}|{DATE_TEXT})",
     re.IGNORECASE,
 )
+# "de 23/10 a 23/11/2026": o início sem ano usa o ano do fim.
+SHORT_RANGE = re.compile(r"\b(\d{1,2})/(\d{1,2})\s*(?:a|at[ée]|à|-|–)\s*(\d{1,2}/\d{1,2}/\d{2,4})\b", re.IGNORECASE)
 DAY_RANGE_TEXT = re.compile(r"\b(\d{1,2})\s+(?:a|e|até)\s+(\d{1,2})\s+de\s+([a-zç]+)(?:\s+de\s+(\d{4}))?", re.IGNORECASE)
 MONEY = re.compile(r"R\$\s*(\d{1,3}(?:\.\d{3})*,\d{2})")
 VACANCIES_TOTAL = re.compile(r"total\s+de\s+(\d{1,4})\s*(?:\([^)]*\)\s*)?vagas", re.IGNORECASE)
@@ -418,6 +420,34 @@ def parse_date(raw: str, default_year: int) -> dt.date | None:
         return None
 
 
+def _plausible(start: dt.date | None, end: dt.date | None, published: dt.date) -> bool:
+    return bool(start and end and start <= end and (end - start).days <= 120 and end >= published - dt.timedelta(days=7))
+
+
+def _short_range(rng: re.Match) -> tuple[dt.date, dt.date] | None:
+    """"23/10 a 23/11/2026" -> (23/10/2026, 23/11/2026)."""
+    end = parse_date(rng.group(3), 0)
+    if not end:
+        return None
+    try:
+        return dt.date(end.year, int(rng.group(2)), int(rng.group(1))), end
+    except ValueError:
+        return None
+
+
+def _day_range(rng: re.Match, published: dt.date) -> tuple[dt.date, dt.date] | None:
+    """"13 a 16 de outubro de 2026" -> (13/10/2026, 16/10/2026)."""
+    mo = MONTHS.get(strip_accents(rng.group(3).lower()))
+    if not mo:
+        return None
+    year = int(rng.group(4) or published.year)
+    try:
+        start, end = dt.date(year, mo, int(rng.group(1))), dt.date(year, mo, int(rng.group(2)))
+    except ValueError:
+        return None
+    return (start, end) if start <= end else None
+
+
 def find_inscription_period(text: str, published: dt.date) -> tuple[dt.date, dt.date] | None:
     """Procura um intervalo de datas logo depois da palavra 'inscrição' ou 'inscrições'."""
     for m in re.finditer(r"inscri[çc](?:[ãa]o|[õo]es)", text, re.IGNORECASE):
@@ -425,32 +455,30 @@ def find_inscription_period(text: str, published: dt.date) -> tuple[dt.date, dt.
         for rng in DATE_RANGE.finditer(chunk):
             end = parse_date(rng.group(2), published.year)
             start = parse_date(rng.group(1), end.year if end else published.year)
-            if start and end and start <= end and (end - start).days <= 120 and end >= published - dt.timedelta(days=7):
+            if _plausible(start, end, published):
                 return start, end
+        for rng in SHORT_RANGE.finditer(chunk):
+            period = _short_range(rng)
+            if period and _plausible(*period, published):
+                return period
         rng = DAY_RANGE_TEXT.search(chunk)
-        if rng:
-            year = int(rng.group(4) or published.year)
-            mo = MONTHS.get(strip_accents(rng.group(3).lower()))
-            if mo:
-                try:
-                    start, end = dt.date(year, mo, int(rng.group(1))), dt.date(year, mo, int(rng.group(2)))
-                    if start <= end:
-                        return start, end
-                except ValueError:
-                    pass
-    # Sem datas depois da palavra: "no período de 09/11/2026 a 30/11/2026 estarão abertas as inscrições".
+        if rng and (period := _day_range(rng, published)):
+            return period
+    # Sem datas depois da palavra: "no período de 09/11/2026 a 30/11/2026 estarão abertas as inscrições" ou
+    # "no período de 13 a 16 de outubro de 2026, no horário das 8h às 11h, …, estarão abertas as inscrições".
     for m in re.finditer(r"per[íi]odo\s+de\s+(?=\d)", text, re.IGNORECASE):
-        if not re.search(r"inscri[çc](?:[ãa]o|[õo]es)", text[m.end(): m.end() + 80], re.IGNORECASE):
+        if not re.search(r"inscri[çc](?:[ãa]o|[õo]es)", text[m.end(): m.end() + 260], re.IGNORECASE):
             continue
         rng = DATE_RANGE.match(text, m.end())
-        if not rng:
-            continue
-        end = parse_date(rng.group(2), published.year)
-        start = parse_date(rng.group(1), end.year if end else published.year)
-        if start and end and start <= end and (end - start).days <= 120 and end >= published - dt.timedelta(days=7):
-            return start, end
+        if rng:
+            end = parse_date(rng.group(2), published.year)
+            start = parse_date(rng.group(1), end.year if end else published.year)
+            if _plausible(start, end, published):
+                return start, end
+        rng = DAY_RANGE_TEXT.match(text, m.end())
+        if rng and (period := _day_range(rng, published)):
+            return period
     return None
-
 
 def find_salary(text: str) -> str:
     values = []
