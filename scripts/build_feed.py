@@ -83,7 +83,9 @@ RECTIFICATION = re.compile(r"retifica[çc][ãa]o", re.IGNORECASE)
 # Temas que usam as mesmas frases, mas não são vagas de emprego público
 # (matrícula escolar, conselhos, bolsas, pós-graduação, vestibular).
 OFF_TOPIC = re.compile(
-    r"conselh[oe]|elei[çc][ãa]o|matr[íi]cula|ano\s+letivo|bolsa|est[áa]gio|credenciamento|chamamento\s+p[úu]blico|"
+    r"conselh[oe]|elei[çc][ãa]o|matr[íi]cula|ano\s+letivo|bolsa|est[áa]gi(?:o|[áa]ri)|credenciamento|chamamento\s+p[úu]blico|"
+    # Seleção interna de diretores e vice-diretores de escola (servidores da rede), não vaga nova.
+    r"vice-?\s?diretor|"
     r"mestrado|doutorado|p[óo]s-gradua|resid[êe]ncia\s+(?:m[ée]dica|multiprofissional)|vestibular|monitoria|aluno|discente|"
     r"curso\s+(?:de\s+)?(?:licenciatura|gradua[çc][ãa]o|bacharelado|especializa[çc][ãa]o|t[ée]cnico)",
     re.IGNORECASE,
@@ -91,17 +93,27 @@ OFF_TOPIC = re.compile(
 # Trechos que, logo antes da frase de abertura, indicam outro tipo de ato.
 NEGATIVE = re.compile(
     r"convoca|nomea(?!da\s+pel[oa])|nomear|homolog|classifica[çc][ãa]o|resultado|posse|desclassifica|investiga[çc][ãa]o\s+social|"
-    r"indeferid|recurso|isen[çc][ãa]o|gabarito|"
+    r"(?:in)?deferi(?:d|ment)|recurso|isen[çc][ãa]o|gabarito|"
+    r"divulga(?:m|r)?\s+(?:os\s+)?locais|foi\s+divulgad|divulga(?:r|[çc][ãa]o)\s+(?:d?as)\s+inscri|lista\s+de\s+inscritos|"
+    # Ato que só institui a comissão do concurso ("incumbida de … providenciar a publicação do Edital de Abertura").
+    r"institu(?:ir|i)\s+a\s+comiss|incumbid[ao]\s+(?:de|entre)|providenciar\s+a\s+publica|fica(?:m)?\s+alterad|"
     r"conforme\s+(?:previsto|prev[êe])|nos\s+termos\s+do\s+edital|constantes?\s+(?:no|do)\s+edital",
     re.IGNORECASE,
 )
+# Avisos de outra etapa que aparecem logo depois do cabeçalho "Extrato do Edital … Concurso Público".
+AFTER_NEGATIVE = re.compile(r"foi\s+divulgad|divulga(?:m|r)?\s+(?:os\s+)?locais", re.IGNORECASE)
 # Listas de candidatos logo depois da frase indicam resultado, não abertura.
 LISTING = re.compile(r"lista\s+de\s+classifica|classifica[çc][ãa]o\s+(?:final|geral)|rela[çc][ãa]o\s+(?:dos\s+)?candidatos", re.IGNORECASE)
 # Cabeçalhos que marcam o início do próximo ato no diário.
 NEXT_ACT = re.compile(
     r"\n\s*(?:EDITAL\s+DE\s+(?:CONVOCA|RESULTADO|HOMOLOGA|CLASSIFICA)|PORTARIA\s|DECRETO\s|LEI\s+(?:COMPLEMENTAR\s+)?N|"
-    r"EXTRATO\s|AVISO\s+DE\s+LICITA|RESOLU[ÇC][ÃA]O\s|ATA\s+D[AE]\s|TERMO\s+DE\s)",
+    r"EXTRATO\s|AVISO\s+DE\s+LICITA|RESOLU[ÇC][ÃA]O\s|ATA\s+D[AE]\s|TERMO\s+DE\s)"
+    r"|C[óo]digo\s+Identificador\s*:",
 )
+# Nos diários das associações (diariomunicipal.com.br, também lidos pelo Querido Diário) cada matéria termina com
+# "Código Identificador:XXXX". É a fronteira mais segura de um ato: um edital longo cita leis ("LEI Nº 495…") que
+# NEXT_ACT toma por um ato novo.
+MATERIA_END = re.compile(r"C[óo]digo\s+Identificador\s*:")
 ORG = re.compile(
     r"(prefeitura\s+(?:municipal\s+|do\s+munic[íi]pio\s+|da\s+est[âa]ncia\s+[\wÀ-ú]+\s+(?:de\s+)?)?(?:de|do|da)\s+[A-ZÀ-Úa-zà-ú' -]{3,60}?"
     r"|c[âa]mara\s+municipal\s+(?:de|do|da)\s+[A-ZÀ-Úa-zà-ú' -]{3,60}?"
@@ -469,8 +481,16 @@ def find_vacancies(text: str) -> str:
     return ""
 
 
+# "O MUNICÍPIO DE CHÃ-PRETA … e a Fundação Vale do Piauí – FUNVAPI, tornam público": o órgão que vem depois de
+# "e a"/"e o" assina junto com o município e costuma ser a banca, não o órgão do concurso.
+CO_SIGNER = re.compile(r"(?:\be|\bcom|\bjunto\s+(?:a|à|ao))\s+(?:a|o)?\s*$", re.IGNORECASE)
+
+
 def find_org(pre: str, window: str, city: str) -> str:
-    candidates = list(ORG.finditer(pre)) or list(ORG.finditer(window[:1500]))
+    def own(source: str) -> list[re.Match]:
+        return [m for m in ORG.finditer(source) if not CO_SIGNER.search(source[max(0, m.start() - 15): m.start()])]
+
+    candidates = own(pre) or own(window[:1500])
     if candidates:
         org = squash(candidates[-1].group(1))
         org = re.sub(r"\s+estado\b.*$", "", org, flags=re.IGNORECASE)
@@ -552,11 +572,17 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
     published = dt.date.fromisoformat(gazette["date"])
     city, uf = gazette["territory_name"], gazette["state_code"]
     items, last_end = [], -1
+    # Trechos de atos já aceitos: (início, fim, número). Um edital longo repete "inscrições para o concurso" nos
+    # capítulos; um trecho sem número (ou com o mesmo número) dentro de um ato já aceito é o mesmo ato.
+    accepted: list[tuple[int, int, str]] = []
     for m in OPENING.finditer(text):
         if m.start() < last_end:
             continue
         around = text[max(0, m.start() - 160): m.end() + 160]
         if NEGATIVE.search(around) or OFF_TOPIC.search(around):
+            continue
+        # Extratos curtos dizem o que é o ato logo depois do cabeçalho: "torna público que foi divulgado … locais".
+        if AFTER_NEGATIVE.search(text, m.end(), m.end() + 400):
             continue
         context = text[max(0, m.start() - 600): m.end() + 400]
         if not SELECTION.search(context):
@@ -574,9 +600,17 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
         full_act = text[start: min(act_end, m.end() + 30000)]
         last_end = end
 
-        period = find_inscription_period(full_act, published)
         number = EDITAL_NUMBER.search(window)
         number_str = re.sub(r"\s+", "", number.group(1)).replace("-", "/") if number else ""
+        # O ato vai até o fim da matéria, quando o diário marca; senão até a próxima fronteira (NEXT_ACT) ou,
+        # sem nenhuma, até onde o extrator lê (30.000 caracteres).
+        materia_end = MATERIA_END.search(text, m.end())
+        span_end = materia_end.start() if materia_end else (act_end if nxt else min(act_end, m.end() + 30000))
+        if any(a_start <= m.start() < a_end and (not number_str or number_str == a_number)
+               for a_start, a_end, a_number in accepted):
+            continue
+        accepted.append((start, span_end, number_str))
+        period = find_inscription_period(full_act, published)
         org = find_org(text[max(0, m.start() - 600): m.end()], window, city)
 
         label = KIND_LABEL[kind]
