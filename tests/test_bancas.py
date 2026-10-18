@@ -1,5 +1,6 @@
 import datetime as dt
 import json
+import re
 import sys
 import unittest
 from pathlib import Path
@@ -180,6 +181,22 @@ class WiringTests(unittest.TestCase):
         live, shadow = bf.run_collectors(TODAY - dt.timedelta(days=7), TODAY, [], env, fetch)
         self.assertEqual(live, [])
         self.assertEqual({i["collector"] for i in shadow}, {"ibgp", "cebraspe"})
+
+    def test_run_collectors_live_goes_to_the_feed(self):
+        env = {"SOURCES_ON": "ibgp,proseleta,cebraspe", "SOURCES_SHADOW": "sigpub", "SOURCES_OFF": "sigpub"}
+        live, shadow = bf.run_collectors(TODAY - dt.timedelta(days=7), TODAY, [], env, CollectTests().fetch)
+        self.assertEqual(shadow, [])
+        self.assertEqual({i["collector"].split(":")[0] for i in live}, {"ibgp", "proseleta", "cebraspe"})
+        self.assertTrue(all(i["source"] == "banca" and not vf.item_errors(i) for i in live))
+
+    def test_workflow_defaults_promote_the_bancas_and_keep_sigpub_in_shadow(self):
+        workflow = (Path(__file__).resolve().parents[1] / ".github/workflows/atualizar-concursos.yml").read_text()
+        on = re.search(r"SOURCES_ON: \$\{\{ vars\.SOURCES_ON \|\| '([^']*)' \}\}", workflow)
+        shadow = re.search(r"SOURCES_SHADOW: \$\{\{ vars\.SOURCES_SHADOW \|\| '([^']*)' \}\}", workflow)
+        env = {"SOURCES_ON": on.group(1), "SOURCES_SHADOW": shadow.group(1)}
+        self.assertEqual({n: sources.collector_mode(n, env) for n in sources.KNOWN_COLLECTORS},
+                         {"sigpub": "shadow", "ibgp": "live", "proseleta": "live", "cebraspe": "live"})
+        self.assertEqual(sources.unknown_names(env), [])
 
 
 if __name__ == "__main__":

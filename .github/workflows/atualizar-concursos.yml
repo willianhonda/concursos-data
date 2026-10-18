@@ -45,8 +45,9 @@ jobs:
           INLABS_PASSWORD: ${{ secrets.INLABS_PASSWORD }}
           # Fontes novas (veja "Fontes novas e modo sombra" no README). Variáveis do repositório, listas separadas por vírgula.
           # SOURCES_ON: entram no feed; SOURCES_SHADOW: só gravam shadow/fontes-novas.json; SOURCES_OFF: kill switch.
-          SOURCES_ON: ${{ vars.SOURCES_ON }}
-          SOURCES_SHADOW: ${{ vars.SOURCES_SHADOW || 'sigpub,ibgp,proseleta,cebraspe' }}
+          # As bancas (IBGP, ProSeleta, Cebraspe) passaram na sombra (BL-058); o Sigpub continua em sombra (BL-057).
+          SOURCES_ON: ${{ vars.SOURCES_ON || 'ibgp,proseleta,cebraspe' }}
+          SOURCES_SHADOW: ${{ vars.SOURCES_SHADOW || 'sigpub' }}
           SOURCES_OFF: ${{ vars.SOURCES_OFF }}
 
       # Se falhar, o job para aqui e o feed de ontem continua no ar.
