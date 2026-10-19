@@ -23,7 +23,7 @@ import unicodedata
 from validate_feed import is_source_off, sources_off
 
 # Coletores conhecidos; o nome é o prefixo de `collector`.
-KNOWN_COLLECTORS = ("sigpub",)
+KNOWN_COLLECTORS = ("sigpub", "ibgp", "proseleta", "cebraspe")
 
 OFF, SKIP, SHADOW, LIVE = "off", "skip", "shadow", "live"
 

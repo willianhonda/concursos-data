@@ -1,0 +1,22 @@
+{
+ "idEvento": 3389,
+ "eventoNomeAbreviado": "PC PE 26",
+ "eventoNomeCompleto": "PC PE 26",
+ "eventoTotalVagas": "1315",
+ "eventoSalarioMaximo": 13560,
+ "strEventoSalarioMaximo": "R$ 13.560,00",
+ "eventoURL": "PC_PE_26",
+ "eventoStatus": "Abertura",
+ "eventoTipo": "concursos",
+ "eventoAno": 2026,
+ "periodoInscricao": "De 15/10/2026 até 16/12/2026 às 18:00, horário oficial de Brasília/DF",
+ "eventoCargos": null,
+ "arquivosEdital": null,
+ "arquivosGabarito": null,
+ "aplicativos": null,
+ "isInscricaoAberta": true,
+ "isDBCriado": 0,
+ "tituloCargos": "Cargos",
+ "tituloCardCargos": "Cargo",
+ "areaCandidato": true
+}
