@@ -68,6 +68,7 @@ jobs:
           INLABS_PASSWORD: ${{ secrets.INLABS_PASSWORD }}
 
       - name: Publicar se mudou
+        id: publicar
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -78,4 +79,15 @@ jobs:
           else
             git commit -m "Atualiza concursos ($(date -u +%Y-%m-%d))"
             git push
+            echo "publicado=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # Push silencioso do FCM (tópico "novos-concursos") quando o feed publicado ganhou ids novos.
+      # Sem o secret FIREBASE_SERVICE_ACCOUNT, o script só registra no log. Uma falha aqui vira aviso e não
+      # desfaz a publicação (veja "Push de concursos novos" no README).
+      - name: Avisar o app dos concursos novos
+        if: steps.publicar.outputs.publicado == 'true'
+        continue-on-error: true
+        run: python scripts/push_novos.py --previous "$RUNNER_TEMP/anterior.json" docs/concursos.json
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}

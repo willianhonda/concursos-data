@@ -76,6 +76,26 @@ O feed chega no mesmo dia a todas as versões instaladas do app, sem revisão da
 
 Para conferir à mão: `python3 scripts/validate_feed.py docs/concursos.json`.
 
+## Push de concursos novos
+
+Depois de publicar, o workflow diário roda `scripts/push_novos.py`, que compara os ids do `docs/concursos.json` novo com os do feed publicado antes da execução. Se houver ids novos, manda **um** push silencioso pelo FCM (API HTTP v1) ao tópico `novos-concursos` do projeto Firebase `concursos-publicos`:
+
+- só dados, sem alerta: `apns-push-type: background`, `apns-priority: 5` e `aps.content-available = 1`. O app acorda em segundo plano, baixa o feed e decide o que notificar;
+- `data.ids`: os ids novos separados por vírgula, na ordem do feed, cortados em 1.000 caracteres (~76 ids) sem partir um id; `data.count`: o total de ids novos, mesmo quando a lista foi cortada.
+
+Sem o feed anterior ou sem ids novos, nada é enviado. O passo só roda quando o feed foi publicado (`publicado=true`) e tem `continue-on-error`: uma falha no push aparece como aviso no Actions e não desfaz a publicação. O iOS limita os pushes em segundo plano, então o app não deve depender só dele (a atualização em background continua valendo).
+
+### Configurar (uma vez só)
+
+1. No [console do Firebase](https://console.firebase.google.com), projeto `concursos-publicos`, vá em *Configurações do projeto → Contas de serviço → Gerar nova chave privada*. Baixa um JSON. Se preferir uma conta só para isso, crie-a no Google Cloud (IAM) com o papel **Firebase Cloud Messaging API Admin** (`roles/firebasecloudmessaging.admin`) e gere a chave dela.
+2. Confira se a **Firebase Cloud Messaging API (V1)** está ativada (*Configurações do projeto → Cloud Messaging*).
+3. No GitHub, em *Settings → Secrets and variables → Actions → New repository secret*, crie `FIREBASE_SERVICE_ACCOUNT` e cole o conteúdo **inteiro** do JSON. Depois apague o arquivo baixado.
+4. No app, a inscrição no tópico `novos-concursos` e o tratamento do push em segundo plano são a outra metade (BL-040).
+
+A autenticação é o fluxo OAuth2 JWT bearer: o script assina um JWT RS256 com a chave da conta de serviço usando o `openssl` da linha de comando (já instalado no runner), troca por um access token em `oauth2.googleapis.com` e chama `messages:send`. Continua sem `pip install`.
+
+Para testar sem enviar: `python3 scripts/push_novos.py --previous /tmp/anterior.json docs/concursos.json --dry-run` mostra a mensagem. Para desligar, apague o secret (o passo só registra "push pulado") ou o passo do workflow.
+
 ## Concursos previstos
 
 `docs/previstos.json` lista os concursos **autorizados** por portaria no DOU que ainda não têm edital (spike CA-007). É um arquivo **separado** do feed: as versões antigas do app não o leem, e um erro aqui nunca afeta `docs/concursos.json`. `[]` é válido e é o estado normal (cerca de 5 autorizações por ano, em lotes).
