@@ -83,7 +83,9 @@ RECTIFICATION = re.compile(r"retifica[çc][ãa]o", re.IGNORECASE)
 # Temas que usam as mesmas frases, mas não são vagas de emprego público
 # (matrícula escolar, conselhos, bolsas, pós-graduação, vestibular).
 OFF_TOPIC = re.compile(
-    r"conselh[oe]|elei[çc][ãa]o|matr[íi]cula|ano\s+letivo|bolsa|est[áa]gio|credenciamento|chamamento\s+p[úu]blico|"
+    r"conselh[oe]|elei[çc][ãa]o|matr[íi]cula|ano\s+letivo|bolsa|est[áa]gi(?:o|[áa]ri)|credenciamento|chamamento\s+p[úu]blico|"
+    # Seleção interna de diretores e vice-diretores de escola (servidores da rede), não vaga nova.
+    r"vice-?\s?diretor|"
     r"mestrado|doutorado|p[óo]s-gradua|resid[êe]ncia\s+(?:m[ée]dica|multiprofissional)|vestibular|monitoria|aluno|discente|"
     r"curso\s+(?:de\s+)?(?:licenciatura|gradua[çc][ãa]o|bacharelado|especializa[çc][ãa]o|t[ée]cnico)",
     re.IGNORECASE,
@@ -91,17 +93,27 @@ OFF_TOPIC = re.compile(
 # Trechos que, logo antes da frase de abertura, indicam outro tipo de ato.
 NEGATIVE = re.compile(
     r"convoca|nomea(?!da\s+pel[oa])|nomear|homolog|classifica[çc][ãa]o|resultado|posse|desclassifica|investiga[çc][ãa]o\s+social|"
-    r"indeferid|recurso|isen[çc][ãa]o|gabarito|"
+    r"(?:in)?deferi(?:d|ment)|recurso|isen[çc][ãa]o|gabarito|"
+    r"divulga(?:m|r)?\s+(?:os\s+)?locais|foi\s+divulgad|divulga(?:r|[çc][ãa]o)\s+(?:d?as)\s+inscri|lista\s+de\s+inscritos|"
+    # Ato que só institui a comissão do concurso ("incumbida de … providenciar a publicação do Edital de Abertura").
+    r"institu(?:ir|i)\s+a\s+comiss|incumbid[ao]\s+(?:de|entre)|providenciar\s+a\s+publica|fica(?:m)?\s+alterad|"
     r"conforme\s+(?:previsto|prev[êe])|nos\s+termos\s+do\s+edital|constantes?\s+(?:no|do)\s+edital",
     re.IGNORECASE,
 )
+# Avisos de outra etapa que aparecem logo depois do cabeçalho "Extrato do Edital … Concurso Público".
+AFTER_NEGATIVE = re.compile(r"foi\s+divulgad|divulga(?:m|r)?\s+(?:os\s+)?locais", re.IGNORECASE)
 # Listas de candidatos logo depois da frase indicam resultado, não abertura.
 LISTING = re.compile(r"lista\s+de\s+classifica|classifica[çc][ãa]o\s+(?:final|geral)|rela[çc][ãa]o\s+(?:dos\s+)?candidatos", re.IGNORECASE)
 # Cabeçalhos que marcam o início do próximo ato no diário.
 NEXT_ACT = re.compile(
     r"\n\s*(?:EDITAL\s+DE\s+(?:CONVOCA|RESULTADO|HOMOLOGA|CLASSIFICA)|PORTARIA\s|DECRETO\s|LEI\s+(?:COMPLEMENTAR\s+)?N|"
-    r"EXTRATO\s|AVISO\s+DE\s+LICITA|RESOLU[ÇC][ÃA]O\s|ATA\s+D[AE]\s|TERMO\s+DE\s)",
+    r"EXTRATO\s|AVISO\s+DE\s+LICITA|RESOLU[ÇC][ÃA]O\s|ATA\s+D[AE]\s|TERMO\s+DE\s)"
+    r"|C[óo]digo\s+Identificador\s*:",
 )
+# Nos diários das associações (diariomunicipal.com.br, também lidos pelo Querido Diário) cada matéria termina com
+# "Código Identificador:XXXX". É a fronteira mais segura de um ato: um edital longo cita leis ("LEI Nº 495…") que
+# NEXT_ACT toma por um ato novo.
+MATERIA_END = re.compile(r"C[óo]digo\s+Identificador\s*:")
 ORG = re.compile(
     r"(prefeitura\s+(?:municipal\s+|do\s+munic[íi]pio\s+|da\s+est[âa]ncia\s+[\wÀ-ú]+\s+(?:de\s+)?)?(?:de|do|da)\s+[A-ZÀ-Úa-zà-ú' -]{3,60}?"
     r"|c[âa]mara\s+municipal\s+(?:de|do|da)\s+[A-ZÀ-Úa-zà-ú' -]{3,60}?"
@@ -123,6 +135,8 @@ DATE_RANGE = re.compile(
     rf"(?:\d{{1,2}}h\d{{0,2}}\s*(?:min)?\s*(?:do\s+dia\s+)?)?({DATE_NUM}|{DATE_TEXT})",
     re.IGNORECASE,
 )
+# "de 23/10 a 23/11/2026": o início sem ano usa o ano do fim.
+SHORT_RANGE = re.compile(r"\b(\d{1,2})/(\d{1,2})\s*(?:a|at[ée]|à|-|–)\s*(\d{1,2}/\d{1,2}/\d{2,4})\b", re.IGNORECASE)
 DAY_RANGE_TEXT = re.compile(r"\b(\d{1,2})\s+(?:a|e|até)\s+(\d{1,2})\s+de\s+([a-zç]+)(?:\s+de\s+(\d{4}))?", re.IGNORECASE)
 MONEY = re.compile(r"R\$\s*(\d{1,3}(?:\.\d{3})*,\d{2})")
 VACANCIES_TOTAL = re.compile(r"total\s+de\s+(\d{1,4})\s*(?:\([^)]*\)\s*)?vagas", re.IGNORECASE)
@@ -326,7 +340,8 @@ def http_get(url: str, *, attempts: int = 5, timeout: int = 60) -> bytes:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return resp.read()
-        except (urllib.error.URLError, TimeoutError) as err:
+        # BrokenPipeError e ConnectionResetError (ConnectionError) aparecem quando a API derruba a conexão no meio.
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as err:
             if attempt == attempts:
                 raise
             log(f"  tentativa {attempt} falhou ({err}); nova tentativa em {delay}s")
@@ -405,6 +420,34 @@ def parse_date(raw: str, default_year: int) -> dt.date | None:
         return None
 
 
+def _plausible(start: dt.date | None, end: dt.date | None, published: dt.date) -> bool:
+    return bool(start and end and start <= end and (end - start).days <= 120 and end >= published - dt.timedelta(days=7))
+
+
+def _short_range(rng: re.Match) -> tuple[dt.date, dt.date] | None:
+    """"23/10 a 23/11/2026" -> (23/10/2026, 23/11/2026)."""
+    end = parse_date(rng.group(3), 0)
+    if not end:
+        return None
+    try:
+        return dt.date(end.year, int(rng.group(2)), int(rng.group(1))), end
+    except ValueError:
+        return None
+
+
+def _day_range(rng: re.Match, published: dt.date) -> tuple[dt.date, dt.date] | None:
+    """"13 a 16 de outubro de 2026" -> (13/10/2026, 16/10/2026)."""
+    mo = MONTHS.get(strip_accents(rng.group(3).lower()))
+    if not mo:
+        return None
+    year = int(rng.group(4) or published.year)
+    try:
+        start, end = dt.date(year, mo, int(rng.group(1))), dt.date(year, mo, int(rng.group(2)))
+    except ValueError:
+        return None
+    return (start, end) if start <= end else None
+
+
 def find_inscription_period(text: str, published: dt.date) -> tuple[dt.date, dt.date] | None:
     """Procura um intervalo de datas logo depois da palavra 'inscrição' ou 'inscrições'."""
     for m in re.finditer(r"inscri[çc](?:[ãa]o|[õo]es)", text, re.IGNORECASE):
@@ -412,32 +455,30 @@ def find_inscription_period(text: str, published: dt.date) -> tuple[dt.date, dt.
         for rng in DATE_RANGE.finditer(chunk):
             end = parse_date(rng.group(2), published.year)
             start = parse_date(rng.group(1), end.year if end else published.year)
-            if start and end and start <= end and (end - start).days <= 120 and end >= published - dt.timedelta(days=7):
+            if _plausible(start, end, published):
                 return start, end
+        for rng in SHORT_RANGE.finditer(chunk):
+            period = _short_range(rng)
+            if period and _plausible(*period, published):
+                return period
         rng = DAY_RANGE_TEXT.search(chunk)
-        if rng:
-            year = int(rng.group(4) or published.year)
-            mo = MONTHS.get(strip_accents(rng.group(3).lower()))
-            if mo:
-                try:
-                    start, end = dt.date(year, mo, int(rng.group(1))), dt.date(year, mo, int(rng.group(2)))
-                    if start <= end:
-                        return start, end
-                except ValueError:
-                    pass
-    # Sem datas depois da palavra: "no período de 09/11/2026 a 30/11/2026 estarão abertas as inscrições".
+        if rng and (period := _day_range(rng, published)):
+            return period
+    # Sem datas depois da palavra: "no período de 09/11/2026 a 30/11/2026 estarão abertas as inscrições" ou
+    # "no período de 13 a 16 de outubro de 2026, no horário das 8h às 11h, …, estarão abertas as inscrições".
     for m in re.finditer(r"per[íi]odo\s+de\s+(?=\d)", text, re.IGNORECASE):
-        if not re.search(r"inscri[çc](?:[ãa]o|[õo]es)", text[m.end(): m.end() + 80], re.IGNORECASE):
+        if not re.search(r"inscri[çc](?:[ãa]o|[õo]es)", text[m.end(): m.end() + 260], re.IGNORECASE):
             continue
         rng = DATE_RANGE.match(text, m.end())
-        if not rng:
-            continue
-        end = parse_date(rng.group(2), published.year)
-        start = parse_date(rng.group(1), end.year if end else published.year)
-        if start and end and start <= end and (end - start).days <= 120 and end >= published - dt.timedelta(days=7):
-            return start, end
+        if rng:
+            end = parse_date(rng.group(2), published.year)
+            start = parse_date(rng.group(1), end.year if end else published.year)
+            if _plausible(start, end, published):
+                return start, end
+        rng = DAY_RANGE_TEXT.match(text, m.end())
+        if rng and (period := _day_range(rng, published)):
+            return period
     return None
-
 
 def find_salary(text: str) -> str:
     values = []
@@ -468,8 +509,16 @@ def find_vacancies(text: str) -> str:
     return ""
 
 
+# "O MUNICÍPIO DE CHÃ-PRETA … e a Fundação Vale do Piauí – FUNVAPI, tornam público": o órgão que vem depois de
+# "e a"/"e o" assina junto com o município e costuma ser a banca, não o órgão do concurso.
+CO_SIGNER = re.compile(r"(?:\be|\bcom|\bjunto\s+(?:a|à|ao))\s+(?:a|o)?\s*$", re.IGNORECASE)
+
+
 def find_org(pre: str, window: str, city: str) -> str:
-    candidates = list(ORG.finditer(pre)) or list(ORG.finditer(window[:1500]))
+    def own(source: str) -> list[re.Match]:
+        return [m for m in ORG.finditer(source) if not CO_SIGNER.search(source[max(0, m.start() - 15): m.start()])]
+
+    candidates = own(pre) or own(window[:1500])
     if candidates:
         org = squash(candidates[-1].group(1))
         org = re.sub(r"\s+estado\b.*$", "", org, flags=re.IGNORECASE)
@@ -551,11 +600,17 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
     published = dt.date.fromisoformat(gazette["date"])
     city, uf = gazette["territory_name"], gazette["state_code"]
     items, last_end = [], -1
+    # Trechos de atos já aceitos: (início, fim, número). Um edital longo repete "inscrições para o concurso" nos
+    # capítulos; um trecho sem número (ou com o mesmo número) dentro de um ato já aceito é o mesmo ato.
+    accepted: list[tuple[int, int, str]] = []
     for m in OPENING.finditer(text):
         if m.start() < last_end:
             continue
         around = text[max(0, m.start() - 160): m.end() + 160]
         if NEGATIVE.search(around) or OFF_TOPIC.search(around):
+            continue
+        # Extratos curtos dizem o que é o ato logo depois do cabeçalho: "torna público que foi divulgado … locais".
+        if AFTER_NEGATIVE.search(text, m.end(), m.end() + 400):
             continue
         context = text[max(0, m.start() - 600): m.end() + 400]
         if not SELECTION.search(context):
@@ -573,9 +628,17 @@ def extract_openings(text: str, gazette: dict) -> list[dict]:
         full_act = text[start: min(act_end, m.end() + 30000)]
         last_end = end
 
-        period = find_inscription_period(full_act, published)
         number = EDITAL_NUMBER.search(window)
         number_str = re.sub(r"\s+", "", number.group(1)).replace("-", "/") if number else ""
+        # O ato vai até o fim da matéria, quando o diário marca; senão até a próxima fronteira (NEXT_ACT) ou,
+        # sem nenhuma, até onde o extrator lê (30.000 caracteres).
+        materia_end = MATERIA_END.search(text, m.end())
+        span_end = materia_end.start() if materia_end else (act_end if nxt else min(act_end, m.end() + 30000))
+        if any(a_start <= m.start() < a_end and (not number_str or number_str == a_number)
+               for a_start, a_end, a_number in accepted):
+            continue
+        accepted.append((start, span_end, number_str))
+        period = find_inscription_period(full_act, published)
         org = find_org(text[max(0, m.start() - 600): m.end()], window, city)
 
         label = KIND_LABEL[kind]

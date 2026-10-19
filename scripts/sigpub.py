@@ -38,7 +38,8 @@ DELAY = 1.0
 # Títulos de atos que nunca são a abertura de um concurso.
 SKIP_TITLE = re.compile(
     r"convoca|chamamento|chamada|resultado|homologa|classifica|gabarito|nomea|posse|comunicado|prorroga|"
-    r"anula|suspen|cancela|aprovad|desempate|lista\s+de|deferi|indeferi|recurso",
+    r"anula|suspen|cancela|aprovad|desempate|lista\s+de|deferi|indeferi|recurso|"
+    r"divulga[çc][ãa]o\s+d[aoe]s?\s+inscri|inscritos|locais\s+(?:e\s+hor|de\s+prova)|vice-?\s?diretor",
     re.IGNORECASE,
 )
 ENTITY_PREFIX = re.compile(
