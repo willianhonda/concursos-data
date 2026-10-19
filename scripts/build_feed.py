@@ -42,6 +42,7 @@ import zipfile
 from pathlib import Path
 
 import bancas
+import orgaos_uf
 import sigpub
 import sources
 from validate_feed import item_errors, sources_off
@@ -744,6 +745,10 @@ def dou_uf(org: str, text: str) -> str:
         table = TRT_UF if "trabalho" in region.group(1).lower() else TRF_UF
         if int(region.group(2)) in table:
             return table[int(region.group(2))]
+    # Lista curada de órgãos federais locais (UnB, UFV, IF Goiano…): vale mais que o nome de estado no texto.
+    sede = orgaos_uf.sede_uf(org)
+    if sede:
+        return sede
     for source in (org, text[:3000]):
         m = STATE_NAME.search(strip_accents(source))
         if m:
@@ -992,9 +997,13 @@ def main() -> int:
         args.shadow_output.write_text(json.dumps(kept, ensure_ascii=False, indent=1) + "\n")
         log(f"sombra: {len(kept)} itens em {args.shadow_output} ({len(shadow)} novos nesta execução)")
 
-    feed = []
     # O kill switch tira do feed também o que já estava publicado.
-    for item in sources.drop_disabled(merge(old, new, today), off):
+    merged = sources.drop_disabled(merge(old, new, today), off)
+    # Itens do DOU publicados antes da lista de sedes ainda estão como "BR".
+    if fixed := orgaos_uf.fix_states(merged):
+        log(f"UF da sede: {fixed} item(ns) do DOU deixaram de ser BR")
+    feed = []
+    for item in merged:
         # Um item fora do formato do app sai do feed em vez de derrubar a lista de quem está na 2.2.x.
         if problems := item_errors(item):
             log(f"  descartado {item.get('id', '?')}: {'; '.join(problems)}")
