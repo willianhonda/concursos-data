@@ -1,5 +1,44 @@
 [
  {
+  "id": "f190c81fd858",
+  "source": "dou",
+  "territoryId": null,
+  "city": null,
+  "state": "DF",
+  "organization": "Secretaria Nacional de Promoção e Defesa dos Direitos Humanos",
+  "orgType": null,
+  "kind": "processo_seletivo",
+  "number": "7/2026",
+  "title": "Secretaria Nacional de Promoção e Defesa dos Direitos Humanos - Processo Seletivo (Edital nº 7/2026)",
+  "published": "2026-10-19"
+ },
+ {
+  "id": "63490ec37980",
+  "source": "dou",
+  "territoryId": null,
+  "city": null,
+  "state": "RJ",
+  "organization": "Defensoria Pública da União em Volta Redonda-RJ",
+  "orgType": null,
+  "kind": "processo_seletivo",
+  "number": "9/2026",
+  "title": "Defensoria Pública da União em Volta Redonda-RJ - Processo Seletivo (Edital nº 9/2026)",
+  "published": "2026-10-19"
+ },
+ {
+  "id": "1d422c8fc65e",
+  "source": "dou",
+  "territoryId": null,
+  "city": null,
+  "state": "RS",
+  "organization": "Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul",
+  "orgType": null,
+  "kind": "processo_seletivo",
+  "number": "22/2026",
+  "title": "Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Processo Seletivo (Edital nº 22/2026)",
+  "published": "2026-10-19"
+ },
+ {
   "id": "96d36249a8d5",
   "source": "dou",
   "territoryId": null,
