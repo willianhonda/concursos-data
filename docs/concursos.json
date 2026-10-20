@@ -1,5 +1,25 @@
 [
  {
+  "id": "9f64261d50c2",
+  "title": "Câmara de Lambari - Concurso Público nº 01/2026",
+  "deadline": "Inscrições: 20/10/2026 a 18/11/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "Vagas 8",
+  "description": "Câmara de Lambari: concurso público nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 20/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.ibgpconcursos.com.br/",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "banca",
+  "city": "Lambari",
+  "published": "2026-10-20",
+  "registrationStarts": "2026-10-20",
+  "registrationEnds": "2026-11-18",
+  "banca": "IBGP",
+  "sphere": "municipal",
+  "collector": "ibgp"
+ },
+ {
   "id": "f43484d7a9d3",
   "title": "Prefeitura de Braúnas - Processo Seletivo nº 01/2026",
   "deadline": "Inscrições: 19/10/2026 a 03/11/2026",
