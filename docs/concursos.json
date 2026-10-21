@@ -1,5 +1,45 @@
 [
  {
+  "id": "de70c268912e",
+  "title": "Prefeitura de Confins - Processo Seletivo nº 02/2026",
+  "deadline": "Inscrições: 21/10/2026 a 05/11/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "Vagas 153",
+  "description": "Prefeitura de Confins: processo seletivo nº 02/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 21/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.ibgpconcursos.com.br/",
+  "linkKind": "banca",
+  "kind": "processo_seletivo",
+  "source": "banca",
+  "city": "Confins",
+  "published": "2026-10-21",
+  "registrationStarts": "2026-10-21",
+  "registrationEnds": "2026-11-05",
+  "banca": "IBGP",
+  "sphere": "municipal",
+  "collector": "ibgp"
+ },
+ {
+  "id": "67233bdcfa94",
+  "title": "Prefeitura de Olímpio Noronha - Processo Seletivo nº 01/2026",
+  "deadline": "Inscrições: 21/10/2026 a 03/11/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "Vagas 4",
+  "description": "Prefeitura de Olímpio Noronha: processo seletivo nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 21/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.ibgpconcursos.com.br/",
+  "linkKind": "banca",
+  "kind": "processo_seletivo",
+  "source": "banca",
+  "city": "Olímpio Noronha",
+  "published": "2026-10-21",
+  "registrationStarts": "2026-10-21",
+  "registrationEnds": "2026-11-03",
+  "banca": "IBGP",
+  "sphere": "municipal",
+  "collector": "ibgp"
+ },
+ {
   "id": "9f64261d50c2",
   "title": "Câmara de Lambari - Concurso Público nº 01/2026",
   "deadline": "Inscrições: 20/10/2026 a 18/11/2026",
@@ -1945,33 +1985,6 @@
   "areas": null
  },
  {
-  "id": "c1e0aa54c20a",
-  "title": "Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Processo Seletivo (Edital nº 33/2026)",
-  "deadline": "Inscrições: 06/10/2026 a 20/10/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "EDITAL Nº 33, DE 5 DE OUTUBRO DE 2026 PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO DE PROFESSOR SUBSTITUTO O DIRETOR-GERAL DO CAMPUS CAXIAS DO SUL DO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO GRANDE DO SUL, no uso de suas atribuições legais e de acordo com o disposto na Lei Nº 8.745/93, torna pública a abertura das inscrições para o Processo Seletivo Simplificado, com vistas à contratação por tempo determinado de Professor Substituto para atender à necessidade temporária de excepcional interesse público. 1. DAS VAGAS Vagas (AC) Vagas (PPP) Vagas* (PcD) Vagas* (Indígenas) Vagas* (Quilombolas) CH semanal Área Requisito Mínimo Exigido 1 Vide itens 1.1 e 1.2 - - - 40 horas Contabilidade Bacharelado em Ciências Contábeis 1 40 horas História Licenciatura em História *Não haverá reserva imediata de cota para indígenas, quilombolas e pessoas com defici\n\nFonte: Diário Oficial da União, Seção 3, 06/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://forms.gle/Qguxz2dvwZczurE1A",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-06",
-  "registrationStarts": "2026-10-06",
-  "registrationEnds": "2026-10-20",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=37",
-  "banca": null,
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao",
-   "administrativa"
-  ]
- },
- {
   "id": "9d3de46baccd",
   "title": "Universidade Federal de Santa Maria - Processo Seletivo (Edital nº 64/2026)",
   "deadline": "Inscrições: 05/10/2026 a 14/12/2026",
@@ -2185,34 +2198,6 @@
   "education": [
    "superior"
   ],
-  "areas": null
- },
- {
-  "id": "1da811ca97ca",
-  "title": "Prefeitura de Goiânia - Processo Seletivo nº 001/2026",
-  "deadline": "Inscrições: 05/10/2026 a 20/10/2026",
-  "state": "GO",
-  "salary": "Faixa salarial: R$ 8.000,00 - R$ 15.000,00",
-  "vacancies": "Vagas 10",
-  "description": "9 SEI Nº 11688806v1 Prefeitura de Goiânia Companhia de Urbanização de Goiânia Assessoria Jurídica de Licitações e Contratos EXTRATO DO EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 — COMURG A COMPANHIA DE URBANIZAÇÃO DE GOIÂNIA — COMURG torna pública a abertura de Processo Seletivo Simplificado destinado à contratação temporária, sob o regime da Consolidação das Leis do Trabalho — CLT, de profissionais para o cargo de Analista de Governança, nos Grupos A — Analista de Projetos e Obras, B — Governança de Projetos e C — Analista de Licitações e Conformidade Processual, nos níveis Júnior, Pleno e Sênior, bem como à formação de cadastro de reserva. VAGAS, JORNADA E REMUNERAÇÃO. São ofertadas 10 (dez) vagas imediatas, sendo 3 (três) para o nível Júnior, 4 (quatro) para o nível Pleno e 3 (três) para o nível Sênior, além de cadastro de reserva. A jornada será de 40 (quarenta) horas semanais. A remuneração bruta mensal será d\n\nFonte: Diário Oficial de Goiânia/GO, 05/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.goiania.go.gov.br/sei",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Goiânia",
-  "published": "2026-10-05",
-  "registrationStarts": "2026-10-05",
-  "registrationEnds": "2026-10-20",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/5208707/2026-10-05/21610df56f2e97ab575f8405826e6cc38e8012a5.pdf",
-  "banca": null,
-  "roles": [
-   "Analista de Governança",
-   "Nos Grupos a — Analista de Projetos e Obras",
-   "Nos Níveis Júnior",
-   "Pleno e Sênior",
-   "Bem Como À Formação de Cadastro de Reserva"
-  ],
-  "education": null,
   "areas": null
  },
  {
@@ -2927,24 +2912,6 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=24/09/2026&jornal=530&pagina=75"
- },
- {
-  "id": "7aa919a3b597",
-  "title": "Fundação Municipal de Ensino Superior de Marília - Concurso Público nº 06/2026",
-  "deadline": "Inscrições: 01/10/2026 a 20/10/2026",
-  "state": "SP",
-  "salary": "",
-  "vacancies": "",
-  "description": ". Art. 5°. Esta Portaria entra em vigor na data de sua publicação. Marília, 23 de setembro de 2026. PAULO JORGE DE OLIVEIRA ALVES Diretor-Presidente EMDURB A FUNDAÇÃO MUNICIPAL DE ENSINO SUPERIOR DE MARÍLIA torna pública a abertura do Concurso Público para o preenchimento do emprego público de MÉDICO DO TRABALHO, conforme Edital DRH n.º 06/2026. Período de inscrição: 01/10/2026 a 20/10/2026, no site www.fumes.sp.gov.br, aba concurso público. Edital completo no site da FUMES.\n\nFonte: Diário Oficial de Marília/SP, 24/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.fumes.sp.gov.br",
-  "kind": "concurso",
-  "source": "querido_diario",
-  "city": "Marília",
-  "published": "2026-09-24",
-  "registrationStarts": "2026-10-01",
-  "registrationEnds": "2026-10-20",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3529005/2026-09-24/a7feea0bfeb78f03af16b0f33ed3ec61ad1d7667.pdf",
-  "linkKind": "orgao"
  },
  {
   "id": "45a8f66897a2",
