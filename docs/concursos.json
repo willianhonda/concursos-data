@@ -102,26 +102,6 @@
   "areas": null
  },
  {
-  "id": "eede96e64e56",
-  "title": "Prefeitura de Belo Vale - Processo Seletivo nº 01/2026",
-  "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 30",
-  "description": "Prefeitura de Belo Vale: processo seletivo nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 19/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "banca",
-  "city": "Belo Vale",
-  "published": "2026-10-19",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-21",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
- },
- {
   "id": "d2c0ae50bac9",
   "title": "Prefeitura de São João Del-Rei - Processo Seletivo nº 01/2026",
   "deadline": "Inscrições: 13/10/2026 a 12/11/2026",
@@ -200,26 +180,6 @@
   "banca": "IBGP",
   "sphere": "municipal",
   "collector": "ibgp"
- },
- {
-  "id": "a6c84119bf95",
-  "title": "Secretaria de Estado da Fazenda de Alagoas - Concurso Público",
-  "deadline": "Inscrições: 17/09/2026 a 21/10/2026",
-  "state": "AL",
-  "salary": "Salário até R$ 25.270,68",
-  "vacancies": "Vagas 40",
-  "description": "Secretaria de Estado da Fazenda de Alagoas: concurso público com inscrições abertas, organizado por Cebraspe. Cargos, requisitos e valores no edital.\n\nFonte: Cebraspe, 19/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.cebraspe.org.br/concursos/SEFAZ_AL_26",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "banca",
-  "city": null,
-  "published": "2026-10-19",
-  "registrationStarts": "2026-09-17",
-  "registrationEnds": "2026-10-21",
-  "banca": "Cebraspe",
-  "sphere": "estadual",
-  "collector": "cebraspe"
  },
  {
   "id": "a034323f84c4",
@@ -317,26 +277,6 @@
   "published": "2026-10-19",
   "registrationStarts": "2026-10-13",
   "registrationEnds": "2026-11-12",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
- },
- {
-  "id": "82cae63cd35e",
-  "title": "Prefeitura de Viçosa - Processo Seletivo nº 01/2026",
-  "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 129",
-  "description": "Prefeitura de Viçosa: processo seletivo nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 19/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "banca",
-  "city": "Viçosa",
-  "published": "2026-10-19",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-21",
   "banca": "IBGP",
   "sphere": "municipal",
   "collector": "ibgp"
@@ -699,37 +639,6 @@
   ],
   "areas": [
    "educacao"
-  ]
- },
- {
-  "id": "2da7268cf5f7",
-  "title": "Prefeitura Municipal de Candeias - Processo Seletivo nº 005/2026",
-  "deadline": "Inscrições: 19/10/2026 a 21/10/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "",
-  "description": "NDEIAS, Estado de Minas Gerais, inscrita no CNPJ sob o nº 17.888.090/0001-00, com sede na Avenida 17 de Dezembro, nº 240, Minas Gerais, CEP 37.280-000, centro, nesta cidade de Candeias/MG, e considerando o Decreto nº 4428 de 13 de outubro de 2026, torna público para conhecimento dos interessados, a abertura do presente Processo Seletivo Simplificado – PSS 005/2026 para contratação de pessoal em regime TEMPORÁRIO, para a prestação de serviços como ENFERMEIRO com a finalidade de atendimento às necessidades temporárias, de excepcional interesse público, da Secretaria Municipal de Saúde e continuidade de seus serviços. 1.DISPOSIÇÕES PRELIMINARES 1.1. Justifica-se a realização do presente processo seletivo simplificado tendo em a necessidade de um enfermeiro para executar suas funções junto a Secretaria Municipal de Saúde, podendo atuar em ESF – Estratégia de Saúde da Família, bem como no CAPS - Centro de Atenção Psicossocial, e ainda no novo Serviço de Regulação que for\n\nFonte: Diário Oficial de Candeias/MG, 16/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.candeias.mg.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Candeias",
-  "published": "2026-10-16",
-  "registrationStarts": "2026-10-19",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3112000/2026-10-16/a58a9dfb51dfb16230c2f67644f9b64b8ba4e916.pdf",
-  "banca": null,
-  "roles": [
-   "Enfermeiro Não Foi Ofertado No Último Concurso Realizado",
-   "O Município Não Possui Cadastro de Reserva e Nem",
-   "Suas Subsidiárias e Controladas",
-   "Salvo Quando Houver Compatibilidade de Horários"
-  ],
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "saude"
   ]
  },
  {
@@ -1435,32 +1344,6 @@
   ]
  },
  {
-  "id": "9ef3cffe04a6",
-  "title": "Instituto Federal de Educação, Ciência e Tecnologia do Norte de Minas Gerais - Processo Seletivo (Edital nº 115/2026)",
-  "deadline": "Inscrições: 10/10/2026 a 21/10/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 115, DE 7 DE OUTUBRO DE 2026 PROCESSO SELETIVO SIMPLIFICADO DE PROFESSOR VISITANTE/VISITANTE ESTRANGEIRO A DIRETORA-GERAL DO CAMPUS ARINOS, DO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO NORTE DE MINAS GERAIS, em exercício, no uso de suas atribuições legais, conferidas pela Portaria/Reitor n° 540 de 12/04/2018, publicada no Diário Oficial da União de 16/04/2018, Processo nº 23392.001471/2026-11, torna público a ABERTURA DE INSCRIÇÕES para o PROCESSO SELETIVO SIMPLIFICADO, objetivando a contratação de PROFESSOR VISITANTE/VISITANTE ESTRANGEIRO, por prazo determinado, na forma da Lei nº 8.745, de 09/12/1993 e alterações posteriores, conforme abaixo especificado: 1 - DA ÁREA / VAGA / CARGA HORÁRIA SEMANAL / HABILITAÇÃO EXIGIDA Área de Atuação Nº de Vagas Carga horária Habilitação Exigida Filosofia/Sociologia 01 40h I - Graduação em Filosofia, Sociologia e/ou C\n\nFonte: Diário Oficial da União, Seção 3, 09/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ifnmg.edu.br/professor-visitante",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-09",
-  "registrationStarts": "2026-10-10",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=38",
-  "banca": null,
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao"
-  ]
- },
- {
   "id": "994866ff21dd",
   "title": "Instituto Benjamin Constant - Processo Seletivo (Edital nº 39/2026)",
   "deadline": "Inscrições: 13/10/2026 a 03/11/2026",
@@ -1657,28 +1540,6 @@
   "areas": [
    "educacao"
   ]
- },
- {
-  "id": "0f5221bea5b9",
-  "title": "Instituto Federal de Educação, Ciência e Tecnologia Baiano - Processo Seletivo (Edital nº 194/2026)",
-  "deadline": "Inscrições: 15/10/2026 a 21/10/2026",
-  "state": "BA",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 194, DE 8 DE OUTUBRO DE 2026 PROCESSO SELETIVO PARA INGRESSO DE ESTUDANTES PARA CURSO DE QUALIFICAÇÃO PROFISSIONAL PRÓ-REITORIA DE EXTENSÃO A Pró-Reitora de Extensão do Instituto Federal de Educação, Ciência e Tecnologia Baiano, no uso das suas atribuições delegadas pela Portaria nº 547 de 02 de outubro de 2026, publicada no DOU de 05/10/2026, Seção 2, página 17, torna pública a abertura de inscrições, na modalidade de Formação Continuada, para provimento de vagas nos cursos de Qualificação Profissional intitulados \"Libras Básico\" e \"Biotecnologia Aplicada à Sustentabilidade, Bioinsumos e Agroindustrialização\", que serão ofertados pelo campus Valença, localizado na R. Glicério Tavares - Valença, BA, 45400-000. As inscrições, seleção e matrícula ocorrerão durante o período de 15 a 21 de outubro de 2026. A íntegra do Edital contendo as demais informações encontra-se disponível\n\nFonte: Diário Oficial da União, Seção 3, 09/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://concurso.ifbaiano.edu.br",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-09",
-  "registrationStarts": "2026-10-15",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=34",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": null
  },
  {
   "id": "ea85cb59f2b8",
@@ -1878,28 +1739,6 @@
   "roles": [
    "Prevista Na Lei 12"
   ],
-  "education": null,
-  "areas": null
- },
- {
-  "id": "34ad368e86c0",
-  "title": "Secretaria Executiva - Processo Seletivo (Edital nº 6/2026)",
-  "deadline": "Inscrições: 06/10/2026 a 21/10/2026",
-  "state": "BR",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "EDITAL DE SELEÇÃO Nº 6/2026 O MINISTÉRIO DOS DIREITOS HUMANOS E DA CIDADANIA (MDHC), em parceria com o PROGRAMA DAS NAÇÕES UNIDAS PARA O DESENVOLVIMENTO (PNUD), no âmbito do Projeto BRA/23/024 - Inovação e inclusão na promoção de direitos humanos e cidadania no Brasil, torna pública a abertura de processo seletivo para contratação de consultoria técnica, na modalidade \"produto-pessoa física\", conforme a seguir: PROCESSO Nº 00135.219573/2026-27 OBJETO: Elaborar subsídios técnicos destinados à implementação das ações previstas no Programa de Privacidade e Segurança da Informação (PPSI) versão 2.0 e ao atendimento das obrigações estabelecidas pela Lei nº 13.709/2018 - Lei Geral de Proteção de Dados Pessoais (LGPD). NÚMERO DE VAGAS: 01 (uma) vaga. LOCALIDADE DE TRABALHO: Território Nacional. INSCRIÇÕES: As pessoas interessadas em participar do processo seletivo deverão encaminhar currí\n\nFonte: Diário Oficial da União, Seção 3, 07/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.gov.br/mdh/pt-br/navegue-por-temas/cooperacao-internacional/editais/2026_CV_padrao.docx",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-07",
-  "registrationStarts": "2026-10-06",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=530&pagina=34",
-  "banca": null,
-  "roles": null,
   "education": null,
   "areas": null
  },
@@ -2637,27 +2476,6 @@
   ]
  },
  {
-  "id": "fcd15258595a",
-  "title": "Universidade Federal de Goiás - Processo Seletivo (Edital nº 25/2026)",
-  "deadline": "Inscrições: 09/10/2026 a 21/10/2026",
-  "state": "GO",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 25, DE 28 DE SETEMBRO DE 2026 CONDIÇÕES ESPECÍFICAS PARA REALIZAÇÃO DE PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO DE PROFESSOR SUBSTITUTO A Reitora da UNIVERSIDADE FEDERAL DE GOIÁS, no uso de suas atribuições estatutárias e regimentais, torna pública a abertura de inscrições para o Processo Seletivo Simplificado (PSS) para a contratação de Professor Substituto (Processo administrativo n° 23070.048402/2026-12), nos termos do Edital de Condições Gerais nº 30/2022, publicado no Diário Oficial da União de 28/11/2022, seção 03, páginas 110 a 112. Período de Inscrições: 09 de outubro a 21 de outubro de 2026 pelo endereço eletrônico https://sistemas.ufg.br/CONCURSOS_WEB/ Valor da inscrição: R$ 50,00 (cinquenta reais) Número de vagas: 26 (vinte e seis) Local de atuação: Câmpus da Região Metropolitana de Goiânia e Câmpus Goiás O Edital de Condições Específicas nº 25/2026 est\n\nFonte: Diário Oficial da União, Seção 3, 29/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://sistemas.ufg.br/CONCURSOS_WEB/Valor",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-29",
-  "registrationStarts": "2026-10-09",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/09/2026&jornal=530&pagina=60",
-  "linkKind": "edital",
-  "areas": [
-   "educacao"
-  ]
- },
- {
   "id": "751d4f7924ec",
   "title": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Concurso Público (Edital nº 183/2026)",
   "deadline": "Inscrições: 06/10/2026 a 17/11/2026",
@@ -3154,23 +2972,6 @@
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=136"
  },
  {
-  "id": "fa8e4bc10e83",
-  "title": "Conselho Nacional dos Direitos da Pessoa com Deficiência - Processo Seletivo (Edital nº 2/2026)",
-  "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
-  "state": "BR",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "EDITAL Nº 2, DE 18 DE SETEMBRO DE 2026 SELEÇÃO DE CONSULTORIA DE PESSOA FÍSICA MOBILIZAÇÃO COMUNITÁRIA E ESCUTA EM CAMPO A SECRETARIA NACIONAL DOS DIREITOS DA PESSOA COM DEFICIÊNCIA DO MINISTÉRIO DOS DIREITOS HUMANOS E DA CIDADANIA (MDHC), em parceria com a UNESCO-ORGANIZAÇÃO DAS NAÇÕES UNIDAS PARA EDUCAÇÃO, A CIÊNCIA E A CULTURA, no âmbito do Projeto 914BRZ3062 - Fortalecimento das ações de reparação a pessoas e comunidades afetadas pela política de internação e isolamento compulsórios de pessoas com hanseníase, torna pública a abertura de processo seletivo para contratação de consultoria técnica conforme a seguir: PROCESSO Nº 00135.215009/2026-35. OBJETO: Contratação de consultoria, de pessoa física, na modalidade produto, em mobilização comunitária e escuta em campo, para elaborar abordagens metodológicas participativas destinadas a orientar a aproximação, a escuta e a organizaçã\n\nFonte: Diário Oficial da União, Seção 3, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://roster.brasilia.unesco.org/app/selection-process-list",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-21",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=102"
- },
- {
   "id": "f7c277b10b51",
   "title": "Comando da Marinha - Processo Seletivo",
   "deadline": "Inscrições: veja o edital",
@@ -3186,23 +2987,6 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=94"
- },
- {
-  "id": "ed77285dffc8",
-  "title": "Conselho Nacional dos Direitos da Pessoa com Deficiência - Processo Seletivo (Edital nº 6/2026)",
-  "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
-  "state": "BR",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "EDITAL Nº 6, DE 18 DE SETEMBRO DE 2026 SELEÇÃO DE CONSULTORIA DE PESSOA FÍSICA ESPECIALISTA SÊNIOR EM TOMBAMENTO DE PATRIMÔNIOS CULTURAIS MATERIAIS A SECRETARIA NACIONAL DOS DIREITOS DA PESSOA COM DEFICIÊNCIA DO MINISTÉRIO DOS DIREITOS HUMANOS E DA CIDADANIA (MDHC), em parceria com a UNESCO-ORGANIZAÇÃO DAS NAÇÕES UNIDAS PARA EDUCAÇÃO, A CIÊNCIA E A CULTURA, no âmbito do Projeto 914BRZ3062 - Fortalecimento das ações de reparação a pessoas e comunidades afetadas pela política de internação e isolamento compulsórios de pessoas com hanseníase, torna pública a abertura de processo seletivo para contratação de consultoria técnica a seguir: PROCESSO Nº 00135.215015/2026-92. OBJETO: Contratação de consultoria, de pessoa física, na modalidade produto, de especialista sênior em tombamento de patrimônios culturais materiais, para coordenar tecnicamente a integração dos insumos produzidos pelas\n\nFonte: Diário Oficial da União, Seção 3, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://roster.brasilia.unesco.org/app/selection-process-list",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-21",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=102"
  },
  {
   "id": "ed23505528fb",
@@ -3251,23 +3035,6 @@
   "areas": [
    "administrativa"
   ]
- },
- {
-  "id": "c2fa6f8c073d",
-  "title": "Conselho Nacional dos Direitos da Pessoa com Deficiência - Processo Seletivo (Edital nº 3/2026)",
-  "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
-  "state": "BR",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "EDITAL Nº 3, DE 18 DE SETEMBRO DE 2026 SELEÇÃO DE CONSULTORIA DE PESSOA FÍSICA ÁREA DE SAÚDE A SECRETARIA NACIONAL DOS DIREITOS DA PESSOA COM DEFICIÊNCIA DO MINISTÉRIO DOS DIREITOS HUMANOS E DA CIDADANIA (MDHC), em parceria com a UNESCO-ORGANIZAÇÃO DAS NAÇÕES UNIDAS PARA EDUCAÇÃO, A CIÊNCIA E A CULTURA, no âmbito do Projeto 914BRZ3062 - Fortalecimento das ações de reparação a pessoas e comunidades afetadas pela política de internação e isolamento compulsórios de pessoas com hanseníase, torna pública a abertura de processo seletivo para contratação de consultoria técnica a seguir: PROCESSO Nº 00135.215011/2026-12. OBJETO: Contratação de consultoria, de pessoa física, na modalidade produto, na área de saúde, com experiência em atenção à hanseníase e/ou atuação em políticas e serviços de saúde relacionados a doenças negligenciadas, para produzir contextualização técnica sobre hansenías\n\nFonte: Diário Oficial da União, Seção 3, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://roster.brasilia.unesco.org/app/selection-process-list",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-21",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=102"
  },
  {
   "id": "aa0bbfba31b6",
@@ -3340,57 +3107,6 @@
   "linkKind": "banca"
  },
  {
-  "id": "18ccc43607f7",
-  "title": "Conselho Nacional dos Direitos da Pessoa com Deficiência - Processo Seletivo (Edital nº 5/2026)",
-  "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
-  "state": "BR",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "EDITAL Nº 5, DE 18 DE SETEMBRO DE 2026 SELEÇÃO DE CONSULTORIA DE PESSOA FÍSICA PESQUISA HISTÓRICA E EDUCAÇÃO POPULAR A SECRETARIA NACIONAL DOS DIREITOS DA PESSOA COM DEFICIÊNCIA DO MINISTÉRIO DOS DIREITOS HUMANOS E DA CIDADANIA (MDHC), em parceria com a UNESCO-ORGANIZAÇÃO DAS NAÇÕES UNIDAS PARA EDUCAÇÃO, A CIÊNCIA E A CULTURA, no âmbito do Projeto 914BRZ3062 - Fortalecimento das ações de reparação a pessoas e comunidades afetadas pela política de internação e isolamento compulsórios de pessoas com hanseníase, torna pública a abertura de processo seletivo para contratação de consultoria técnica a seguir: PROCESSO Nº 00135.215014/2026-48. OBJETO: Contratação de consultoria, de pessoa física, na modalidade produto, em pesquisa histórica e educação popular, para elaborar abordagens metodológicas participativas destinadas a orientar a coleta, a sistematização e a análise de documentação\n\nFonte: Diário Oficial da União, Seção 3, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://roster.brasilia.unesco.org/app/selection-process-list",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-21",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=102"
- },
- {
-  "id": "16bdb86aa370",
-  "title": "Conselho Nacional dos Direitos da Pessoa com Deficiência - Processo Seletivo (Edital nº 4/2026)",
-  "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
-  "state": "BR",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "EDITAL Nº 4, DE 18 DE SETEMBRO DE 2026 SELEÇÃO DE CONSULTORIA DE PESSOA FÍSICA REFERÊNCIAS CULTURAIS, USOS SOCIAIS E ANÁLISES TERRITORIALIZADAS A SECRETARIA NACIONAL DOS DIREITOS DA PESSOA COM DEFICIÊNCIA DO MINISTÉRIO DOS DIREITOS HUMANOS E DA CIDADANIA (MDHC), em parceria com a UNESCO-ORGANIZAÇÃO DAS NAÇÕES UNIDAS PARA EDUCAÇÃO, A CIÊNCIA E A CULTURA, no âmbito do Projeto 914BRZ3062 - Fortalecimento das ações de reparação a pessoas e comunidades afetadas pela política de internação e isolamento compulsórios de pessoas com hanseníase, torna pública a abertura de processo seletivo para contratação de consultoria técnica a seguir: PROCESSO Nº 00135.215013/2026-01. OBJETO: Contratação de consultoria, de pessoa física, na modalidade produto, em referências culturais, usos sociais e análises territorializadas, para elaborar abordagens metodológicas participativas destinadas a identifica\n\nFonte: Diário Oficial da União, Seção 3, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://roster.brasilia.unesco.org/app/selection-process-list",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-21",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=102"
- },
- {
-  "id": "1219f1590fdc",
-  "title": "Conselho Nacional dos Direitos da Pessoa com Deficiência - Processo Seletivo (Edital nº 1/2026)",
-  "deadline": "Inscrições: 21/09/2026 a 21/10/2026",
-  "state": "BR",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "EDITAL Nº 1, DE 18 DE SETEMBRO DE 2026 SELEÇÃO DE CONSULTORIA DE PESSOA FÍSICA PATRIMÔNIO CULTURAL, ARQUITETURA HISTÓRICA E CONJUNTOS DE INTERESSE CULTURAL A SECRETARIA NACIONAL DOS DIREITOS DA PESSOA COM DEFICIÊNCIA DO MINISTÉRIO DOS DIREITOS HUMANOS E DA CIDADANIA (MDHC), em parceria com a UNESCO-ORGANIZAÇÃO DAS NAÇÕES UNIDAS PARA EDUCAÇÃO, A CIÊNCIA E A CULTURA, no âmbito do Projeto 914BRZ3062 - Fortalecimento das ações de reparação a pessoas e comunidades afetadas pela política de internação e isolamento compulsórios de pessoas com hanseníase, torna pública a abertura de processo seletivo para contratação de consultoria técnica conforme a seguir: PROCESSO Nº 00135.214985/2026-71. OBJETO: Contratação de consultoria, de pessoa física, na modalidade produto, em patrimônio cultural, arquitetura histórica e conjuntos de interesse cultural, para elaborar abordagens metodológicas parti\n\nFonte: Diário Oficial da União, Seção 3, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://roster.brasilia.unesco.org/app/selection-process-list",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-21",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=101"
- },
- {
   "id": "d21c7244fdeb",
   "title": "Município de Paulínia - Processo Seletivo nº 001/2026",
   "deadline": "Inscrições: veja o edital",
@@ -3407,24 +3123,6 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "https://data.queridodiario.ok.org.br/3536505/2026-09-18/c8e97f88396cb951d8eaac14edaf93ed859c9601.pdf"
- },
- {
-  "id": "b96556e9ecf3",
-  "title": "Câmara Municipal de Barão de Antonina - Concurso Público nº 01/2026",
-  "deadline": "Inscrições: 23/09/2026 a 21/10/2026",
-  "state": "SP",
-  "salary": "Salário: R$ 6.603,39",
-  "vacancies": "",
-  "description": "raconstitucionais atinentes à matéria, em especial, a Lei Orgânica do Município de Barão de Antonina - SP e a Lei Complementar do Município de Barão de Antonina - SP – Dispõe sobre o Estatuto dos Servidores do Município de Barão de Antonina – SP, TORNA PÚBLICA a realização do Concurso Público n.º 01/2026, sob o regime estatutário para o provimento de vagas do quadro de servidores do Poder Legislativo Municipal. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público a que se refere o presente Edital será executado pela Fundação FAFIPA – Campus de Paranavaí, CNPJ: 05.566.804/0001-76, com sede administrativa na Av. Paraná, 794 A - Esquina com Rua Guaporé, 1° Andar - Centro CEP: 87.705-190, Paranavaí – PR, endereço eletrônico www.fundacaofafipa.org.br e correio eletrônico candidato@fundacaofafipa.org.br. 1.2 A seleção visa o preenchimento de vagas, sob o regime estatutário, para suprir a necessidade de servidores do Po\n\nFonte: Diário Oficial de Barão de Antonina/SP, 18/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.fundacaofafipa.org.br",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "querido_diario",
-  "city": "Barão de Antonina",
-  "published": "2026-09-18",
-  "registrationStarts": "2026-09-23",
-  "registrationEnds": "2026-10-21",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3505005/2026-09-18/9c0f19629167795575f45034ab284de98d1dc42d.pdf"
  },
  {
   "id": "9176a1ab98c4",
