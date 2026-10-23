@@ -1,5 +1,84 @@
 [
  {
+  "id": "7486a1315eb0",
+  "title": "Prefeitura Municipal de São Tomás de Aquino - Processo Seletivo nº 004/2026",
+  "deadline": "Inscrições: 24/11/2026 a 13/12/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "O Municipio de São Tomás de Aquino, Estado de Minas Gerais, pelo presente, representado pelo Prefeito Municipal em exercício, que no uso de suas atribuições legais e com amparo na Lei Municipal n. 1.313/2023, faz saber que, encontram-se abertas as inscrições para o Processo Seletivo Público Simplificado com base na análise curricular e de títulos para contratação por tempo determinado para os postos de trabalho que menciona, consoante as condições e prazos que estabelecidos neste Edital. - DAS DISPOSIÇÕES PRELIMINARES O Processo Seletivo Público Simplificado será regido por este Edital, seus Anexos e eventuais retificações, cabendo à Comissão Especial de Processo Seletivo Público Simplificado sua condução e execução. O Processo Seletivo Público Simplificado terá validade de 12 (doze) meses , admitida sua prorrogação uma vez, por igual período, devidamente justificada, consoante do artigo 5.°, anexo I da Lei Municipa\n\nFonte: Diário Oficial dos Municípios Mineiros, 23/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "http://www.staquino.mg.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "São Tomás de Aquino",
+  "published": "2026-10-23",
+  "registrationStarts": "2026-11-24",
+  "registrationEnds": "2026-12-13",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amm-mg/materia/E7B8C8CF",
+  "banca": null,
+  "roles": [
+   "Agente Comunitário de Saúde",
+   "Agente de Controle de Endemias",
+   "Assistente Social",
+   "Auxiliar Consultório Dentário",
+   "Auxiliar de Enfermagem",
+   "Auxiliar de Farmácia",
+   "Cirurgião Dentista",
+   "Educador Físico",
+   "Enfermeiro",
+   "Farmaceutico",
+   "Fiscal Vigilância SA",
+   "Que Trata o Presente Edital"
+  ],
+  "education": [
+   "fundamental",
+   "medio",
+   "tecnico",
+   "superior"
+  ],
+  "areas": [
+   "saude",
+   "educacao",
+   "assistencia_social"
+  ],
+  "collector": "sigpub:amm-mg",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "44b835baada5",
+  "title": "Município de Coqueiros do Sul - Processo Seletivo nº 073/2026",
+  "deadline": "Inscrições: 26/10/2026 a 30/10/2026",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "GABINETE DO PREFEITO EDITAL Nº 073/2026 – PROCESSO SELETIVO SIMPLIFICADO Nº 005/2026 EDITAL Nº 073/2026 – PROCESSO SELETIVO SIMPLIFICADO Nº 005/2026 O Município de Coqueiros do Sul/RS torna pública a abertura de Processo Seletivo Simplificado destinado à contratação temporária, em caráter emergencial, e à formação de cadastro de reserva para os cargos de Fonoaudiólogo, Monitor Escolar e Professor de Educação Infantil. Inscrições: de 26 a 30 de outubro de 2026 , no Departamento de Pessoal, das 8h às 12h e das 13h às 17h. O edital completo encontra-se disponível no Mural de Publicações Oficiais do Município e no site www.coqueirosdosul.rs.gov.br. Coqueiros do Sul/RS, em 23/10/2026. RAFAEL KOCHENBORGER – Prefeito Municipal. Publicado por: Gelson Luis Antunes Durante\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 23/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.coqueirosdosul.rs.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Coqueiros do Sul",
+  "published": "2026-10-23",
+  "registrationStarts": "2026-10-26",
+  "registrationEnds": "2026-10-30",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/A0863D83",
+  "banca": null,
+  "roles": [
+   "Fonoaudiólogo",
+   "Monitor Escolar",
+   "Professor de Educação Infantil"
+  ],
+  "education": null,
+  "areas": [
+   "saude",
+   "educacao"
+  ],
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
   "id": "8e1402aa01d4",
   "title": "Prefeitura Municipal de Novo Repartimento - Processo Seletivo",
   "deadline": "Inscrições: veja o edital",
