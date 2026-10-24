@@ -1,5 +1,31 @@
 [
  {
+  "id": "aecf7ad11df9",
+  "source": "querido_diario",
+  "territoryId": "3530706",
+  "city": "Mogi Guaçu",
+  "state": "SP",
+  "organization": "Fundação Educacional Guaçuana",
+  "orgType": "fundacao",
+  "kind": "concurso",
+  "number": "1/2026",
+  "title": "Fundação Educacional Guaçuana - Concurso Público nº 1/2026",
+  "published": "2026-10-24"
+ },
+ {
+  "id": "f73cbd2d3e2b",
+  "source": "querido_diario",
+  "territoryId": "3522505",
+  "city": "Itapevi",
+  "state": "SP",
+  "organization": "Prefeitura Municipal de Itapevi",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "10/2026",
+  "title": "Prefeitura Municipal de Itapevi - Processo Seletivo nº 10/2026",
+  "published": "2026-10-23"
+ },
+ {
   "id": "d7f25150b2c2",
   "source": "querido_diario",
   "territoryId": "3530706",
@@ -65,6 +91,19 @@
   "published": "2026-10-23"
  },
  {
+  "id": "48c621235c5a",
+  "source": "querido_diario",
+  "territoryId": "3535309",
+  "city": "Palmital",
+  "state": "SP",
+  "organization": "Município de Palmital",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "1/2026",
+  "title": "Município de Palmital - Processo Seletivo nº 001/2026",
+  "published": "2026-10-23"
+ },
+ {
   "id": "43621cb58458",
   "source": "querido_diario",
   "territoryId": "3548708",
@@ -88,6 +127,19 @@
   "kind": "processo_seletivo",
   "number": "5/2026",
   "title": "Município de São Bernardo do Campo - Processo Seletivo nº 05/2026",
+  "published": "2026-10-23"
+ },
+ {
+  "id": "2fb30cd14e9f",
+  "source": "querido_diario",
+  "territoryId": "3522505",
+  "city": "Itapevi",
+  "state": "SP",
+  "organization": "Prefeitura Municipal de Itapevi",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "11/2026",
+  "title": "Prefeitura Municipal de Itapevi - Processo Seletivo nº 11/2026",
   "published": "2026-10-23"
  },
  {
