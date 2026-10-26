@@ -1,5 +1,68 @@
 [
  {
+  "id": "fcb8a87d6f6a",
+  "title": "Câmara Municipal de São Geraldo do Araguaia - Concurso Público nº 001/2026",
+  "deadline": "Inscrições: 23/10/2026 a 23/11/2026",
+  "state": "PA",
+  "salary": "Faixa salarial: R$ 1.621,00 - R$ 3.000,00",
+  "vacancies": "Vagas 1",
+  "description": "GABINETE DO PRESIDENTE AVISO EXTRATO DE CONCURSO PUBLICO ESTADO DO PARÁ CÂMARA MUNICIPAL DE SÃO GERALDO DO ARAGUAIA CNPJ: 34.669.119/0001-73 EXTRATO DO EDITAL DE ABERTURA Nº 001/2026 – CONCURSO PÚBLICO A CÂMARA MUNICIPAL DE SÃO GERALDO DO ARAGUAIA – PA, com base na Resolução nº 151/2025, de 18 de junho de 2025, que dispõe sobre o Plano de Cargos, Carreiras e Vencimentos – PCCV, e na Lei Orgânica do Município, torna pública a abertura de inscrições para o Concurso Público destinado ao provimento de cargos efetivos de nível fundamental, médio e superior do seu quadro de pessoal. O concurso será executado pelo ICAP – Instituto de Capacitação, Assessoria e Pesquisa Ltda – EPP. CARGOS, VAGAS E VENCIMENTOS: todos com carga horária de 40 horas semanais. • F101 – Auxiliar de Serviços Gerais – Manutenção/Zeladoria: 01 vaga; R$ 1.621,00; Ensino\n\nFonte: Diário Oficial dos Municípios do Estado do Pará, 26/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.icap-to.com.br",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "diario_municipal",
+  "city": "São Geraldo do Araguaia",
+  "published": "2026-10-26",
+  "registrationStarts": "2026-10-23",
+  "registrationEnds": "2026-11-23",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famep/materia/47D4FB96",
+  "banca": "ICAP",
+  "roles": null,
+  "education": [
+   "fundamental",
+   "medio",
+   "tecnico",
+   "superior"
+  ],
+  "areas": [
+   "administrativa",
+   "operacional"
+  ],
+  "collector": "sigpub:famep",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Pará"
+ },
+ {
+  "id": "d34a67633684",
+  "title": "Município de Mostardas - Processo Seletivo",
+  "deadline": "Inscrições: 27/10/2026 a 11/11/2026",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "rva. O Prefeito Municipal de Mostardas, no uso de suas atribuições e amparado em excepcional interesse público e com fulcro no art. 37, IX, da Constituição da República, e dos artigos 203 ao 208 da Lei Municipal n° 4333, de 07 de dezembro de 2021, torna público a realização de Processo Seletivo Simplificado, que será regido pelas normas estabelecidas neste Edital e nos Decretos nºs. 6495, de 1º de Outubro de 2010, 7892, de 21 de agosto de 2018 e 9467 de 13 de novembro de 2024, visando à formação de cadastro reserva para os cargos: Atendente Geral;Atendente Geral (4º Distrito – Dr. Edgardo Pereira Velho); Cirurgião Dentista (UBS Pedro Gautério); Enfermeiro; Enfermeiro (4º Distrito – Dr. Edgardo Pereira Velho); Fiscal de Obras e Posturas; Mecânico; Monitor (4°Distrito – Dr. Edgardo Pereira Velho); Motorista; Motorista De Ônibus; Motorista De Ônibus (Balneário Mostardense); Motorista De Ônibus (4º Distrito – Dr. Edgardo Pereira Velho)\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 26/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.mostardas.rs.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Mostardas",
+  "published": "2026-10-26",
+  "registrationStarts": "2026-10-27",
+  "registrationEnds": "2026-11-11",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/E4925458",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude",
+   "educacao",
+   "assistencia_social",
+   "operacional"
+  ],
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
   "id": "7486a1315eb0",
   "title": "Prefeitura Municipal de São Tomás de Aquino - Processo Seletivo nº 004/2026",
   "deadline": "Inscrições: 24/11/2026 a 13/12/2026",
