@@ -1,5 +1,44 @@
 [
  {
+  "id": "ae0d35718847",
+  "source": "querido_diario",
+  "territoryId": "3525607",
+  "city": "João Ramalho",
+  "state": "SP",
+  "organization": "Câmara Municipal de João Ramalho",
+  "orgType": "camara",
+  "kind": "concurso",
+  "number": "1/2026",
+  "title": "Câmara Municipal de João Ramalho - Concurso Público nº 01/2026",
+  "published": "2026-10-26"
+ },
+ {
+  "id": "843f0d5ff4fa",
+  "source": "querido_diario",
+  "territoryId": "5007208",
+  "city": "Rio Brilhante",
+  "state": "MS",
+  "organization": "Município de Rio Brilhante",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "4/2026",
+  "title": "Município de Rio Brilhante - Processo Seletivo nº 004/2026",
+  "published": "2026-10-26"
+ },
+ {
+  "id": "31a82c5a6ac2",
+  "source": "querido_diario",
+  "territoryId": "5007208",
+  "city": "Rio Brilhante",
+  "state": "MS",
+  "organization": "Município de Rio Brilhante",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "3/2026",
+  "title": "Município de Rio Brilhante - Processo Seletivo nº 003/2026",
+  "published": "2026-10-26"
+ },
+ {
   "id": "aecf7ad11df9",
   "source": "querido_diario",
   "territoryId": "3530706",
