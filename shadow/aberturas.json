@@ -1,5 +1,44 @@
 [
  {
+  "id": "773f20ad566c",
+  "source": "querido_diario",
+  "territoryId": "3530706",
+  "city": "Mogi Guaçu",
+  "state": "SP",
+  "organization": "Fundação Educacional Guaçuana",
+  "orgType": "fundacao",
+  "kind": "concurso",
+  "number": "2/2026",
+  "title": "Fundação Educacional Guaçuana - Concurso Público nº 2/2026",
+  "published": "2026-10-28"
+ },
+ {
+  "id": "f339384478fc",
+  "source": "querido_diario",
+  "territoryId": "2804805",
+  "city": "Nossa Senhora do Socorro",
+  "state": "SE",
+  "organization": "Município de Nossa Senhora do Socorro",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "2/2026",
+  "title": "Município de Nossa Senhora do Socorro - Processo Seletivo nº 02/2026",
+  "published": "2026-10-27"
+ },
+ {
+  "id": "1a9b7f6394c8",
+  "source": "querido_diario",
+  "territoryId": "2919553",
+  "city": "Luís Eduardo Magalhães",
+  "state": "BA",
+  "organization": "Prefeitura Municipal de Luís Eduardo Magalhães",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "1/2026",
+  "title": "Prefeitura Municipal de Luís Eduardo Magalhães - Processo Seletivo nº 001/2026",
+  "published": "2026-10-27"
+ },
+ {
   "id": "ae0d35718847",
   "source": "querido_diario",
   "territoryId": "3525607",

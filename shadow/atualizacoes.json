@@ -1,5 +1,47 @@
 [
  {
+  "id": "upd-44b23cbdb707",
+  "examId": "773f20ad566c",
+  "type": "resultado",
+  "title": "Resultado publicado",
+  "organization": "Fundação Educacional Guaçuana",
+  "edital": "Concurso Público nº 2/2026",
+  "state": "SP",
+  "city": "Mogi Guaçu",
+  "published": "2026-10-28",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3530706/2026-10-28/048368bb1dfeb2dd82bb60abb01f0380ed3d17d4.pdf",
+  "excerpt": "INISTRATIVOS 10.1. Caberá recurso administrativo, nos três dias úteis seguintes à data das respectivas divulgações, em relação: a) ao EDITAL DE ABERTURA DE INSCRIÇÕES; b) ao EDITAL DE INDEFERIMENTO DE INSCRIÇÕES; c) à PROVA OBJETIVA (questões e gabarito); d) ao EDITAL DE CLASSIFICAÇÃO PROVISÓRIA após Prova Objetiva; e) ao EDITAL DE CLASSIFICAÇÃO PROVISÓRIA após Prova Prática. 10.2. Os recursos administrativos deverão ser efetuados exclusivamente através do site publiconsult.com.br. Para interpos",
+  "source": "querido_diario"
+ },
+ {
+  "id": "upd-f2f64d461553",
+  "examId": "d21c7244fdeb",
+  "type": "convocacao",
+  "title": "Convocação publicada",
+  "organization": "Município de Paulínia",
+  "edital": "Processo Seletivo nº 001/2026",
+  "state": "SP",
+  "city": "Paulínia",
+  "published": "2026-10-27",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3536505/2026-10-27/1cf8f097d0d4be762bafec6e680194ea69f06c57.pdf",
+  "excerpt": "ões para o Procedimento de Heteroiden- tificação Online. Art. 4º Este Edital entra em vigor na data de sua publicação, revogadas as dispo- sições contrárias. Paulínia/SP, 27 de outubro de 2026. DANILO BARROS PREFEITO MUNICIPAL ANEXO I – EDITAL DE CONVOCAÇÃO PARA O PROCEDIMENTO DE HETE- ROIDENTIFICAÇÃO PROCESSO SELETIVO N° 001/2026 201 - AGENTE DE APOIO EDUCACIONAL Nome Inscrição ADELAINE CRISTINA FARIA AMÉRICO NASCIMENTO PINTO 7600004430 ADENILZA PEREIRA 7600000617 ADRIANA APARECIDA THEODORO FEL",
+  "source": "querido_diario"
+ },
+ {
+  "id": "upd-a094a074167f",
+  "examId": "d21c7244fdeb",
+  "type": "resultado",
+  "title": "Resultado publicado",
+  "organization": "Prefeitura Municipal de Paulínia",
+  "edital": "Processo Seletivo nº 001/2026",
+  "state": "SP",
+  "city": "Paulínia",
+  "published": "2026-10-27",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3536505/2026-10-27/1cf8f097d0d4be762bafec6e680194ea69f06c57.pdf",
+  "excerpt": "ESSO SELETIVO N° 001/2026 A Prefeitura Municipal de Paulínia, no Estado de São Paulo, no uso de suas atri- buições legais, mediante as condições estipuladas neste Edital, seu anexo e de- mais disposições legais aplicáveis, TORNA PÚBLICO o EDITAL DE RESULTADO DA PROVA OBJETIVA – PÓS-RECURSO, do PROCESSO SELETIVO aberto pelo Edital de Abertura nº 001/2026, conforme segue: Art. 1° Após análise dos recursos interpostos contra o resultado da Prova Objetiva – Preliminar, fica ALTERADO o resultado divu",
+  "source": "querido_diario"
+ },
+ {
   "id": "upd-9acb393996a6",
   "examId": "00c70150d757",
   "type": "homologacao",
