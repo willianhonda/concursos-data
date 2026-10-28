@@ -150,18 +150,28 @@ def collect(
     return items
 
 
+def _search_term(slug, term, since, until, fetch, sleep, log, cards: dict[str, dict]) -> None:
+    """Todas as matérias de um termo no período. A busca devolve no máximo MAX_PAGES páginas; quando o teto é
+    atingido o período é dividido ao meio e cada metade é pesquisada de novo, até caber ou chegar a um dia."""
+    for page in range(1, MAX_PAGES + 1):
+        sleep(DELAY)
+        result = parse_search(fetch(search_url(slug, term, since, until, page)).decode("utf-8", errors="replace"))
+        for card in result["cards"]:
+            cards.setdefault(card["code"], card)
+        if page * PAGE_SIZE >= result["total"] or not result["cards"]:
+            return
+    if since >= until:
+        log(f"sigpub:{slug}: busca por {term!r} em {since} cortada em {MAX_PAGES} páginas")
+        return
+    middle = since + (until - since) // 2
+    _search_term(slug, term, since, middle, fetch, sleep, log, cards)
+    _search_term(slug, term, middle + dt.timedelta(days=1), until, fetch, sleep, log, cards)
+
+
 def _search_all(slug, since, today, fetch, sleep, log) -> list[dict]:
     cards: dict[str, dict] = {}
     for term in TERMS:
-        for page in range(1, MAX_PAGES + 1):
-            sleep(DELAY)
-            result = parse_search(fetch(search_url(slug, term, since, today, page)).decode("utf-8", errors="replace"))
-            for card in result["cards"]:
-                cards.setdefault(card["code"], card)
-            if page * PAGE_SIZE >= result["total"] or not result["cards"]:
-                break
-        else:
-            log(f"sigpub:{slug}: busca por {term!r} cortada em {MAX_PAGES} páginas")
+        _search_term(slug, term, since, today, fetch, sleep, log, cards)
     return list(cards.values())
 
 

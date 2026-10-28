@@ -175,6 +175,38 @@ class CollectTests(unittest.TestCase):
         self.assertLessEqual(len(amp_pages), sigpub.MAX_PAGES)
 
 
+class SearchCapTests(unittest.TestCase):
+    """Uma busca com mais matérias do que cabe em MAX_PAGES é dividida por período em vez de cortada."""
+
+    def test_period_is_split_when_the_page_cap_is_hit(self):
+        import datetime as dt
+        import urllib.parse
+
+        def card(code):
+            return (f'<h2 class="materia-card__titulo"><a href="/amp/materia/{code}">Concurso {code}</a></h2>'
+                    '<span class="materia-card__entidade">Prefeitura</span><dl><dt>Circulação</dt><dd>01/10/2026</dd></dl>')
+
+        calls = []
+
+        def fetch(url):
+            query = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)
+            since = query["busca_avancada[dataInicio]"][0]
+            until = query["busca_avancada[dataFim]"][0]
+            calls.append((since, until))
+            # Um período longo "tem" 10.000 matérias; um curto (até 8 dias) tem 1 só, com código próprio.
+            span = (dt.date.fromisoformat(until) - dt.date.fromisoformat(since)).days
+            total = 10000 if span > 8 else 1
+            body = card("d" + since.replace("-", "") + until.replace("-", "")) if total == 1 else "".join(card("p" + since.replace("-", "") + f"x{n}") for n in range(25))
+            return f'de <strong>{total}</strong> matérias {body}'.encode()
+
+        logs = []
+        cards = sigpub._search_all("amp", dt.date(2026, 9, 27), dt.date(2026, 10, 27), fetch, lambda _: None, logs.append)
+        self.assertTrue(cards)
+        self.assertFalse([m for m in logs if "cortada" in m])
+        # Pediu períodos menores que o original.
+        self.assertTrue(any(s != "2026-09-27" or u != "2026-10-27" for s, u in calls))
+
+
 if __name__ == "__main__":
     unittest.main()
 
