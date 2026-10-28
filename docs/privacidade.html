@@ -20,7 +20,7 @@
 <body>
 <main>
 <h1>Política de Privacidade</h1>
-<p class="muted">App Radar de Concursos (ConcursosPublicos) para iOS · Atualizada em 26 de setembro de 2026</p>
+<p class="muted">App Radar de Concursos (ConcursosPublicos) para iOS · Atualizada em 28 de outubro de 2026</p>
 
 <p>Esta política explica quais dados o app coleta, para quê e quais são os seus direitos, conforme a Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018).</p>
 
@@ -29,6 +29,7 @@
   <li>O app não tem cadastro nem login e não pede seu nome, e-mail, telefone ou CPF.</li>
   <li>Os concursos que você favorita ficam salvos só no seu aparelho.</li>
   <li>Coletamos dados de uso e de falhas anônimos, com ferramentas do Google (Firebase), para entender como o app é usado e corrigir erros.</li>
+  <li>Para entregar avisos de concursos novos, o app registra o aparelho no serviço de notificações da Apple e do Google (Firebase Cloud Messaging). O envio não leva seus filtros nem seus alertas: eles ficam no aparelho.</li>
   <li>Não usamos seus dados para publicidade, não rastreamos você em outros apps ou sites e não vendemos dados.</li>
 </ul>
 
@@ -39,7 +40,9 @@
   <tr><td>Interações com o app: telas abertas, sessões e abertura de editais</td><td>Entender quais recursos são usados e melhorar o app</td><td>Google Analytics for Firebase</td></tr>
   <tr><td>Localização aproximada (cidade/região), derivada do endereço IP mascarado</td><td>Estatísticas gerais de uso por região</td><td>Google Analytics for Firebase</td></tr>
   <tr><td>Relatórios de falhas e erros: rastreamento da pilha, modelo do aparelho e versão do sistema e do app</td><td>Diagnosticar e corrigir falhas</td><td>Firebase Crashlytics</td></tr>
+  <tr><td>Token de registro de notificações do aparelho (gerado pelo Firebase; não é o identificador de publicidade)</td><td>Entregar o aviso de que há concursos novos, para quem escolhe o envio imediato</td><td>Firebase Cloud Messaging</td></tr>
 </table>
+<p>O token de notificações é criado pelo aparelho e só é usado para receber os avisos; o aparelho entra no tópico de concursos novos apenas quando o assinante do Premium escolhe a entrega "Assim que encontrar" e permite os avisos, e sai dele quando muda a escolha. O servidor não conhece os filtros nem os alertas de ninguém, e o push enviado não leva texto: o app baixa a lista e decide, no próprio aparelho, o que avisar.</p>
 <p>Esses dados não são associados à sua identidade. A base legal é o legítimo interesse em manter o app funcionando e melhorá-lo (art. 7º, IX, da LGPD).</p>
 
 <h2>Dados que ficam só no seu aparelho</h2>
