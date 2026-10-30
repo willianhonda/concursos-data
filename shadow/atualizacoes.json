@@ -1,5 +1,19 @@
 [
  {
+  "id": "upd-c0d7741e7107",
+  "examId": "2da7268cf5f7",
+  "type": "resultado",
+  "title": "Resultado publicado",
+  "organization": "Prefeitura Municipal de Candeias",
+  "edital": "Processo Seletivo nº 005/2026",
+  "state": "MG",
+  "city": "Candeias",
+  "published": "2026-10-29",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3112000/2026-10-29/c9bc500183cc706687260fd661ec109e6a9d7110.pdf",
+  "excerpt": "___________________________________________________________________ Avenida 17 de Dezembro, 240, Centro – CEP 37.280-000 – CANDEIAS/MG Telefone: (35) 3475-0119 PROCESSO SELETIVO SIMPLIFICADO Nº 005/2026 SECRETARIA MUNICIPAL DE SAÚDE CLASSIFICAÇÃO FINAL Item 01 ENFERMEIRO CLASSIFICAÇÃO NOME PONTUAÇÃO PROVA OBJETIVA (NOTA MÁXIMA 10 PTS) 1º BEATRIZ VIEIRA MOREIRA 4,5 2º ANA PAULA SIMÕES 4,0 CANDEIAS, 29 DE OUTUBRO DE 2026.",
+  "source": "querido_diario"
+ },
+ {
   "id": "upd-cc598fd6dd13",
   "examId": "00c70150d757",
   "type": "convocacao",

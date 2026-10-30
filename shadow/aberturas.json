@@ -1,5 +1,18 @@
 [
  {
+  "id": "21e70475e4f5",
+  "source": "querido_diario",
+  "territoryId": "3534401",
+  "city": "Osasco",
+  "state": "SP",
+  "organization": "Prefeitura do Município de Osasco",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "1/2026",
+  "title": "Prefeitura do Município de Osasco - Processo Seletivo nº 001/2026",
+  "published": "2026-10-29"
+ },
+ {
   "id": "773f20ad566c",
   "source": "querido_diario",
   "territoryId": "3530706",
