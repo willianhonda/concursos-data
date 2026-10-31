@@ -189,13 +189,13 @@ class WiringTests(unittest.TestCase):
         self.assertEqual({i["collector"].split(":")[0] for i in live}, {"ibgp", "proseleta", "cebraspe"})
         self.assertTrue(all(i["source"] == "banca" and not vf.item_errors(i) for i in live))
 
-    def test_workflow_defaults_promote_the_bancas_and_keep_sigpub_in_shadow(self):
+    def test_workflow_defaults_promote_the_bancas_and_keep_sigpub_and_dosp_in_shadow(self):
         workflow = (Path(__file__).resolve().parents[1] / ".github/workflows/atualizar-concursos.yml").read_text()
         on = re.search(r"SOURCES_ON: \$\{\{ vars\.SOURCES_ON \|\| '([^']*)' \}\}", workflow)
         shadow = re.search(r"SOURCES_SHADOW: \$\{\{ vars\.SOURCES_SHADOW \|\| '([^']*)' \}\}", workflow)
         env = {"SOURCES_ON": on.group(1), "SOURCES_SHADOW": shadow.group(1)}
         self.assertEqual({n: sources.collector_mode(n, env) for n in sources.KNOWN_COLLECTORS},
-                         {"sigpub": "shadow", "ibgp": "live", "proseleta": "live", "cebraspe": "live"})
+                         {"sigpub": "shadow", "dosp": "shadow", "ibgp": "live", "proseleta": "live", "cebraspe": "live"})
         self.assertEqual(sources.unknown_names(env), [])
 
 
