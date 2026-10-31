@@ -1,5 +1,6 @@
 import datetime as dt
 import io
+import json
 import sys
 import unittest
 import xml.etree.ElementTree as ET
@@ -153,6 +154,21 @@ class RecallTests(unittest.TestCase):
         self.assertTrue(bf.warn_if_stale([{"date": "2026-10-01"}, {"date": "2026-10-03"}], today))
         self.assertFalse(bf.warn_if_stale([{"date": "2026-10-15"}], today))
         self.assertFalse(bf.warn_if_stale([], today))
+
+    def test_stale_cities_warning(self):
+        today = dt.date(2026, 10, 31)
+        answers = {"3549904": [{"date": "2026-07-08"}], "3550308": [], "3106200": [{"date": "2026-10-29"}]}
+
+        def fetch(url):
+            territory = url.split("territory_ids=")[1].split("&")[0]
+            if territory == "2304400":
+                raise OSError("fora do ar")
+            return json.dumps({"gazettes": answers.get(territory, [{"date": "2026-10-30"}])}).encode()
+
+        stale = bf.stale_cities(today, fetch)
+        self.assertIn("São José dos Campos (último diário há 115 dias)", stale)
+        self.assertIn("São Paulo (sem nenhum diário)", stale)
+        self.assertEqual(len(stale), 2)
 
 
 class DouTests(unittest.TestCase):

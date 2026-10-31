@@ -42,6 +42,7 @@ import zipfile
 from pathlib import Path
 
 import bancas
+import dosp
 import orgaos_uf
 import sigpub
 import sources
@@ -391,6 +392,48 @@ def warn_if_stale(gazettes: list[dict], today: dt.date) -> bool:
         log(f"AVISO: o diário mais recente da busca tem {age} dias; os spiders do Querido Diário podem ter parado")
         return True
     return False
+
+
+# Capitais e cidades grandes: o spider de uma delas parar deixa o feed cego a ela sem que o aviso global
+# (`warn_if_stale`, que olha só a busca por concurso em todo o país) perceba.
+WATCHED_CITIES = {
+    "1200401": "Rio Branco", "2704302": "Maceió", "1600303": "Macapá", "1302603": "Manaus", "2927408": "Salvador",
+    "2304400": "Fortaleza", "5300108": "Brasília", "3205309": "Vitória", "5208707": "Goiânia", "2111300": "São Luís",
+    "5103403": "Cuiabá", "5002704": "Campo Grande", "3106200": "Belo Horizonte", "1501402": "Belém",
+    "2507507": "João Pessoa", "4106902": "Curitiba", "2611606": "Recife", "2211001": "Teresina",
+    "3304557": "Rio de Janeiro", "2408102": "Natal", "4314902": "Porto Alegre", "1100205": "Porto Velho",
+    "1400100": "Boa Vista", "4205407": "Florianópolis", "3550308": "São Paulo", "2800308": "Aracaju",
+    "1721000": "Palmas", "3549904": "São José dos Campos", "3509502": "Campinas", "3518800": "Guarulhos",
+    "3548500": "Santos", "3548708": "São Bernardo do Campo",
+}
+# Alguns diários saem só em dias úteis ou com atraso; abaixo disso não é sinal de spider parado.
+CITY_STALE_AFTER_DAYS = 14
+
+
+def stale_cities(today: dt.date, fetch=http_get) -> list[str]:
+    """Cidades vigiadas cujo diário mais recente na API é antigo (ou que não têm diário nenhum)."""
+    stale = []
+    for territory_id, name in WATCHED_CITIES.items():
+        params = {"territory_ids": territory_id, "sort_by": "descending_date", "size": 1}
+        try:
+            gazettes = json.loads(fetch(f"{API}?{urllib.parse.urlencode(params)}")).get("gazettes", [])
+        except Exception as err:  # noqa: BLE001 - uma cidade sem resposta não derruba o job
+            log(f"  {name}: não deu para checar o spider ({err})")
+            continue
+        age = newest_gazette_age(gazettes, today)
+        if age is None:
+            stale.append(f"{name} (sem nenhum diário)")
+        elif age > CITY_STALE_AFTER_DAYS:
+            stale.append(f"{name} (último diário há {age} dias)")
+        time.sleep(0.2)
+    return stale
+
+
+def warn_stale_cities(today: dt.date, fetch=http_get) -> list[str]:
+    stale = stale_cities(today, fetch)
+    if stale:
+        log(f"AVISO: spiders do Querido Diário parados em {len(stale)} cidade(s) vigiada(s): " + "; ".join(stale))
+    return stale
 
 
 # ---------------------------------------------------------------- extração
@@ -910,6 +953,7 @@ SHADOW_OUTPUT = Path("shadow/fontes-novas.json")
 # nome do coletor (o prefixo de `collector`) -> função que devolve os itens
 COLLECTOR_FUNCS = {
     "sigpub": sigpub.collect,
+    "dosp": dosp.collect,
     **{name: functools.partial(bancas.collect, only=name) for name in ("ibgp", "proseleta", "cebraspe")},
 }
 
@@ -963,6 +1007,7 @@ def main() -> int:
         log(f"Querido Diário: {err}")
         gazettes = []
     warn_if_stale(gazettes, today)
+    warn_stale_cities(today)
 
     new: list[dict] = []
     for g in gazettes:
