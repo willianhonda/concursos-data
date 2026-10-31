@@ -75,6 +75,35 @@
   "gazetteName": "Diário Oficial dos Municípios Mineiros"
  },
  {
+  "id": "244605a33434",
+  "title": "Município de Senador Rui Palmeira - Processo Seletivo",
+  "deadline": "Inscrições: 04/11/2026 a 06/11/2026",
+  "state": "AL",
+  "salary": "Salário: R$ 2.000,00",
+  "vacancies": "",
+  "description": "CD/FNDE nº 4, de 26 de fevereiro de 2026, com as alterações da Resolução CD/FNDE nº 17, de 22 de outubro de 2026, e nas Resoluções CFN nº 788 e nº 789, ambas de 13 de setembro de 2024, observada a Resolução CFN nº 857, de 5 de maio de 2026, torna pública a abertura deste PROCESSO SELETIVO SIMPLIFICADO, destinado à contratação por tempo determinado de Nutricionista Escolar para compor o quadro técnico da Secretaria Municipal de Educação de Senador Rui Palmeira, com atuação no Programa Nacional de Alimentação Escolar (PNAE), e à formação de cadastro de reserva, nas condições seguintes. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1. O certame será regido por este Edital e seus anexos e executado pela Comissão Especial Organizadora do Processo Seletivo Simplificado, doravante denominada Comissão, observados a impessoalidade, a publicidade, a motivação, a isonomia e o direito de recurso. 1.2. A contratação por tempo d\n\nFonte: Diário Oficial de Senador Rui Palmeira/AL, 30/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.senadorruipalmeira.al.gov.br/portal/index.php",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Senador Rui Palmeira",
+  "published": "2026-10-30",
+  "registrationStarts": "2026-11-04",
+  "registrationEnds": "2026-11-06",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2700000/2026-10-30/f7a3bbf991c5ea838f847565d60e87251853f745.pdf",
+  "banca": null,
+  "roles": [
+   "Nutricionista Escolar Cumprirá Jornada de",
+   "Nutricionista Escolar"
+  ],
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ]
+ },
+ {
   "id": "f96bb781f820",
   "title": "Prefeitura Municipal de Balsa Nova - Processo Seletivo nº 19/2026",
   "deadline": "Inscrições: 29/10/2026 a 12/11/2026",
@@ -914,37 +943,6 @@
   ]
  },
  {
-  "id": "f73cbd2d3e2b",
-  "title": "Prefeitura Municipal de Itapevi - Processo Seletivo nº 10/2026",
-  "deadline": "Inscrições: 23/10/2026 a 30/10/2026",
-  "state": "SP",
-  "salary": "",
-  "vacancies": "",
-  "description": "DE SELEÇÃO DA FUNÇÃO DE CONFIANÇA PARA COORDENADOR ADMINISTRATIVO FINANCEIRO PARA ATUAR NO PROGRAMA MUNICIPAL DE EDUCAÇÃO INTEGRAL E DÁ OUTRAS PROVIDÊNCIAS. A Secretaria Municipal de Educação de Itapevi, no uso de suas atribuições legais, torna público o Edital Nº 10/2026, com a abertura das inscrições para os docentes integrantes do Programa Municipal de Educação Integral do Município de Itapevi, interessados em participar do Processo Seletivo referente às funções de Confiança do Programa Municipal de Educação Integral, de acordo com a Resolução de Nº 10 publicada no Diário Oficial do Município de Itapevi em 06 de Setembro de 2024, Ano 16 - Edição Nº 1321. I – Das Condições Para concorrer no Processo Seletivo na função de confiança de Coordenador Administrativo Financeiro das Escolas em Tempo Integral, o candidato deverá atender às seguintes condições: 1. Ter, no mínimo, um (01) ano de atuação ininterrupta no Programa Municipal de Educação Integral de Itapevi; 2. Ser graduado em Pedagogia ou Pós-Graduado na área de Educação; 3. Ter mais de três (3) anos\n\nFonte: Diário Oficial de Itapevi/SP, 23/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://forms.gle/ZZBCTUn9yCn3vhqq9",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Itapevi",
-  "published": "2026-10-23",
-  "registrationStarts": "2026-10-23",
-  "registrationEnds": "2026-10-30",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3522505/2026-10-23/08efe3671d64c0a706eff536ddcca44849cddcfb.pdf",
-  "banca": "Equipe Gestora do Programa",
-  "roles": [
-   "Confiança",
-   "Confiança do Programa Municipal de Educação Integral",
-   "Candidato Deverá Atender Às Seguintes Condições: 1",
-   "Gestão Na Rede Municipal de Itapevi",
-   "Confiança Almejada",
-   "Coordenador Administrativo Financeiro o",
-   "Será Publicada No Diário Oficial",
-   "Gestão"
-  ],
-  "education": null,
-  "areas": null
- },
- {
   "id": "8ab4efd395b7",
   "title": "Município de São Bernardo do Campo - Processo Seletivo nº 04/2026",
   "deadline": "Inscrições: veja o edital",
@@ -1093,38 +1091,6 @@
   "areas": null
  },
  {
-  "id": "44b835baada5",
-  "title": "Município de Coqueiros do Sul - Processo Seletivo nº 073/2026",
-  "deadline": "Inscrições: 26/10/2026 a 30/10/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "",
-  "description": "GABINETE DO PREFEITO EDITAL Nº 073/2026 – PROCESSO SELETIVO SIMPLIFICADO Nº 005/2026 EDITAL Nº 073/2026 – PROCESSO SELETIVO SIMPLIFICADO Nº 005/2026 O Município de Coqueiros do Sul/RS torna pública a abertura de Processo Seletivo Simplificado destinado à contratação temporária, em caráter emergencial, e à formação de cadastro de reserva para os cargos de Fonoaudiólogo, Monitor Escolar e Professor de Educação Infantil. Inscrições: de 26 a 30 de outubro de 2026 , no Departamento de Pessoal, das 8h às 12h e das 13h às 17h. O edital completo encontra-se disponível no Mural de Publicações Oficiais do Município e no site www.coqueirosdosul.rs.gov.br. Coqueiros do Sul/RS, em 23/10/2026. RAFAEL KOCHENBORGER – Prefeito Municipal. Publicado por: Gelson Luis Antunes Durante\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 23/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.coqueirosdosul.rs.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "diario_municipal",
-  "city": "Coqueiros do Sul",
-  "published": "2026-10-23",
-  "registrationStarts": "2026-10-26",
-  "registrationEnds": "2026-10-30",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/A0863D83",
-  "banca": null,
-  "roles": [
-   "Fonoaudiólogo",
-   "Monitor Escolar",
-   "Professor de Educação Infantil"
-  ],
-  "education": null,
-  "areas": [
-   "saude",
-   "educacao"
-  ],
-  "collector": "sigpub:famurs",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
- },
- {
   "id": "43621cb58458",
   "title": "Município de São Bernardo do Campo - Processo Seletivo nº 01/2026",
   "deadline": "Inscrições: veja o edital",
@@ -1172,30 +1138,6 @@
   "education": [
    "superior"
   ],
-  "areas": [
-   "educacao"
-  ]
- },
- {
-  "id": "2fb30cd14e9f",
-  "title": "Prefeitura Municipal de Itapevi - Processo Seletivo nº 11/2026",
-  "deadline": "Inscrições: 23/10/2026 a 30/10/2026",
-  "state": "SP",
-  "salary": "",
-  "vacancies": "",
-  "description": "DE 2026 REGULAMENTA O PROCESSO DE SELEÇÃO DE PROFESSOR DE EDUCAÇÃO BÁSICA I E II PARA ATUAR NAS ESCOLAS DE TEMPO INTEGRAL. A Secretaria Municipal de Educação de Itapevi, no uso de suas atribuições legais, torna público o Edital Nº 11/2026, com a abertura das inscrições dos profissionais integrantes do Quadro de Docentes do Magistério da Rede Municipal de Itapevi, interessados em participar do Processo Seletivo referente ao Programa Municipal de Educação Integral para atuar nas “Escolas do Futuro” – Escolas de Tempo Integral, nos termos das Leis Nº 2.645, de 01 de março de 2019, de acordo com o Parágrafo único do Art. 14, da Lei Nº 2.676, que passou a vigorar em 15 de Maio de 2019, e Lei Nº 2.954 de 01 de Dezembro de 2021. I – Das Condições Poderá participar do Processo Seletivo para atuar nas Escolas em Tempo Integral - “Escolas do Futuro”, o docente que atenda às seguintes condições: 1. Ser professor efetivo da Rede Municipal de Ensino do Município de Itapevi; 2. Estar em efetivo exercício do seu cargo ou função atividade ou\n\nFonte: Diário Oficial de Itapevi/SP, 23/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.itapevi.sp.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Itapevi",
-  "published": "2026-10-23",
-  "registrationStarts": "2026-10-23",
-  "registrationEnds": "2026-10-30",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3522505/2026-10-23/08efe3671d64c0a706eff536ddcca44849cddcfb.pdf",
-  "banca": "Equipe Gestora do Programa",
-  "roles": null,
-  "education": null,
   "areas": [
    "educacao"
   ]
@@ -1740,26 +1682,6 @@
   "published": "2026-10-19",
   "registrationStarts": "2026-10-13",
   "registrationEnds": "2026-11-12",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
- },
- {
-  "id": "96f981e3a947",
-  "title": "Câmara de Candeias do Jamari - Concurso Público nº 01/2026",
-  "deadline": "Inscrições: 21/09/2026 a 30/10/2026",
-  "state": "RO",
-  "salary": "",
-  "vacancies": "Vagas 17",
-  "description": "Câmara de Candeias do Jamari: concurso público nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 19/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "banca",
-  "city": "Candeias do Jamari",
-  "published": "2026-10-19",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-30",
   "banca": "IBGP",
   "sphere": "municipal",
   "collector": "ibgp"
@@ -4332,24 +4254,6 @@
   "gazetteUrl": "https://data.queridodiario.ok.org.br/3536505/2026-09-18/c8e97f88396cb951d8eaac14edaf93ed859c9601.pdf"
  },
  {
-  "id": "9176a1ab98c4",
-  "title": "Prefeitura Municipal do Salvador - Concurso Público nº 02/2026",
-  "deadline": "Inscrições: 21/09/2026 a 30/10/2026",
-  "state": "BA",
-  "salary": "Faixa salarial: R$ 1.773,21 - R$ 3.546,42",
-  "vacancies": "Vagas 50",
-  "description": "Infância e Juventude. EDITAIS SECRETARIA MUNICIPAL DE GESTÃO - SEMGE CONCURSO PÚBLICO - EDITAL Nº 02/2026 GCM O Secretário Municipal de Gestão, no uso de suas atribuições, em conformidade com os dispositivos da Constituição Federal vigente, torna pública a abertura de inscrições e estabelece as normas relativas à realização do Concurso Público, para preenchimento de vagas efetivas do quadro permanente da Prefeitura Municipal do Salvador, bem como a formação de cadastro de reserva no período de vigência do Concurso Público, para o cargo de Nível Médio de Guarda Civil Municipal nos termos da Lei Complementar nº 01/1991 com alterações posteriores, Lei nº 9.640/2022 e Processo Administrativo SEMGE nº 78684/2026, o qual reger-se-á de acordo com as instruções, que fazem parte deste Edital. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público a que se refere o presente Edital destina-se ao preenchimento de 50 (cinquenta) vagas imediatas, além de cadastro de reserva a ser\n\nFonte: Diário Oficial de Salvador/BA, 18/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://conhecimento.fgv.br/concursos/pmsguarda2026",
-  "linkKind": "edital",
-  "kind": "concurso",
-  "source": "querido_diario",
-  "city": "Salvador",
-  "published": "2026-09-18",
-  "registrationStarts": "2026-09-21",
-  "registrationEnds": "2026-10-30",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/2927408/2026-09-18/ea3b0b244518d645ff888544709af99091f198f6.pdf"
- },
- {
   "id": "56d09d67037e",
   "title": "Município de Corbélia - Processo Seletivo nº 01/2026 (retificação)",
   "deadline": "Inscrições: veja o edital",
@@ -4384,23 +4288,5 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "https://data.queridodiario.ok.org.br/3521408/2026-09-16/7eb1ec0f948f0f8916fa282933e319339eca439e.pdf"
- },
- {
-  "id": "f3646f22db31",
-  "title": "Município de Campinas - Concurso Público nº 01/2026 (retificação)",
-  "deadline": "Inscrições: veja o edital",
-  "state": "SP",
-  "salary": "",
-  "vacancies": "",
-  "description": "nas, 14 de setembro de 2026 ENRIQUE JAVIER MISAILIDIS LERENA PRESIDENTE DA SETEC CONCURSO PÚBLICO - EDITAL Nº 01/2026 EXTRATO DA RETIFICAÇÃO Nº 01 DO EDITAL DE ABERTURA O Presidente daSETEC - SERVIÇOS TÉCNICOS GERAIS, no Município de Campinas/SP torna pública a RETIFICAÇÃO Nº 01 DO EDITAL DE ABERTURA do Concurso Público nº 01/2026. O arquivo, na íntegra, será publicado nos endereços eletrônicos https://indepac.selecao.net.br/ e https://setec.sp.gov.br/ a partir desta data. Campinas, 14 de setembro de 2026 ENRIQUE JAVIER MISAILIDIS LERENA PRESIDENTE DA SETEC CONCURSO PÚBLICO - EDITAL Nº 02/2026\n\nFonte: Diário Oficial de Campinas/SP, 15/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://indepac.selecao.net.br/",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "querido_diario",
-  "city": "Campinas",
-  "published": "2026-09-15",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3509502/2026-09-15/0db82de6c807327927bc454fbf218f52c7544f60.pdf"
  }
 ]
