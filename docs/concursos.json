@@ -2491,30 +2491,6 @@
   "areas": null
  },
  {
-  "id": "e125656a4e15",
-  "title": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Processo Seletivo (Edital nº 4/2026)",
-  "deadline": "Inscrições: 21/10/2026 a 31/10/2026",
-  "state": "CE",
-  "salary": "Salário: R$ 4.478,03",
-  "vacancies": "",
-  "description": "EDITAL Nº 4, DE 8 DE OUTUBRO DE 2026 A DIRETORA-GERAL DO CAMPUS DE LIMOEIRO DO NORTE DO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO CEARÁ (IFCE), no uso de suas atribuições e considerando a delegação de competência conferida pela Portaria Normativa nº 81/GABR/REITORIA, de 08 de agosto de 2023, torna pública a abertura de inscrições para o Processo Seletivo Simplificado destinado a selecionar candidatos para contratação por tempo determinado, como professor substituto para o campus de Limoeiro do Norte, nos termos da Lei nº 8.745/93 e suas alterações. Período: 21/10/2026 a 31/10/2026. Inscrição somente via internet, pelo sítio qselecao.ifce.edu.br; Taxa: R$ 150,00 (cento e cinquenta reais) paga por meio de boleto eletrônico, em qualquer agência bancária ou lotérica; Habilitação exigida e todas as informações do certame se encontram disponíveis, na íntegra, no Edital do certam\n\nFonte: Diário Oficial da União, Seção 3, 13/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=51",
-  "linkKind": "diario",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-13",
-  "registrationStarts": "2026-10-21",
-  "registrationEnds": "2026-10-31",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=13/10/2026&jornal=530&pagina=51",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": [
-   "educacao"
-  ]
- },
- {
   "id": "c61471bcfc29",
   "title": "Fundação Vale do Piauí - Concurso Público nº 001/2026",
   "deadline": "Inscrições: veja o edital",
@@ -4270,23 +4246,5 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "https://data.queridodiario.ok.org.br/4106308/2026-09-17/b7836a499a37baed6956e3f6a166947157259d34.pdf"
- },
- {
-  "id": "22b5385931ab",
-  "title": "Município de Iracemápolis - Processo Seletivo nº 001/2026",
-  "deadline": "Inscrições: veja o edital",
-  "state": "SP",
-  "salary": "",
-  "vacancies": "",
-  "description": "ÁTER EVENTUAL VILCÉIA SALVINO DA SILVA CORRÊA, Diretora Municipal da Educação de Iracemápolis, Estado de São Paulo, no uso de suas atribuições legais, em especial a conferida pelo art. 3º da Lei municipal nº 2516/2022, de 13 de setembro de 2022, torna pública a abertura de PROCESSO SELETIVO SIMPLIFICADO POR ANÁLISE OBJETIVA DE CURRÍCULO PARA CONTRATAÇÃO DE PROFESSORES EM CARÁTER EVENTUAL para substituir Professor I - Ensino Fundamental, Professor I - Educação Infantil, Professor de Artes, Professor de Atendimento Educacional Especializado e Professor de Educação Física, pertencentes ao quadro permanente, durante os seus impedimentos legais e transitórios que possam comprometer ou ocasionar prejuízo à Educação, mediante as condições estabelecidas no Edital, na seguinte conformidade: Função Vagas Valor Hora/aula Requisitos Carga Horária Professor I - Ensino Fundamental Cadastro de Professor Eventual (CPE) R\n\nFonte: Diário Oficial de Iracemápolis/SP, 16/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.iracemapolis.sp.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Iracemápolis",
-  "published": "2026-09-16",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3521408/2026-09-16/7eb1ec0f948f0f8916fa282933e319339eca439e.pdf"
  }
 ]
