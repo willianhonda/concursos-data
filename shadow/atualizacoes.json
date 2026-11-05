@@ -1,5 +1,33 @@
 [
  {
+  "id": "upd-3923f5309dd7",
+  "examId": "1630362603c4",
+  "type": "resultado",
+  "title": "Resultado publicado",
+  "organization": "Município de Mogi Guaçu",
+  "edital": "Processo Seletivo nº 001/2026",
+  "state": "SP",
+  "city": "Mogi Guaçu",
+  "published": "2026-11-04",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3530706/2026-11-04/7bb5a8d3cee9c108cd50d17f0f6a15a44c314d02.pdf",
+  "excerpt": "- Mogi Mirim - Itapira - Estiva Gerbi - Conchal Rua José Alves, nº 403 - Centro - Mogi Mirim/SP Telefone: 19.3818-4505 / 19.3891-4489 PROCESSO SELETIVO EDITAL Nº 001/2026 EDITAL DE DIVULGAÇÃO DO RESULTADO DOS RECURSOS REFERENTES AO DEFERIMENTO DAS INSCRIÇÕES O CONSÓRCIO INTERMUNICIPAL DE SAÚDE “08 DE ABRIL”, por intermédio do seu Presidente Sr. Márcio Roberto Pavan, Prefeito Municipal de Estiva Gerbi, no uso de suas atribuições e prerrogativas legais, TORNA PÚBLICO aos candidatos do Processo Sel",
+  "source": "querido_diario"
+ },
+ {
+  "id": "upd-080e54c61ca0",
+  "examId": "f76eb2e71292",
+  "type": "gabarito",
+  "title": "Gabarito publicado",
+  "organization": "Município de Cachoeira do Sul",
+  "edital": "Concurso Público nº 01/2026",
+  "state": "RS",
+  "city": "Cachoeira do Sul",
+  "published": "2026-11-03",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4303004/2026-11-03/f1aa3768fa3433e207a967c31c794275f23c4784.pdf",
+  "excerpt": "de recursos e demais disposições O representante legal do Poder Executivo de Cachoeira do Sul/RS, no exercício das atribuições que lhe são conferidas pela legislação vigente e no âmbito do Concurso Público nº 01/2026, faz saber o que segue: 1. Gabarito definitivo: após a análise dos recursos interpostos, divulga-se o gabarito definitivo, conforme o Anexo I deste edital. 1.1. O recorrente poderá consultar o parecer referente ao seu recurso diretamente na área do candidato, disponível no site www.",
+  "source": "querido_diario"
+ },
+ {
   "id": "upd-c0d7741e7107",
   "examId": "2da7268cf5f7",
   "type": "resultado",
