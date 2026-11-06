@@ -1,5 +1,33 @@
 [
  {
+  "id": "upd-7debba738dfc",
+  "examId": "7141ab76dc27",
+  "type": "resultado",
+  "title": "Resultado publicado",
+  "organization": "Prefeitura Municipal de Andradina",
+  "edital": "Concurso Público nº 002/2026",
+  "state": "SP",
+  "city": "Andradina",
+  "published": "2026-11-05",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3502101/2026-11-05/e851504cefe8702ec6fe3e610b63667d09567fc0.pdf",
+  "excerpt": "ão de PessoasConcurso Público ESTADO DE SÃO PAULO PREFEITURA MUNICIPAL DE ANDRADINA EDITAL DO CONCURSO PÚBLICO N.° 002/2026 1 EDITAL DE ABERTURA DE INSCRIÇÕES CONCURSO PÚBLICO Nº 002/2026 EDITAL DE DIVULGAÇÃO DO RESULTADO PRELIMINAR DAS PROVAS OBJETIVAS E DA AVALIAÇÃO DE TÍTULOS A PREFEITURA MUNICIPAL DE ANDRADINA/SP, no uso de suas atribuições legais, torna público o RESULTADO PRELIMINAR DAS PROVAS OBJETIVAS E DA AVALIAÇÃO DE TÍTULOS do Concurso Público nº 002/2026, executado pelo Centro Educac",
+  "source": "querido_diario"
+ },
+ {
+  "id": "upd-4b64056bdcd4",
+  "examId": "ae0d35718847",
+  "type": "gabarito",
+  "title": "Gabarito publicado",
+  "organization": "Câmara Municipal de João Ramalho-sp e Nos Sites",
+  "edital": "Concurso Público nº 01/2026",
+  "state": "SP",
+  "city": "João Ramalho",
+  "published": "2026-11-05",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3525607/2026-11-05/ef72191df1d225cc86b10c6a7301f72b62b4ca3c.pdf",
+  "excerpt": "sinado digitalmente conforme MP nº 2.200-2, de 2001, e Lei 14.063, de 2020, garantindo autenticidade, validade jurídica e integridade. Divulgação da análise dos recursos e dos gabaritos definitivos das provas objetivas 21/12/2026 Divulgação da classificação preliminar das Provas Objetivas. 21/12/2026 Prazo para interposição de recursos acerca da divulgação da classificação preliminar das Provas Objetivas 22/12/2026 até o dia 23/12/2026 Decisão dos recursos interpostos acerca da divulgação do res",
+  "source": "querido_diario"
+ },
+ {
   "id": "upd-3923f5309dd7",
   "examId": "1630362603c4",
   "type": "resultado",
