@@ -1,5 +1,667 @@
 [
  {
+  "id": "fb12d357146c",
+  "title": "Prefeitura de Antônio Prado de Minas - Concurso Público nº 01/2026",
+  "deadline": "Inscrições: 03/11/2026 a 02/12/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "Vagas 33",
+  "description": "Prefeitura de Antônio Prado de Minas: concurso público nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.ibgpconcursos.com.br/",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "banca",
+  "city": "Antônio Prado de Minas",
+  "published": "2026-11-06",
+  "registrationStarts": "2026-11-03",
+  "registrationEnds": "2026-12-02",
+  "banca": "IBGP",
+  "sphere": "municipal",
+  "collector": "ibgp"
+ },
+ {
+  "id": "91d88ca9a07e",
+  "title": "Fundação Hospitalar Getúlio Vargas - Processo Seletivo nº 007/2026",
+  "deadline": "Inscrições: 06/11/2026 a 04/12/2026",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "FUNDAÇÃO HOSPITALAR GETULIO VARGAS PROCESSO SELETIVO SIMPLIFICADO PROCESSO SELETIVO SIMPLIFICADO N° 007/2026 EDITAL DE ABERTURA A FUNDAÇÃO HOSPITALAR GETÚLIO VARGAS – FHGV, torna pública a abertura de inscrições e estabelece normas relativas à realização de PROCESSO SELETIVO SIMPLIFICADO - PSS, através de aplicação de provas de títulos de caráter competitivo, destinado a contratação de trabalhadores por prazo determinado em regime celetista e formação de cadastro de reserva para as unidades administradas pela Fundação Hospitalar Getúlio Vargas no município de Sapucaia do Sul-RS , razão esgotamento das listas dos certames vigentes para o emprego e insuficiência de aprovados no concurso público e processo seletivo simplificado vigente, o qual reger-se-á pelas Instruções Especiais contidas em Edital e nas demais disposições legais vigentes, conforme segue: FUNÇÕES: Médico Anestesiologista , Médico Cardiologista, Mé\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.fhgv.com.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Sapucaia do Sul",
+  "published": "2026-11-06",
+  "registrationStarts": "2026-11-06",
+  "registrationEnds": "2026-12-04",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/7EA50EC5",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude"
+  ],
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
+  "id": "458f8d6285ce",
+  "title": "Município de Riacho da Cruz - Processo Seletivo",
+  "deadline": "Inscrições: veja o edital",
+  "state": "RN",
+  "salary": "",
+  "vacancies": "",
+  "description": "a Secretaria Municipal de Educação, Cultura, Desporto e Juventude – SMECDJ, sob a coordenação da Comissão Municipal de Gestão Democrática, instituída por meio da Portaria de Nº 087/2026 – PMRC , torna público, para o conhecimento dos interessados, a abertura de inscrições para o Processo Seletivo Simplificado para fins de Seleção de Gestor (a) / Diretor (a) Escolar das escolas que integram a Rede Municipal de Ensino, para fins de participar do processo de eleitoral para o provimento nos referidos cargos de acordo com as normas previstas no presente Edital. DAS DISPOSIÇÕES INICIAIS 1.1 O Processo Seletivo Simplificado para Gestores (as) / Diretores (as), a quem se destina o presente edital, tem como objeto selecionar pessoal para provimento dos cargos de Gestor (a) / Diretor (a) Escolar das escolas que integram a Rede Municipal de Ensino de Riacho da Cruz/RN, de acordo com a Lei Municipal nº 479, de 12 de setembro de 2022. O proce\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Norte, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://avamec.mec.gov.br/#/instituicao/seb/curso/14703/informacoes",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Riacho da Cruz",
+  "published": "2026-11-06",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://www.diariomunicipal.com.br/femurn/materia/05FDF118",
+  "banca": "Chefe do Poder Executivo Municipal",
+  "roles": [
+   "Gestor (a)",
+   "Diretor (a) Escolar das Escolas",
+   "Diretor (a) Escolar Será Realizada",
+   "Diretor",
+   "No Mínimo",
+   "Presidente da Caixa Escolar"
+  ],
+  "education": [
+   "superior"
+  ],
+  "areas": null,
+  "collector": "sigpub:femurn",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Norte"
+ },
+ {
+  "id": "3b8eab653c40",
+  "title": "Prefeitura de Lima Duarte - Processo Seletivo nº 01/2026",
+  "deadline": "Inscrições: 06/11/2026 a 17/11/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "Vagas 98",
+  "description": "Prefeitura de Lima Duarte: processo seletivo nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.ibgpconcursos.com.br/",
+  "linkKind": "banca",
+  "kind": "processo_seletivo",
+  "source": "banca",
+  "city": "Lima Duarte",
+  "published": "2026-11-06",
+  "registrationStarts": "2026-11-06",
+  "registrationEnds": "2026-11-17",
+  "banca": "IBGP",
+  "sphere": "municipal",
+  "collector": "ibgp"
+ },
+ {
+  "id": "37e1d52ea9d3",
+  "title": "Município de Honório Serpa - Processo Seletivo nº 003/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "PR",
+  "salary": "",
+  "vacancies": "",
+  "description": "tado do Paraná, JOÃO CARLOS GARBIN , no uso das suas atribuições legais que lhe são conferidas, em conformidade com a Lei Orgânica Municipal, com o art. 37, IX, da Constituição Federal de 1988, e com a Lei Municipal nº 835, de 28 de junho de 2019, TORNA PÚBLICA a abertura de PROCESSO SELETIVO SIMPLIFICADO Nº 003/2026 , para contratação de servidores por tempo determinado, a fim de atender à necessidade de excepcional interesse público, nas condições e prazos estabelecidos neste edital: DAS DISPOSIÇÕES PRELIMINARES Este Processo Seletivo Simplificado reger-se-á de acordo com os termos do art. 37, IX, da Constituição Federal de 1988, Lei Municipal nº 835, de 28 de junho de 2019 e Lei Municipal nº 724, de 13 de abril de 2017 e será publicado no Diário Oficial dos Municípios do Paraná (https://www.diariomunicipal.com.br/amp/pesquisar ) e disponibilizado no site da Prefeitura Municipal de Honório Serpa (http://www.honorioserpa.pr.g\n\nFonte: Diário Oficial dos Municípios do Paraná, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "http://www.honorioserpa.pr.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Honório Serpa",
+  "published": "2026-11-06",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/8A60149C",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "fundamental",
+   "superior"
+  ],
+  "areas": [
+   "educacao"
+  ],
+  "collector": "sigpub:amp",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Paraná"
+ },
+ {
+  "id": "d6c45d59c3a9",
+  "title": "Prefeitura Municipal de Itápolis - Processo Seletivo nº 004/2026",
+  "deadline": "Inscrições: 10/11/2026 a 22/11/2026",
+  "state": "SP",
+  "salary": "Salário: R$ 1.908,44",
+  "vacancies": "",
+  "description": "legais e em conformidade com os princípios constitucionais que regem a Administração Pública, especialmente aqueles previstos no artigo 37 da Constituição Federal, bem como com as disposições da legislação federal, estadual e municipal aplicável, TORNA PÚBLICA a abertura de inscrições para o PROCESSO SELETIVO Nº 004/2026, destinado à seleção de candidatos para o exercício de funções públicas no âmbito da Administração Municipal, mediante a realização de PROVAS E TÍTULOS, conforme as especificidades de cada função, observadas as condições, normas e procedimentos estabelecidos neste Edital Normativo e em seus anexos, que constituem parte integrante do presente instrumento. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 A organização, aplicação e correção do Processo seletivo serão de responsabilidade da CMM ASSESSORIA E CONSULTORIA EM GESTÃO PÚBLICA LTDA. 1.2 O presente Processo Seletivo destina-se à formação de cadastro de reserva para eventual con\n\nFonte: Diário Oficial de Itápolis/SP, 05/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.portal.cmmconcursos.com.br",
+  "linkKind": "banca",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Itápolis",
+  "published": "2026-11-05",
+  "registrationStarts": "2026-11-10",
+  "registrationEnds": "2026-11-22",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3522703/2026-11-05/65523176abcbb9048dd051880b367e96300d937a.pdf",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "fundamental",
+   "medio",
+   "superior"
+  ],
+  "areas": null
+ },
+ {
+  "id": "d24f0aa826cf",
+  "title": "Município de Contagem - Concurso Público nº 01/2025 (retificação)",
+  "deadline": "Inscrições: veja o edital",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "da o arredondamento das frações resultantes da aplicação dos percentuais definidos para cada cota; e considerando que é prerrogativa da Administração Pública, sob o princípio da autotutela administrativa, corrigir os atos administrativos editados, torna pública a presente Retificação ao Edital de Abertura do Concurso Público. 1 - O quadro de vagas do subitem 2.1 do Edital nº 01/2025 passa a viger com as seguintes alterações relacionadas à distribuição das vagas por modalidade de concorrência: Cargo Total AC PcD PP IND QUI Observação Cargos de Nível Fundamental e Médio Auxiliar de Laboratório 1 1 - - - - Sem alteração Auxiliar de Saúde Bucal 23 13 2 7 1 - Ajuste Assistente Administrativo – 30hs 15 8 2 4 - 1 Ajuste Assistente Administrativo – 40hs 70 39 8 19 3 1 Ajuste Cargos de Nível Médio Técnico Técnico em Enfermagem – 30hs 64 36 7 16 3 2 Ajuste Técnico em Enfermagem – 40hs 73 41 9 18 3 2 Ajuste Técnico em Laboratório 1 1 - - - - Sem alteraçã\n\nFonte: Diário Oficial de Contagem/MG, 05/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.contagem.mg.gov.br",
+  "linkKind": "orgao",
+  "kind": "concurso",
+  "source": "querido_diario",
+  "city": "Contagem",
+  "published": "2026-11-05",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3118601/2026-11-05/05ebe90985050a7665222228d1603923b8c4f1a4.pdf",
+  "banca": null,
+  "roles": [
+   "Associar Uma Pessoa Ou Entidade a Uma Chave Pública"
+  ],
+  "education": [
+   "fundamental",
+   "medio",
+   "superior"
+  ],
+  "areas": null
+ },
+ {
+  "id": "082379fbdc6c",
+  "title": "Câmara Municipal de Santa Helena de Goiás - Concurso Público nº 01/2026",
+  "deadline": "Inscrições: 13/12/2026 a 13/01/2027",
+  "state": "GO",
+  "salary": "",
+  "vacancies": "",
+  "description": "CÂMARA MUNICIPAL DE SANTA HELENA DE GOIÁS CÂMARA DE SANTA HELENA DE GOIÁS - GO EXTRATO DE EDITAL DO CONCURSO PÚBLICO N. 01/2026 A CÂMARA MUNICIPAL DE SANTA HELENA DE GOIÁS - GO , através da Comissão Especial de Concurso Público - CECP, nomeada pelo Ato da Presidência n. 021/2026, torna público que no período de 13/12/2026 a 13/01/2027 estarão abertas as inscrições do Concurso Público , visando à contratação de servidores efetivos para preenchimento de vagas e cadastro de reserva. O edital completo e anexos estarão disponíveis no placar da Câmara e nos sites www.itame.com.br e www.legislativoshego.gov.br. Santa Helena de Goiás, 05/11/2026. CLAUDIA CARDOSO DE GOUVEIA. Presidente da CECP. Publicado por: Girlene Vieira Branquinho\n\nFonte: Diário Oficial dos Municípios do Estado de Goiás, 05/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.itame.com.br",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "diario_municipal",
+  "city": "Santa Helena de Goiás",
+  "published": "2026-11-05",
+  "registrationStarts": "2026-12-13",
+  "registrationEnds": "2027-01-13",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/fgm/materia/ED06267B",
+  "banca": "Itame",
+  "roles": null,
+  "education": null,
+  "areas": null,
+  "collector": "sigpub:fgm",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado de Goiás"
+ },
+ {
+  "id": "053e782ac3dc",
+  "title": "Município de Matinhos - Processo Seletivo nº 5354/2026",
+  "deadline": "Inscrições: 06/11/2026 a 20/11/2026",
+  "state": "PR",
+  "salary": "Salário: R$ 14.350,70",
+  "vacancies": "",
+  "description": "S) O Prefeito do Município de Matinhos, Estado do Paraná, no uso de suas atribuições legais, mediante as condições estipuladas neste Edital, em conformidade com a Constituição Federal e com as demais normas infraconstitucionais atinentes à matéria, TORNA PÚBLICO a realização do presente Processo Seletivo Simplificado, sob o regime da Consolidação das Leis do Trabalho (CLT) para o provimento de vagas do seu quadro de pessoal, por tempo determinado. DAS DISPOSIÇÕES PRELIMINARES O Processo Seletivo Simplificado a que se refere o presente Edital será executado pelo Município de Matinhos, com sede na Rua Pastor Elias Abrahão, nº 166, Centro - Matinhos/PR, site www.matinhos.pr.gov.br A seleção visa ao preenchimento de vagas, sob o regime da Consolidação das Leis do Trabalho (CLT), para suprir necessidade de pessoal da administração pública do Município de Matinhos – PR, de acordo com as tabelas do item 3 deste Edital, e tem prazo de validade d\n\nFonte: Diário Oficial dos Municípios do Paraná, 05/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://matinhos.atende.net/autoatendimento/servicos/inscricao-concurso-publico-e-processo-seletivo/5.11.2",
+  "linkKind": "edital",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Matinhos",
+  "published": "2026-11-05",
+  "registrationStarts": "2026-11-06",
+  "registrationEnds": "2026-11-20",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/00513378",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ],
+  "collector": "sigpub:amp",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Paraná"
+ },
+ {
+  "id": "c93f9a29ddb6",
+  "title": "Prefeitura Municipal de Formiga - Processo Seletivo nº 008/2026",
+  "deadline": "Inscrições: 09/11/2026 a 13/11/2026",
+  "state": "MG",
+  "salary": "Salário: R$ 3.078,38",
+  "vacancies": "",
+  "description": "ORTARIAS; DECRETOS; EXTRATOS; RESOLUÇÕES EDITAL DE PROCESSO SELETIVO Nº. 008/2026 PREFEITURA MUNICIPAL DE FORMIGA PROCESSO SELETIVO SIMPLIFICADO EDITAL DE PROCESSO SELETIVO Nº. 008/2026 O Prefeito do Município de Formiga MG, torna público que estarão abertas as inscrições para o Processo Seletivo nº. 008/2026. O Processo Seletivo será coordenado pelas Secretaria Municipal de Planejamento, Administração e Gestão e Secretaria Municipal de Educação. 1 - DAS DISPOSIÇÕES PRELIMINARES 1.1 - Este Processo Seletivo dar-se-á em conformidade com o inciso IX do art. 37 da Constituição Federal, Lei Municipal nº. 6191 de 20 de fevereiro de 2024 e suas alterações, bem como, Decreto Municipal nº 10.069/2023, de 31/07/2023 e suas alterações. 2 - DA DIVULGAÇÃO 2.1 - A divulgação oficial das etapas deste Processo Seletivo dar-se-á através de publicações no site oficial da Prefeitura Municipal de Formiga (http://www.form\n\nFonte: Diário Oficial dos Municípios Mineiros, 04/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "http://www.formiga.mg.gov.br/",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Formiga",
+  "published": "2026-11-04",
+  "registrationStarts": "2026-11-09",
+  "registrationEnds": "2026-11-13",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amm-mg/materia/F80CC10E",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "fundamental",
+   "superior"
+  ],
+  "areas": [
+   "educacao"
+  ],
+  "collector": "sigpub:amm-mg",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "c4fd82199f66",
+  "title": "Município de Catanduva - Processo Seletivo nº 035/2026",
+  "deadline": "Inscrições: 27/11/2026 a 30/11/2026",
+  "state": "SP",
+  "salary": "",
+  "vacancies": "",
+  "description": ", inciso II e IX, da Constituição Federal, nas Leis Complementares Municipais nº 3.632/00 e nº 0452/08 e na Deliberação CEE 145/2016, torna público, para conhecimento dos interessados, o presente Edital de Re-Ratificação do Edital nº 034/2026 de abertura de inscrições do Processo Seletivo Simplificado destinado à seleção de Professores para contratação temporária. Por este Edital fica ratificado o Edital nº 034/2026 e retificado para que conste que a contratação é para o ano letivo de 2027, mantendo-se as demais disposições na sua integralidade, como a seguir republicado com a correção. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1. Os docentes selecionados serão contratados em regime especial, por um ano, podendo ser prorrogado por igual período, conforme critério de conveniência e oportunidade. 1.2. O processo seletivo será conduzido por Comissão Organizadora devidamente constituída por Portaria Interna do IMES Cat\n\nFonte: Diário Oficial de Catanduva/SP, 04/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.imescatanduva.edu.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Catanduva",
+  "published": "2026-11-04",
+  "registrationStarts": "2026-11-27",
+  "registrationEnds": "2026-11-30",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3511102/2026-11-04/a73c17a7e322a9fadd0ff6e92865510a591ab227.pdf",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "educacao"
+  ]
+ },
+ {
+  "id": "be0beb8acb4e",
+  "title": "Município de São Pedro do Sul - Processo Seletivo",
+  "deadline": "Inscrições: 04/11/2026 a 16/11/2026",
+  "state": "RS",
+  "salary": "Salário: R$ 1.621,00",
+  "vacancies": "",
+  "description": "ELHOR - PIM EDITAL 001 – ABERTURA DO PROCESSO FERNANDO PILAR CÉZAR , Prefeito Municipal, no uso das suas atribuições legais, em conformidade com a Lei Municipal nº 2.022/2010, TORNA PÚBLICO que estarão abertas, no período abaixo discriminado, as inscrições para Processo Seletivo Simplificado, a ser conduzido pela Comissão Permanente designada pela Portaria Municipal nº 4.586/2026, visando contratação de 06 Visitadores dos Programas Criança Feliz (PCF) e Primeira Infância Melhor (PIM), bem como formação de Cadastro Reserva, conforme disponibilização de vagas contidas na Lei Municipal nº 4.122/2026. I - DAS CARACTERÍSTICAS DO CONTRATO: O presente Processo Seletivo Simplificado visa a selecionar candidatos para contratação de contratar 06 (seis) visitadores, pelo período de 12 (doze) meses, prorrogável por igual período, com carga horária de 40 (quarenta) horas semanais, com amparo na Lei Municipal nº 4.122/2026. O\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 04/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.diariomunicipal.com.br/famurs/materia/6A0DD003",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "São Pedro do Sul",
+  "published": "2026-11-04",
+  "registrationStarts": "2026-11-04",
+  "registrationEnds": "2026-11-16",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/6A0DD003",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "medio",
+   "tecnico",
+   "superior"
+  ],
+  "areas": [
+   "assistencia_social"
+  ],
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
+  "id": "9855982d6e10",
+  "title": "Prefeitura Municipal de Birigui - Processo Seletivo nº 228/2026",
+  "deadline": "Inscrições: 04/11/2026 a 08/11/2026",
+  "state": "SP",
+  "salary": "Salário: R$ 1.621,05",
+  "vacancies": "",
+  "description": "gitalmente conforme MP nº 2.200-2, de 2001, e Lei 14.063, de 2020, garantindo autenticidade, validade jurídica e integridade. 1 EDITAL Nº 228/2026 - PROCESSO SELETIVO N.º 04/2026 A Prefeitura Municipal de Birigui, Estado de São Paulo, torna público que realizará, na forma prevista no artigo 37 da Constituição Federal, a abertura de inscrições ao PROCESSO SELETIVO DE PROVAS, para a contratação da função especificada no item 1.4.1 deste Edital. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 - A abertura deste Processo Seletivo decorre de necessidade temporária e emergencial, nos termos do inciso IX do caput do art. 37 da Constituição Federal, da Lei Municipal nº. 3.946/2001, alterada pela Lei Municipal nº. 4.846/2007, bem como das seguintes justificativas:  Considerando que a previsão para a homologação do Concurso Público 02/2026 é para meados do mês de abril de 2027, a fim de prover o cargo citado no item 1.4.1 desse edital, assim como o fato de que o último processo seletivo perdeu sua\n\nFonte: Diário Oficial de Birigui/SP, 04/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "http://www.semebi.com.br/processoseletivo04-2026",
+  "linkKind": "edital",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Birigui",
+  "published": "2026-11-04",
+  "registrationStarts": "2026-11-04",
+  "registrationEnds": "2026-11-08",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3506508/2026-11-04/00469a723f67f6c17d336d1b1a1458198a46cc8a.pdf",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "fundamental",
+   "superior"
+  ],
+  "areas": [
+   "operacional"
+  ]
+ },
+ {
+  "id": "6fe28dfdc959",
+  "title": "Prefeitura Municipal de Foz do Jordão - Processo Seletivo nº 01/2026",
+  "deadline": "Inscrições: 11/11/2026 a 25/11/2026",
+  "state": "PR",
+  "salary": "Salário: R$ 2.621,55",
+  "vacancies": "",
+  "description": "ções contidas no art. 11 da Lei Municipal de n.º 716/2016 e artigos 332 e 333 da Lei Municipal 5/1997, e em razão da necessidade temporária de contratação de servidores, em razão da continuidade dos serviços públicos e excepcional interesse público, TORNA PÚBLICA a abertura de inscrições para a realização de Processo Seletivo Simplificado–PSS visando à contratação temporária de agentes públicos para provimento de vagas do seu quadro de pessoal discriminadas no presente, em Regime Especial de Contratação, de acordo com as normas instituídas neste Edital Normativo. DAS DISPOSIÇÕES PRELIMINARES O Processo Seletivo Simplificado destina-se ao provimento de vagas existentes, sob regime de contratação de trabalho por tempo determinado, no quadro de servidores da Prefeitura Municipal de Foz do Jordão, Estado do Paraná, de acordo com a Tabela do item 2.1 deste Edital, com prazo de validade de 1 (um) ano a contar da data de homologação do certame, que tem previsão para\n\nFonte: Diário Oficial dos Municípios do Paraná, 04/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.fozdojordao.pr.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Foz do Jordão",
+  "published": "2026-11-04",
+  "registrationStarts": "2026-11-11",
+  "registrationEnds": "2026-11-25",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/6F99D6C2",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "saude",
+   "educacao"
+  ],
+  "collector": "sigpub:amp",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Paraná"
+ },
+ {
+  "id": "5de1eb4c6f0f",
+  "title": "Município de Serrinha - Processo Seletivo nº 001/2026",
+  "deadline": "Inscrições: 06/11/2026 a 13/11/2026",
+  "state": "RN",
+  "salary": "",
+  "vacancies": "",
+  "description": "ação como Diretor e Vice-Diretor Escolar. A Prefeitura Municipal de Serrinha/RN, por meio do Secretário Municipal de Educação JOSUÉ DE MEDEIROS , no uso das atribuições conferidas pela Lei Municipal nº 501/2022 e pelo Decreto Municipal nº 026/2024, TORNA PÚBLICA a realização de processo seletivo simplificado, para recrutamento, cadastro e habilitação de servidores públicos do quadro do magistério municipal em Banco de Informações consultivo de Gestores Escolares do qual deverão ser designados Diretores e Vice-Diretores dos estabelecimentos de ensino municipais. I – DAS DISPOSIÇÕES INICIAIS O processo de recrutamento, cadastro e habilitação de servidores públicos do quadro efetivo do magistério municipal, se dará por meio de seleção interna e será regulamentado pelo presente edital. O processo seletivo possuirá duas fases: inscrição e análise curricular. Encerra-se a competência desta Comissão Especial após a publicação da lista\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Norte, 04/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.diariomunicipal.com.br/femurn/materia/7DFFE1FF",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Serrinha",
+  "published": "2026-11-04",
+  "registrationStarts": "2026-11-06",
+  "registrationEnds": "2026-11-13",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/femurn/materia/7DFFE1FF",
+  "banca": null,
+  "roles": [
+   "Gestor Escolar Como Basilares"
+  ],
+  "education": null,
+  "areas": null,
+  "collector": "sigpub:femurn",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Norte"
+ },
+ {
+  "id": "def2d08ca416",
+  "title": "Prefeitura Municipal de Candeias - Processo Seletivo nº 001/2026",
+  "deadline": "Inscrições: 09/11/2026 a 11/11/2026",
+  "state": "MG",
+  "salary": "Salário: R$ 1.695,10",
+  "vacancies": "",
+  "description": "NDEIAS, Estado de Minas Gerais, inscrita no CNPJ sob o nº 17.888.090/0001-00, com sede na Avenida 17 de Dezembro, nº 240, CEP 37.280-000, centro, nesta cidade de Candeias/MG, por intermédio da Secretaria Municipal de Desenvolvimento Social – SMDS, TORNA PÚBLICO para conhecimento dos interessados, a abertura do presente Processo Seletivo Simplificado (PSS), para a contratação de pessoal visando atender a necessidade temporária de excepcional interesse público, observada as regras que constam deste edital. I - JUSTIFICATIVA A contratação de pessoal, para atender a necessidade temporária de excepcional interesse público, devidamente autorizada nos termos do Decreto Municipal de N. 4417, de 28 de setembro de 2026, tem como objetivo viabilizar a continuidade na prestação de serviços públicos socioassistenciais à comunidade, tendo em vista a necessidade de contratação de Psicólogos, bem como, de Visitador para o Programa Criança Feliz. Considerando que o Programa Criança\n\nFonte: Diário Oficial de Candeias/MG, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.candeias.mg.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Candeias",
+  "published": "2026-11-03",
+  "registrationStarts": "2026-11-09",
+  "registrationEnds": "2026-11-11",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3112000/2026-11-03/300afb2dc90ba005156704108ff85d00a92a20c3.pdf",
+  "banca": null,
+  "roles": [
+   "Psicólogo No Concurso Público Municipal",
+   "Visitador o"
+  ],
+  "education": [
+   "medio",
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ]
+ },
+ {
+  "id": "d679bcaaaa8b",
+  "title": "Município de Campinas - Processo Seletivo",
+  "deadline": "Inscrições: veja o edital",
+  "state": "SP",
+  "salary": "",
+  "vacancies": "",
+  "description": "Empresa Escola - CIEE e a Fundação Municipal para Edu- cação Comunitária - FUMEC em conformidade com a Lei Federal n.º 11.788/08, Lei Municipal N°10.442/2000, Lei Municipal N°12.030/2004, Lei Municipal N°13.840/2010 e Lei Municipal N° 16.281/2022 tornam pública a realização de processo seletivo por prova on-line para formação de cadastro reserva para es- tágio, conforme quadro de vagas no item 1.1, de acordo com as seguintes ins- truções: 1. DISPOSIÇÕES GERAIS 1.1. O processo seletivo destina-se à formação de cadastro de reserva para 18 Campinas, terça-feira, 03 de novembro de 2026Diário Oficial do Município de Campinas categorias discriminadas no artigo 4º do Decreto nº 3.298/1999, com as alterações introduzidas pelo Decreto nº 5.296/2004, no § 1º do artigo 1º da Lei nº 12.764, de 27 de dezembro de 2012 (Transtorno do Espectro Autista), e as contempladas pelo enunciado da Súmula nº 377 do Superior Tribunal de Justiça (ST\n\nFonte: Diário Oficial de Campinas/SP, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://pp.ciee.org.br/vitrine/processos-seletivos/publico",
+  "linkKind": "edital",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Campinas",
+  "published": "2026-11-03",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3509502/2026-11-03/629737813136babfff07dce5cbcbcadd2c48f10d.pdf",
+  "banca": "Fundação Municipal para Educa- Ção Comunitária",
+  "roles": null,
+  "education": [
+   "medio",
+   "tecnico",
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ]
+ },
+ {
+  "id": "d24fcaf6e3f9",
+  "title": "Município de Piranguinho - Processo Seletivo nº 001/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "Lei Municipal nº 1.408, de 31 de março de 2017, a legislação municipal correlata e a Instrução Normativa TCE-MG nº 01/2022, observados os apontamentos do Tribunal de Contas do Estado de Minas Gerais – TCE-MG, no âmbito do Processo nº 1217827, TORNA PÚBLICA a abertura do PROCESSO SELETIVO Nº 001/2026, destinado ao provimento de vaga e à formação de cadastro de reserva para o cargo efetivo de AGENTE EPIDEMIOLÓGICO, integrante do Quadro Permanente de Pessoal do Município de Piranguinho/MG, mediante as condições, os requisitos e os critérios estabelecidos neste Edital e em seus anexos. 1.DAS DISPOSIÇÕES PRELIMINARES 1.1 O Processo seletivo será realizado pela empresa Gama Consultoria em gestão pública, encarregado do planejamento, organização, elaboração, aplicação e correção das provas, será fiscalizado pela Comissão Especial de Organização com acompanhamento e Fiscalização durante o Processo seletivo do Município\n\nFonte: Diário Oficial de Piranguinho/MG, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.gamaconsult.com.br",
+  "linkKind": "banca",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Piranguinho",
+  "published": "2026-11-03",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3151008/2026-11-03/141fae5b7f093bc65cdc9ca5613f03f131f713c6.pdf",
+  "banca": "Gama Consultoria em Gestão Pública",
+  "roles": [
+   "Agente Epidemiológico",
+   "Integrante"
+  ],
+  "education": [
+   "medio"
+  ],
+  "areas": null
+ },
+ {
+  "id": "c541bd9f73e6",
+  "title": "Prefeitura do Município de Santo Antônio do Sudoeste - Processo Seletivo nº 002/2026 (retificação)",
+  "deadline": "Inscrições: 27/10/2026 a 19/11/2026",
+  "state": "PR",
+  "salary": "",
+  "vacancies": "",
+  "description": "001/2026 PRIMEIRA RETIFICAÇÃO DO EDITAL DE ABERTURA PUBLICAÇÃO Nº 002/2026 A PREFEITURA DO MUNICÍPIO DE SANTO ANTÔNIO DO SUDOESTE , ESTADO DO PARANÁ , por intermédio da Comissão Organizadora de Processos Seletivos criada pela Portaria nº 146/2026, torna público aos interessados a Primeira Retificação do Edital de Abertura do Processo Seletivo 001/2026. Art. 1º Conforme Ofício 480/2026 do Município de Santo Antônio do Sudoeste, fica excluído do Processo Seletivo Simplificado 001/2026 os cargos de Professor de Educação Especial e Professor de Inglês, para regularização da legislação municipal. Art. 2º Os candidatos que efetuaram pagamento da taxa de inscrição, poderão solicitar a devolução da taxa, no período de 27 de outubro até 19 de novembro de 2026 . Para solicitar a devolução o candidato deverá enviar e-mail para contato@institutounifil.com.br colocar no assunto do e-mail: DEVOLUÇÃO DA TAXA PREF SANTO ANTÔNIO SUDOESTE, no texto colocar nome completo, inscrição, CPF, banco, e\n\nFonte: Diário Oficial dos Municípios do Paraná, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.diariomunicipal.com.br/amp/materia/5A39F40F",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Santo Antônio do Sudoeste",
+  "published": "2026-11-03",
+  "registrationStarts": "2026-10-27",
+  "registrationEnds": "2026-11-19",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/5A39F40F",
+  "banca": null,
+  "roles": [
+   "Professor de Educação Especial e Professor de Inglês"
+  ],
+  "education": null,
+  "areas": [
+   "educacao"
+  ],
+  "collector": "sigpub:amp",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Paraná"
+ },
+ {
+  "id": "7141ab76dc27",
+  "title": "Prefeitura Municipal de Andradina - Concurso Público nº 002/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "SP",
+  "salary": "",
+  "vacancies": "",
+  "description": "ixoto, nº 1291 - CEP: 16901-030 Telefone: (18) 3702-3150 - Site: www.ciensp.sp.gov.br http://www.ciensp.sp.gov.br ESTADO DE SÃO PAULO PREFEITURA MUNICIPAL DE ANDRADINA EDITAL DO CONCURSO PÚBLICO N.° 002/2026 1 EDITAL DE ABERTURA DE INSCRIÇÕES CONCURSO PÚBLICO Nº 002/2026 3ª RETIFICAÇÃO DO EDITAL DE ABERTURA DE INSCRIÇÕES A PREFEITURA MUNICIPAL DE ANDRADINA/SP, no uso de suas atribuições legais, torna pública a 3ª RETIFICAÇÃO do Edital de Abertura de Inscrições do Concurso Público nº 002/2026, executado pelo Centro Educacional de Pesquisa e Assessoria São Francisco – CEPASF, nos seguintes termos: Considerando a necessidade de atualização do sistema SGE, utilizado na leitura óptica e no processamento dos cartões-resposta, o que impossibilita a divulgação do resultado preliminar das Provas Objetivas e da Avaliação de Títulos na data prevista de 3 de novembro de 2026, ficam altera\n\nFonte: Diário Oficial de Andradina/SP, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://data.queridodiario.ok.org.br/3502101/2026-11-03/b6aa70c00150d20437e175f5e36b254f6a37ff8f.pdf",
+  "linkKind": "diario",
+  "kind": "concurso",
+  "source": "querido_diario",
+  "city": "Andradina",
+  "published": "2026-11-03",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3502101/2026-11-03/b6aa70c00150d20437e175f5e36b254f6a37ff8f.pdf",
+  "banca": "Centro Educacional de Pesquisa e Assessoria São Francisco",
+  "roles": null,
+  "education": null,
+  "areas": null
+ },
+ {
+  "id": "66c902cf6d39",
+  "title": "Município de Campo Belo - Processo Seletivo",
+  "deadline": "Inscrições: 30/11/2026 a 04/12/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "e contratar temporariamente servidores, vinculado ao regime geral de previdência social, para trabalhar nas Escolas, CEMEIs e SME com fundamento na lei municipal nº 4.122 de 22 de novembro de 2022, mediante os seguintes termos a seguir expostos: 1. Ficam abertas as inscrições a todos que, mediante o preenchimento dos requisitos deste Edital, se interessarem na inscrição do Processo Seletivo Simplificado – PSS para contratação temporária de: Auxiliar de Serviços Gerais, Monitor de Educação, Monitor do Transporte Escolar, Motorista do Transporte Escolar, Profissional de Apoio, Professor de Educação Básica – regência, Professor de Educação Básica I - função de Apoio, Professor de Educação Básica I - função de Apoio/Libras, Professor Educação Básica I - função Inglês, Professor de Educação Física, Orientador Educacional, Supervisor Pedagógico e Secretário Escolar, para trabalhar na Rede Pública Municipal de Ensino de\n\nFonte: Diário Oficial de Campo Belo/MG, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://data.queridodiario.ok.org.br/3111200/2026-11-03/7a0700a815af8fd9f85c000bcbdce97e281ddd59.pdf",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Campo Belo",
+  "published": "2026-11-03",
+  "registrationStarts": "2026-11-30",
+  "registrationEnds": "2026-12-04",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3111200/2026-11-03/7a0700a815af8fd9f85c000bcbdce97e281ddd59.pdf",
+  "banca": null,
+  "roles": [
+   "Apoio",
+   "Professor de Educação Básica I - Função de Apoio/Libras",
+   "Professor Educação Básica I - Função Inglês",
+   "Professor de Educação Física",
+   "Orientador Educacional",
+   "Supervisor Pedagógico",
+   "Secretário Escolar",
+   "Supervisor Pedagógico e Secretário Escolar",
+   "De Acordo com a Demanda da Secret"
+  ],
+  "education": [
+   "fundamental",
+   "medio",
+   "superior"
+  ],
+  "areas": [
+   "educacao",
+   "administrativa"
+  ]
+ },
+ {
+  "id": "62cc35b674dc",
+  "title": "Prefeitura Municipal de Candeias - Processo Seletivo",
+  "deadline": "Inscrições: 09/11/2026 a 11/11/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "os fins que o candidato identificado acima realizou sua inscrição. Prefeitura Municipal de Candeias, em ____ de __________ de 2026. ____________________________________________________ Assinatura do responsável pela inscrição EXTRATO DE EDITAL DE PROCESSO SELETIVO 001/2026 – A PREFEITURA MUNICIPAL DE CANDEIAS, Estado de Minas Gerais, por intermédio da Secretaria Municipal de Desenvolvimento Social, TORNA PÚBLICO a abertura de Processo Seletivo Simplificado, para a contratação de servidor temporário (Visitador Social e Psicólogo) por prazo determinado. Inscrições (pessoalmente ou procuração), sem pagamento de taxa, de 9 a 11 de novembro de 2026, de 09:00 h as 11:00 h e 13h às 15 h, na Secretaria Municipal de Desenvolvimento Social. A íntegra do edital está disponível no site da Prefeitura Municipal de Candeias/MG (www.candeias.mg.gov.br). Outras informações (Telefone 3475-0308). Em 03 de novembro\n\nFonte: Diário Oficial de Candeias/MG, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.candeias.mg.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Candeias",
+  "published": "2026-11-03",
+  "registrationStarts": "2026-11-09",
+  "registrationEnds": "2026-11-11",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3112000/2026-11-03/300afb2dc90ba005156704108ff85d00a92a20c3.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude"
+  ]
+ },
+ {
+  "id": "524a518cf802",
+  "title": "Município de Catanduva - Processo Seletivo nº 034/2026",
+  "deadline": "Inscrições: 27/11/2026 a 30/11/2026",
+  "state": "SP",
+  "salary": "",
+  "vacancies": "",
+  "description": "meio do seu Diretor, tendo em vista o disposto no artigo 37, inciso II e IX, da Constituição Federal, nas Leis Complementares Municipais nº 3.632/00 e nº 0452/08 e na Deliberação CEE 145/2016, torna público, para conhecimento dos interessados, a abertura de inscrições do Processo Seletivo Simplificado destinado à seleção de Professores para contratação temporária. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1. Os docentes selecionados serão contratados em regime especial, por um ano, podendo ser prorrogado por igual período, conforme critério de conveniência e oportunidade. 1.2. O processo seletivo será conduzido por Comissão Organizadora devidamente constituída por Portaria Interna do IMES Catanduva. 1.3. As dúvidas poderão ser esclarecidas por intermédio do correio eletrônico: coord.direito@imescatanduva.edu.br. 1.4. A divulgação oficial das informações referentes ao processo seletivo dar-se-á pela publicação de edi\n\nFonte: Diário Oficial de Catanduva/SP, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.imescatanduva.edu.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Catanduva",
+  "published": "2026-11-03",
+  "registrationStarts": "2026-11-27",
+  "registrationEnds": "2026-11-30",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3511102/2026-11-03/761fcdce406f56d037a20ac422b279e9282f2966.pdf",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "educacao"
+  ]
+ },
+ {
+  "id": "12ce34bcb860",
+  "title": "Município de Piranguinho - Processo Seletivo nº 003/2026 (retificação)",
+  "deadline": "Inscrições: 09/11/2026 a 15/11/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "Federal nº 11.350/2006 e suas alterações, da Lei Municipal nº 1.408/2017, da Lei Complementar Municipal nº 027/2019 e da Instrução Normativa TCE-MG nº 01/2022, bem como a suspensão determinada pelo Edital nº 003/2026, de 23 de outubro de 2026, TORNA PÚBLICO a presente RETIFICAÇÃO DO EDITAL DE ABERTURA Nº 002/2026, referente ao Processo Seletivo nº 001/2026, para adequação de suas disposições à legislação vigente, especialmente quanto à alteração da denominação do cargo de Agente de Combate às Endemias para Agente Epidemiológico, ao regime jurídico, aos requisitos de investidura, às atribuições e ao cronograma de execução, nos seguintes termos: 1. Fica retificada a denominação do cargo ofertado no Processo Seletivo Público nº 001/2026, constante do Edital de Abertura nº 002/2026, passando a vigorar com a seguinte redação: 1.1 O cargo anteriormente denominado AGENTE DE COMBATE ÀS ENDEMIAS passa a ser identificado como AGENTE EPIDEMIOLÓGICO, em conformidade com a denom\n\nFonte: Diário Oficial de Piranguinho/MG, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.gamaconsult.com.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Piranguinho",
+  "published": "2026-11-03",
+  "registrationStarts": "2026-11-09",
+  "registrationEnds": "2026-11-15",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3151008/2026-11-03/141fae5b7f093bc65cdc9ca5613f03f131f713c6.pdf",
+  "banca": null,
+  "roles": [
+   "Agente de Combate Às Endemias",
+   "“agente de Combate ÀS Endemias”"
+  ],
+  "education": [
+   "medio"
+  ],
+  "areas": null
+ },
+ {
   "id": "d4bb465f4f01",
   "title": "Prefeitura Municipal de São Tomás de Aquino - Processo Seletivo nº 005/2026",
   "deadline": "Inscrições: 21/12/2026 a 08/01/2027",
@@ -295,39 +957,6 @@
   ]
  },
  {
-  "id": "09db743700da",
-  "title": "Município de Bocaiúva do Sul - Processo Seletivo",
-  "deadline": "Inscrições: 22/10/2026 a 03/11/2026",
-  "state": "PR",
-  "salary": "",
-  "vacancies": "",
-  "description": "ucação, no uso de suas atribuições e observados os arts. 37 e 206, VI, da Constituição Federal, a Lei Federal nº 9.394/1996 e o art. 14, § 1º, I, da Lei Federal nº 14.113/2020, bem como a legislação municipal pertinente às funções de gestão escolar, torna pública a abertura de processo seletivo destinado à formação de Banco de Gestores Escolares, nos termos seguintes. 1. DISPOSIÇÕES PRELIMINARES 1.1. A seleção tem por finalidade aferir competências técnicas de mérito e desempenho para a composição de banco de profissionais habilitados ao exercício das funções de diretor escolar, diretor de Centro Municipal de Educação Infantil (CMEI) e para coordenador pedagógico. 1.2. A seleção será conduzida por Comissão Organizadora designada por ato próprio, com bancas técnicas e critérios padronizados, transparentes e objetivos. 1.3. A inclusão no Banco não constitui concurso público, não cria cargo, não modifica vínculo funcional e não g\n\nFonte: Diário Oficial dos Municípios do Paraná, 29/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://bocaiuvadosul.pr.gov.br/uploads/692f0b9d9a841.pdf",
-  "linkKind": "edital",
-  "kind": "processo_seletivo",
-  "source": "diario_municipal",
-  "city": "Bocaiúva do Sul",
-  "published": "2026-10-29",
-  "registrationStarts": "2026-10-22",
-  "registrationEnds": "2026-11-03",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/00C2C82E",
-  "banca": null,
-  "roles": [
-   "Gestão Escolar",
-   "Torna Pública a Abertura de",
-   "Diretor Escolar",
-   "Diretor de Centro Municipal de Educação Infantil (cmei)"
-  ],
-  "education": [
-   "fundamental",
-   "superior"
-  ],
-  "areas": null,
-  "collector": "sigpub:amp",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Paraná"
- },
- {
   "id": "04bf6c52baf7",
   "title": "Instituto de Previdência do Município de Jundiaí - Concurso Público",
   "deadline": "Inscrições: 16/11/2026 a 15/12/2026",
@@ -614,38 +1243,6 @@
   ]
  },
  {
-  "id": "9fdb94bce2e2",
-  "title": "Município de Renascença - Processo Seletivo nº 254/2026",
-  "deadline": "Inscrições: 08/10/2026 a 02/11/2026",
-  "state": "PR",
-  "salary": "",
-  "vacancies": "",
-  "description": "resulte em número fracionado, este deverá ser elevado até o primeiro número inteiro subsequente, respeitando o percentual máximo de 20% (vinte por cento) das vagas oferecidas no certame.\" O item 4.1 passa a vigorar com a seguinte redação: \"4.1 As inscrições para o processo seletivo simplificado de contratação temporária são gratuitas e serão realizadas entre os dias 08/10/2026 e 02/11/2026, através do seguinte endereço eletrônico: www.renascenca.pr.gov.br, no link Concursos/PSS – PSS Professor com Licenciatura Plena 20h e 40h.\" Os itens 6.1, 6.2 e 6.5 passam a vigorar com as seguintes redações: \"6.1 No dia 03 de novembro de 2026, a Comissão publicará no mural da Prefeitura Municipal e no site oficial do Município, edital contendo a divulgação das inscrições deferidas e indeferidas. 6.2 O candidato que não tiver a sua inscrição deferida poderá interpor recurso escrito perante a Comissão de Seleção até as 17h00min do\n\nFonte: Diário Oficial dos Municípios do Paraná, 27/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.renascenca.pr.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "diario_municipal",
-  "city": "Renascença",
-  "published": "2026-10-27",
-  "registrationStarts": "2026-10-08",
-  "registrationEnds": "2026-11-02",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/3184B0E7",
-  "banca": null,
-  "roles": [
-   "Professor – Educação Física No Anexo I",
-   "Passando a Vigorar"
-  ],
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao"
-  ],
-  "collector": "sigpub:amp",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Paraná"
- },
- {
   "id": "9fa1e5358e4e",
   "title": "Município de Paulo Frontin - Processo Seletivo nº 001/2026",
   "deadline": "Inscrições: 29/10/2026 a 07/11/2026",
@@ -830,32 +1427,6 @@
   "collector": "sigpub:famurs",
   "sphere": "municipal",
   "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
- },
- {
-  "id": "ae0d35718847",
-  "title": "Câmara Municipal de João Ramalho - Concurso Público nº 01/2026",
-  "deadline": "Inscrições: 27/10/2026 a 15/11/2026",
-  "state": "SP",
-  "salary": "",
-  "vacancies": "",
-  "description": "TURA DAS INSCRIÇÕES Nº 01/2026 A Câmara Municipal de João Ramalho, Estado de São Paulo, aqui representado pelo Presidente da Casa, Senhor João Paulo Lucheti, no uso de suas atribuições legais, em observância ao art. 37 da Constituição Federal, TORNA PÚBLICO o presente Edital de Abertura de Inscrições do Concurso Público para contratação de cargos em caráter de provimento efetivo, para atender excepcional interesse público, nos termos do inciso IX, art. 37 da Constituição Federal e dá outras providências. As contratações decorrentes do presente Concurso Público de Provas e Títulos serão realizadas por prazo determinado, sob o Regime Estatutário, nos termos da Lei Complementar nº 43/2019, observadas, (Estatuto dos Servidores Públicos do Município de João Ramalho e Lei Orgânica do município, com vinculação previdenciária ao Regime da Previdência Própria Municipal. As contratações serão administradas pela Câmara Municipal de João Ramalho, por me\n\nFonte: Diário Oficial de João Ramalho/SP, 26/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://portal.alphaselecoes.com.br/",
-  "linkKind": "orgao",
-  "kind": "concurso",
-  "source": "querido_diario",
-  "city": "João Ramalho",
-  "published": "2026-10-26",
-  "registrationStarts": "2026-10-27",
-  "registrationEnds": "2026-11-15",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3525607/2026-10-26/cd59931d8f617454f4b8a431ca0ef1ac764d6872.pdf",
-  "banca": null,
-  "roles": null,
-  "education": [
-   "medio"
-  ],
-  "areas": [
-   "administrativa"
-  ]
  },
  {
   "id": "843f0d5ff4fa",
@@ -1067,28 +1638,6 @@
    "educacao",
    "administrativa"
   ]
- },
- {
-  "id": "48c621235c5a",
-  "title": "Município de Palmital - Processo Seletivo nº 001/2026",
-  "deadline": "Inscrições: 23/10/2026 a 04/11/2026",
-  "state": "SP",
-  "salary": "",
-  "vacancies": "",
-  "description": "CESSO SELETIVO SIMPLIFICADO N° 001/2026Edital Normativo Palmital/SP, 22 de outubro de 2026 O MUNICÍPIO DE PALMITAL/SP, por determinação do Excelentíssimo Senhor Prefeito Municipal e em consonância com a Legislação Federal, Estadual e Municipal, torna público o EDITAL NORMATIVO do PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 de PROVAS, para contratação de vaga do seu quadro de pessoal. O presente PROCESSO SELETIVO SIMPLIFICADO será regido pelas instruções especiais a seguir transcritas e demais legislações pertinentes: 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 Este certame terá a execução técnico-administrativa da GL CONSULTORIA EM DESENVOLVIMENTO SOCIAL E AÇÃO EDUCATIVA S/S LTDA. 1.2 O acompanhamento do PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 do MUNICÍPIO DE PALMITAL/SP estará a cargo da Comissão de Acompanhamento e Monitoramento de PROCESSO SELETIVO SIMPLIFICADO nomeada exclusivamente pela PORTARIA Nº 4.275/2026. 1.3 A validad\n\nFonte: Diário Oficial de Palmital/SP, 23/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.glconsultoria.com.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Palmital",
-  "published": "2026-10-23",
-  "registrationStarts": "2026-10-23",
-  "registrationEnds": "2026-11-04",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3535309/2026-10-23/a9e95d787b4dbeeae70576e4d8852a753b8c68ce.pdf",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": null
  },
  {
   "id": "43621cb58458",
@@ -1385,26 +1934,6 @@
   ]
  },
  {
-  "id": "de70c268912e",
-  "title": "Prefeitura de Confins - Processo Seletivo nº 02/2026",
-  "deadline": "Inscrições: 21/10/2026 a 05/11/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 153",
-  "description": "Prefeitura de Confins: processo seletivo nº 02/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 21/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "banca",
-  "city": "Confins",
-  "published": "2026-10-21",
-  "registrationStarts": "2026-10-21",
-  "registrationEnds": "2026-11-05",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
- },
- {
   "id": "c9bf33e0dec9",
   "title": "Município de Porto Velho - Concurso Público",
   "deadline": "Inscrições: veja o edital",
@@ -1436,62 +1965,6 @@
   "collector": "sigpub:arom",
   "sphere": "municipal",
   "gazetteName": "Diário Oficial dos Municípios do Estado de Rondônia"
- },
- {
-  "id": "b42cce1834d2",
-  "title": "Prefeitura Municipal de Balsa Nova - Processo Seletivo nº 18/2026",
-  "deadline": "Inscrições: 21/10/2026 a 04/11/2026",
-  "state": "PR",
-  "salary": "Salário: R$ 5.677,08",
-  "vacancies": "",
-  "description": "SECRETARIA DE ADMINISTRAÇÃO EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 18/2026 PREFEITURA MUNICIPAL DE BALSA NOVA EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 18/2026 O Prefeito de Balsa Nova, Estado do Paraná, no uso das atribuições legais, resolve TORNAR PÚBLICO o presente Edital, que estabelece instruções especiais destinadas à realização do PROCESSO SELETIVO SIMPLIFICADO nº 18/2026 , visando à contratação de pessoal por prazo determinado, em atendimento à necessidade temporária de excepcional interesse público, em regime especial de trabalho, para o cargo de: TRABALHADOR DA EDUCAÇÃO – PEDAGOGO , nos termos da Lei Municipal nº 879/2015 e consoante as Portarias nº 633/2026 e 634/2026 que fixou as Comissões Especiais para o Processo Seletivo Simplificado nº 18/2026 , em trâmite por meio do Processo Administrativo 20780/2026. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1. A contratação ocorrerá em Regime Especial, com fundamento nos termos do inciso IX do art. 37 da Constituição Federal (Lei nº 8.745/1993\n\nFonte: Diário Oficial dos Municípios do Paraná, 21/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://balsanova.oxy.elotech.com.br/protocolo/1/aberturaProcessoExterno",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "diario_municipal",
-  "city": "Balsa Nova",
-  "published": "2026-10-21",
-  "registrationStarts": "2026-10-21",
-  "registrationEnds": "2026-11-04",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/13A97E55",
-  "banca": null,
-  "roles": [
-   "Trabalhador da Educação - Pedagogo",
-   "Não Excedendo o Período de",
-   "1 por Ano 1",
-   "0 Total 10",
-   "0 5",
-   "Pedagogo"
-  ],
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao"
-  ],
-  "collector": "sigpub:amp",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Paraná"
- },
- {
-  "id": "67233bdcfa94",
-  "title": "Prefeitura de Olímpio Noronha - Processo Seletivo nº 01/2026",
-  "deadline": "Inscrições: 21/10/2026 a 03/11/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 4",
-  "description": "Prefeitura de Olímpio Noronha: processo seletivo nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 21/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "banca",
-  "city": "Olímpio Noronha",
-  "published": "2026-10-21",
-  "registrationStarts": "2026-10-21",
-  "registrationEnds": "2026-11-03",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
  },
  {
   "id": "29dad9b6081d",
@@ -1563,26 +2036,6 @@
    "superior"
   ],
   "areas": null
- },
- {
-  "id": "f43484d7a9d3",
-  "title": "Prefeitura de Braúnas - Processo Seletivo nº 01/2026",
-  "deadline": "Inscrições: 19/10/2026 a 03/11/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 59",
-  "description": "Prefeitura de Braúnas: processo seletivo nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 19/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "banca",
-  "city": "Braúnas",
-  "published": "2026-10-19",
-  "registrationStarts": "2026-10-19",
-  "registrationEnds": "2026-11-03",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
  },
  {
   "id": "f190c81fd858",
@@ -1787,46 +2240,6 @@
   "collector": "ibgp"
  },
  {
-  "id": "127dba01cc1f",
-  "title": "Prefeitura de Lagoa da Prata - Concurso Público nº 01/2026",
-  "deadline": "Inscrições: 05/10/2026 a 03/11/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 105",
-  "description": "Prefeitura de Lagoa da Prata: concurso público nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 19/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "banca",
-  "city": "Lagoa da Prata",
-  "published": "2026-10-19",
-  "registrationStarts": "2026-10-05",
-  "registrationEnds": "2026-11-03",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
- },
- {
-  "id": "0dc0bbf7cb4f",
-  "title": "Câmara de Dores do Indaiá - Concurso Público nº 01/2026",
-  "deadline": "Inscrições: 05/10/2026 a 03/11/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 5",
-  "description": "Câmara de Dores do Indaiá: concurso público nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 19/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "banca",
-  "city": "Dores do Indaiá",
-  "published": "2026-10-19",
-  "registrationStarts": "2026-10-05",
-  "registrationEnds": "2026-11-03",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
- },
- {
   "id": "c719c9b54e32",
   "title": "Município de Campo Mourão - Concurso Público",
   "deadline": "Inscrições: veja o edital",
@@ -1924,30 +2337,6 @@
    "tecnico"
   ],
   "areas": null
- },
- {
-  "id": "49c60193c298",
-  "title": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Processo Seletivo (Edital nº 30/2026)",
-  "deadline": "Inscrições: 22/10/2026 a 05/11/2026",
-  "state": "CE",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 30/2026 DG-PAR/PARACURU-IFCE, 15 DE OUTUBRO DE 2026 O DIRETOR GERAL DO CAMPUS DE PARACURU DO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO CEARÁ (IFCE), no uso de suas atribuições e considerando a delegação de competência conferida pela Portaria Normativa nº 81/GABR/REITORIA, de 08 de agosto de 2023, torna pública a abertura de inscrições para o Processo Seletivo Simplificado destinado a selecionar candidatos para contratação por tempo determinado, como professor substituto para o campus de PARACURU, nos termos da Lei nº 8.745/93 e suas alterações. INSCRIÇÕES: Período: 22/10/2026 a 05/11/2026. Inscrição somente via internet, pelo sítio qselecao.ifce.edu.br; Taxa: R$ 150,00 (cento e cinquenta reais) paga por meio de boleto eletrônico, em qualquer agência bancária ou lotérica; Habilitação exigida e todas as informações do certame se encontram disponíveis, na íntegra, no\n\nFonte: Diário Oficial da União, Seção 3, 16/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/10/2026&jornal=530&pagina=34",
-  "linkKind": "diario",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-16",
-  "registrationStarts": "2026-10-22",
-  "registrationEnds": "2026-11-05",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/10/2026&jornal=530&pagina=34",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": [
-   "educacao"
-  ]
  },
  {
   "id": "39c106914c6c",
@@ -2177,32 +2566,6 @@
   ]
  },
  {
-  "id": "4e306baa33ff",
-  "title": "Instituto Federal de Educação, Ciência e Tecnologia Goiano - Processo Seletivo (Edital nº 29/2026)",
-  "deadline": "Inscrições: 20/10/2026 a 04/11/2026",
-  "state": "GO",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 29, DE 14 DE OUTUBRO DE 2026 PROCESSO SELETIVO PARA CONTRATAÇÃO DE PROFESSOR VISITANTE E PROFESSOR VISITANTE ESTRANGEIRO O Reitor do Instituto Federal de Educação, Ciência e Tecnologia Goiano, no uso de suas atribuições legais conferidas pelo Decreto de 13 de março de 2020, publicado no DOU de 16 de março de 2020, Seção 2, página 3, considerando a Lei nº 11.892, de 29 de dezembro de 2008, publicada no DOU de 30 de dezembro de 2008, tendo em vista os termos da Lei n° 8.745, de 09/12/1993, bem como o Decreto n° 6.944, de 21/08/2009, Decreto n° 7.312/2010, torna pública a ABERTURA DE INSCRIÇÕES para o PROCESSO SELETIVO, com vistas à contratação de PROCESSO SELETIVO PARA CONTRATAÇÃO DE PROFESSOR VISITANTE E PROFESSOR VISITANTE ESTRANGEIRO, POR TEMPO DETERMINADO para atender necessidade temporária de excepcional interesse público do IF Goiano - Campus Ceres, Campus Urutaí e Campus\n\nFonte: Diário Oficial da União, Seção 3, 15/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://www.ifgoiano.edu.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-15",
-  "registrationStarts": "2026-10-20",
-  "registrationEnds": "2026-11-04",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=530&pagina=30",
-  "banca": null,
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao"
-  ]
- },
- {
   "id": "4499c1fed278",
   "title": "Município de Costa Rica - Processo Seletivo nº 16/2026",
   "deadline": "Inscrições: 15/10/2026 a 10/11/2026",
@@ -2374,30 +2737,6 @@
   "registrationStarts": null,
   "registrationEnds": null,
   "gazetteUrl": "https://data.queridodiario.ok.org.br/3304557/2026-10-14/40754d9b14fd56e8c6115dce5887892ff4b7b77c.pdf",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": [
-   "saude"
-  ]
- },
- {
-  "id": "7bb5ffc1245e",
-  "title": "Município de Arapongas - Processo Seletivo nº 081/2026",
-  "deadline": "Inscrições: 28/09/2026 a 03/11/2026",
-  "state": "PR",
-  "salary": "",
-  "vacancies": "",
-  "description": "taria nº 417/26, de 08 de setembro de 2026, no uso de suas atribuições legais, TORNA PÚBLICA: 1. Fica alterado o item 1 do Processo Seletivo de Estagiário aberto pelo Edital nº 068/2026, quanto ao cronograma de atividades, para realização das inscrições do Processo Seletivo de Estagiário, conforme segue: CRONOGRAMA DE ATIVIDADES Datas Atividades 10/09/2026 Publicação do Edital de Abertura. 11/09, 14/09 e 15/09/2026 Prazo para impugnação do Edital. 28/09 a 03/11/2026 Período de inscrições, preenchimento do formulário de inscrição e envio de documentos exigidos que deverão ser anexados no ato da inscrição online. 25/11/2026 Homologação das inscrições e das notas preliminares de todos os inscritos. 26/11, 27/11 e 30/11/2026 Prazo para recursos quanto às inscrições e notas preliminares. 04/12/2026 Publicação do resultado dos recursos e homologação da classificação e resultado final.\n\nFonte: Diário Oficial de Arapongas/PR, 14/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://arapongas.atende.net/cidadao/pagina/processo-seletivo-de-estagiarios-2026",
-  "linkKind": "edital",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Arapongas",
-  "published": "2026-10-14",
-  "registrationStarts": "2026-09-28",
-  "registrationEnds": "2026-11-03",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4101507/2026-10-14/a898a8f20a27de912e753034d5dcede8d04b1f2c.pdf",
   "banca": null,
   "roles": null,
   "education": null,
@@ -2634,61 +2973,6 @@
   ],
   "areas": [
    "administrativa"
-  ]
- },
- {
-  "id": "994866ff21dd",
-  "title": "Instituto Benjamin Constant - Processo Seletivo (Edital nº 39/2026)",
-  "deadline": "Inscrições: 13/10/2026 a 03/11/2026",
-  "state": "RJ",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 39, DE 6 DE OUTUBRO DE 2026 O DIRETOR-GERAL DO INSTITUTO BENJAMIN CONSTANT, no uso das atribuições que lhe são conferidas pelo art. 25, Inciso VII, do Regimento Interno, com redação dada pela Portaria MEC nº 310, de 3 de abril de 2018, torna pública a realização de Processo Seletivo Simplificado destinado à contratação de pessoal para atender à necessidade temporária de excepcional interesse público, considerada no Inciso IV do Art. 2º da Lei nº 8.745, de 09 de dezembro de 1993. O presente Processo Seletivo Simplificado será realizado em conformidade com a legislação vigente, em particular com a Constituição Federal de 1988, com a Lei nº 8.745, de 09 de dezembro de 1993, com os Decretos nº 4.748, de 16 de junho de 2003, nº 6.479, de 11 de junho de 2008, nº 9.739, de 28 de março de 2019, e pelo instituído no presente Edital, destinando-se a selecionar candidatos para preenchime\n\nFonte: Diário Oficial da União, Seção 3, 09/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibc.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-09",
-  "registrationStarts": "2026-10-13",
-  "registrationEnds": "2026-11-03",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=32",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": [
-   "saude",
-   "educacao"
-  ]
- },
- {
-  "id": "824e7a8043e7",
-  "title": "Universidade Federal de São Paulo - Processo Seletivo (Edital nº 719/2026)",
-  "deadline": "Inscrições: 13/10/2026 a 02/11/2026",
-  "state": "SP",
-  "salary": "Faixa salarial: R$ 1.839,19 - R$ 5.037,78",
-  "vacancies": "",
-  "description": "EDITAL Nº 719, DE 8 DE OUTUBRO DE 2026 PROCESSO SELETIVO SIMPLIFICADO PARA PROVIMENTO DE VAGA NO CARGO DE PROFESSOR DE MAGISTÉRIO SUPERIOR SUBSTITUTO Processo n° 23089.025481/2026-86 A PRÓ-REITORA ADJUNTA DE GESTÃO COM PESSOAS DA UNIVERSIDADE FEDERAL DE SÃO PAULO, no uso de suas atribuições legais e estatutárias e considerando o que dispõe a Constituição Federal de 1988, as Leis Federais nº 7.853/1989, de 24/10/1989, nº 8.112/90, de 11/12/1990; nº 9.784, de 29/01/1999, nº 12.772, de 28/12/2012, com alterações da Lei nº 12.863, de 24/09/2013, nº 12.990/2014; nº 13.325/2016, de 29/7/2016; nº 13.656, de 30/4/2018; nº 13.709/2018, de 14/08/2018; Lei nº 13.872, de 17/9/2019; os Decretos nº 3.298/1999, de 20/12/1999; nº 6.593/2008, de 2/1/2008; nº 8.727, 28/4/2016, 9.199, de 20/11/2017, nº 9.508/2018, de 24/09/2018 e nº 9.739/2019, de 28/03/2019; as Portarias nº 243 do Ministério da Educaçã\n\nFonte: Diário Oficial da União, Seção 3, 09/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://concursos.unifesp.br/",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-09",
-  "registrationStarts": "2026-10-13",
-  "registrationEnds": "2026-11-02",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=60",
-  "banca": null,
-  "roles": [
-   "Professor de Magistério Superior Substituto",
-   "Professor(a) Substituto(a) do Magistério Superior",
-   "Professor do Magistério Superior Substituto"
-  ],
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao"
   ]
  },
  {
@@ -3039,37 +3323,6 @@
   ]
  },
  {
-  "id": "ecde41777302",
-  "title": "Município de Curitiba - Concurso Público nº 1/2026",
-  "deadline": "Inscrições: 07/10/2026 a 05/11/2026",
-  "state": "PR",
-  "salary": "Faixa salarial: R$ 1.152,29 - R$ 4.993,27",
-  "vacancies": "",
-  "description": "Executivo SECRETARIA MUNICIPAL DE GESTÃO DE PESSOAL - SMGP CP - EDITAL NORMATIVO Nº 4 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Concurso Público n° 4, de 2026, que estabelece normas para provimento de vagas nos cargos de Agente Administrativo, Fiscal e Fiscal de Obras e Posturas, na Administração Pública Direta e a formação de cadastro de reserva do quadro de servidores efetivos da Administração Pública Autárquica e Fundacional do Município de Curitiba, em regime estatutário. Secretaria Municipal de Gestão de Pessoal, 6 de outubro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal (Republicado após período de impugnação, conforme Retificação do Edital Normativo n° 1/2026). SUMÁRIO Poder Executivo SECRETARIA MUNICIPAL DE GESTÃO DE PESSOAL - SMGP\n\nFonte: Diário Oficial de Curitiba/PR, 06/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.fundacaofafipa.org.br",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "querido_diario",
-  "city": "Curitiba",
-  "published": "2026-10-06",
-  "registrationStarts": "2026-10-07",
-  "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-10-06/144f1c0ed725fb009a38dd02f42c7a86128ba6a4.pdf",
-  "banca": "Fundação Fafipa",
-  "roles": [
-   "Agente Administrativo",
-   "Fiscal",
-   "Fiscal de Obras e Posturas"
-  ],
-  "education": [
-   "medio",
-   "tecnico"
-  ],
-  "areas": [
-   "administrativa"
-  ]
- },
- {
   "id": "db0e779a83a4",
   "title": "Prefeitura Municipal de Divina Pastora - Processo Seletivo",
   "deadline": "Inscrições: veja o edital",
@@ -3115,87 +3368,6 @@
    "superior"
   ],
   "areas": null
- },
- {
-  "id": "8e0af65de2bc",
-  "title": "Centro Federal de Educação Tecnológica de Minas Gerais - Processo Seletivo (Edital nº 662/2026)",
-  "deadline": "Inscrições: 07/10/2026 a 02/11/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "EDITAL Nº 662, DE 28 DE SETEMBRO DE 2026 Processo Seletivo Simplificado A Secretária de Gestão de Pessoas do Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG), no uso de suas atribuições conforme a Portaria GDG/CEFET-MG nº 52, de 20/02/2024, e de acordo com a Lei nº 8.745, de 09/12/1993 e suas alterações, e as Leis nº 12.772, de 28/12/2012, e nº 10.667, de 14/05/2003 e suas alterações, torna pública a abertura de inscrições para Processo Seletivo Simplificado para atender à necessidade temporária de excepcional interesse público, destinado a selecionar candidatos(as) visando contratação, por tempo determinado, de Professor(a) Visitante Brasileiro para o CEFET-MG, conforme as disposições a seguir: 1. Das disposições preliminares 1.1 O presente processo seletivo simplificado destina-se ao preenchimento de 01 (uma) vaga para PROFESSOR VISITANTE BRASILEIRO, por prazo dete\n\nFonte: Diário Oficial da União, Seção 3, 06/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.segep.cefetmg.br/contatos/setores/coordenacao-de-administracao-de-pessoal/divisao-de-admissao-e-contratacao/professor-visitante/",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-06",
-  "registrationStarts": "2026-10-07",
-  "registrationEnds": "2026-11-02",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=30",
-  "banca": null,
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao",
-   "ti",
-   "engenharia"
-  ]
- },
- {
-  "id": "757b430d2d55",
-  "title": "Centro Federal de Educação Tecnológica de Minas Gerais - Processo Seletivo (Edital nº 661/2026)",
-  "deadline": "Inscrições: 07/10/2026 a 02/11/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "Edital nº 661, de 5 de outubro de 2026 Processo Seletivo Simplificado A Secretária de Gestão de Pessoas do Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG), no uso de suas atribuições conforme a Portaria GDG/CEFET-MG nº 52, de 20/02/2024, e de acordo com a Lei nº 8.745, de 09/12/1993 e suas alterações, e as Leis nº 12.772, de 28/12/2012, e nº 10.667, de 14/05/2003 e suas alterações, torna pública a abertura de inscrições para Processo Seletivo Simplificado para atender à necessidade temporária de excepcional interesse público, destinado a selecionar candidatos(as) visando contratação, por tempo determinado, de Professor(a) Visitante Brasileiro para o CEFET-MG, conforme as disposições a seguir: 1. Das disposições preliminares 1.1 O presente processo seletivo simplificado destina-se ao preenchimento de 01 (uma) vaga para PROFESSOR VISITANTE BRASILEIRO, por prazo determ\n\nFonte: Diário Oficial da União, Seção 3, 06/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.segep.cefetmg.br/contatos/setores/coordenacao-de-administracao-de-pessoal/divisao-de-admissao-e-contratacao/professor-visitante/",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-06",
-  "registrationStarts": "2026-10-07",
-  "registrationEnds": "2026-11-02",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/10/2026&jornal=530&pagina=30",
-  "banca": null,
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao",
-   "ti"
-  ]
- },
- {
-  "id": "bfba9ba40780",
-  "title": "Universidade Federal de Goiás - Concurso Público (Edital nº 20/2026)",
-  "deadline": "Inscrições: 16/10/2026 a 04/11/2026",
-  "state": "GO",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 20, DE 1º DE OUTUBRO DE 2026 CONDIÇÕES ESPECÍFICAS PARA REALIZAÇÃO DE CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA PREENCHIMENTO DE VAGA(S) DE PROFESSOR DO ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO A Reitora da Universidade Federal de Goiás, usando de suas atribuições estatutárias e regimentais, tendo em vista o Edital de Condições Gerais nº 23/2025, torna públicas as condições específicas para realização de concurso público de provas e títulos para preenchimento de vaga(s) de Professor do Ensino Básico, Técnico e Tecnológico, no âmbito da Universidade Federal de Goiás. 1. DAS DISPOSIÇÕES PRELIMINARES: 1.1. As normas deste certame serão aquelas estabelecidas no Edital de Condições Gerais nº 23/2025, de leitura obrigatória, complementadas pelas informações constantes deste edital, suas normas complementares e quaisquer editais complementares que venham a ser publicados. 2. DA ESPEC\n\nFonte: Diário Oficial da União, Seção 3, 05/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.cepae.ufg.br",
-  "linkKind": "orgao",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-05",
-  "registrationStarts": "2026-10-16",
-  "registrationEnds": "2026-11-04",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=44",
-  "banca": null,
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao"
-  ]
  },
  {
   "id": "990f3505ab58",
@@ -3252,33 +3424,6 @@
    "superior"
   ],
   "areas": null
- },
- {
-  "id": "19064090a0c9",
-  "title": "Universidade Federal de Goiás - Concurso Público (Edital nº 22/2026)",
-  "deadline": "Inscrições: 16/10/2026 a 04/11/2026",
-  "state": "GO",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 22, DE 1º DE OUTUBRO DE 2026 CONDIÇÕES ESPECÍFICAS PARA REALIZAÇÃO DE CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA PREENCHIMENTO DE VAGA(S) DE PROFESSOR DO MAGISTÉRIO SUPERIOR A Reitora da Universidade Federal de Goiás, usando de suas atribuições estatutárias e regimentais, tendo em vista o Edital de Condições Gerais nº 23/2025, torna públicas as condições específicas para realização de concurso público de provas e títulos para preenchimento de vaga(s) de Professor do Magistério Superior, no âmbito da Universidade Federal de Goiás. 1. DAS DISPOSIÇÕES PRELIMINARES: 1.1. As normas deste certame serão aquelas estabelecidas no Edital de Condições Gerais nº 23/2025, de leitura obrigatória, complementadas pelas informações constantes deste edital, suas normas complementares e quaisquer editais complementares que venham a ser publicados. 2. DA ESPECIFICAÇÃO DO CONCURSO PÚBLICO: NÚM\n\nFonte: Diário Oficial da União, Seção 3, 05/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.cepae.ufg.br",
-  "linkKind": "orgao",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-05",
-  "registrationStarts": "2026-10-16",
-  "registrationEnds": "2026-11-04",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/10/2026&jornal=530&pagina=44",
-  "banca": null,
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "saude",
-   "educacao"
-  ]
  },
  {
   "id": "116a5c47fe7b",
@@ -3369,34 +3514,6 @@
   ],
   "areas": [
    "educacao"
-  ]
- },
- {
-  "id": "6d582d547208",
-  "title": "Tribunal Regional do Trabalho da 8ª Região - Concurso Público (Edital nº 1/2026)",
-  "deadline": "Inscrições: 05/10/2026 a 05/11/2026",
-  "state": "PA",
-  "salary": "Faixa salarial: R$ 1.425,77 - R$ 16.040,88",
-  "vacancies": "",
-  "description": "EDITAL Nº 1, DE 1º DE outubro DE 2026 CONCURSO PÚBLICO PARA O PROVIMENTO DE CARGOS DO QUADRO PERMANENTE DE PESSOAL ABERTURA DE INSCRIÇÕES A DESEMBARGADORA PRESIDENTE DO TRIBUNAL REGIONAL DO TRABALHO DA 8ª REGIÃO, tendo em vista o contrato celebrado com a FUNDAÇÃO CARLOS CHAGAS, faz saber que será realizado em locais, datas e horários a serem oportunamente divulgados, Concurso Público para preenchimento de vagas e formação de cadastro de reserva de cargos do Quadro Permanente de Pessoal deste Tribunal, que se regerá de acordo com as Instruções Especiais que fazem parte deste Edital. INSTRUÇÕES ESPECIAIS 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O concurso público realizar-se-á sob a responsabilidade da Fundação Carlos Chagas, obedecidas as normas deste Edital. 1.2 O Concurso destina-se ao preenchimento de vagas e formação de cadastro de reserva para os cargos constantes no Capítulo 2, ob\n\nFonte: Diário Oficial da União, Seção 3, 02/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.concursosfcc.com.br",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-02",
-  "registrationStarts": "2026-10-05",
-  "registrationEnds": "2026-11-05",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=02/10/2026&jornal=530&pagina=139",
-  "banca": "FCC",
-  "education": [
-   "tecnico",
-   "superior"
-  ],
-  "areas": [
-   "ti",
-   "juridica",
-   "administrativa"
   ]
  },
  {
@@ -3730,24 +3847,6 @@
   "registrationEnds": null,
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/09/2026&jornal=530&pagina=161",
   "linkKind": "diario"
- },
- {
-  "id": "851e8da92e0a",
-  "title": "Prefeitura da Estância Turística de São Roque - Processo Seletivo nº 009/2026",
-  "deadline": "Inscrições: 25/09/2026 a 05/11/2026",
-  "state": "SP",
-  "salary": "Salário: R$ 2.805,09",
-  "vacancies": "",
-  "description": "SP PROCESSO SELETIVO SIMPLIFICADO DEPARTAMENTO DE EDUCAÇÃO EDITAL NÚMERO 009/2026 A PREFEITURA DA ESTÂNCIA TURÍSTICA DE SÃO ROQUE, ESTADO DE SÃO PAULO, através do Departamento de Educação no uso de suas atribuições legais torna pública a abertura de inscrições e estabelece normas para a realização do Processo Seletivo Simplificado Edital nº 009/2026, destinado à contratação temporária e de excepcional interesse público, com intuito de preencher as vagas disponíveis e formação de cadastro reserva no quadro de pessoal desta Prefeitura, conforme disposição legal, com fundamentação legal no artigo 37, inciso IX, da Constituição Federal a ser regido nos termos do inciso III, do artigo 177, da Lei n° 2.209, de 1° de fevereiro de 1994 e sua alteração, com contribuição previdenciária ao Regime Geral de Previdência Social, Lei Orgânica do Município, Leis Municipais, em especial Lei nº. 3.680, de 12/09/2011, Lei nº. 2.209, de 01/02/1994, Decreto nº. 7.24\n\nFonte: Diário Oficial de São Roque/SP, 25/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://abconcursospublicos.org/",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "São Roque",
-  "published": "2026-09-25",
-  "registrationStarts": "2026-09-25",
-  "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3550605/2026-09-25/55eede5ac8b18f63b513b78a45c0f4f472622436.pdf",
-  "linkKind": "banca"
  },
  {
   "id": "12cf946e31bf",
@@ -4094,23 +4193,6 @@
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=136"
  },
  {
-  "id": "f7c277b10b51",
-  "title": "Comando da Marinha - Processo Seletivo",
-  "deadline": "Inscrições: veja o edital",
-  "state": "BR",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL DE 17 de setembro de 2026 INSTRUCÕES PARA O PROCESSO SELETIVO DE PROFISSIONAIS DE NÍVEL SUPERIOR DAS ÁREAS DE SAÚDE APOIO A SAÚDE, TÉCNICA, TÉCNICA MAGITÉRIO E DE ENGENHARIA, PARA A PRESTAÇÃO DO SERVICO MILITAR VOLUNTARIO (SMV) COMO OFICIAIS TEMPORÁRIOS DA MARINHA DO BRASIL O Comando do Primeiro Distrito Naval (Com1°DN), no uso de suas atribuições, torna pública a abertura de inscrições, de acordo com os Avisos de Convocação n° 4 e 5 de 2026, Médicos e Demais Áreas, e estabelece normas especificas ao processo seletivo para captação de profissionais de nível superior, de ambos os sexos, para a prestação do SMV temporário como Oficial de 2 a Classe da Reserva da Marinha (RM2), de acordo com o disposto nas Leis n o 4.375/1964 (Lei do Serviço Militar), alterada pela Lei n o 13.954, de 16 de dezembro de 2019 e n o 5.292/1967 (Dispõe sobre a prestação do Serviço Militar pelos\n\nFonte: Diário Oficial da União, Seção 3, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.marinha.mil.br/com1dn/conteudo/smv-oficial-rm2",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-21",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=94"
- },
- {
   "id": "ed23505528fb",
   "title": "Comando da Marinha - Processo Seletivo",
   "deadline": "Inscrições: 18/09/2026 a 10/11/2026",
@@ -4126,125 +4208,5 @@
   "registrationStarts": "2026-09-18",
   "registrationEnds": "2026-11-10",
   "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=21/09/2026&jornal=530&pagina=95"
- },
- {
-  "id": "eca2d999e2c9",
-  "title": "Prefeitura Municipal de Curitiba - Concurso Público nº 4/2026",
-  "deadline": "Inscrições: 07/10/2026 a 05/11/2026",
-  "state": "PR",
-  "salary": "Faixa salarial: R$ 1.152,29 - R$ 4.993,27",
-  "vacancies": "",
-  "description": "Executivo SECRETARIA MUNICIPAL DE GESTÃO DE PESSOAL - SMGP CP - EDITAL NORMATIVO Nº 4 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Concurso Público n° 4, de 2026, que estabelece normas para provimento de vagas nos cargos de Agente Administrativo, Fiscal e Fiscal de Obras e Posturas, na Administração Pública Direta e a formação de cadastro de reserva do quadro de servidores efetivos da Administração Pública Autárquica e Fundacional do Município de Curitiba, em regime estatutário. Secretaria Municipal de Gestão de Pessoal, 21 de setembro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal SUMÁRIO Poder Executivo SECRETARIA MUNICIPAL DE GESTÃO DE PESSOAL - SMGP Torna público o Edital Normativo do Concurso Público para provimento de vagas nos cargos de\n\nFonte: Diário Oficial de Curitiba/PR, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.fundacaofafipa.org.br",
-  "kind": "concurso",
-  "source": "querido_diario",
-  "city": "Curitiba",
-  "published": "2026-09-21",
-  "registrationStarts": "2026-10-07",
-  "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf",
-  "linkKind": "banca",
-  "banca": "Fundação Fafipa",
-  "roles": [
-   "Agente Administrativo",
-   "Fiscal",
-   "Fiscal de Obras e Posturas"
-  ],
-  "education": [
-   "medio",
-   "tecnico"
-  ],
-  "areas": [
-   "administrativa"
-  ]
- },
- {
-  "id": "9c7f51760a7b",
-  "title": "Município de Curitiba - Concurso Público nº 5/2026",
-  "deadline": "Inscrições: 07/10/2026 a 05/11/2026",
-  "state": "PR",
-  "salary": "Faixa salarial: R$ 4.333,71 - R$ 14.117,18",
-  "vacancies": "",
-  "description": "XV CURITIBA, SEGUNDA-FEIRA, 21 DE SETEMBRO DE 2026 Página 46 CP - EDITAL NORMATIVO Nº 5 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Concurso Público n° 5, de 2026, que estabelece normas para provimento de vagas nos cargos de Analista Administrativo, Analista de Finanças, Assistente Social, Auditor Fiscal de Tributos Municipais, Contador e Engenheiro Civil, na Administração Pública Direta e a formação de cadastro de reserva do quadro de servidores efetivos da Administração Pública Autárquica e Fundacional do Município de Curitiba, em regime estatutário. Secretaria Municipal de Gestão de Pessoal, 21 de setembro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal Torna público o Edital Normativo do Concurso Público para provimento de vagas nos cargos de A\n\nFonte: Diário Oficial de Curitiba/PR, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.fundacaofafipa.org.br",
-  "kind": "concurso",
-  "source": "querido_diario",
-  "city": "Curitiba",
-  "published": "2026-09-21",
-  "registrationStarts": "2026-10-07",
-  "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf",
-  "linkKind": "banca",
-  "banca": "Fundação Fafipa",
-  "roles": [
-   "Analista Administrativo",
-   "Analista de Finanças",
-   "Assistente Social",
-   "Auditor Fiscal de Tributos Municipais",
-   "Contador",
-   "Engenheiro Civil"
-  ],
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "engenharia",
-   "administrativa",
-   "assistencia_social"
-  ]
- },
- {
-  "id": "203061b5345e",
-  "title": "Prefeitura Municipal de Curitiba - Concurso Público nº 6/2026",
-  "deadline": "Inscrições: 07/10/2026 a 05/11/2026",
-  "state": "PR",
-  "salary": "Faixa salarial: R$ 2.842,24 - R$ 38.087,99",
-  "vacancies": "",
-  "description": "V CURITIBA, SEGUNDA-FEIRA, 21 DE SETEMBRO DE 2026 Página 108 CP - EDITAL NORMATIVO Nº 6 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Concurso Público n° 6, de 2026, que estabelece normas para provimento de vagas no cargo de Procurador do Município, na Administração Pública Direta do Município de Curitiba, em regime estatutário. Secretaria Municipal de Gestão de Pessoal, 21 de setembro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal Torna público o Edital Normativo do Concurso Público para provimento de vagas no cargo de Procurador do Município. DIÁRIO OFICIAL ELETRÔNICO ATOS DO MUNICÍPIO DE CURITIBA SUPLEMENTO Nº 2 Nº 175 - SUPLEMENTO Nº 2 - ANO XV CURITIBA, SEGUNDA-FEIRA, 21 DE SETEMBRO DE 2026 Página 109 E D I T A L N O R M A T I\n\nFonte: Diário Oficial de Curitiba/PR, 21/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.fundacaofafipa.org.br",
-  "kind": "concurso",
-  "source": "querido_diario",
-  "city": "Curitiba",
-  "published": "2026-09-21",
-  "registrationStarts": "2026-10-07",
-  "registrationEnds": "2026-11-05",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-09-21/896941cbf751908cff484901e2b88244f7cb2a46.pdf",
-  "linkKind": "banca"
- },
- {
-  "id": "d21c7244fdeb",
-  "title": "Município de Paulínia - Processo Seletivo nº 001/2026",
-  "deadline": "Inscrições: veja o edital",
-  "state": "SP",
-  "salary": "Faixa salarial: R$ 1.802,24 - R$ 11.724,57",
-  "vacancies": "",
-  "description": "nº 4.698 de 10 de abril de 2026. II - Esta Portaria entrará em vigor na data de sua publicação, produzindo efeitos a partir de 12 de novembro de 2025. CUMPRA-SE. REGISTRE-SE. PUBLIQUE-SE. Paulínia, 17 de setembro de 2026. ções legais aplicáveis, TORNA PÚBLICO o EDITAL DE HORÁRIO E LOCAL DE REALIZAÇÃO DA PROVA OBJETIVA, do PROCESSO SELETIVO aberto pelo Edital de Abertura nº 001/2026, conforme segue: Art. 1º Para as funções descritas na TABELA 01, a Prova Objetiva será realizada na data de 27/09/2026 (DOMINGO), no período da MANHÃ. TABELA 01 – RELAÇÃO DAS FUNÇÕES QUE REALIZARÃO A PROVA NO PERÍODO DA MANHÃ HORÁRIO DE ABERTURA DOS PORTÕES HORÁRIO DE FECHAMENTO DOS PORTÕES 07h00min (HORÁRIO LOCAL) 08h00min (HORÁRIO LOCAL) CÓDIGO FUNÇÃO PERÍODO 202 Motorista Manhã 401 Professor de Educação Básica I – PEB I Manhã Art. 2º Para as funções descritas na TABELA 02, a Prova Objetiva será realizada na data de 27/09/2026 (DOMINGO), no período da TARDE. TABELA 02 – RELAÇÃO DAS FUNÇÕ\n\nFonte: Diário Oficial de Paulínia/SP, 18/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.avalia.org.br",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Paulínia",
-  "published": "2026-09-18",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3536505/2026-09-18/c8e97f88396cb951d8eaac14edaf93ed859c9601.pdf"
- },
- {
-  "id": "56d09d67037e",
-  "title": "Município de Corbélia - Processo Seletivo nº 01/2026 (retificação)",
-  "deadline": "Inscrições: veja o edital",
-  "state": "PR",
-  "salary": "",
-  "vacancies": "",
-  "description": "refeito do Município de Corbélia, Estado do Paraná, Thiago Daross Stefanello, no uso de suas atribuições legais, considerando o Edital nº 002/2026, que regulamenta o Processo Seletivo Simplificado destinado à contratação temporária de Professor, TORNA PÚBLICA a presente RETIFICAÇÃO, para alteração da data de realização da Prova Escrita e adequação do cronograma do Processo Seletivo, nos seguintes termos: 1. Fica retificado o item 4.2 – Cronograma do Processo Seletivo, quanto aos atos a partir da publicação do Edital de Ensalamento, que passam a vigorar conforme o cronograma abaixo: DATA ATIVIDADE 30/10/2026 Publicação e Divulgação do Edital de Ensalamento. 08/11/2026 Realização da Prova Escrita e entrega da documentação referente à Prova de Títulos. 09/11/2026 Divulgação do Gabarito Provisório e disponibilização do caderno de provas. 10/11/2026 Recurso contra as questões objetivas e o gabarito provisório, por e-mail: educacao@corbelia.pr.gov.br. 11/11/2026 Divulgação do Gabarito Definitivo.\n\nFonte: Diário Oficial de Corbélia/PR, 17/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://data.queridodiario.ok.org.br/4106308/2026-09-17/b7836a499a37baed6956e3f6a166947157259d34.pdf",
-  "linkKind": "diario",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Corbélia",
-  "published": "2026-09-17",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106308/2026-09-17/b7836a499a37baed6956e3f6a166947157259d34.pdf"
  }
 ]
