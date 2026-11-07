@@ -1,5 +1,25 @@
 [
  {
+  "id": "de70c268912e",
+  "title": "Prefeitura de Confins - Processo Seletivo nº 02/2026",
+  "deadline": "Inscrições: 21/10/2026 a 12/11/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "Vagas 153",
+  "description": "Prefeitura de Confins: processo seletivo nº 02/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 07/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.ibgpconcursos.com.br/",
+  "linkKind": "banca",
+  "kind": "processo_seletivo",
+  "source": "banca",
+  "city": "Confins",
+  "published": "2026-11-07",
+  "registrationStarts": "2026-10-21",
+  "registrationEnds": "2026-11-12",
+  "banca": "IBGP",
+  "sphere": "municipal",
+  "collector": "ibgp"
+ },
+ {
   "id": "fb12d357146c",
   "title": "Prefeitura de Antônio Prado de Minas - Concurso Público nº 01/2026",
   "deadline": "Inscrições: 03/11/2026 a 02/12/2026",
@@ -18,6 +38,97 @@
   "banca": "IBGP",
   "sphere": "municipal",
   "collector": "ibgp"
+ },
+ {
+  "id": "bc574611b8d0",
+  "title": "Município de Monteiro Lobato - Processo Seletivo nº 06/2026 (retificação)",
+  "deadline": "Inscrições: 06/11/2026 a 11/11/2026",
+  "state": "SP",
+  "salary": "Salário: R$ 4.719,59",
+  "vacancies": "",
+  "description": "MPLIFICADO Nº 06 EDITAL Nº 06/2026 RETIFICAÇÃO N° 01 O Prefeito do Município de Monteiro Lobato, no uso de suas atribuições legais e em conformidade com o artigo 37, inciso IX, da Constituição Federal, bem como com a Lei Orgânica Municipal, torna pública a abertura de Processo Seletivo Simplificado para contratação temporária de empregos públicos de Enfermeiro 40 horas, destinado ao atendimento de necessidade temporária de excepcional interesse público, nos termos e condições estabelecidos neste edital. 1. JUSTIFICATIVA 1.1. O presente Processo Seletivo Simplificado fundamenta-se na necessidade temporária de contratação de profissional para o emprego de Enfermeiro 40 horas semanais, com o objetivo de assegurar a continuidade, a regularidade e a adequada prestação dos serviços públicos essenciais de saúde à população do Município de Monteiro Lobato/SP. 1.2. A seleção visa suprir, em caráter excepcional e tempo\n\nFonte: Diário Oficial de Monteiro Lobato/SP, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.monteirolobato.sp.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Monteiro Lobato",
+  "published": "2026-11-06",
+  "registrationStarts": "2026-11-06",
+  "registrationEnds": "2026-11-11",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3531704/2026-11-06/ce77ef88ea545914dc67b7c3777dec6b7fcf6f77.pdf",
+  "banca": null,
+  "roles": [
+   "Enfermeiro 40 Horas",
+   "Enfermeiro 40 Horas Semanais",
+   "Com o Objetivo de Assegurar a Continuidade",
+   "Cujo Cronograma Prevê a Homologação do Resultado Final",
+   "Enfermeiro"
+  ],
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ]
+ },
+ {
+  "id": "b274cf291ef8",
+  "title": "Município de Marau - Processo Seletivo",
+  "deadline": "Inscrições: 09/11/2026 a 13/11/2026",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "xcepcional interesse público, devidamente reconhecido nos termos de Lei Municipal, com fulcro no artigo 37, IX, da Constituição Federal Brasileira de 1988, Lei Municipal 1.402/1990, Lei Municipal nº 4.130 de 15 de fevereiro de 2007 e alterações, torna público a realização de Processo Seletivo Simplificado, para contratação emergencial, que será regido pelas normas estabelecidas neste edital e na LEI Nº 6.629 de 29 de setembro de 2026. 1. DAS DISPOSIÇÕES PRELIMINARES. 1.1. O Processo Seletivo Simplificado será executado por intermédio de Comissão composta por servidores municipais, designada através da Portaria n° 152 de 08 de outubro de 2026. 1.2. Durante toda realização do processo seletivo simplificado, serão prestigiados, sem prejuízo de outros, os princípios estabelecidos no art.37, “caput”, da Constituição Federal. 1.3. O presente Edital e demais atos e decisões inerentes ao processo seletivo simpli\n\nFonte: Diário Oficial de Marau/RS, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.pmmarau.com.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Marau",
+  "published": "2026-11-06",
+  "registrationStarts": "2026-11-09",
+  "registrationEnds": "2026-11-13",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4311809/2026-11-06/1fc5b7007d233d9276c132fbe19092a2f3271bc1.pdf",
+  "banca": null,
+  "roles": [
+   "Arquiteto – 40h",
+   "Por Prazo Determinado",
+   "Junto Ao Departamento de Engenharia e Meio Ambiente",
+   "Amparada de Excepcional Interesse Público",
+   "Devidamente Reconhecido"
+  ],
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "engenharia"
+  ]
+ },
+ {
+  "id": "91daf285037c",
+  "title": "Prefeitura Municipal de Candeias - Processo Seletivo nº 006/2026",
+  "deadline": "Inscrições: 09/11/2026 a 13/11/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "IAS, Estado de Minas Gerais, inscrita no CNPJ sob o nº 17.888.090/0001-00, com sede na Avenida 17 de Dezembro, nº 240, Minas Gerais, CEP 37.280-000, centro, nesta cidade de Candeias/MG, e considerando o Decreto n.º 4442, de 05 de novembro de 2026, torna público para conhecimento dos interessados, a abertura do presente Processo Seletivo Simplificado – PSS 006/2026 para contratação de pessoal em regime TEMPORÁRIO, para a prestação de serviços como FISIOTERAPEUTA com a finalidade de atendimento às necessidades temporárias, de excepcional interesse público, da Secretaria Municipal de Saúde e continuidade de seus serviços. 1.DISPOSIÇÕES PRELIMINARES 1.1. Justifica-se a realização do presente processo seletivo simplificado tendo em a necessidade de um fisioterapeuta para executar suas funções junto a Secretaria Municipal de Saúde, dentro da equipe multiprofissional, podendo atuar em PSF – Estratégia de Saúde da Família, no Serviço de Atendimento Domiciliar – SAD, no Cent\n\nFonte: Diário Oficial de Candeias/MG, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.candeias.mg.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Candeias",
+  "published": "2026-11-06",
+  "registrationStarts": "2026-11-09",
+  "registrationEnds": "2026-11-13",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3112000/2026-11-06/5ccdd11f4676244f10eeee63f38f14b105af9fd5.pdf",
+  "banca": null,
+  "roles": [
+   "Suas Subsidiárias e Controladas",
+   "Salvo Quando Houver Compatibilidade de Horários"
+  ],
+  "education": [
+   "superior"
+  ],
+  "areas": null
  },
  {
   "id": "91d88ca9a07e",
@@ -45,6 +156,30 @@
   "collector": "sigpub:famurs",
   "sphere": "municipal",
   "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
+  "id": "4e32329ef1f8",
+  "title": "Município de Sobradinho - Processo Seletivo nº 165/2026",
+  "deadline": "Inscrições: 09/11/2026 a 15/11/2026",
+  "state": "RS",
+  "salary": "Salário: R$ 1.522,00",
+  "vacancies": "",
+  "description": "io Grande do Sul, aos 05 dias do mês de novembro de 2026. Luiz Affonso Trevisan, Prefeito Municipal. Registre-se e publique-se em 05/11/2026. Diego Batista da Silva, Secretário de Administração e Finanças. Edital Edital 165/2026, de 06/11/2026 EXTRATO DO EDITAL Nº 165/2026 PROCESSO SELETIVO SIMPLIFICADO – SELEÇÃO PÚBLICA Nº 21/2026 Diário Oficial do Município Edição Nº 1007 - Ordinária Sobradinho - Rio Grande do Sul, 6 de Novembro de 2026 MUNICIPIO DE SOBRADINHO O Município de Sobradinho/RS torna público o Edital nº 165/2026, que estabelece a realização de Processo Seletivo Simplificado destinado à formação de cadastro reserva para eventual contratação temporária de profissionais para a Secretaria Municipal da Saúde, nos cargos de Médico – ESF (40 horas semanais) e Farmacêutico (20 horas semanais). As contratações serão pelo prazo determinado de até 10 (dez) meses, prorrogável uma vez por igual perí\n\nFonte: Diário Oficial de Sobradinho/RS, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.sobradinho.rs.gov.br/portal/",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Sobradinho",
+  "published": "2026-11-06",
+  "registrationStarts": "2026-11-09",
+  "registrationEnds": "2026-11-15",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4320701/2026-11-06/be60f7b5892acf78a4ef2584259e7e53c267d740.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude"
+  ]
  },
  {
   "id": "458f8d6285ce",
@@ -737,35 +872,6 @@
   "gazetteName": "Diário Oficial dos Municípios Mineiros"
  },
  {
-  "id": "244605a33434",
-  "title": "Município de Senador Rui Palmeira - Processo Seletivo",
-  "deadline": "Inscrições: 04/11/2026 a 06/11/2026",
-  "state": "AL",
-  "salary": "Salário: R$ 2.000,00",
-  "vacancies": "",
-  "description": "CD/FNDE nº 4, de 26 de fevereiro de 2026, com as alterações da Resolução CD/FNDE nº 17, de 22 de outubro de 2026, e nas Resoluções CFN nº 788 e nº 789, ambas de 13 de setembro de 2024, observada a Resolução CFN nº 857, de 5 de maio de 2026, torna pública a abertura deste PROCESSO SELETIVO SIMPLIFICADO, destinado à contratação por tempo determinado de Nutricionista Escolar para compor o quadro técnico da Secretaria Municipal de Educação de Senador Rui Palmeira, com atuação no Programa Nacional de Alimentação Escolar (PNAE), e à formação de cadastro de reserva, nas condições seguintes. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1. O certame será regido por este Edital e seus anexos e executado pela Comissão Especial Organizadora do Processo Seletivo Simplificado, doravante denominada Comissão, observados a impessoalidade, a publicidade, a motivação, a isonomia e o direito de recurso. 1.2. A contratação por tempo d\n\nFonte: Diário Oficial de Senador Rui Palmeira/AL, 30/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.senadorruipalmeira.al.gov.br/portal/index.php",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Senador Rui Palmeira",
-  "published": "2026-10-30",
-  "registrationStarts": "2026-11-04",
-  "registrationEnds": "2026-11-06",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/2700000/2026-10-30/f7a3bbf991c5ea838f847565d60e87251853f745.pdf",
-  "banca": null,
-  "roles": [
-   "Nutricionista Escolar Cumprirá Jornada de",
-   "Nutricionista Escolar"
-  ],
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "saude"
-  ]
- },
- {
   "id": "f96bb781f820",
   "title": "Prefeitura Municipal de Balsa Nova - Processo Seletivo nº 19/2026",
   "deadline": "Inscrições: 29/10/2026 a 12/11/2026",
@@ -1106,33 +1212,6 @@
   "banca": "IBGP",
   "sphere": "municipal",
   "collector": "ibgp"
- },
- {
-  "id": "35b47e5fc238",
-  "title": "Município de Victor Graeff - Processo Seletivo nº 13/2026",
-  "deadline": "Inscrições: 28/10/2026 a 06/11/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "",
-  "description": "SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO E FAZENDA PROCESSO SELETIVO SIMPLIFICADO Nº 13/2026 - EDITAL Nº 144/2026 O MUNICÍPIO DE VICTOR GRAEFF , Estado do Rio Grande do Sul, no uso de suas atribuições, TORNA PÚBLICA a realização de Processo Seletivo Simplificado, para a cadastro reserva de Auxiliar de Serviços Gerais. As inscrições serão recebidas junto ao Centro Administrativo Municipal, sito na Avenida João Amann, nº 690, centro, Victor Graeff/RS, das 07h30min às 11h e das 13h às 16h:30min no período de 28 de outubro a 06 de novembro de 2026. Maiores informações pelo telefone (54) 3338-1242/1273. e pelo site www.victorgraeff.rs.gov.br – Victor Graeff/RS 28 de outubro de 2026. LAIRTON ANDRÉ KOECHE - Prefeito Municipal. Publicado por: Patricia Dos Santos\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 28/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.victorgraeff.rs.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "diario_municipal",
-  "city": "Victor Graeff",
-  "published": "2026-10-28",
-  "registrationStarts": "2026-10-28",
-  "registrationEnds": "2026-11-06",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/3927008D",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": [
-   "operacional"
-  ],
-  "collector": "sigpub:famurs",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
  },
  {
   "id": "fd9b32171c31",
@@ -4123,74 +4202,6 @@
   "gazetteUrl": "https://data.queridodiario.ok.org.br/2305233/2026-09-22/5278bd517e5550fcb2fc44293281ac094e353f14.pdf",
   "linkKind": "banca",
   "banca": "Consulpam"
- },
- {
-  "id": "ed3574511350",
-  "title": "Universidade Federal do Rio Grande do Norte - Concurso Público (Edital nº 109/2026)",
-  "deadline": "Inscrições: veja o edital",
-  "state": "RN",
-  "salary": "Faixa salarial: R$ 1.175,00 - R$ 14.463,85",
-  "vacancies": "",
-  "description": "EDITAL Nº 109/PROGESP, de 18 de setembro de 2026 CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA O PROVIMENTO DE CARGO DE PROFESSOR DO ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO A PRÓ-REITORA DE GESTÃO DE PESSOAS DA UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE, no uso das atribuições que lhe confere a Portaria n o 1.270/95-R, de 23 de outubro de 1995, e considerando o que dispõem o Art. 53 da Lei n o 9.394/96, de 20 de dezembro de 1996, a Portaria Conjunta MGI Nº 70, de 8 de outubro de 2025, e a Portaria MEC nº 926, de 26 de dezembro de 2025; torna pública a abertura de inscrições para o Concurso Público de Provas e Títulos, de acordo com a Lei nº 12.772, de 28 de dezembro de 2012, com o Decreto nº 9.739, de 28 de março de 2019 e as Normas de Concurso Público, dispostas pela Resolução n o 031/2025-CONSEPE, de 16 de dezembro de 2025, considerada parte integrante deste Edital, disponível no sít\n\nFonte: Diário Oficial da União, Seção 3, 22/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://sigrh.ufrn.br",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-22",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=44"
- },
- {
-  "id": "e7d9385d0e7c",
-  "title": "Tribunal Regional do Trabalho da 5ª Região - Concurso Público (Edital nº 32/2026)",
-  "deadline": "Inscrições: veja o edital",
-  "state": "BA",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 32, DE 15 DE SETEMBRO DE 2026 CONCURSO PÚBLICO PARA O PROVIMENTO DE CARGOS DO QUADRO PERMANENTE DE PESSOAL A DESEMBARGADORA DO TRABALHO, PRESIDENTE DO TRIBUNAL REGIONAL DO TRABALHO DA 5ª REGIÃO, tendo em vista o Edital nº 01/2022 de Abertura de Inscrições do Concurso Público para formação de Cadastro de Reserva para provimento de cargos do Quadro Permanente de Pessoal deste Tribunal, publicado no Diário Oficial da União, seção 3, na edição de 09/09/2022, resolve: 1. TORNAR PÚBLICO que o candidato LUCAS NASCIMENTO ZEFERINO DO CARMO, passa a concorrer em condição regular na 80ª posição da lista dos Candidatos Autodeclarados Negros para o cargo de Analista Judiciário - Área Judiciária - O15, inscrição nº 0050008c do presente certame e não mais na condição sub judice, conforme decisão proferida nos autos do Processo Judicial nº 0814573-28.2023.4.05.0000. IVANA MÉRCIA NILO DE MA\n\nFonte: Diário Oficial da União, Seção 3, 22/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=141",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-22",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=141"
- },
- {
-  "id": "88f5e1a0dc1a",
-  "title": "Estado de Minas Gerais - Concurso Público",
-  "deadline": "Inscrições: veja o edital",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "",
-  "description": "cONcURSO Prefeitura Municipal de Munhoz/MG, no uso de suas atribuições legais, de acordo com a legislação pertinente, torna pública a realização de concurso público em vista do disposto no art. 37, inciso II, da Constituição da República Federativa do Brasil, na Lei Orgânica do Município de Munhoz/MG e Leis Municipais vigentes, que realizar-se-á Concurso Público de Provas, para o preenchimento dos Cargos Públicos existentes na administração direta do município. O presente Concurso Público destina-se aos cargos e vagas previstas neste Edital, para o preenchimento efetivo de outras vagas que surgirem durante o período de validade deste concurso público ou ainda para outras vagas que forem criadas. As INSCRIÇÕES serão realizadas na modalidade INTERNET, diretamente pelo candidato no site www.ibdoprojetos.org.br, a partir das 08:00h de 23 de novembro de 2026 até às 23:59h de 22 de dezembro d\n\nFonte: Diário Oficial da União, Seção 3, 22/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibdoprojetos.org.br",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-22",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=185"
- },
- {
-  "id": "6a87cbb08325",
-  "title": "Tribunal Regional Federal da 6ª Região - Concurso Público",
-  "deadline": "Inscrições: veja o edital",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "",
-  "description": "ANEXO II REQUERIMENTO DE INSCRIÇÃO DEFINITIVA EXMA. SRA. DESEMBARGADORA PRESIDENTE DA COMISSÃO DO CONCURSO PÚBLICO PARA PROVIMENTO DE CARGOS DE JUIZ FEDERAL SUBSTITUTO DO TRIBUNAL REGIONAL FEDERAL DA 6ª REGIÃO Nº de Inscrição: ______________ Nome: ____________________________________________________________________________. RG nº ______________________ órgão expedidor: ________________ data expedição ___/___/___. OAB nº: ____________________ CPF nº _____________________ Requer sua Inscrição Definitiva no Concurso Público para Provimento de Cargos de Juiz Federal Substituto do Tribunal Regional Federal da 6ª Região, apresentando os seguintes documentos, nesta ordem: ( ) documento oficial de identidade; ( ) certidão de nascimento ou de casamento; ( ) diploma de bacharel em Direito, devidamente registrado no Ministério da Educação; ( ) certidão ou declaração idônea que comprove h\n\nFonte: Diário Oficial da União, Seção 3, 22/09/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=136",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-09-22",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=22/09/2026&jornal=530&pagina=136"
  },
  {
   "id": "ed23505528fb",
