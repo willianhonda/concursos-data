@@ -1,5 +1,33 @@
 [
  {
+  "id": "upd-23504d6c3a71",
+  "examId": "ba51033b93b5",
+  "type": "convocacao",
+  "title": "Convocação publicada",
+  "organization": "Município de Joinville",
+  "edital": "Processo Seletivo nº 007/2026",
+  "state": "SC",
+  "city": "Joinville",
+  "published": "2026-11-10",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4209102/2026-11-10/fb325883fd38df997e9ec196b722cf6f130240f0.pdf",
+  "excerpt": "deral nº8.539, de 08/10/2015 e o Decreto Municipal nº 21.863, de 30/01/2014. A autenticidade do documento pode ser conferida no site https://portalsei.joinville.sc.gov.br/ informando o código verificador 31554528 e o código CRC 91460CDC. ATO DE CONVOCAÇÃO SEI Nº 31553432/2026 - SGP.URS.ARE Joinville, 10 de novembro de 2026. Tendo em vista a aprovação do(a) Senhor(a) GABRIELA ALVES MACHADO (Final de Fila) n o Processo Seletivo - Edital 007-2026-SGP no Cargo 0023 - Auxiliar de Educador, vimos conv",
+  "source": "querido_diario"
+ },
+ {
+  "id": "upd-37e8ce94a3b5",
+  "examId": "ba51033b93b5",
+  "type": "convocacao",
+  "title": "Convocação publicada",
+  "organization": "Município de Joinville",
+  "edital": "Processo Seletivo nº 007/2026",
+  "state": "SC",
+  "city": "Joinville",
+  "published": "2026-11-09",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4209102/2026-11-09/3d33bb16790adafbf5e65ffac76b6340ac1b1173.pdf",
+  "excerpt": "de 30/01/2014. 130 de 172 Nº 3085, segunda-feira, 09 de novembro de 2026 A autenticidade do documento pode ser conferida no site https://portalsei.joinville.sc.gov.br/ informando o código verificador 31457018 e o código CRC BCE166F0. ATO DE CONVOCAÇÃO SEI Nº 31540152/2026 - SGP.URS.ARE Joinville, 09 de novembro de 2026. Tendo em vista a aprovação do(a) Senhor(a) TAMIRIS KUHN DE SOUZA (Final de Fila) no Processo Seletivo - Edital 007-2026-SGP no Cargo 0023 - Auxiliar de Educador, vimos convocá-lo",
+  "source": "querido_diario"
+ },
+ {
   "id": "upd-7debba738dfc",
   "examId": "7141ab76dc27",
   "type": "resultado",
