@@ -61,6 +61,34 @@ class SedeUfTests(unittest.TestCase):
         self.assertEqual([i["state"] for i in feed], ["DF", "BR", "SP", "BR"])
 
 
+class SedeCityTests(unittest.TestCase):
+    def test_federal_bodies_seated_in_sao_paulo(self):
+        # Nomes reais do docs/concursos.json de 07/11/2026, publicados sem cidade.
+        for org in (
+            "Universidade Federal de São Paulo",
+            "Tribunal Regional Federal da 3ª Região",
+            "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo",
+            "Tribunal Regional do Trabalho da 2ª Região",
+            "Tribunal Regional Eleitoral de São Paulo",
+        ):
+            self.assertEqual(orgaos_uf.sede_city(org), "São Paulo", org)
+
+    def test_other_bodies_get_no_city(self):
+        for org in ("Tribunal Regional Federal da 1ª Região", "Tribunal Regional do Trabalho da 15ª Região",
+                    "Universidade Federal do ABC", "Universidade Federal de São Carlos", "Departamento de Polícia Federal"):
+            self.assertIsNone(orgaos_uf.sede_city(org), org)
+
+    def test_fix_cities_only_fills_dou_items_without_a_city(self):
+        feed = [
+            {"id": "a", "title": "Tribunal Regional Federal da 3ª Região - Concurso Público", "state": "SP", "source": "dou", "city": None},
+            {"id": "b", "title": "Universidade Federal de São Paulo - Processo Seletivo", "state": "SP", "source": "dou", "city": "Diadema"},
+            {"id": "c", "title": "Universidade Federal de São Paulo - Processo Seletivo", "state": "SP", "source": "querido_diario"},
+            {"id": "d", "title": "Departamento de Polícia Federal - Concurso Público", "state": "BR", "source": "dou"},
+        ]
+        self.assertEqual(orgaos_uf.fix_cities(feed), 1)
+        self.assertEqual([i.get("city") for i in feed], ["São Paulo", "Diadema", None, None])
+
+
 class DouSedeTests(unittest.TestCase):
     def test_dou_item_gets_the_seat_state(self):
         item = bf.extract_dou_article(ET.fromstring(dou_article(
@@ -70,6 +98,16 @@ class DouSedeTests(unittest.TestCase):
             category="Ministério da Educação/Instituto Federal de Educação, Ciência e Tecnologia Goiano",
         )))
         self.assertEqual(item["state"], "GO")
+        self.assertIsNone(item["city"])
+
+    def test_dou_item_gets_the_seat_city(self):
+        item = bf.extract_dou_article(ET.fromstring(dou_article(
+            "Edital", "EDITAL Nº 29/2026",
+            "<p>A Presidente torna pública a abertura de inscrições do Concurso Público para Analista Judiciário. "
+            "Inscrições de 01/11/2026 a 30/11/2026.</p>",
+            category="Poder Judiciário/Tribunal Regional Federal da 3ª Região",
+        )))
+        self.assertEqual((item["state"], item["city"]), ("SP", "São Paulo"))
 
     def test_national_body_stays_br(self):
         item = bf.extract_dou_article(ET.fromstring(dou_article(

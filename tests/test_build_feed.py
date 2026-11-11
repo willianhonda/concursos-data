@@ -6,6 +6,7 @@ import unittest
 import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import build_feed as bf  # noqa: E402
@@ -169,6 +170,20 @@ class RecallTests(unittest.TestCase):
         self.assertIn("São José dos Campos (último diário há 115 dias)", stale)
         self.assertIn("São Paulo (sem nenhum diário)", stale)
         self.assertEqual(len(stale), 2)
+
+    def test_stale_cities_uses_the_current_http_get_with_a_single_short_try(self):
+        # O default antigo (`fetch=http_get`) prendia a função real: os testes de ponta a ponta iam à rede e,
+        # com a API fora do ar, 5 tentativas por cidade estouravam o tempo do job.
+        calls = []
+
+        def fake_get(url, **kwargs):
+            calls.append(kwargs)
+            raise OSError("fora do ar")
+
+        with mock.patch.object(bf, "http_get", fake_get), mock.patch.object(bf, "log", lambda _: None):
+            self.assertEqual(bf.stale_cities(dt.date(2026, 10, 31)), [])
+        self.assertEqual(len(calls), len(bf.WATCHED_CITIES))
+        self.assertTrue(all(c == {"attempts": 1, "timeout": 15} for c in calls))
 
 
 class DouTests(unittest.TestCase):

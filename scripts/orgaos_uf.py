@@ -172,6 +172,40 @@ def org_of(item: dict) -> str:
     return (item.get("title") or "").split(" - ")[0]
 
 
+# Órgãos federais com sede numa capital e o nome que identifica uma única sede: a cidade entra no item para a
+# busca pela cidade achá-los ("São Paulo" não aparece em "Tribunal Regional Federal da 3ª Região"). Os TRTs e
+# TRFs entram pelo número da região. Por ora só a capital paulista.
+SEDE_CIDADE = {
+    "universidade federal de sao paulo": "São Paulo",
+    IF + "de sao paulo": "São Paulo",
+    "tribunal regional eleitoral de sao paulo": "São Paulo",
+}
+REGION_CIDADE = {("federal", 3): "São Paulo", ("trabalho", 2): "São Paulo"}
+REGION = re.compile(r"^tribunal regional (trabalho|federal) (\d{1,2})a? regiao$")
+
+_SEDE_CIDADE = {norm(k): v for k, v in SEDE_CIDADE.items()}
+
+
+def sede_city(org: str) -> str | None:
+    """Cidade da sede de um órgão federal da lista; None para os demais."""
+    key = norm(org)
+    if region := REGION.match(key):
+        return REGION_CIDADE.get((region.group(1), int(region.group(2))))
+    return _SEDE_CIDADE.get(key)
+
+
+def fix_cities(feed: list[dict]) -> int:
+    """Põe a cidade da sede nos itens do DOU sem cidade, inclusive os já publicados. Devolve quantos mudaram."""
+    changed = 0
+    for item in feed:
+        if not item.get("city") and item.get("source") == "dou":
+            city = sede_city(org_of(item))
+            if city:
+                item["city"] = city
+                changed += 1
+    return changed
+
+
 def fix_states(feed: list[dict]) -> int:
     """Troca "BR" pela UF da sede nos itens do DOU, inclusive os já publicados. Devolve quantos mudaram."""
     changed = 0

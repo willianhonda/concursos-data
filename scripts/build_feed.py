@@ -410,8 +410,15 @@ WATCHED_CITIES = {
 CITY_STALE_AFTER_DAYS = 14
 
 
-def stale_cities(today: dt.date, fetch=http_get) -> list[str]:
+def quick_get(url: str) -> bytes:
+    """Uma tentativa curta: o aviso de spider parado não pode prender o job quando a API cai (32 cidades × 5 tentativas)."""
+    return http_get(url, attempts=1, timeout=15)
+
+
+def stale_cities(today: dt.date, fetch=None) -> list[str]:
     """Cidades vigiadas cujo diário mais recente na API é antigo (ou que não têm diário nenhum)."""
+    # Resolvido na chamada, não no default: assim um teste que troca `http_get` também troca esta busca.
+    fetch = fetch or quick_get
     stale = []
     for territory_id, name in WATCHED_CITIES.items():
         params = {"territory_ids": territory_id, "sort_by": "descending_date", "size": 1}
@@ -429,7 +436,7 @@ def stale_cities(today: dt.date, fetch=http_get) -> list[str]:
     return stale
 
 
-def warn_stale_cities(today: dt.date, fetch=http_get) -> list[str]:
+def warn_stale_cities(today: dt.date, fetch=None) -> list[str]:
     stale = stale_cities(today, fetch)
     if stale:
         log(f"AVISO: spiders do Querido Diário parados em {len(stale)} cidade(s) vigiada(s): " + "; ".join(stale))
@@ -847,7 +854,7 @@ def extract_dou_article(article: ET.Element) -> dict | None:
         "linkKind": link_kind,
         "kind": kind,
         "source": "dou",
-        "city": None,
+        "city": orgaos_uf.sede_city(org),
         "published": published.isoformat(),
         "registrationStarts": period[0].isoformat() if period else None,
         "registrationEnds": period[1].isoformat() if period else None,
@@ -1047,6 +1054,8 @@ def main() -> int:
     # Itens do DOU publicados antes da lista de sedes ainda estão como "BR".
     if fixed := orgaos_uf.fix_states(merged):
         log(f"UF da sede: {fixed} item(ns) do DOU deixaram de ser BR")
+    if fixed := orgaos_uf.fix_cities(merged):
+        log(f"cidade da sede: {fixed} item(ns) do DOU ganharam a cidade")
     feed = []
     for item in merged:
         # Um item fora do formato do app sai do feed em vez de derrubar a lista de quem está na 2.2.x.

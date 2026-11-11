@@ -239,6 +239,7 @@ class PipelineTests(unittest.TestCase):
             with mock.patch.dict(os.environ, env, clear=False), mock.patch.object(sys, "argv", argv), \
                     mock.patch.object(bf, "search_gazettes", return_value=[]), mock.patch.object(bf, "fetch_dou", return_value=[]), \
                     mock.patch.object(bf, "http_get", fake_get), mock.patch.object(bf, "link_is_broken", return_value=False), \
+                    mock.patch.object(bf, "warn_stale_cities", return_value=[]), \
                     mock.patch.object(sigpub, "SLUGS", {"amp": "PR"}), mock.patch.object(sigpub, "DELAY", 0), \
                     mock.patch.object(bf, "log", lambda _: None), \
                     mock.patch.object(bf.dt, "date", wraps=dt.date) as fake_date:
