@@ -1,5 +1,364 @@
 [
  {
+  "id": "c7b3688d6e06",
+  "title": "SEAP PE - Concurso Público",
+  "deadline": "Inscrições: 12/11/2026 a 04/01/2027",
+  "state": "PE",
+  "salary": "Salário até R$ 5.667,92",
+  "vacancies": "Vagas 700",
+  "description": "SEAP PE: concurso público com inscrições abertas, organizado por Cebraspe. Cargos, requisitos e valores no edital.\n\nFonte: Cebraspe, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.cebraspe.org.br/concursos/SEAP_PE_26",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "banca",
+  "city": null,
+  "published": "2026-11-12",
+  "registrationStarts": "2026-11-12",
+  "registrationEnds": "2027-01-04",
+  "banca": "Cebraspe",
+  "sphere": "estadual",
+  "collector": "cebraspe"
+ },
+ {
+  "id": "b815070c7ec5",
+  "title": "Município de Mandaguari - Processo Seletivo",
+  "deadline": "Inscrições: 18/11/2026 a 25/11/2026",
+  "state": "PR",
+  "salary": "",
+  "vacancies": "",
+  "description": "ação e treinamento quando necessário; ● Colaborar com as atividades e articulação da escola com as famílias e a comunidade. ● Executar outras tarefas correlatas de acordo com a solicitação da direção e equipe escolar 10. DAS INSCRIÇÕES 10.1. As inscrições para o Processo Seletivo Simplificado – PSS serão realizadas exclusivamente por meio eletrônico, mediante o cumprimento obrigatório de duas etapas: o preenchimento e envio de formulário eletrônico específico, disponibilizado por meio do link https://forms.gle/7gWM8RpxydePAkT98, indicado neste Edital, e o envio, por e-mail de toda a documentação exigida neste Edital, para o endereço eletrônico específico do processo seletivo: psseducamandaguari@gmail.com . 10.2. As inscrições serão realizadas no período de 18 a 25 de novembro de 2026, das 00h00 do dia 18 de novembro até às 23h59 do dia 25 de novembro de 2026, não sendo cobrada taxa de inscrição. 10.3. O formulário\n\nFonte: Diário Oficial dos Municípios do Paraná, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://forms.gle/7gWM8RpxydePAkT98",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Mandaguari",
+  "published": "2026-11-12",
+  "registrationStarts": "2026-11-18",
+  "registrationEnds": "2026-11-25",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/0A8DC310",
+  "banca": null,
+  "roles": [
+   "Auxiliar Educacional",
+   "Educador Infantil",
+   "Professor",
+   "Monitor do Ensino Integral",
+   "Professor de Educação Física",
+   "Professor de Língua Inglesa",
+   "Professor de Língua Brasileira de Sinais – Libras",
+   "Instrutor de Musicalização",
+   "Instrutor de Informática"
+  ],
+  "education": [
+   "medio",
+   "superior"
+  ],
+  "areas": [
+   "educacao",
+   "ti"
+  ],
+  "collector": "sigpub:amp",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Paraná"
+ },
+ {
+  "id": "86ce832fd45e",
+  "title": "Prefeitura de Onça de Pitangui - Processo Seletivo nº 01/2026",
+  "deadline": "Inscrições: 23/10/2026 a 13/11/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "Vagas 11",
+  "description": "Prefeitura de Onça de Pitangui: processo seletivo nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.ibgpconcursos.com.br/",
+  "linkKind": "banca",
+  "kind": "processo_seletivo",
+  "source": "banca",
+  "city": "Onça de Pitangui",
+  "published": "2026-11-12",
+  "registrationStarts": "2026-10-23",
+  "registrationEnds": "2026-11-13",
+  "banca": "IBGP",
+  "sphere": "municipal",
+  "collector": "ibgp"
+ },
+ {
+  "id": "817665aaa95d",
+  "title": "Município de Rolim de Moura - Processo Seletivo",
+  "deadline": "Inscrições: 18/11/2026 a 19/11/2026",
+  "state": "RO",
+  "salary": "",
+  "vacancies": "",
+  "description": "/RO, por intermédio da SECRETARIA MUNICIPAL DE SAÚDE – SEMUSA, no uso de suas atribuições legais, com fundamento no inciso IX do art. 37 da Constituição Federal, na Instrução Normativa nº 41/2014 do TCE-RO, e em atendimento ao Decreto nº 7.160/2026, torna público a realização de PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO TEMPORÁRIA POR EXCEPCIONAL INTERESSE PÚBLICO DE PROFISSIONAIS PARA ATUAÇÃO NOS SERVIÇOS ESPECIALIZADOS, sob regime jurídico celetista, conforme condições estabelecidas neste Edital e seus anexos. 1. DO OBJETO 1.1 O presente Processo Seletivo Simplificado destina-se à contratação temporária de PROFISSIONAIS DE SAÚDE, em caráter emergencial, para atender necessidade temporária de excepcional interesse público, conforme justificativa constante nos autos do processo administrativo nº 6508/2026. 1.2 Todo o desenvolvimento e execução deste Processo Seletivo, bem como o Edital e o Resultado Final, serão publicados\n\nFonte: Diário Oficial dos Municípios do Estado de Rondônia, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.rolimdemoura.ro.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Rolim de Moura",
+  "published": "2026-11-12",
+  "registrationStarts": "2026-11-18",
+  "registrationEnds": "2026-11-19",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/arom/materia/D18A22AD",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "medio",
+   "tecnico",
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ],
+  "collector": "sigpub:arom",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado de Rondônia"
+ },
+ {
+  "id": "7b2610969797",
+  "title": "Prefeitura de Confins - Processo Seletivo nº 03/2026",
+  "deadline": "Inscrições: 12/11/2026 a 03/12/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "Vagas 171",
+  "description": "Prefeitura de Confins: processo seletivo nº 03/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.ibgpconcursos.com.br/",
+  "linkKind": "banca",
+  "kind": "processo_seletivo",
+  "source": "banca",
+  "city": "Confins",
+  "published": "2026-11-12",
+  "registrationStarts": "2026-11-12",
+  "registrationEnds": "2026-12-03",
+  "banca": "IBGP",
+  "sphere": "municipal",
+  "collector": "ibgp"
+ },
+ {
+  "id": "7733496bbff2",
+  "title": "Município de Victor Graeff - Processo Seletivo nº 14/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "DMINISTRAÇÃO E FAZENDA - EDITAL DE ABERTURA Nº 146 DE 12 DE NOVEMBRO DE 2026 PROCESSO SELETIVO SIMPLIFICADO Nº 14/2026 O MUNICÍPIO DE VICTOR GRAEFF, Estado do Rio Grande do Sul, no uso de suas atribuições, visando à eventual contratação de pessoal, TORNA PÚBLICO a realização de Processo Seletivo Simplificado, para Motorista/Operador de Máquina, de acordo com cronograma constante no Anexo I. INSCRIÇÕES: As inscrições para a referida função serão recebidas junto ao Centro Administrativo Municipal, sito na Avenida João Amann, nº 690, centro, Victor Graeff/RS, das 07h30min às 11h00min e das 13h às 16h, no período de 12 de a 19 de novembro de 2026. Maiores informações pelo telefone (54) 3338-1242/1273 e no site www.victorgraeff.rs.gov.br / Publicações / Editais / Processos Seletivos. Victor Graeff/RS, 12/11/2026. Publicado por: Fernanda Martins de Mello\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.victorgraeff.rs.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Victor Graeff",
+  "published": "2026-11-12",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/526F978A",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "operacional"
+  ],
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
+  "id": "68839a99b58b",
+  "title": "Município de Santa Barbara - Processo Seletivo nº 04/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "um) curso pontuado. (Pontuação máxima: 10 pontos – 01 curso) 10 Declaração e/ou Certificado de Conclusão emitido e assinado pela Instituição responsável, com carga horária mínima de 50 (cinquenta) horas e com data de conclusão anterior à data de publicação do Edital de Processo Seletivo. Participação em cursos correlatos ao(à) curso/área que se inscreveu ; com carga horária mínima de 20 (vinte) horas, computando 02 (dois) pontos a cada curso apresentado e obedecendo ao limite de até 5 (cinco) cursos pontuados. (Pontuação máxima: 10 pontos – 5 cursos) 10 Declaração e/ou Certificado de Conclusão emitido e assinado pela Instituição responsável, com carga horária mínima de 20 (vinte). Carteira Nacional de Habilitação – Categoria B . (Pontuação máxima: 05 pontos – 01 CNH) 05 Cópia da CNH válida. Declaro que as informações acima são verídicas e que estou ciente das normas que regem o presente Edital de Processo Seleti\n\nFonte: Diário Oficial dos Municípios Mineiros, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.diariomunicipal.com.br/amm-mg/materia/CA7ADFA4",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Santa Barbara",
+  "published": "2026-11-12",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amm-mg/materia/CA7ADFA4",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "ti"
+  ],
+  "collector": "sigpub:amm-mg",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "5a1948b339ae",
+  "title": "Município de João Monlevade - Processo Seletivo nº 15/2026",
+  "deadline": "Inscrições: 27/11/2026 a 30/11/2026",
+  "state": "MG",
+  "salary": "Salário: R$ 1.799,76",
+  "vacancies": "Vagas 1",
+  "description": "MUNICIPIO DE JOÃO MONLEVADE - EDITAL Nº 15 /2026 PROCESSO SELETIVO SIMPLIFICADO AUXILIAR DE CONSULTÓRIO ODONTOLÓGICO O MUNICÍPIO DE JOÃO MONLEVADE, através da Secretaria Municipal de Saúde, torna público que estarão abertas inscrições para Processo Seletivo Simplificado visando o preenchimento de 01 (uma) vaga e cadastro reserva para o cargo de AUXILIAR DE CONSULTÓRIO ODONTOLÓGICO, por meio de contratação por tempo determinado para atender a necessidade temporária de excepcional interesse público, com amparo nos dispositivos da Constituição Federal, Leis Municipais nº. 402/1975 e suas alterações, 2.011/2012, 2.185/2016 e 2.238/2017 nos seguintes termos: 1 – DAS DISPOSIÇÕES PRELIMINARES 1.1 O Processo Seletivo Simplificado a que se refere o presente edital será realizado sob responsabilidade da Comissão nomeada pelo Prefeito Municipal, através de Portaria especificamente para este fim; 1.2 O\n\nFonte: Diário Oficial dos Municípios Mineiros, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "http://www.pmjm.mg.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "João Monlevade",
+  "published": "2026-11-12",
+  "registrationStarts": "2026-11-27",
+  "registrationEnds": "2026-11-30",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amm-mg/materia/4F826090",
+  "banca": null,
+  "roles": [
+   "Auxiliar de Consultório Odontológico"
+  ],
+  "education": [
+   "medio"
+  ],
+  "areas": [
+   "saude"
+  ],
+  "collector": "sigpub:amm-mg",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "585a85083d28",
+  "title": "Câmara Municipal de Picuí - Concurso Público nº 001/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "PB",
+  "salary": "Faixa salarial: R$ 3.250,00 - R$ 3.900,00",
+  "vacancies": "",
+  "description": "O DE CONCURSO PÚBLICO Nº 001/2026 – CMP/PB A CÂMARA MUNICIPAL DE PICUÍ , Estado da Paraíba, no uso de suas atribuições legais, torna público, para conhecimento de todos os interessados, que ficam abertas, durante o período constante no Anexo I , as inscrições do Concurso Público destinado ao provimento de cargos em seu quadro de servidores, sendo o presente certame regido pelas legislações pertinentes, além das disposições constantes neste Edital e em seus anexos. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1. A Comissão Especial para Coordenação, Acompanhamento e Fiscalização do Concurso Público Municipal da Câmara de Picuí/PB , composta por membros do quadro de servidores da Câmara Municipal de Picuí, instituída através da Portaria Nº 013/2026-CMP, será responsável pela coordenação, supervisão, acompanhamento e fiscalização do certame, nos limites de suas atribuições. 1.2. A Comissão Permanente de Concursos da Universi\n\nFonte: Diário Oficial dos Municípios do Estado da Paraíba, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://cpcon.uepb.edu.br/cmPicuí2026",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "diario_municipal",
+  "city": "Picuí",
+  "published": "2026-11-12",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famup/materia/5C24881B",
+  "banca": "CPCON",
+  "roles": null,
+  "education": [
+   "fundamental",
+   "medio"
+  ],
+  "areas": [
+   "seguranca",
+   "operacional"
+  ],
+  "collector": "sigpub:famup",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado da Paraíba"
+ },
+ {
+  "id": "2676841690b8",
+  "title": "Município de Santa Barbara - Processo Seletivo",
+  "deadline": "Inscrições: veja o edital",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "m) curso pontuado. (Pontuação máxima: 10 pontos – 01 curso) 10 Declaração e/ou Certificado de Conclusão emitido e assinado pela Instituição responsável, com carga horária mínima de 50 (cinquenta) horas e com data de conclusão anterior à data de publicação do Edital de Processo Seletivo. Participação em cursos correlatos ao(à) curso/área que se inscreveu ; com carga horária mínima de 20 (vinte) horas, computando 02 (dois) pontos a cada curso apresentado e obedecendo ao limite de até 5 (cinco) cursos pontuados. (Pontuação máxima: 10 pontos – 5 cursos) 10 Declaração e/ou Certificado de Conclusão emitido e assinado pela Instituição responsável, com carga horária mínima de 20 (vinte). Carteira Nacional de Habilitação – Categoria B . (Pontuação máxima: 05 pontos – 01 CNH) 05 Cópia da CNH válida. 5.2. A avaliação dos Títulos depende da comprovação pelo candidato no ato da inscrição, vedada a apresentação extemporânea\n\nFonte: Diário Oficial dos Municípios Mineiros, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.diariomunicipal.com.br/amm-mg/materia/CA7ADFA4",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Santa Barbara",
+  "published": "2026-11-12",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amm-mg/materia/CA7ADFA4",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "ti"
+  ],
+  "collector": "sigpub:amm-mg",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "10858ed33e69",
+  "title": "Município de Victor Graeff - Processo Seletivo nº 15/2026",
+  "deadline": "Inscrições: 12/11/2026 a 19/11/2026",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO E FAZENDA - PROCESSO SELETIVO SIMPLIFICADO Nº 15/2026 EDITAL Nº 147/2026 O MUNICÍPIO DE VICTOR GRAEFF, Estado do Rio Grande do Sul, no uso de suas atribuições, TORNA PÚBLICO a realização de Processo Seletivo Simplificado, para a contratação de Operário. INSCRIÇÕES: As inscrições para as referidas funções serão recebidas junto ao Centro Administrativo Municipal, sito na Avenida João Amann, nº 690, centro, Victor Graeff/RS, das 07h30min às 11hmin e das 13h às 16:30h, no período de 12 a 19 de novembro de 2026. Maiores informações pelo telefone (54) 3338-1242/1273 e no site www.victorgraeff.rs.gov.br / Publicações / Editais / Processos Seletivos. Victor Graeff/RS, 12 de novembro de 2026. Publicado por: Fernanda Martins de Mello\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.victorgraeff.rs.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Victor Graeff",
+  "published": "2026-11-12",
+  "registrationStarts": "2026-11-12",
+  "registrationEnds": "2026-11-19",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/54A33210",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": null,
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
+  "id": "0af63e5c6710",
+  "title": "Câmara Municipal de Estrela do Sul - Concurso Público nº 001/2026",
+  "deadline": "Inscrições: 11/01/2027 a 11/02/2027",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "Vagas 7",
+  "description": "companhamento e Fiscalização do Concurso Público, nomeada pela Portaria nº 037/2026 de 08 de setembro de 2026, no uso de suas atribuições legais e a empresa “Versátil Tecnologia e Serviços Administrativos”, responsável pela realização deste certame, tornam público para conhecimento dos interessados o presente Edital de Abertura que regulamenta o Concurso Público nº 001/2026, visando a seleção e futura contratação de pessoal para preenchimento de 07 (sete) vagas no quadro de cargos públicos de provimento efetivo da Câmara Municipal de Estrela do Sul/MG, pelo regime jurídico de trabalho estatutário, conforme disposições contidas na Constituição da República Federativa do Brasil, na Lei Orgânica do Município de Estrela do Sul/MG, no Regimento Interno da Câmara Municipal de Estrela do Sul/MG, nas Súmulas, Resoluções e Instruções Normativas do Tribunal de Contas do Estado de Minas Gerais, na Lei Municipal nº 193/2025, de 10 de dezembro de 2025, que “Dispõe sobre Plano de Cargos, Carreira e Vencimentos do\n\nFonte: Diário Oficial dos Municípios Mineiros, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.versatilsolucoesadm.com.br/",
+  "linkKind": "orgao",
+  "kind": "concurso",
+  "source": "diario_municipal",
+  "city": "Estrela do Sul",
+  "published": "2026-11-12",
+  "registrationStarts": "2027-01-11",
+  "registrationEnds": "2027-02-11",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amm-mg/materia/D54FC36E",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "fundamental",
+   "medio"
+  ],
+  "areas": null,
+  "collector": "sigpub:amm-mg",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "06ed36c948fb",
+  "title": "Município de Tijucas do Sul - Processo Seletivo nº 03/2026",
+  "deadline": "Inscrições: 13/11/2026 a 16/11/2026",
+  "state": "PR",
+  "salary": "",
+  "vacancies": "",
+  "description": "r. Prefeito José Altair Moreira, mediante as condições estipuladas neste Edital, em conformidade com os termos do art. 37, IX da Constituição Federal e Lei Municipal n° 660/2019, e demais disposições atinentes à matéria, TORNA PÚBLICO A SITUAÇÃO DAS INSCRIÇÕES do Processo Seletivo Simplificado nº 03/2026, nos seguintes termos: Art. 1º Ficam PUBLICADAS as situações das inscrições relacionadas no ANEXO I deste Edital, de acordo com o Item 3 do Edital nº 17/2026. Art. 2º Os candidatos poderão interpor recurso quanto a situação da inscrição, conforme previsto no item 8.1 “b” do Edital de Abertura nº 17/2026, utilizando o modelo estabelecido no Anexo III, nos dias 13 de novembro e 16 de novembro de 2026, EXCLUSIVAMENTE através do e-mail concursos@tijucasdosul.pr.gov.br . Art. 3º Este Edital entra em vigor na data de sua publicação, revogadas as disposições contrárias. Tijucas do Sul, 12 de novembro de 2026. JOSÉ ALTA\n\nFonte: Diário Oficial dos Municípios do Paraná, 12/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.diariomunicipal.com.br/amp/materia/642F4514",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Tijucas do Sul",
+  "published": "2026-11-12",
+  "registrationStarts": "2026-11-13",
+  "registrationEnds": "2026-11-16",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/642F4514",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude"
+  ],
+  "collector": "sigpub:amp",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Paraná"
+ },
+ {
   "id": "9b0fe0a7cd56",
   "title": "Município de Bocaiúva do Sul - Processo Seletivo nº 01/2026",
   "deadline": "Inscrições: veja o edital",
@@ -358,38 +717,6 @@
   "banca": "IBGP",
   "sphere": "municipal",
   "collector": "ibgp"
- },
- {
-  "id": "bc574611b8d0",
-  "title": "Município de Monteiro Lobato - Processo Seletivo nº 06/2026 (retificação)",
-  "deadline": "Inscrições: 06/11/2026 a 11/11/2026",
-  "state": "SP",
-  "salary": "Salário: R$ 4.719,59",
-  "vacancies": "",
-  "description": "MPLIFICADO Nº 06 EDITAL Nº 06/2026 RETIFICAÇÃO N° 01 O Prefeito do Município de Monteiro Lobato, no uso de suas atribuições legais e em conformidade com o artigo 37, inciso IX, da Constituição Federal, bem como com a Lei Orgânica Municipal, torna pública a abertura de Processo Seletivo Simplificado para contratação temporária de empregos públicos de Enfermeiro 40 horas, destinado ao atendimento de necessidade temporária de excepcional interesse público, nos termos e condições estabelecidos neste edital. 1. JUSTIFICATIVA 1.1. O presente Processo Seletivo Simplificado fundamenta-se na necessidade temporária de contratação de profissional para o emprego de Enfermeiro 40 horas semanais, com o objetivo de assegurar a continuidade, a regularidade e a adequada prestação dos serviços públicos essenciais de saúde à população do Município de Monteiro Lobato/SP. 1.2. A seleção visa suprir, em caráter excepcional e tempo\n\nFonte: Diário Oficial de Monteiro Lobato/SP, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.monteirolobato.sp.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Monteiro Lobato",
-  "published": "2026-11-06",
-  "registrationStarts": "2026-11-06",
-  "registrationEnds": "2026-11-11",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3531704/2026-11-06/ce77ef88ea545914dc67b7c3777dec6b7fcf6f77.pdf",
-  "banca": null,
-  "roles": [
-   "Enfermeiro 40 Horas",
-   "Enfermeiro 40 Horas Semanais",
-   "Com o Objetivo de Assegurar a Continuidade",
-   "Cujo Cronograma Prevê a Homologação do Resultado Final",
-   "Enfermeiro"
-  ],
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "saude"
-  ]
  },
  {
   "id": "b274cf291ef8",
@@ -838,36 +1165,6 @@
   "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Norte"
  },
  {
-  "id": "def2d08ca416",
-  "title": "Prefeitura Municipal de Candeias - Processo Seletivo nº 001/2026",
-  "deadline": "Inscrições: 09/11/2026 a 11/11/2026",
-  "state": "MG",
-  "salary": "Salário: R$ 1.695,10",
-  "vacancies": "",
-  "description": "NDEIAS, Estado de Minas Gerais, inscrita no CNPJ sob o nº 17.888.090/0001-00, com sede na Avenida 17 de Dezembro, nº 240, CEP 37.280-000, centro, nesta cidade de Candeias/MG, por intermédio da Secretaria Municipal de Desenvolvimento Social – SMDS, TORNA PÚBLICO para conhecimento dos interessados, a abertura do presente Processo Seletivo Simplificado (PSS), para a contratação de pessoal visando atender a necessidade temporária de excepcional interesse público, observada as regras que constam deste edital. I - JUSTIFICATIVA A contratação de pessoal, para atender a necessidade temporária de excepcional interesse público, devidamente autorizada nos termos do Decreto Municipal de N. 4417, de 28 de setembro de 2026, tem como objetivo viabilizar a continuidade na prestação de serviços públicos socioassistenciais à comunidade, tendo em vista a necessidade de contratação de Psicólogos, bem como, de Visitador para o Programa Criança Feliz. Considerando que o Programa Criança\n\nFonte: Diário Oficial de Candeias/MG, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.candeias.mg.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Candeias",
-  "published": "2026-11-03",
-  "registrationStarts": "2026-11-09",
-  "registrationEnds": "2026-11-11",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3112000/2026-11-03/300afb2dc90ba005156704108ff85d00a92a20c3.pdf",
-  "banca": null,
-  "roles": [
-   "Psicólogo No Concurso Público Municipal",
-   "Visitador o"
-  ],
-  "education": [
-   "medio",
-   "superior"
-  ],
-  "areas": [
-   "saude"
-  ]
- },
- {
   "id": "d679bcaaaa8b",
   "title": "Município de Campinas - Processo Seletivo",
   "deadline": "Inscrições: veja o edital",
@@ -1010,30 +1307,6 @@
   "areas": [
    "educacao",
    "administrativa"
-  ]
- },
- {
-  "id": "62cc35b674dc",
-  "title": "Prefeitura Municipal de Candeias - Processo Seletivo",
-  "deadline": "Inscrições: 09/11/2026 a 11/11/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "",
-  "description": "os fins que o candidato identificado acima realizou sua inscrição. Prefeitura Municipal de Candeias, em ____ de __________ de 2026. ____________________________________________________ Assinatura do responsável pela inscrição EXTRATO DE EDITAL DE PROCESSO SELETIVO 001/2026 – A PREFEITURA MUNICIPAL DE CANDEIAS, Estado de Minas Gerais, por intermédio da Secretaria Municipal de Desenvolvimento Social, TORNA PÚBLICO a abertura de Processo Seletivo Simplificado, para a contratação de servidor temporário (Visitador Social e Psicólogo) por prazo determinado. Inscrições (pessoalmente ou procuração), sem pagamento de taxa, de 9 a 11 de novembro de 2026, de 09:00 h as 11:00 h e 13h às 15 h, na Secretaria Municipal de Desenvolvimento Social. A íntegra do edital está disponível no site da Prefeitura Municipal de Candeias/MG (www.candeias.mg.gov.br). Outras informações (Telefone 3475-0308). Em 03 de novembro\n\nFonte: Diário Oficial de Candeias/MG, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.candeias.mg.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Candeias",
-  "published": "2026-11-03",
-  "registrationStarts": "2026-11-09",
-  "registrationEnds": "2026-11-11",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3112000/2026-11-03/300afb2dc90ba005156704108ff85d00a92a20c3.pdf",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": [
-   "saude"
   ]
  },
  {
@@ -1718,36 +1991,6 @@
   "gazetteName": "Diário Oficial dos Municípios do Estado do Pará"
  },
  {
-  "id": "d34a67633684",
-  "title": "Município de Mostardas - Processo Seletivo",
-  "deadline": "Inscrições: 27/10/2026 a 11/11/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "",
-  "description": "rva. O Prefeito Municipal de Mostardas, no uso de suas atribuições e amparado em excepcional interesse público e com fulcro no art. 37, IX, da Constituição da República, e dos artigos 203 ao 208 da Lei Municipal n° 4333, de 07 de dezembro de 2021, torna público a realização de Processo Seletivo Simplificado, que será regido pelas normas estabelecidas neste Edital e nos Decretos nºs. 6495, de 1º de Outubro de 2010, 7892, de 21 de agosto de 2018 e 9467 de 13 de novembro de 2024, visando à formação de cadastro reserva para os cargos: Atendente Geral;Atendente Geral (4º Distrito – Dr. Edgardo Pereira Velho); Cirurgião Dentista (UBS Pedro Gautério); Enfermeiro; Enfermeiro (4º Distrito – Dr. Edgardo Pereira Velho); Fiscal de Obras e Posturas; Mecânico; Monitor (4°Distrito – Dr. Edgardo Pereira Velho); Motorista; Motorista De Ônibus; Motorista De Ônibus (Balneário Mostardense); Motorista De Ônibus (4º Distrito – Dr. Edgardo Pereira Velho)\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 26/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.mostardas.rs.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "diario_municipal",
-  "city": "Mostardas",
-  "published": "2026-10-26",
-  "registrationStarts": "2026-10-27",
-  "registrationEnds": "2026-11-11",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/E4925458",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": [
-   "saude",
-   "educacao",
-   "assistencia_social",
-   "operacional"
-  ],
-  "collector": "sigpub:famurs",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
- },
- {
   "id": "843f0d5ff4fa",
   "title": "Município de Rio Brilhante - Processo Seletivo nº 004/2026",
   "deadline": "Inscrições: veja o edital",
@@ -2413,26 +2656,6 @@
   "collector": "ibgp"
  },
  {
-  "id": "9078d8536366",
-  "title": "Prefeitura de Porto Velho - Concurso Público nº 24/2026",
-  "deadline": "Inscrições: 13/10/2026 a 11/11/2026",
-  "state": "RO",
-  "salary": "",
-  "vacancies": "Vagas 430",
-  "description": "Prefeitura de Porto Velho: concurso público nº 24/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 19/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "banca",
-  "city": "Porto Velho",
-  "published": "2026-10-19",
-  "registrationStarts": "2026-10-13",
-  "registrationEnds": "2026-11-11",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
- },
- {
   "id": "83aa66a722c8",
   "title": "Prefeitura de São João Del-Rei - Concurso Público nº 03/2026",
   "deadline": "Inscrições: 13/10/2026 a 12/11/2026",
@@ -2468,26 +2691,6 @@
   "published": "2026-10-19",
   "registrationStarts": "2026-10-13",
   "registrationEnds": "2026-11-12",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
- },
- {
-  "id": "2175b6f0d592",
-  "title": "Prefeitura de Porto Velho - Concurso Público nº 25/2026",
-  "deadline": "Inscrições: 13/10/2026 a 11/11/2026",
-  "state": "RO",
-  "salary": "",
-  "vacancies": "Vagas 2248",
-  "description": "Prefeitura de Porto Velho: concurso público nº 25/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 19/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "banca",
-  "city": "Porto Velho",
-  "published": "2026-10-19",
-  "registrationStarts": "2026-10-13",
-  "registrationEnds": "2026-11-11",
   "banca": "IBGP",
   "sphere": "municipal",
   "collector": "ibgp"
@@ -2951,35 +3154,6 @@
   "areas": [
    "educacao"
   ]
- },
- {
-  "id": "44c505a832f6",
-  "title": "Ministério de Minas e Energia - Concurso Público (Edital nº 1/2026)",
-  "deadline": "Inscrições: 13/10/2026 a 11/11/2026",
-  "state": "RJ",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL DE CONCURSO PÚBLICO Nº 1/2026 Indústrias Nucleares do Brasil S.A. - INB, torna pública a realização do Concurso Público destinado a formação de Cadastro de Reserva para os cargos de nível médio e superior previstos neste edital, de acordo com o disposto abaixo. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público regido por este Edital, pelos diplomas legais e regulamentares, por seus anexos e posteriores retificações, caso existam, visa a formação de cadastro reserva (CR) para os cargos de nível médio e superior, conforme previsto no item 3.1, observado o prazo de validade do certame. 1.2 O prazo de validade do Concurso Público é de 2 (dois) anos, contados da data da publicação da homologação do resultado final no Diário Oficial da União (DOU), podendo ser prorrogado uma única vez, por igual período, nos termos do art. 37, inciso III, da Constituição Federal. 1.3 Das vagas\n\nFonte: Diário Oficial da União, Seção 3, 14/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://conhecimento.fgv.br/processoseletivo/inb2026",
-  "linkKind": "edital",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-14",
-  "registrationStarts": "2026-10-13",
-  "registrationEnds": "2026-11-11",
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=14/10/2026&jornal=530&pagina=116",
-  "banca": "FGV",
-  "roles": [
-   "Inspetor de Guarda",
-   "De Caráter Eliminatório"
-  ],
-  "education": [
-   "medio",
-   "tecnico",
-   "superior"
-  ],
-  "areas": null
  },
  {
   "id": "c61471bcfc29",
