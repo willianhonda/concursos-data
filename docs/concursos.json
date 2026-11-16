@@ -1,5 +1,182 @@
 [
  {
+  "id": "e1b6306f605a",
+  "title": "Prefeitura Municipal de Tocos do Moji-mg - Processo Seletivo",
+  "deadline": "Inscrições: 16/11/2026 a 19/11/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "PREFEITURA TOCOS DO MOJI - EXTRATO DO EDITAL DE PROCESSO SELETIVO SIMPLIFICADO 018/2026. A Prefeitura Municipal de Tocos do Moji-MG TORNA PÚBLICO que estarão abertas no período de 16 de novembro a 19 de novembro de 2026, na Sede da Prefeitura Municipal, no horário de 8h às 11h e das 13h às 16h, as inscrições ao Processo Seletivo para contratação temporária de Monitor de Creche, Monitor Escolas, Pedagogo, Pedreiro, Pintor, Professor da Ed. Infantil e Professor de Inglês visando suprir carências provisórias. O Edital em seu inteiro teor está à disposição dos interessados na Prefeitura Municipal e no site www.tocosdomoji.mg.gov.br – Tocos do Moji, 13 de novembro de 2026 – José Maria Cantuária – Prefeito Muni\n\nFonte: Diário Oficial dos Municípios Mineiros, 16/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.tocosdomoji.mg.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Tocos do Moji",
+  "published": "2026-11-16",
+  "registrationStarts": "2026-11-16",
+  "registrationEnds": "2026-11-19",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amm-mg/materia/03FFEE2F",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "educacao",
+   "operacional"
+  ],
+  "collector": "sigpub:amm-mg",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "d413d5ec77a0",
+  "title": "Município de Crissiumal - Processo Seletivo nº 435/2026",
+  "deadline": "Inscrições: veja o edital",
+  "state": "RS",
+  "salary": "Salário: R$ 2.866,30",
+  "vacancies": "Vagas 1",
+  "description": "o Rio Grande do Sul, no uso de suas atribuições legais que lhe são conferidas pela Lei Orgânica Municipal, e considerando o disposto no artigo 37, inciso IX, da Constituição Federal, nas Leis Municipais nº 1.181/1993, nº 2.473/2.010 e nº 5.332/2026, torna público e estabelece normas para a realização do Processo Seletivo Simplificado destinado à seleção e contratação emergencial de 01 (um) servidor, por tempo determinado, para exercer a função/cargo de TÉCNICO DE REFERÊNCIA DO SERVIÇO DE PROTEÇÃO SOCIAL BÁSICA NO DOMICÍLIO PARA GESTANTES E CRIANÇAS DE 0 A 6 ANOS (SPSBD-GC) DE 20 (VINTE) HORAS , para atender à necessidade temporária de excepcional interesse público no âmbito da Secretaria Municipal de Assistência e Desenvolvimento Social, mediante as condições estabelecidas neste Edital. 1. DISPOSIÇÕES PRELIMINARES 1.1. O Processo Seletivo Simplificado será regido por este Edital, por seus anexos e eventuais retificações, sendo sua execução de responsabil\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 16/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.crissiumal.rs.gov.br/",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Crissiumal",
+  "published": "2026-11-16",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/6DA8084D",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ],
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
+  "id": "a5d5a797edea",
+  "title": "Município de Trairão - Processo Seletivo",
+  "deadline": "Inscrições: 23/11/2026 a 27/11/2026",
+  "state": "PA",
+  "salary": "",
+  "vacancies": "",
+  "description": "ão de serviços vigentes; CONSIDERANDO o previsto na Lei 4.320/64, que dispõe sobre elaboração e controle dos orçamentos e balanços; CONSIDERANDO a Lei municipal 328/2017, que dispõe sobre contratação por tempo determinado e dá outras providências. TORNA PÚBLICA a realização de Processo Seletivo Simplificado-PSS- - SEMED 005/2026, nos termos da legislação em vigor, Lei Orgânica do Município de Trairão e de acordo com as disposições deste Edital. DAS DISPOSIÇÕES PRELIMINARES 1.1 Este Processo Seletivo Simplificado – PSS 005/2026-SEMED será regido por este Edital, seus anexos, eventuais retificações e/ou aditamentos, bem como pelos diplomas legais aplicáveis e tem por objetivo a seleção simplificada de profissionais, a serem convocados, para atuar na Secretaria Municipal de Educação, visando atender, exclusivamente, a necessidade temporária, de excepcional interesse público, suprindo vagas existentes na esfera municipal, discrimina\n\nFonte: Diário Oficial dos Municípios do Estado do Pará, 16/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.trairao.pa.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Trairão",
+  "published": "2026-11-16",
+  "registrationStarts": "2026-11-23",
+  "registrationEnds": "2026-11-27",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famep/materia/33D3478F",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "fundamental",
+   "medio",
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ],
+  "collector": "sigpub:famep",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Pará"
+ },
+ {
+  "id": "8b188ab175db",
+  "title": "Prefeitura de Gramado dos Loureiros - Processo Seletivo nº 004/2026",
+  "deadline": "Inscrições: 16/11/2026 a 23/11/2026",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "004/2026 O Município de Gramado dos Loureiros Torna Público aos interessados que, no período de 16/11/2026 até 23/11/2026 , na Secretaria Municipal de Administração – Setor de Pessoal, em horário normal de expediente, das 7h às 13h, estarão abertas inscrições para Processo Seletivo Simplificado, para contratação emergencial conforme a necessidade administrativa da Secretaria Municipal de Educação, Desporto e Cultura e Secretaria Municipal de Assistência Social e Bem Estar. Maiores informações pelo site www.gramadodosloureiros.rs.gov.br ou Telefone (054) 9 9337-5998 OU 99337-6907. - Em 13/11/2026 – Artur Cereza – Prefeito Municipal. Publicado por: Jaísa Batista\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 16/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.gramadodosloureiros.rs.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Gramado dos Loureiros",
+  "published": "2026-11-16",
+  "registrationStarts": "2026-11-16",
+  "registrationEnds": "2026-11-23",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/7A6155D4",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": null,
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
+  "id": "7eb1444a1b02",
+  "title": "Município de Trairão - Processo Seletivo",
+  "deadline": "Inscrições: 30/11/2026 a 01/12/2026",
+  "state": "PA",
+  "salary": "",
+  "vacancies": "",
+  "description": "ão de serviços vigentes; CONSIDERANDO o previsto na Lei 4.320/64, que dispõe sobre elaboração e controle dos orçamentos e balanços; CONSIDERANDO a Lei municipal 328/2017, que dispõe sobre contratação por tempo determinado e dá outras providências. TORNA PÚBLICA a realização de Processo Seletivo Simplificado-PSS 004/2026 - SEMSAT, nos termos da legislação em vigor, Lei Orgânica do Município de Trairão e de acordo com as disposições deste Edital. DAS DISPOSIÇÕES PRELIMINARES 1.1 Este Processo Seletivo Simplificado – PSS 004/2026-SEMSAT será regido por este Edital, seus anexos, eventuais retificações e/ou aditamentos, bem como pelos diplomas legais aplicáveis e tem por objetivo a seleção simplificada de profissionais, a serem convocados, para atuar na Secretaria Municipal de Saúde, visando atender, exclusivamente, a necessidade temporária, de excepcional interesse público, suprindo vagas existentes na esfera municipal, discriminada\n\nFonte: Diário Oficial dos Municípios do Estado do Pará, 16/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.trairao.pa.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Trairão",
+  "published": "2026-11-16",
+  "registrationStarts": "2026-11-30",
+  "registrationEnds": "2026-12-01",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famep/materia/03BEB83E",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "fundamental",
+   "medio",
+   "tecnico",
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ],
+  "collector": "sigpub:famep",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Pará"
+ },
+ {
+  "id": "2d99d9f85d0f",
+  "title": "Município de Jari - Processo Seletivo",
+  "deadline": "Inscrições: 18/11/2026 a 19/11/2026",
+  "state": "RS",
+  "salary": "Faixa salarial: R$ 2.589,13 - R$ 13.385,32",
+  "vacancies": "",
+  "description": "PORTUGUÊS, MATEMÁTICA E HISTÓRIA E MÉDICO CLÍNICO 16 HORAS por prazo determinado para desempenhar suas funções junto a Prefeitura Municipal de Jari, amparado em excepcional interesse público, com fulcro no art. 37, IX, da Constituição da República, Torna pública a realização do Processo Seletivo Simplificado, que será regido pelas normas estabelecidas neste Edital e Decreto nº 5.698 de 12 de fevereiro de 2026, de acordo com as normas e condições seguintes: 1. DOS PRESTADORES DE SERVIÇO 1.1 – Os cargos/funções objeto deste Processo Seletivo Simplificado – PSS/PMJ para cadastro de reserva e futura contratação temporária, a escolaridade/requisitos, os vencimentos e a jornada de trabalho são as seguintes: PROFESSOR ÁREA 2 – ENSINO FUNDAMENTAL 22 HORAS – ANOS FINAIS – PORTUGUÊS. Ensino Fundamental de área específica, do sexto ao nono ano: exigência mínima de habilitação em curso superior de licenciatura plena, com habilitação específ\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 16/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.jari.rs.gov.br/editais/processos-seletivos?pasta=2026",
+  "linkKind": "edital",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Jari",
+  "published": "2026-11-16",
+  "registrationStarts": "2026-11-18",
+  "registrationEnds": "2026-11-19",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/6821F914",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "fundamental",
+   "superior"
+  ],
+  "areas": [
+   "saude",
+   "educacao",
+   "juridica"
+  ],
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
   "id": "dbabcb4ab4de",
   "title": "Município de Morretes - Processo Seletivo nº 34/2026",
   "deadline": "Inscrições: 17/11/2026 a 19/11/2026",
@@ -1029,30 +1206,6 @@
   "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
  },
  {
-  "id": "4e32329ef1f8",
-  "title": "Município de Sobradinho - Processo Seletivo nº 165/2026",
-  "deadline": "Inscrições: 09/11/2026 a 15/11/2026",
-  "state": "RS",
-  "salary": "Salário: R$ 1.522,00",
-  "vacancies": "",
-  "description": "io Grande do Sul, aos 05 dias do mês de novembro de 2026. Luiz Affonso Trevisan, Prefeito Municipal. Registre-se e publique-se em 05/11/2026. Diego Batista da Silva, Secretário de Administração e Finanças. Edital Edital 165/2026, de 06/11/2026 EXTRATO DO EDITAL Nº 165/2026 PROCESSO SELETIVO SIMPLIFICADO – SELEÇÃO PÚBLICA Nº 21/2026 Diário Oficial do Município Edição Nº 1007 - Ordinária Sobradinho - Rio Grande do Sul, 6 de Novembro de 2026 MUNICIPIO DE SOBRADINHO O Município de Sobradinho/RS torna público o Edital nº 165/2026, que estabelece a realização de Processo Seletivo Simplificado destinado à formação de cadastro reserva para eventual contratação temporária de profissionais para a Secretaria Municipal da Saúde, nos cargos de Médico – ESF (40 horas semanais) e Farmacêutico (20 horas semanais). As contratações serão pelo prazo determinado de até 10 (dez) meses, prorrogável uma vez por igual perí\n\nFonte: Diário Oficial de Sobradinho/RS, 06/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.sobradinho.rs.gov.br/portal/",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Sobradinho",
-  "published": "2026-11-06",
-  "registrationStarts": "2026-11-09",
-  "registrationEnds": "2026-11-15",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4320701/2026-11-06/be60f7b5892acf78a4ef2584259e7e53c267d740.pdf",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": [
-   "saude"
-  ]
- },
- {
   "id": "458f8d6285ce",
   "title": "Município de Riacho da Cruz - Processo Seletivo",
   "deadline": "Inscrições: veja o edital",
@@ -1501,33 +1654,6 @@
   "areas": [
    "educacao"
   ]
- },
- {
-  "id": "12ce34bcb860",
-  "title": "Município de Piranguinho - Processo Seletivo nº 003/2026 (retificação)",
-  "deadline": "Inscrições: 09/11/2026 a 15/11/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "",
-  "description": "Federal nº 11.350/2006 e suas alterações, da Lei Municipal nº 1.408/2017, da Lei Complementar Municipal nº 027/2019 e da Instrução Normativa TCE-MG nº 01/2022, bem como a suspensão determinada pelo Edital nº 003/2026, de 23 de outubro de 2026, TORNA PÚBLICO a presente RETIFICAÇÃO DO EDITAL DE ABERTURA Nº 002/2026, referente ao Processo Seletivo nº 001/2026, para adequação de suas disposições à legislação vigente, especialmente quanto à alteração da denominação do cargo de Agente de Combate às Endemias para Agente Epidemiológico, ao regime jurídico, aos requisitos de investidura, às atribuições e ao cronograma de execução, nos seguintes termos: 1. Fica retificada a denominação do cargo ofertado no Processo Seletivo Público nº 001/2026, constante do Edital de Abertura nº 002/2026, passando a vigorar com a seguinte redação: 1.1 O cargo anteriormente denominado AGENTE DE COMBATE ÀS ENDEMIAS passa a ser identificado como AGENTE EPIDEMIOLÓGICO, em conformidade com a denom\n\nFonte: Diário Oficial de Piranguinho/MG, 03/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.gamaconsult.com.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Piranguinho",
-  "published": "2026-11-03",
-  "registrationStarts": "2026-11-09",
-  "registrationEnds": "2026-11-15",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3151008/2026-11-03/141fae5b7f093bc65cdc9ca5613f03f131f713c6.pdf",
-  "banca": null,
-  "roles": [
-   "Agente de Combate Às Endemias",
-   "“agente de Combate ÀS Endemias”"
-  ],
-  "education": [
-   "medio"
-  ],
-  "areas": null
  },
  {
   "id": "d4bb465f4f01",
@@ -2065,28 +2191,6 @@
   "banca": "IBGP",
   "sphere": "municipal",
   "collector": "ibgp"
- },
- {
-  "id": "1a9b7f6394c8",
-  "title": "Prefeitura Municipal de Luís Eduardo Magalhães - Processo Seletivo nº 001/2026",
-  "deadline": "Inscrições: 02/11/2026 a 15/11/2026",
-  "state": "BA",
-  "salary": "",
-  "vacancies": "",
-  "description": "ontra-se no site oficial deste ente. EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026 O PREFEITO MUNICIPAL DE LUÍS EDUARDO MAGALHÃES, ESTADO DA BAHIA, no uso das atribuições que lhe são conferidas pela Lei Orgânica Municipal, TORNA PÚBLICA a abertura das inscrições para o PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026, destinadas ao provimento de vagas temporárias e à formação de cadastro de reserva, mediante contratação por tempo determinado, sob o regime de direito administrativo, observadas as disposições das Leis Municipais nº 428/2010 e nº 482/2011, bem como as demais normas aplicáveis. As inscrições estarão abertas no período de 02/11/2026 a 15/11/2026, conforme as condições, os requisitos e os procedimentos estabelecidos no edital e em seus anexos. O edital e seus anexos estarão disponíveis para consulta nos sítios eletrônicos oficiais do Município de Luís Eduardo Magalhães (https://luiseduardomagalhaes.\n\nFonte: Diário Oficial de Luís Eduardo Magalhães/BA, 27/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://icdssolucoes.selecao.net.br/",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Luís Eduardo Magalhães",
-  "published": "2026-10-27",
-  "registrationStarts": "2026-11-02",
-  "registrationEnds": "2026-11-15",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/2919553/2026-10-27/0d41b875853af1ed300dffdf0fa0895ddd43e6ec.pdf",
-  "banca": "Seleção",
-  "roles": null,
-  "education": null,
-  "areas": null
  },
  {
   "id": "fcb8a87d6f6a",
@@ -3892,55 +3996,6 @@
   ],
   "areas": [
    "educacao"
-  ]
- },
- {
-  "id": "9667a866082d",
-  "title": "Tribunal Regional Federal da 6ª Região - Concurso Público (Edital nº 1/2026)",
-  "deadline": "Inscrições: veja o edital",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "",
-  "description": "EDITAL Nº 1, DE 22 DE AGOSTO DE 2025 I CONCURSO PÚBLICO PARA PROVIMENTO DE CARGOS DE JUIZ FEDERAL SUBSTITUTO E DE JUÍZA FEDERAL SUBSTITUTA DO TRIBUNAL REGIONAL FEDERAL DA 6ª REGIÃO EDITAL DE REESTRUTURAÇÃO DA COMISSÃO DE CONCURSO O TRIBUNAL REGIONAL FEDERAL DA 6ª REGIÃO, pela Desembargadora Federal Simone Lemos Fernandes, Presidente da Comissão do I Concurso Público para ingresso na carreira da magistratura da 6ª Região, no uso de suas atribuições e nos termos do EDITAL DE ABERTURA Nº 1, DE 22 DE AGOSTO DE 2025 e da Resolução n. 75/2009 do CNJ e Resolução nº 67/2009 do CJF, Considerando a existência de possível obstáculo ao comparecimento de integrantes da Comissão de Concurso na prova oral por força de compromissos inadiáveis assumidos no período estimado de sua realização; Considerando, ainda, a transparência e publicidade que devem necessariamente guiar os certames públicos; Tor\n\nFonte: Diário Oficial da União, Seção 3, 01/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=162",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-01",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=162",
-  "linkKind": "diario",
-  "roles": [
-   "Juiz Federal Substituto e de Juíza Federal Substituta"
-  ],
-  "areas": [
-   "juridica"
-  ]
- },
- {
-  "id": "335117dc2178",
-  "title": "Fundação Universidade Federal de Mato Grosso - Processo Seletivo (Edital nº 1/2026)",
-  "deadline": "Inscrições: veja o edital",
-  "state": "MT",
-  "salary": "Salário: R$ 5.215,39",
-  "vacancies": "",
-  "description": "EDITAL Nº 1, DE 30 DE SETEMBRO DE 2026 PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO, POR TEMPO DETERMINADO, DE TRADUTORES E INTÉRPRETES DE LÍNGUA BRASILEIRA DE SINAIS - LIBRAS A Reitora da Universidade Federal do Mato Grosso, no uso de suas atribuições legais, torna pública a abertura das inscrições para o Processo Seletivo Simplificado destinado à contratação temporária de profissionais especializados, de nível superior, para atendimento a pessoas com deficiência, no âmbito da UFMT, com fundamento no art. 2º, inciso XII, da Lei nº 8.745/1993, com redação dada pela Lei nº 15.367/2026, e demais normas aplicáveis. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Processo Seletivo Simplificado será executado pela Coordenação de Acessibilidade, Inclusão e Saúde Mental - CASME, vinculada à Secretaria de Direitos Humanos - SEDH, da Universidade Federal do Mato Grosso - UFMT. 1.2 O Cargo, Lotação,\n\nFonte: Diário Oficial da União, Seção 3, 01/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=78",
-  "kind": "processo_seletivo",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-01",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/10/2026&jornal=530&pagina=78",
-  "linkKind": "diario",
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao",
-   "ti"
   ]
  },
  {
