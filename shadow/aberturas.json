@@ -1,5 +1,31 @@
 [
  {
+  "id": "c9d7403bba5c",
+  "source": "querido_diario",
+  "territoryId": "4320701",
+  "city": "Sobradinho",
+  "state": "RS",
+  "organization": "Município de Sobradinho",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "172/2026",
+  "title": "Município de Sobradinho - Processo Seletivo nº 172/2026",
+  "published": "2026-11-18"
+ },
+ {
+  "id": "6663d7fa2bbe",
+  "source": "querido_diario",
+  "territoryId": "4205407",
+  "city": "Florianópolis",
+  "state": "SC",
+  "organization": "Prefeitura Municipal de Florianópolis",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "5/2018",
+  "title": "Prefeitura Municipal de Florianópolis - Processo Seletivo nº 005/2018",
+  "published": "2026-11-18"
+ },
+ {
   "id": "75e10abf787c",
   "source": "querido_diario",
   "territoryId": "3530706",
