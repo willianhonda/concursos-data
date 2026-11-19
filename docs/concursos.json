@@ -1,5 +1,150 @@
 [
  {
+  "id": "f40a685b15b4",
+  "title": "Município de Tio Hugo - Concurso Público nº 01/2026",
+  "deadline": "Inscrições: 30/11/2026 a 22/12/2026",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO - EXTRATO DE EDITAL DE CONCURSO PÚBLICO ESTADO DO RIO GRANDE DO SUL MUNICÍPIO DE TIO HUGO/RS EXTRATO DO EDITAL Nº 01/2026 - CONCURSO PÚBLICO Nº 02/2026 REALIZAÇÃO: INSTITUTO OBJETIVA - CNPJ 00.849.426/0001-14 A representante legal do Poder Executivo de Tio Hugo/RS , no exercício das atribuições que lhe são conferidas pela legislação vigente, faz saber , por meio deste extrato, a publicação do Edital nº 01/2026 , referente ao Concurso Público nº 02/2026, para o cargo de Tesoureiro , regido pelo Regime Estatutário . Período de inscrições : de 30/11/2026 a 22/12/2026, no site do INSTITUTO OBJETIVA . O edital completo, contendo o cronograma de execução e todas as especificaç\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 19/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.objetivas.com.br",
+  "linkKind": "banca",
+  "kind": "concurso",
+  "source": "diario_municipal",
+  "city": "Tio Hugo",
+  "published": "2026-11-19",
+  "registrationStarts": "2026-11-30",
+  "registrationEnds": "2026-12-22",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/4D703820",
+  "banca": "Objetiva",
+  "roles": [
+   "Tesoureiro"
+  ],
+  "education": null,
+  "areas": null,
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
+  "id": "95c308f91ce5",
+  "title": "Prefeitura do Município de Sengés - Concurso Público nº 001/2026",
+  "deadline": "Inscrições: 23/11/2026 a 27/11/2026",
+  "state": "PR",
+  "salary": "Faixa salarial: R$ 1.416,04 - R$ 5.097,76",
+  "vacancies": "",
+  "description": "GABINETE DO PREFEITO - CONCURSO PÚBLICO 001/2026 GUARDA CIVIL MUNICIPAL EDITAL DE ABERTURA PUBLICAÇÃO Nº 001/2026 A PREFEITURA DO MUNICÍPIO DE SENGÉS , ESTADO DO PARANÁ , por intermédio do Prefeito Municipal Gerson Nunes da Silva, torna público aos interessados a abertura das inscrições destinadas ao Concurso Público 001/2026, para preenchimento de vagas da Guarda Civil Municipal atualmente existentes, e que vierem a surgir dentro da validade do Concurso, pelo Regime Estatutário, com base No Estatuto dos Servidores Públicos Municipais de Sengés, nas Leis Municipal nº 572/2022, nº 711/2024, nº 840/2026 e nº 846/2026 e mediante as condições estipuladas neste Edital, a Constituição Federal, Lei Federal n° 14.965/2024 e demais disposições. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público será regido por este Edital, seus anexos, suas posteriores retificações, caso haja , e por editais complementares. 1.1.1 O Concurso Público será executado sob a re\n\nFonte: Diário Oficial dos Municípios do Paraná, 19/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.institutounifil.com.br",
+  "linkKind": "orgao",
+  "kind": "concurso",
+  "source": "diario_municipal",
+  "city": "Sengés",
+  "published": "2026-11-19",
+  "registrationStarts": "2026-11-23",
+  "registrationEnds": "2026-11-27",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/9AD1A834",
+  "banca": "Instituição Organizadora",
+  "roles": [
+   "Presidente Marcos Roberto Molda",
+   "Na Função de Membros",
+   "Thiago Sampaio Mariano",
+   "Bernardo Rolim de Mello Martins",
+   "Rosemara Neves",
+   "Fabiano de Jesus Mariano"
+  ],
+  "education": [
+   "medio"
+  ],
+  "areas": null,
+  "collector": "sigpub:amp",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Paraná"
+ },
+ {
+  "id": "642636604f78",
+  "title": "Prefeitura Municipal de São Miguel do Guamá - Processo Seletivo",
+  "deadline": "Inscrições: veja o edital",
+  "state": "PA",
+  "salary": "",
+  "vacancies": "Vagas 85",
+  "description": "RAÇÃO - PREFEITURA MUNICIPAL DE SÃO MIGUEL DO GUAMÁ SECRETARIA MUNICIPAL DE SAÚDE - SMS PROCESSO SELETIVO PÚBLICO 001/2026 A PREFEITURA MUNICIPAL DE SÃO MIGUEL DO GUAMÁ , por meio da SECRETARIA MUNICIPAL DE SAÚDE, usando de suas atribuições legais, torna pública a abertura de Processo Seletivo Público para o provimento, em regime estatutário, de 85 vagas, sendo 19 imediatas e 66 cadastros reserva, com o objetivo de suprir vagas no cargo de Agente Comunitário de Saúde na Secretaria Municipal de Saúde. As inscrições iniciam-se às 10h00m do dia 23/11/2026 e encerram-se às 23h59m do dia 18/12/2026, o mesmo será executado sob a responsabilidade técnica e operacional do INSTITUTO DE DESENVOLVIMENTO SOCIAL ÁGATA , conforme Contrato nº 20260248, com previsão do Resultado Final para 05/03/2027. O edital, com todas as informações sobre o certame, estará disponível nos sites www.institutoagata.com e Prefeitura Municipal de São Miguel do Gua\n\nFonte: Diário Oficial dos Municípios do Estado do Pará, 19/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.institutoagata.com",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "São Miguel do Guamá",
+  "published": "2026-11-19",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famep/materia/2B3330CF",
+  "banca": null,
+  "roles": [
+   "Agente Comunitário de Saúde Na Secretaria Municipal de Saúde"
+  ],
+  "education": null,
+  "areas": [
+   "saude"
+  ],
+  "collector": "sigpub:famep",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Pará"
+ },
+ {
+  "id": "4b3e2fac5064",
+  "title": "Município de Lagoa Grande - Processo Seletivo",
+  "deadline": "Inscrições: veja o edital",
+  "state": "PE",
+  "salary": "Faixa salarial: R$ 5.939,20 - R$ 7.535,87",
+  "vacancies": "",
+  "description": "EDITAL Nº 001, DE 12 DE NOVEMBRO DE 2026 PROCESSO SELETIVO INTERNO DE GESTORES E GESTORES ADJUNTOS (VICE-GESTORES ESCOLARES) PARA ATUAREM NAS UNIDADES EDUCACIONAIS DA REDE MUNICIPAL DE ENSINO DE LAGOA GRANDE-PE. O Município de Lagoa Grande-PE, torna pública a abertura do processo seletivo interno de GESTORES ESCOLARES E GESTORES ADJUNTOS (VICE-GESTORES ESCOLARES) PARA ATUAREM NAS UNIDADES EDUCACIONAIS DA REDE MUNICIPAL DE ENSINO DE LAGOA GRANDE-PE , para atender interesse público da Secretaria de Educação, Cultura e Esportes do município de Lagoa Grande/PE, de acordo com as definições e normas estabelecidas neste Edital, embasada na Lei nº 14.113, de 25 dezembro de 2020, constante no art. 14, § 1º, inciso I, e em conformidade com a Lei Municipal nº 017/2022, que regulamenta o processo de escolha dos Gestores Escolares e Gestores Adjuntos (Vice-Gestores) Escolares das Unidades Educacionais da Rede Municipal de Ensino de Lagoa\n\nFonte: Diário Oficial dos Municípios do Estado de Pernambuco, 19/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.facape.br/concursos",
+  "linkKind": "edital",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Lagoa Grande",
+  "published": "2026-11-19",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amupe/materia/E1A067E9",
+  "banca": null,
+  "roles": [
+   "Diretor e de Vice-Diretor Será de",
+   "Diretor e Vice-Diretor (art"
+  ],
+  "education": [
+   "tecnico",
+   "superior"
+  ],
+  "areas": null,
+  "collector": "sigpub:amupe",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado de Pernambuco"
+ },
+ {
+  "id": "c9d7403bba5c",
+  "title": "Município de Sobradinho - Processo Seletivo nº 172/2026",
+  "deadline": "Inscrições: 19/11/2026 a 08/12/2026",
+  "state": "RS",
+  "salary": "Salário: R$ 2.856,67",
+  "vacancies": "",
+  "description": "Diário Oficial do Município Edição Nº 1015 - Ordinária Sobradinho - Rio Grande do Sul, 18 de Novembro de 2026 MUNICIPIO DE SOBRADINHO Edital Edital 172/2026, de 18/11/2026 EXTRATO DO EDITAL Nº 172/2026 PROCESSO SELETIVO SIMPLIFICADO – SELEÇÃO PÚBLICA Nº 25/2026 O Município de Sobradinho/RS torna pública a abertura de Processo Seletivo Simplificado para formação de Cadastro Reserva para eventual contratação temporária de Professor de Educação Especial, com carga horária de 22 horas semanais e remuneração mensal de R$ 2.856,67. As inscrições serão realizadas exclusivamente por meio eletrônico, através do e-mail inscricaosmectdsho@gmail.com, no período de 19 de novembro a 08 de dezembro de 2026, mediante o envio da documentação exigida no edital, em formato PDF. O valor da taxa de inscrição é d\n\nFonte: Diário Oficial de Sobradinho/RS, 18/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.sobradinho.rs.gov.br/portal/",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Sobradinho",
+  "published": "2026-11-18",
+  "registrationStarts": "2026-11-19",
+  "registrationEnds": "2026-12-08",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4320701/2026-11-18/a816e4e83631684dfae3421c266e1dbfde06c2fb.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "educacao"
+  ]
+ },
+ {
   "id": "aa0db5b46957",
   "title": "Prefeitura Municipal de Guaxupé - Processo Seletivo nº 01/2026",
   "deadline": "Inscrições: 23/11/2026 a 27/11/2026",
@@ -28,6 +173,62 @@
   "collector": "sigpub:amm-mg",
   "sphere": "municipal",
   "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "9ac40bc1fcc7",
+  "title": "Município de Lagoa da Canoa - Processo Seletivo",
+  "deadline": "Inscrições: veja o edital",
+  "state": "AL",
+  "salary": "",
+  "vacancies": "",
+  "description": "que trata da Contratação por tempo determinado; e nos termos do Decreto Municipal nº 2.394 de 03 de setembro de 2014, que regulamenta a realização de Processo Seletivo Simplificado no âmbito da administração direta do poder executivo municipal; torna público a abertura de Processo Seletivo Simplificado objetivando a composição de quadro de reserva técnica, por tempo determinado, de profissionais de nível fundamental completo, nível médio completo e superior completo, para o atendimento de carências diversas; aptos ao preenchimento dos cargos e vagas necessários, para atender serviços de excepcional interesse público – em especial no desenvolvimento de atividades na área pedagógica da rede municipal de ensino, em atendimento, mediante normas e condições estabelecidas neste Edital. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Processo Seletivo Simplificado será integralmente realizado sob a responsabilidade da Secretaria Municipal de\n\nFonte: Diário Oficial de Lagoa da Canoa/AL, 18/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://pss.arapiraca.al.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Lagoa da Canoa",
+  "published": "2026-11-18",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/2700000/2026-11-18/858e1e8e05257ba6c08f8db07fcdac1e0d2b36cb.pdf",
+  "banca": "Gestão da Secretaria Municipal de Educação",
+  "roles": null,
+  "education": [
+   "fundamental",
+   "medio",
+   "superior"
+  ],
+  "areas": [
+   "educacao"
+  ]
+ },
+ {
+  "id": "998c81c2b1f9",
+  "title": "Município de Eldorado - Processo Seletivo",
+  "deadline": "Inscrições: 03/12/2026 a 04/12/2026",
+  "state": "SP",
+  "salary": "Salário: R$ 2.792,39",
+  "vacancies": "",
+  "description": "ituações de vacância, afastamento ou insuficiência de titulares de cargo, mediante contratação temporária, conforme a necessidade do Departamento Municipal de Educação; TORNA PÚBLICAS as normas e condições seguintes. 1 - DAS INSCRIÇÕES 1. As inscrições para o Processo Seletivo Simplificado serão realizadas nas seguintes condições: PERÍODO: 03/12/2026 a 04/12/2026. HORÁRIO: das 8h às 11h e das 13h30 às 16h. LOCAL: Departamento Municipal de Educação. ENDEREÇO: Rua Nove de Julho, nº 204, Centro, Eldorado/SP. 2. A inscrição será gratuita, efetuada pelo interessado ou por procurador devidamente constituído, mediante entrega da Ficha de Inscrição (Anexo li), previamente preenchida e assinada, e da documentação exigida neste Edital. Prefeitura Munlclpaf da E•tAncla Turiatlca de E.lclorado Praça Nossa Senhota da Gula N- 348 - CEP 11 960-000 • Eklor�SP CNPJ 45 08988510001--85 • Fone/Fax (13) 3871-6100 www.eldora\n\nFonte: Diário Oficial de Eldorado/SP, 18/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.eldorado.sp.gov",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Eldorado",
+  "published": "2026-11-18",
+  "registrationStarts": "2026-12-03",
+  "registrationEnds": "2026-12-04",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3514809/2026-11-18/c863b479a4b51bf96be3e88c4a473fe7c4de04c8.pdf",
+  "banca": null,
+  "roles": null,
+  "education": [
+   "fundamental",
+   "superior"
+  ],
+  "areas": [
+   "educacao",
+   "juridica"
+  ]
  },
  {
   "id": "86d854d7e789",
@@ -64,6 +265,32 @@
   "collector": "sigpub:amm-mg",
   "sphere": "municipal",
   "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "6663d7fa2bbe",
+  "title": "Prefeitura Municipal de Florianópolis - Processo Seletivo nº 005/2018",
+  "deadline": "Inscrições: 27/11/2026 a 02/12/2026",
+  "state": "SC",
+  "salary": "",
+  "vacancies": "",
+  "description": ", lotados na Secretaria Municipal de Educação, regidos pela Lei nº 2.517/86, Lei nº 2.915/88, Lei Complementar CMF nº 063/03 e Leis Complementares, de acordo com as instruções gerais que fazem parte deste Edital. 1. DAS INSCRIÇÕES 1.1. As inscrições para o processo seletivo de designação e ampliação da jornada (Portaria TIN) estarão abertas no período compreendido entre às 10h do dia 27 de novembro de 2026 às 19h do dia 02 de dezembro de 2026, via Internet, no portal do servidor: https://adm.pmf.sc.gov.br/admin/portal_servidor.php, no módulo Concursos da Educação, informando sua matrícula e senha de consulta (contracheque). 1.1.1. Poderão solicitar designação os servidores efetivos docentes (professor e professor auxiliar) e especialistas em assuntos educacionais (administrador escolar, orientador educacional e supervisor escolar) com lotação na Secretaria Municipal de Educação, admitidos até a data\n\nFonte: Diário Oficial de Florianópolis/SC, 18/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://adm.pmf.sc.gov.br/admin/portal_servidor.php",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Florianópolis",
+  "published": "2026-11-18",
+  "registrationStarts": "2026-11-27",
+  "registrationEnds": "2026-12-02",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4205407/2026-11-18/1288207503ac85de270c3c46d15d8bfa6a3736b4.pdf",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude",
+   "educacao",
+   "administrativa"
+  ]
  },
  {
   "id": "5da2cce93f88",
@@ -253,6 +480,33 @@
   "collector": "sigpub:amm-mg",
   "sphere": "municipal",
   "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "9a63dbeb2ff2",
+  "title": "Município de Mamborê - Processo Seletivo",
+  "deadline": "Inscrições: 24/11/2026 a 01/12/2026",
+  "state": "PR",
+  "salary": "Faixa salarial: R$ 2.734,97 - R$ 5.469,94",
+  "vacancies": "",
+  "description": "ndo a necessidade de suprir a vaga do profissional enfermeiro em licença sem vencimentos e exoneração, auxiliar de enfermagem por exoneração, e outras situações devidamente justificadas que surgirem durante a vigência deste PSS. TORNA PÚBLICO que estarão abertas as inscrições para Processo Seletivo Simplificado (PSS) para contratação de pessoal por tempo determinado, que se regerá pelas seguintes regras: 1 – DISPOSIÇÕES PRELIMINARES I – O Processo Seletivo Simplificado será regido pelas regras estabelecidas no presente Edital, destinado a selecionar candidatos para contratação por tempo determinado. II – O prazo de validade do presente Edital esgotar-se-á em 02 (dois) anos, podendo ser prorrogável por mais 02 (dois) anos, a contar da data de publicação do ato de homologação do resultado final do Processo Seletivo Simplificado. 2 – CRONOGRAMA DE EXECUÇÃO DO PROCESSO SELETIVO SIMPLIFICADO I – O pre\n\nFonte: Diário Oficial de Mamborê/PR, 17/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.mambore.pr.gov.br",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "querido_diario",
+  "city": "Mamborê",
+  "published": "2026-11-17",
+  "registrationStarts": "2026-11-24",
+  "registrationEnds": "2026-12-01",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/4114005/2026-11-17/231afb437bc3632cb57854a058737ad43984af18.pdf",
+  "banca": "Junta Médica Oficial do Município Ou Médico do Trabalho",
+  "roles": null,
+  "education": [
+   "medio",
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ]
  },
  {
   "id": "5fac2d6b9eba",
@@ -1308,33 +1562,6 @@
   "gazetteName": "Diário Oficial dos Municípios do Paraná"
  },
  {
-  "id": "464fa76f3c43",
-  "title": "Prefeitura Municipal de Tunas - Processo Seletivo nº 030/2026",
-  "deadline": "Inscrições: 12/11/2026 a 18/11/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "",
-  "description": "PREFEITURA MUNICIPAL DE TUNAS - EXTRATO DE EDITAL – ABERTURA DE PROCESSO SELETIVO EXTRATO DE EDITAL – ABERTURA DE PROCESSO SELETIVO PROCESSO SELETIVO SIMPLIFICADO Nº 030/2026 O Município de Tunas, informa que realizará PROCESSO SELETIVO SIMPLIFICADO ANÁLISE DE CURRÍCULOS/CADASTRO RESERVA para o cargo de MESTRE OPERADOR. INSCRIÇÕES: No Setor de Recursos Humanos, na Prefeitura Municipal de Tunas, situada na Rua Carolina Schimitt, dos dias 12/11/2026 à 18/11/2026 , das 8h30min às 11h30min e das 13h30min às 17h00min. Maiores informações poderão ser obtidas através do telefone (51) 92003-2206. O Edital na íntegra estará disponível a partir de 11/11/2026 no mural de publicações oficiais da Prefeitura Municipal e Site d\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 11/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.diariomunicipal.com.br/famurs/materia/15D7483E",
-  "linkKind": "diario",
-  "kind": "processo_seletivo",
-  "source": "diario_municipal",
-  "city": "Tunas",
-  "published": "2026-11-11",
-  "registrationStarts": "2026-11-12",
-  "registrationEnds": "2026-11-18",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/15D7483E",
-  "banca": null,
-  "roles": [
-   "Mestre Operador"
-  ],
-  "education": null,
-  "areas": null,
-  "collector": "sigpub:famurs",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
- },
- {
   "id": "3ec706db1981",
   "title": "Município de Piratini - Concurso Público nº 001/2026",
   "deadline": "Inscrições: veja o edital",
@@ -1539,33 +1766,6 @@
    "superior"
   ],
   "areas": [
-   "educacao"
-  ]
- },
- {
-  "id": "b5cce867f1a4",
-  "title": "Autarquia Municipal de Jundiaí - Processo Seletivo",
-  "deadline": "Inscrições: 09/11/2026 a 18/11/2026",
-  "state": "SP",
-  "salary": "",
-  "vacancies": "",
-  "description": "o, no uso de suas atribuições legais, 01. Com fundamentação na Lei Municipal nº 9.580/2021, Artigo 2º, Inciso IV e Lei Complementar Federal 173, de 27 de maio de 2020, FAZ SABER que estarão abertas, no período de 04 de a 19 de novembro de 2026, inscrições ao Processo Seletivo Público para contratação temporária de 02 (dois) Docentes, com carga horária de 20 (vinte) horas de atividade por semana, a serem cumpridas de forma horizontal, em no mínimo dois dias por semana, sob regime especial, para atuar no Departamento de PEDIATRIA da Faculdade de Medicina de Jundiaí. 1.1. As inscrições serão efetuadas exclusivamente na página eletrônica https://academico.fmj.br/selecao_simplificada, conforme normas estabelecidas no item 03 deste edital. 02. A carga horária será cumprida no sentido horizontal, de acordo com as necessidades didáticas do Departamento de Pediatria, em todos os locais em que a Faculdade mant\n\nFonte: Diário Oficial de Jundiaí/SP, 09/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://academico.fmj.br/selecao_simplificada",
-  "linkKind": "edital",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Jundiaí",
-  "published": "2026-11-09",
-  "registrationStarts": "2026-11-09",
-  "registrationEnds": "2026-11-18",
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/3525904/2026-11-09/ee9b9acfb1d998a11c128d4194a2095e9e211564.pdf",
-  "banca": null,
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "saude",
    "educacao"
   ]
  },
@@ -3188,26 +3388,6 @@
   "collector": "sigpub:arom",
   "sphere": "municipal",
   "gazetteName": "Diário Oficial dos Municípios do Estado de Rondônia"
- },
- {
-  "id": "9f64261d50c2",
-  "title": "Câmara de Lambari - Concurso Público nº 01/2026",
-  "deadline": "Inscrições: 20/10/2026 a 18/11/2026",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 8",
-  "description": "Câmara de Lambari: concurso público nº 01/2026 com inscrições abertas, organizado por IBGP. Cargos, requisitos e valores no edital.\n\nFonte: IBGP Concursos, 20/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.ibgpconcursos.com.br/",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "banca",
-  "city": "Lambari",
-  "published": "2026-10-20",
-  "registrationStarts": "2026-10-20",
-  "registrationEnds": "2026-11-18",
-  "banca": "IBGP",
-  "sphere": "municipal",
-  "collector": "ibgp"
  },
  {
   "id": "95fbcbc6ade8",
