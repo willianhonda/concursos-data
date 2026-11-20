@@ -1,5 +1,18 @@
 [
  {
+  "id": "ed93abc3b2e7",
+  "source": "querido_diario",
+  "territoryId": "3551306",
+  "city": "Sebastianópolis do Sul",
+  "state": "SP",
+  "organization": "Prefeitura Municipal de Sebastianópolis do Sul",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "3/2026",
+  "title": "Prefeitura Municipal de Sebastianópolis do Sul - Processo Seletivo nº 003/2026",
+  "published": "2026-11-19"
+ },
+ {
   "id": "c9d7403bba5c",
   "source": "querido_diario",
   "territoryId": "4320701",

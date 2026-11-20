@@ -1,5 +1,47 @@
 [
  {
+  "id": "upd-4bb93278c36f",
+  "examId": "def2d08ca416",
+  "type": "resultado",
+  "title": "Resultado publicado",
+  "organization": "Prefeitura Municipal de Candeias",
+  "edital": "Processo Seletivo nº 001/2026",
+  "state": "MG",
+  "city": "Candeias",
+  "published": "2026-11-18",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3112000/2026-11-18/7e19ded878adbf8a8a938765e55fe4abd6fa0b74.pdf",
+  "excerpt": "Seletivo Simplificado – Edital 01/2026, nomeada pelo Decreto nº do Decreto nº. 4417, de 28 de setembro de 2026, e por meio das alterações contidas no decreto n. 4438, de 28 de outubro de 2026, torna público para conhecimento dos interessados a CLASSIFICAÇÃO PRELIMINAR do presente processo seletivo: CARGO: VISITADOR Classifica ção Candi dato/ Nome N.º de ins cri çã o Lín gua Por tug ues a Conheci mentos Específic os Pontuação Total 1º CRIST HYAN NE AGUI AR 03 08 40 48 2º NAYA RA BAST OS BORG ES 1",
+  "source": "querido_diario"
+ },
+ {
+  "id": "upd-dee9cdcb9502",
+  "examId": "9d52a5bd95ac",
+  "type": "resultado",
+  "title": "Resultado publicado",
+  "organization": "Prefeitura Municipal de Mirante do Paranapanema",
+  "edital": "Processo Seletivo nº 002/2026",
+  "state": "SP",
+  "city": "Mirante do Paranapanema",
+  "published": "2026-11-17",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3530201/2026-11-17/9a1749b42ca625237a3f02bbb80b0167d073dcbe.pdf",
+  "excerpt": "icidade, validade jurídica e integridade. Poder ExecutivoConcursos / Processos Seletivos MUNICÍPIO DE MIRANTE DO PARANAPANEMA-SP CAPITAL DO PONTAL E DA REFORMA AGRÁRIA Secretaria Municipal de Administração EDITAL DE DIVULGAÇÃO DE RESULTADO PRELIMINAR DA PROVA ESCRITA E PROVA PRÁTICA DO PROCESSO SELETIVO 002/2026. A Prefeitura Municipal de Mirante do Paranapanema, Estado de São Paulo, por meio do convênio firmado com CIOP, torna pública a relação Preliminar dos aprovados no Processo Seletivo real",
+  "source": "querido_diario"
+ },
+ {
+  "id": "upd-0f7f4dd503ff",
+  "examId": "3571a65a7bdd",
+  "type": "resultado",
+  "title": "Resultado publicado",
+  "organization": "Prefeitura Municipal de Mirante do Paranapanema",
+  "edital": "Concurso Público nº 003/2026",
+  "state": "SP",
+  "city": "Mirante do Paranapanema",
+  "published": "2026-11-17",
+  "gazetteUrl": "https://data.queridodiario.ok.org.br/3530201/2026-11-17/9a1749b42ca625237a3f02bbb80b0167d073dcbe.pdf",
+  "excerpt": "........................................................................................ MUNICÍPIO DE MIRANTE DO PARANAPANEMA-SP CAPITAL DO PONTAL E DA REFORMA AGRÁRIA Secretaria Municipal de Administração EDITAL DE DIVULGAÇÃO DE RESULTADO PRELIMINAR DA PROVA ESCRITA E PROVA PRÁTICA DO CONCURSO PÚBLICO 003/2026. A Prefeitura Municipal de Mirante do Paranapanema, Estado de São Paulo, por meio do convênio firmado com CIOP, torna pública a relação Preliminar dos aprovados no Concurso Público realiz",
+  "source": "querido_diario"
+ },
+ {
   "id": "upd-702f3d297a74",
   "examId": "75e10abf787c",
   "type": "resultado",
