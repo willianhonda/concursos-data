@@ -13,6 +13,45 @@
   "published": "2026-11-19"
  },
  {
+  "id": "cbee84191979",
+  "source": "querido_diario",
+  "territoryId": "3551702",
+  "city": "Sertãozinho",
+  "state": "SP",
+  "organization": "Prefeitura da Estância Turística de Sertãozinho",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "13/2026",
+  "title": "Prefeitura da Estância Turística de Sertãozinho - Processo Seletivo nº 013/2026",
+  "published": "2026-11-19"
+ },
+ {
+  "id": "c2c9fe9d4b9c",
+  "source": "querido_diario",
+  "territoryId": "3534401",
+  "city": "Osasco",
+  "state": "SP",
+  "organization": "Prefeitura do Município de Osasco",
+  "orgType": "prefeitura",
+  "kind": "concurso",
+  "number": "1/2023",
+  "title": "Prefeitura do Município de Osasco - Concurso Público nº 001/2023",
+  "published": "2026-11-19"
+ },
+ {
+  "id": "2c4df3d6ef1f",
+  "source": "querido_diario",
+  "territoryId": "4306403",
+  "city": "Dois Irmãos",
+  "state": "RS",
+  "organization": "Município de Dois Irmãos",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "166/2026",
+  "title": "Município de Dois Irmãos - Processo Seletivo nº 166/2026",
+  "published": "2026-11-19"
+ },
+ {
   "id": "c9d7403bba5c",
   "source": "querido_diario",
   "territoryId": "4320701",
