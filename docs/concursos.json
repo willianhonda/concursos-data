@@ -1,5 +1,186 @@
 [
  {
+  "id": "c0f995004786",
+  "title": "Município de Alto Paraíso de Goiás - Processo Seletivo nº 002/2026",
+  "deadline": "Inscrições: 02/12/2026 a 04/12/2026",
+  "state": "GO",
+  "salary": "",
+  "vacancies": "Vagas 26",
+  "description": "FUNDO MUNICIPAL DE SAUDE - AVISO DE PUBLICAÇÃO DO EDITAL Nº 002/2026 PROCESSO SELETIVO SIMPLIFICADO O Município de Alto Paraíso de Goiás – GO, por meio da Secretaria Municipal de Saúde e da Comissão de Processo Seletivo Simplificado, torna pública a abertura de processo seletivo para contratação temporária de pessoal, com 26 (vinte e seis) vagas para chamamento imediato e formação de cadastro de reserva. A seleção será realizada mediante análise curricular. As inscrições são gratuitas e deverão ser realizadas presencialmente, de 02 a 04 de dezembro de 2026, das 8h às 12h e das 14h às 17h, no Protocolo da Prefeitura Municipal, situado na Praça do Centro Administrativo, nº 01, Centro, Alto Paraíso de Goiás – GO, mediante apres\n\nFonte: Diario Municipal de Goiás, 24/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.diariomunicipal.com.br/agm/materia/9CC27491",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Alto Paraíso de Goiás",
+  "published": "2026-11-24",
+  "registrationStarts": "2026-12-02",
+  "registrationEnds": "2026-12-04",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/agm/materia/9CC27491",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": null,
+  "collector": "sigpub:agm",
+  "sphere": "municipal",
+  "gazetteName": "Diario Municipal de Goiás"
+ },
+ {
+  "id": "a96725bd3851",
+  "title": "Município de João Monlevade - Processo Seletivo nº 16/2026",
+  "deadline": "Inscrições: 30/11/2026 a 02/12/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "Vagas 1",
+  "description": "CIPIO DE JOÃO MONLEVADE - EDITAL Nº 16/2026 PROCESSO SELETIVO PÚBLICO PARA O CARGO DE MÉDICO PLANTONISTA (PNEUMOLOGISTA) E (ENDOCRINOLOGISTA) O Município de João Monlevade, através da Secretaria Municipal de Saúde, torna público que estarão abertas inscrições para Processo Seletivo Simplificado visando o preenchimento de 1(uma) vaga e cadastro reserva para o cargo de Médico Plantonista (PNEUMOLOGISTA) e 1(uma) vaga e cadastro reserva para o cargo de Médico Plantonista (ENDOCRINOLOGISTA), por meio de contratação por tempo determinado para atender a necessidade temporária de excepcional interesse público, com amparo nos dispositivos da Constituição Federal, Leis Municipais nº. 402/1975 e suas alterações, 2.011/2012, 2.185/2016 e 2.238/2017 nos seguintes termos: 1 – DAS DISPOSIÇÕES PRELIMINARES O Processo Seletivo Público Simplificado a que se refere o presente edital será realizado sob responsabilidade da Comissão nom\n\nFonte: Diário Oficial dos Municípios Mineiros, 24/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.diariomunicipal.com.br/amm-mg/materia/C5144867",
+  "linkKind": "diario",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "João Monlevade",
+  "published": "2026-11-24",
+  "registrationStarts": "2026-11-30",
+  "registrationEnds": "2026-12-02",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amm-mg/materia/C5144867",
+  "banca": null,
+  "roles": [
+   "Médico Plantonista (pneumologista)"
+  ],
+  "education": [
+   "superior"
+  ],
+  "areas": [
+   "saude"
+  ],
+  "collector": "sigpub:amm-mg",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "8e1c6aac8245",
+  "title": "Município de Erechim - Processo Seletivo nº 316/2026",
+  "deadline": "Inscrições: 24/11/2026 a 26/11/2026",
+  "state": "RS",
+  "salary": "",
+  "vacancies": "",
+  "description": "SIMPLIFICADO Nº 316/2026 EDITAL 001/2026 A Secretária Municipal de Administração de Erechim, Estado do Rio Grande do Sul, no uso de suas atribuições previstas no Decreto nº 5111/2021, torna público, para conhecimento de todos os interessados que estão abertas as inscrições para Contratação por Tempo Determinado , através de processo seletivo simplificado, conforme Lei Municipal nº 7.880/2026, como segue: - 02 (DOIS) AGENTES EXECUTIVOS ESPECIALIZADOS 40H; O Edital com todas as informações necessárias, encontra-se publicado no site: https://www.pmerechim.rs.gov.br//concursos/97/processos-seletivos-e-contratos-temporarios---2026. As inscrições serão realizadas nos dias 24/11/2026 a 26/11/2026, na Secretaria Municipal de Administração, Diretoria de Recursos Humanos, Praça da Bandeira, nº 354 – Bairro Centro – Erechim – RS, conforme Item 1 do presente Edital. Erechim, 23 de Novembro de 2026. Registre-se e Pub\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 24/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.pmerechim.rs.gov.br//concursos/97/processos-seletivos-e-contratos-temporarios---2026",
+  "linkKind": "edital",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Erechim",
+  "published": "2026-11-24",
+  "registrationStarts": "2026-11-24",
+  "registrationEnds": "2026-11-26",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/42317D81",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": null,
+  "collector": "sigpub:famurs",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
+ },
+ {
+  "id": "713b6e72e71b",
+  "title": "Prefeitura Municipal de Paiçandu - Concurso Público",
+  "deadline": "Inscrições: veja o edital",
+  "state": "PR",
+  "salary": "",
+  "vacancies": "",
+  "description": "e de viabilizar a continuidade do atendimento aos cidadãos do Município aos Serviços Publicos. Neste sentido, a Prefeitura Municipal de Paiçandu, visando, atender os preceitos constitucionais e administrativos, vem por meio da presente justificativa tornar publica a realização de novo Concurso público. Paiçandu, 17 de Novembro de 2026. ISMAEL BATISTA Prefeito Municipal COD CARGO PÚBLICO CARGA HORARIA 1 Advogado 20 2 Auxiliar de contabilidade 35 3 Auxiliar de engenharia 35 4 Agente de Saúde 35 5 Agrônomo 35 6 Fiscal 35 7 Assessor Administrativo 35 8 Assistente Administrativo 35 9 Assistente Social 30 10 Auxiliar Administrativo 35 11 Auxiliar de Serviço Gerais 40 12 Bioquímico 35 13 Borracheiro 40 14 Contador 35 15 Dentista 20 16 Educador Social 40 17 Eletricista 40 18 Enfermeiro 30 19 Telefonista 35 20 Engenheiro Civil 28 21 Farmacêutico 30 22 Fiscal de Tributos 35\n\nFonte: Diário Oficial dos Municípios do Paraná, 24/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://www.diariomunicipal.com.br/amp/materia/1C70F60D",
+  "linkKind": "diario",
+  "kind": "concurso",
+  "source": "diario_municipal",
+  "city": "Paiçandu",
+  "published": "2026-11-24",
+  "registrationStarts": null,
+  "registrationEnds": null,
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amp/materia/1C70F60D",
+  "banca": null,
+  "roles": null,
+  "education": null,
+  "areas": [
+   "saude",
+   "educacao",
+   "juridica",
+   "seguranca",
+   "engenharia",
+   "administrativa",
+   "assistencia_social",
+   "operacional"
+  ],
+  "collector": "sigpub:amp",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Paraná"
+ },
+ {
+  "id": "11aa284ed359",
+  "title": "Município de Santo Antonio do Itambé - Processo Seletivo nº 02/2025",
+  "deadline": "Inscrições: 02/12/2026 a 14/12/2026",
+  "state": "MG",
+  "salary": "",
+  "vacancies": "",
+  "description": "DE RECURSOS HUMANOS - EDITAL 02/2026 DO PROCESSO SELETIVO SIMPLIFICADO PARA CONTRATAÇÃO E CADASTRO RESERVA DE FUNÇÕES PÚBLICAS TEMPORÁRIAS PARA O QUADRO DE PESSOAL DO MUNICÍPIO DE SANTO ANTÔNIO DO ITAMBÉ/MG O Município de Santo Antônio do Itambé/MG torna público e estabelece normas para a realização de Processo Seletivo Simplificado para contratação temporária e formação de cadastro reserva no quadro de pessoal do Município. A presente seleção destina-se a suprir a necessidade temporária de excepcional interesse público, nos casos de afastamentos legais: substituição de servidor titular de cargo efetivo afastado em razão de licença para tratamento de saúde, ou por acidente em serviço ou doença profissional, de licença por motivo de doença em pessoa da família, de licença por motivo de gestação, adoção ou guarda judicial, de licença para tratar de interesses particulares (art. 84, I, II, III, IV e VI, da Lei Complementar nº 03/2005) ou de cessão a outro órgã\n\nFonte: Diário Oficial dos Municípios Mineiros, 24/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://santoantoniodoitambe.mg.gov.br/",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Santo Antonio do Itambé",
+  "published": "2026-11-24",
+  "registrationStarts": "2026-12-02",
+  "registrationEnds": "2026-12-14",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/amm-mg/materia/F79698B8",
+  "banca": null,
+  "roles": [
+   "Motorista",
+   "Orientador Social",
+   "Psicólogo"
+  ],
+  "education": null,
+  "areas": [
+   "saude",
+   "assistencia_social",
+   "operacional"
+  ],
+  "collector": "sigpub:amm-mg",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios Mineiros"
+ },
+ {
+  "id": "0105fe1632fa",
+  "title": "Município de Rio do Fogo - Processo Seletivo",
+  "deadline": "Inscrições: 07/12/2026 a 11/12/2026",
+  "state": "RN",
+  "salary": "",
+  "vacancies": "Vagas 12",
+  "description": "ão de diretor escolar e vice-diretor escolar, dos estabelecimentos de ensino da Rede Municipal de Ensino, instituída por meio da Portaria de nº 148/2023 –, no uso das atribuições conferidas pelo Decreto Municipal de nº034, de 08 de setembro de 2022, torna pública a realização do Processo Seletivo Simplificado, para a habilitação dos gestores e vice gestor da rede municipal de ensino. 1. DAS DISPOSIÇÕES INICIAIS 1.1 É objeto deste Edital a seleção de pessoal para o provimento do cargo de Gestor(a) escolar ou e vice gestor(a), Escolar das unidades escolares da Rede Municipal de Ensino, de acordo com art.2º do decreto Municipal nº034, de 08 de setembro de 2022. 1.2 A seleção de pessoal para provimento do cargo de Gestor(a)/Vice-gestor(a) ou Escolar será realizada mediante metodologia de análise dos critérios técnicos de mérito e desempenho, disposto no art.14,§1º , inciso I da Lei nº14.113/2020, sendo considerados os seguintes aspect\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Norte, 24/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
+  "url": "https://avamec.mec.gov.br/#/curso/listar?query=gest%C3%A3o%20escolar",
+  "linkKind": "orgao",
+  "kind": "processo_seletivo",
+  "source": "diario_municipal",
+  "city": "Rio do Fogo",
+  "published": "2026-11-24",
+  "registrationStarts": "2026-12-07",
+  "registrationEnds": "2026-12-11",
+  "gazetteUrl": "https://www.diariomunicipal.com.br/femurn/materia/DC8382F2",
+  "banca": "Chefe do Poder Executivo Municipal",
+  "roles": [
+   "Gestor(a) Escolar Ou e Vice Gestor(a)",
+   "Escolar das Unidades Escolares da Rede Municipal de Ensino",
+   "De Acordo com Art",
+   "Gestor(a)/Vice-gestor(a) Ou Escolar Será Realizada",
+   "Gestor Escolar e Vice-gestor Escolar Serão Formalizadas"
+  ],
+  "education": [
+   "superior"
+  ],
+  "areas": null,
+  "collector": "sigpub:femurn",
+  "sphere": "municipal",
+  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Norte"
+ },
+ {
   "id": "f6fa12110f54",
   "title": "Município de Laranjal - Processo Seletivo nº 010/2026",
   "deadline": "Inscrições: 30/11/2026 a 08/12/2026",
@@ -1062,31 +1243,6 @@
   "collector": "sigpub:famep",
   "sphere": "municipal",
   "gazetteName": "Diário Oficial dos Municípios do Estado do Pará"
- },
- {
-  "id": "8b188ab175db",
-  "title": "Prefeitura de Gramado dos Loureiros - Processo Seletivo nº 004/2026",
-  "deadline": "Inscrições: 16/11/2026 a 23/11/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "",
-  "description": "004/2026 O Município de Gramado dos Loureiros Torna Público aos interessados que, no período de 16/11/2026 até 23/11/2026 , na Secretaria Municipal de Administração – Setor de Pessoal, em horário normal de expediente, das 7h às 13h, estarão abertas inscrições para Processo Seletivo Simplificado, para contratação emergencial conforme a necessidade administrativa da Secretaria Municipal de Educação, Desporto e Cultura e Secretaria Municipal de Assistência Social e Bem Estar. Maiores informações pelo site www.gramadodosloureiros.rs.gov.br ou Telefone (054) 9 9337-5998 OU 99337-6907. - Em 13/11/2026 – Artur Cereza – Prefeito Municipal. Publicado por: Jaísa Batista\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 16/11/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.gramadodosloureiros.rs.gov.br",
-  "linkKind": "orgao",
-  "kind": "processo_seletivo",
-  "source": "diario_municipal",
-  "city": "Gramado dos Loureiros",
-  "published": "2026-11-16",
-  "registrationStarts": "2026-11-16",
-  "registrationEnds": "2026-11-23",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/7A6155D4",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": null,
-  "collector": "sigpub:famurs",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
  },
  {
   "id": "7eb1444a1b02",
@@ -2423,49 +2579,6 @@
   "gazetteName": "Diário Oficial dos Municípios Mineiros"
  },
  {
-  "id": "c99d7c893300",
-  "title": "Prefeitura Municipal de São José do Inhacorá - Concurso Público nº 01/2026",
-  "deadline": "Inscrições: 30/10/2026 a 23/11/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "",
-  "description": "AL DA ADMINISTRAÇÃO EXTRATO CONCURSO PÚBLICO Nº 01/2026 ESTADO DO RIO GRANDE DO SUL MUNICÍPIO DE SÃO JOSÉ DO INHACORÁ CONCURSO PÚBLICO Nº 01/2026 - EDITAL Nº 195/2026 - EXTRATO ADEMIR JOSÉ SCHNEIDER, Prefeito Municipal de São José do Inhacorá, TORNA PÚBLICO a abertura de inscrições do CONCURSO PÚBLICO nº 01/2026 , para os cargos de Agente Educacional, Almoxarife, Dentista, Educador Social, Merendeira, Motorista, Nutricionista, Operário, Professor de Anos Iniciais - 20h, Professor de Anos Iniciais - 40h, Professor de Arte, Professor de Computação e Inovação, Professor de Educação Especial - AEE, Professor de Educação Física, Professor de Educação Infantil - 25h, Professor de Educação Infantil - 40h, Professor de História, Professor de Língua Inglesa, Professor de Língua Portuguesa e Professor de Matemática. INSCRIÇÕES: De 30/10 a 23/11/2026 , pelo site www.premierconcursos.com.br . Mais informações, estão disponíveis no Quadro de Publicaçõ\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 29/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.premierconcursos.com.br",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "diario_municipal",
-  "city": "São José do Inhacorá",
-  "published": "2026-10-29",
-  "registrationStarts": "2026-10-30",
-  "registrationEnds": "2026-11-23",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/FABC71D0",
-  "banca": null,
-  "roles": [
-   "Agente Educacional",
-   "Almoxarife",
-   "Dentista",
-   "Educador Social",
-   "Merendeira",
-   "Motorista",
-   "Nutricionista",
-   "Operário",
-   "Professor de Anos Iniciais - 20h",
-   "Professor de Anos Iniciais - 40h",
-   "Professor de Arte",
-   "Professor de Computação e Inovação"
-  ],
-  "education": null,
-  "areas": [
-   "saude",
-   "educacao",
-   "assistencia_social",
-   "operacional"
-  ],
-  "collector": "sigpub:famurs",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
- },
- {
   "id": "a04fc69d82d8",
   "title": "Prefeitura Municipal de São Caetano - Concurso Público nº 001/2026",
   "deadline": "Inscrições: veja o edital",
@@ -2489,33 +2602,6 @@
   "collector": "sigpub:amupe",
   "sphere": "municipal",
   "gazetteName": "Diário Oficial dos Municípios do Estado de Pernambuco"
- },
- {
-  "id": "8a362f2158a9",
-  "title": "Prefeitura Municipal de São José do Inhacorá - Processo Seletivo nº 01/2026",
-  "deadline": "Inscrições: 30/10/2026 a 23/11/2026",
-  "state": "RS",
-  "salary": "",
-  "vacancies": "",
-  "description": "ÇÃO EXTRATO PROCESSO SELETIVO PÚBLICO Nº 01/2026 ESTADO DO RIO GRANDE DO SUL MUNICÍPIO DE SÃO JOSÉ DO INHACORÁ PROCESSO SELETIVO PÚBLICO Nº 01/2026 - EDITAL Nº 196/2026 - EXTRATO ADEMIR JOSÉ SCHNEIDER, Prefeito Municipal de São José do Inhacorá, TORNA PÚBLICO a abertura de inscrições do PROCESSO SELETIVO PÚBLICO nº 01/2026 , para os empregos públicos de Agente Comunitário de Saúde (ACS) e Agente de Combate às Endemias (ACE). INSCRIÇÕES: De 30/10 a 23/11/2026 , pelo site www.premierconcursos.com.br . Mais informações, estão disponíveis no Quadro de Publicações Oficiais da Prefeitura Municipal de São José do Inhacorá, situada na Rua Frei Leonardo Braun, 50, Centro - São José do Inhacorá - RS, e nos sites www.saojosedoinhacora.rs.gov.br e www.premierconcursos.com.br São José do Inhacorá, 28 de outubro de 2026. ADEMIR JOSÉ SCHNEIDER, Prefeito Municipal Publicado por: Renato Gräf\n\nFonte: Diário Oficial dos Municípios do Estado do Rio Grande do Sul, 29/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.premierconcursos.com.br",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "diario_municipal",
-  "city": "São José do Inhacorá",
-  "published": "2026-10-29",
-  "registrationStarts": "2026-10-30",
-  "registrationEnds": "2026-11-23",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/famurs/materia/6FF15637",
-  "banca": null,
-  "roles": null,
-  "education": null,
-  "areas": [
-   "saude"
-  ],
-  "collector": "sigpub:famurs",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Estado do Rio Grande do Sul"
  },
  {
   "id": "6e5405e78ee6",
@@ -2856,39 +2942,6 @@
   "banca": "IBGP",
   "sphere": "municipal",
   "collector": "ibgp"
- },
- {
-  "id": "fcb8a87d6f6a",
-  "title": "Câmara Municipal de São Geraldo do Araguaia - Concurso Público nº 001/2026",
-  "deadline": "Inscrições: 23/10/2026 a 23/11/2026",
-  "state": "PA",
-  "salary": "Faixa salarial: R$ 1.621,00 - R$ 3.000,00",
-  "vacancies": "Vagas 1",
-  "description": "GABINETE DO PRESIDENTE AVISO EXTRATO DE CONCURSO PUBLICO ESTADO DO PARÁ CÂMARA MUNICIPAL DE SÃO GERALDO DO ARAGUAIA CNPJ: 34.669.119/0001-73 EXTRATO DO EDITAL DE ABERTURA Nº 001/2026 – CONCURSO PÚBLICO A CÂMARA MUNICIPAL DE SÃO GERALDO DO ARAGUAIA – PA, com base na Resolução nº 151/2025, de 18 de junho de 2025, que dispõe sobre o Plano de Cargos, Carreiras e Vencimentos – PCCV, e na Lei Orgânica do Município, torna pública a abertura de inscrições para o Concurso Público destinado ao provimento de cargos efetivos de nível fundamental, médio e superior do seu quadro de pessoal. O concurso será executado pelo ICAP – Instituto de Capacitação, Assessoria e Pesquisa Ltda – EPP. CARGOS, VAGAS E VENCIMENTOS: todos com carga horária de 40 horas semanais. • F101 – Auxiliar de Serviços Gerais – Manutenção/Zeladoria: 01 vaga; R$ 1.621,00; Ensino\n\nFonte: Diário Oficial dos Municípios do Estado do Pará, 26/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.icap-to.com.br",
-  "linkKind": "banca",
-  "kind": "concurso",
-  "source": "diario_municipal",
-  "city": "São Geraldo do Araguaia",
-  "published": "2026-10-26",
-  "registrationStarts": "2026-10-23",
-  "registrationEnds": "2026-11-23",
-  "gazetteUrl": "https://www.diariomunicipal.com.br/famep/materia/47D4FB96",
-  "banca": "ICAP",
-  "roles": null,
-  "education": [
-   "fundamental",
-   "medio",
-   "tecnico",
-   "superior"
-  ],
-  "areas": [
-   "administrativa",
-   "operacional"
-  ],
-  "collector": "sigpub:famep",
-  "sphere": "municipal",
-  "gazetteName": "Diário Oficial dos Municípios do Estado do Pará"
  },
  {
   "id": "843f0d5ff4fa",
@@ -3941,147 +3994,6 @@
    "medio"
   ],
   "areas": null
- },
- {
-  "id": "ddfbf2e92486",
-  "title": "Prefeitura Municipal de Curitiba - Processo Seletivo nº 11/2026",
-  "deadline": "Inscrições: veja o edital",
-  "state": "PR",
-  "salary": "Salário: R$ 3.027,73",
-  "vacancies": "",
-  "description": "XV CURITIBA, SEXTA-FEIRA, 9 DE OUTUBRO DE 2026 Página 120 PSS - EDITAL NORMATIVO Nº 11 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL, no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Processo Seletivo Simplificado, destinado a contratação temporária de agentes públicos para o exercício da função pública de Agente Administrativo, na Administração Direta do Município de Curitiba, em Regime Especial de Contratação, de acordo com as normas instituídas, conforme anexo. Secretaria Municipal de Gestão de Pessoal, 9 de outubro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal Torna público o Edital Normativo do Processo Seletivo Simplificado para provimento na função pública de Agente Administrativo. DIÁRIO OFICIAL ELETRÔNICO ATOS DO MUNICÍPIO DE CURITIBA SUPLEMENTO Nº 1 Nº 189 - SUPLEMENTO Nº 1 - ANO XV\n\nFonte: Diário Oficial de Curitiba/PR, 09/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.institutoaocp.org.br",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Curitiba",
-  "published": "2026-10-09",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-10-09/bf90d1036678c4a4ae73d539dd1075fc10f7cb22.pdf",
-  "banca": "Instituto AOCP",
-  "roles": null,
-  "education": [
-   "medio"
-  ],
-  "areas": [
-   "administrativa"
-  ]
- },
- {
-  "id": "7e8ded786c4d",
-  "title": "Universidade Federal de Itajubá - Concurso Público (Edital nº 51/2026)",
-  "deadline": "Inscrições: veja o edital",
-  "state": "MG",
-  "salary": "",
-  "vacancies": "Vagas 1",
-  "description": "EDITAL Nº 51, de 8 de outubro de 2026 Concurso Público de Provas e Títulos para o cargo efetivo de PROFESSOR DE MAGISTÉRIO SUPERIOR A Diretora de Desenvolvimento de Pessoal, no uso da competência que lhe foi delegada pelo Reitor da UNIFEI, por meio da Portaria nº 2.586, de 20/12/2024, publicada no DOU de 23/12/2024, e nos termos das Leis nº 8.112/1990 e nº 12.772/2012, Decretos nº 9.739/2019, nº 7.485/2011 e nº 8.259/2014, Portaria Conjunta MGI/MEC nº 38/2026 e Resolução nº 5/2023 - CEPEAd de 12/09/2023, torna público que estarão abertas as inscrições para o Concurso Público de Provas e Títulos para o cargo efetivo de PROFESSOR DE MAGISTÉRIO SUPERIOR. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1. As áreas, número de vagas, regime de trabalho, classe e titulação exigidas, estão no Anexo deste Edital. 1.2. Os diplomas de graduação e pós-graduação exigidos no Anexo deverão ser de cursos reconhe\n\nFonte: Diário Oficial da União, Seção 3, 09/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://progepe.unifei.edu.br/concursos-e-processos-seletivos/edital-no-51-2026/",
-  "linkKind": "edital",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-09",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=47",
-  "banca": null,
-  "roles": [
-   "No Uso da Competência",
-   "Professor de Magistério Superior",
-   "Professor de Magistério Superior É a"
-  ],
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "educacao"
-  ]
- },
- {
-  "id": "69c22843743e",
-  "title": "Secretaria Executiva - Concurso Público (Edital nº 1/2026)",
-  "deadline": "Inscrições: veja o edital",
-  "state": "DF",
-  "salary": "Salário: R$ 20.000,00",
-  "vacancies": "",
-  "description": "EDITAL CGU Nº 1, DE 8 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA O PROVIMENTO DE VAGAS E A FORMAÇÃO DE CADASTRO DE RESERVA EM CARGOS DE AUDITOR FEDERAL DE FINANÇAS E CONTROLE (AFFC) O Secretário-Executivo Adjunto da Controladoria-Geral da União, tendo em vista a autorização por meio da Portaria MGI nº 5.093, de 22 de junho de 2026, e o disposto no Decreto-Lei nº 2.346, de 23 de julho de 1987, na Lei nº 8.112, de 11 de dezembro de 1990, na Lei nº 9.625, de 7 de abril de 1998, na Lei nº 11.890, de 24 de dezembro de 2008, na Lei nº 13.327, de 29 de julho de 2016, no Decreto nº 9.739, de 28 de março de 2019, e na Lei nº 15.141, de 2 de junho de 2025, e suas respectivas alterações, torna pública a realização de concurso público para o provimento de vagas e a formação de cadastro de reserva em cargos de Auditor Federal de Finanças e Controle (AFFC), mediante as condições estabelecidas neste ed\n\nFonte: Diário Oficial da União, Seção 3, 09/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "http://www.cebraspe.org.br/concursos/cgu_26_affc",
-  "linkKind": "edital",
-  "kind": "concurso",
-  "source": "dou",
-  "city": null,
-  "published": "2026-10-09",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=530&pagina=155",
-  "banca": "Cebraspe",
-  "roles": [
-   "Tendo em Vista a Autorização",
-   "Auditor Federal de Finanças e Controle (affc)",
-   "De Caráter Eliminatório e Classificatório",
-   "De Responsabilidade do Cebrasp",
-   "Auditor Federal de Finanças e Controle",
-   "Dentre Outras Atribuições"
-  ],
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "administrativa"
-  ]
- },
- {
-  "id": "613973c7d57e",
-  "title": "Prefeitura Municipal de Curitiba - Processo Seletivo nº 10/2026",
-  "deadline": "Inscrições: veja o edital",
-  "state": "PR",
-  "salary": "Faixa salarial: R$ 2.410,63 - R$ 10.446,05",
-  "vacancies": "",
-  "description": "XV CURITIBA, SEXTA-FEIRA, 9 DE OUTUBRO DE 2026 Página 82 PSS - EDITAL NORMATIVO Nº 10 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL, no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Processo Seletivo Simplificado, destinado a contratação temporária de agentes públicos para o exercício da função pública de Contador, na Administração Direta do Município de Curitiba, em Regime Especial de Contratação, de acordo com as normas instituídas, conforme anexo. Secretaria Municipal de Gestão de Pessoal, 9 de outubro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal Torna público o Edital Normativo do Processo Seletivo Simplificado para provimento na função pública de Contador. DIÁRIO OFICIAL ELETRÔNICO ATOS DO MUNICÍPIO DE CURITIBA SUPLEMENTO Nº 1 Nº 189 - SUPLEMENTO Nº 1 - ANO XV CURITIBA, SEXTA-FEIRA, 9\n\nFonte: Diário Oficial de Curitiba/PR, 09/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.institutoaocp.org.br",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Curitiba",
-  "published": "2026-10-09",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-10-09/bf90d1036678c4a4ae73d539dd1075fc10f7cb22.pdf",
-  "banca": "Instituto AOCP",
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "administrativa"
-  ]
- },
- {
-  "id": "2b7546446e0e",
-  "title": "Município de Curitiba - Processo Seletivo nº 09/2026",
-  "deadline": "Inscrições: veja o edital",
-  "state": "PR",
-  "salary": "",
-  "vacancies": "",
-  "description": "O XV CURITIBA, SEXTA-FEIRA, 9 DE OUTUBRO DE 2026 Página 41 PSS - EDITAL NORMATIVO Nº 9 A SECRETÁRIA MUNICIPAL DE GESTÃO DE PESSOAL, no uso das competências que lhe foram delegadas pelo Decreto Municipal nº 41, de 2 de janeiro de 2025, RESOLVE TORNAR PÚBLICO o Edital Normativo do Processo Seletivo Simplificado, destinado a contratação temporária de agentes públicos para o exercício da função pública de Engenheiro Civil, na Administração Direta do Município de Curitiba, em Regime Especial de Contratação, de acordo com as normas instituídas, conforme anexo. Secretaria Municipal de Gestão de Pessoal, 9 de outubro de 2026. Daniele Regina dos Santos : Secretária Municipal de Gestão de Pessoal SECRETARIA MUNICIPAL DE GESTÃO DE PESSOAL - SMGP Torna público o Edital Normativo do Processo Seletivo Simplificado para provimento na função pública de Engenheiro Civil. DIÁRIO OFICIAL ELETRÔNICO ATOS DO MUNICÍPIO DE CURITIBA SUPLEMENTO\n\nFonte: Diário Oficial de Curitiba/PR, 09/10/2026. Informações extraídas automaticamente; confira sempre o edital oficial.",
-  "url": "https://www.institutoaocp.org.br",
-  "linkKind": "banca",
-  "kind": "processo_seletivo",
-  "source": "querido_diario",
-  "city": "Curitiba",
-  "published": "2026-10-09",
-  "registrationStarts": null,
-  "registrationEnds": null,
-  "gazetteUrl": "https://data.queridodiario.ok.org.br/4106902/2026-10-09/bf90d1036678c4a4ae73d539dd1075fc10f7cb22.pdf",
-  "banca": "Instituto AOCP",
-  "roles": null,
-  "education": [
-   "superior"
-  ],
-  "areas": [
-   "engenharia"
-  ]
  },
  {
   "id": "26c7bc938bcc",
