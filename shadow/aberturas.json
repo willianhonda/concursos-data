@@ -1,5 +1,57 @@
 [
  {
+  "id": "0cfa370f7a78",
+  "source": "querido_diario",
+  "territoryId": "3528007",
+  "city": "Macatuba",
+  "state": "SP",
+  "organization": "Município de Macatuba",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "1/2026",
+  "title": "Município de Macatuba - Processo Seletivo nº 01/2026",
+  "published": "2026-11-25"
+ },
+ {
+  "id": "d71943ee6a38",
+  "source": "querido_diario",
+  "territoryId": "3112000",
+  "city": "Candeias",
+  "state": "MG",
+  "organization": "Prefeitura Municipal de Candeias",
+  "orgType": "prefeitura",
+  "kind": "processo_seletivo",
+  "number": "2/2026",
+  "title": "Prefeitura Municipal de Candeias - Processo Seletivo nº 02/2026",
+  "published": "2026-11-24"
+ },
+ {
+  "id": "328efd10c9d0",
+  "source": "querido_diario",
+  "territoryId": "3519907",
+  "city": "Iepê",
+  "state": "SP",
+  "organization": "Prefeitura Municipal de Iepê",
+  "orgType": "prefeitura",
+  "kind": "concurso",
+  "number": "1/2026",
+  "title": "Prefeitura Municipal de Iepê - Concurso Público nº 001/2026",
+  "published": "2026-11-24"
+ },
+ {
+  "id": "cd05259f9e0f",
+  "source": "querido_diario",
+  "territoryId": "3534401",
+  "city": "Osasco",
+  "state": "SP",
+  "organization": "Prefeitura do Município de Osasco",
+  "orgType": "prefeitura",
+  "kind": "concurso",
+  "number": "3/2026",
+  "title": "Prefeitura do Município de Osasco - Concurso Público nº 003/2026",
+  "published": "2026-11-23"
+ },
+ {
   "id": "ed93abc3b2e7",
   "source": "querido_diario",
   "territoryId": "3551306",
